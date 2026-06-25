@@ -1,0 +1,35 @@
+[
+  {
+    "metro": "denver_co",
+    "slug": "denver",
+    "name": "Denver",
+    "state": "CO",
+    "stateName": "Colorado",
+    "lat": 39.7392,
+    "lng": -104.9903,
+    "dense": false,
+    "blurb": "Front Range cold-therapy studios across the Denver metro."
+  },
+  {
+    "metro": "dallas_fort_worth_tx",
+    "slug": "dallas-fort-worth",
+    "name": "Dallas–Fort Worth",
+    "state": "TX",
+    "stateName": "Texas",
+    "lat": 32.7767,
+    "lng": -96.797,
+    "dense": false,
+    "blurb": "Cold plunge, sauna, and contrast-therapy studios across the DFW metroplex."
+  },
+  {
+    "metro": "philadelphia_pa",
+    "slug": "philadelphia",
+    "name": "Philadelphia",
+    "state": "PA",
+    "stateName": "Pennsylvania",
+    "lat": 39.9526,
+    "lng": -75.1652,
+    "dense": false,
+    "blurb": "Greater Philadelphia recovery studios for cold and heat therapy."
+  }
+]
