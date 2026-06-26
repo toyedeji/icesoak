@@ -1,17 +1,27 @@
 #!/usr/bin/env bash
-# Nightly IceSoak scrape — invoked by n8n (CT 170).
-# Regenerates studios.json and questions.json then commits + pushes.
+# Weekly IceSoak scrape — invoked by n8n (CT 170).
+# Builds the image locally, scrapes studios, commits + pushes only if data changed.
 set -euo pipefail
 
-IMAGE="${ICESOAK_IMAGE:-icesoak-scraper:latest}"
+IMAGE="localhost/icesoak-scraper:latest"
 WORK_DIR="${ICESOAK_WORK_DIR:-/opt/icesoak}"
+SCRAPER_DIR="${WORK_DIR}/scraper"
 
 log() { echo "[$(date -u +%Y-%m-%dT%H:%M:%SZ)] $*"; }
 
-log "Starting IceSoak scrape (image: $IMAGE)"
+log "=== IceSoak weekly scrape start ==="
 
-# The whole repo is mounted at /work; scrape.py now lives in scraper/ and writes
-# studios.json + questions.json to the repo root (/work).
+# 1. Pull latest repo state
+log "Pulling latest repo..."
+cd "${WORK_DIR}"
+git pull
+
+# 2. Build image from local Dockerfile (avoids short-name registry resolution)
+log "Building scraper image: ${IMAGE}"
+podman build --network=host -t "${IMAGE}" "${SCRAPER_DIR}"
+
+# 3. Run scraper — mounts repo root at /work; scrape.py writes studios.json + questions.json there
+log "Running scraper..."
 podman run --rm \
     --shm-size=1g \
     -v "${WORK_DIR}:/work" \
@@ -19,18 +29,23 @@ podman run --rm \
     "${IMAGE}" \
     python scraper/scrape.py
 
-log "Scrape complete. Committing results..."
+log "Scrape complete."
 
+# 4. Commit and push only if outputs changed
 cd "${WORK_DIR}"
+git add studios.json questions.json
 
-# Only commit if outputs actually changed
-if git diff --quiet studios.json questions.json 2>/dev/null; then
-    log "No changes in outputs — skipping commit."
-else
-    git add studios.json questions.json
-    git commit -m "data: nightly studio refresh $(date -u +%Y-%m-%d)"
-    git push
-    log "Committed and pushed."
+if git diff --cached --quiet; then
+    log "No changes in studios.json / questions.json — nothing to commit."
+    log "=== Done (no-op). ==="
+    exit 0
 fi
 
-log "Done."
+log "Data changed — committing..."
+git -c user.name="toyedeji" \
+    -c user.email="toyedeji@users.noreply.github.com" \
+    commit -m "data: weekly studio refresh $(date -u +%Y-%m-%d)"
+
+git push
+log "Committed and pushed."
+log "=== Done. ==="
