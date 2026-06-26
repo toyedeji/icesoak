@@ -1,0 +1,18 @@
+# Normalize all text to LF in the repo so Linux (Netlify build, scraper
+# container) never sees CRLF. Critical for shell scripts and Python.
+* text=auto eol=lf
+
+*.sh   text eol=lf
+*.py   text eol=lf
+*.mjs  text eol=lf
+*.ts   text eol=lf
+*.tsx  text eol=lf
+*.json text eol=lf
+
+# Binary assets (none yet, but guard against accidental normalization).
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.webp binary
