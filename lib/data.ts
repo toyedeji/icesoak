@@ -1,5 +1,8 @@
-import studiosJson from "@/data/studios.json";
-import questionsJson from "@/data/questions.json";
+// studios.json and questions.json live at the REPO ROOT — the single source of
+// truth that the scraper (scraper/scrape.py) overwrites on each run.
+// metros.json is static site config and stays under data/.
+import studiosJson from "@/studios.json";
+import questionsJson from "@/questions.json";
 import metrosJson from "@/data/metros.json";
 import type { Studio, Question, Metro } from "./types";
 

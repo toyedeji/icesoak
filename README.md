@@ -10,12 +10,30 @@ rank in Google and be citable by AI answer engines.
   client-side widget; all listing content is server-rendered into the HTML.
 - **Netlify** for hosting (see `netlify.toml`).
 
-## Data
-- `data/studios.json` — array of studios (required: `id, name, metro, city, lat,
-  lng, status`; all else nullable). Missing fields are omitted, never rendered
-  as `null`. Build succeeds even with stub/empty data.
-- `data/questions.json` — guide content (15 seeded guides).
-- `data/metros.json` — metro slug ↔ display name ↔ map center.
+## Repo layout
+- Root — the Next.js static-export app (`app/`, `components/`, `lib/`, `public/`).
+- `scraper/` — the Python data pipeline (`scrape.py`, `crawlers/`, `processors/`,
+  `utils/`, `Dockerfile`, `run_scrape.sh`, `data/seed_studios.json`).
+
+## Data (single source of truth at the repo root)
+- `studios.json` (**repo root**) — array of studios (required: `id, name, metro,
+  city, lat, lng, status`; all else nullable). Missing fields are omitted, never
+  rendered as `null`. Build succeeds even with stub/empty data. Seeded from
+  `scraper/data/seed_studios.json`; the scraper **overwrites this file** on each run.
+- `questions.json` (**repo root**) — guide content (15 seeded guides). The scraper
+  overwrites this too when its questions crawler produces output.
+- `data/metros.json` — metro slug ↔ display name ↔ map center (static site config,
+  not scraper output).
+
+## Scraper → site data flow
+`scraper/scrape.py` writes `studios.json` and `questions.json` to the **repo root**
+(the parent of `scraper/`), which is exactly what the Next.js build imports. Run it
+in the container with the repo mounted at `/work`:
+```bash
+podman run --rm --shm-size=1g -v /opt/icesoak:/work -w /work \
+  icesoak-scraper:latest python scraper/scrape.py
+# → /opt/icesoak/studios.json and /opt/icesoak/questions.json
+```
 
 ## Key conventions / decisions
 - **`[city]` URL segment = metro slug** (`denver`, `dallas-fort-worth`,
