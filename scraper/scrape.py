@@ -110,11 +110,14 @@ async def run() -> None:
     # ── Final merge + validation ─────────────────────────────────────────────
     studios = merge_sources(enriched)
 
-    # ── Stamp last_verified only on live-scraped records ─────────────────────
-    for s in studios:
-        # Seed records carry source="seed" and stay last_verified=null until
-        # the crawler successfully visits them and overwrites the entry.
-        pass  # merge_sources already preserves last_verified from enrichment
+    # ── Geocode addresses → lat/lng (cached; 1 req/sec Nominatim policy) ─────
+    from processors.geocoder import geocode_studios
+    studios, geo_stats = geocode_studios(studios)
+    log.info(
+        "Geocoding: %d new, %d cached, %d failed, %d no-address",
+        geo_stats["geocoded"], geo_stats["from_cache"],
+        geo_stats["failed"], geo_stats["no_address"],
+    )
 
     # ── Write studios.json ───────────────────────────────────────────────────
     WORK_DIR.mkdir(parents=True, exist_ok=True)
