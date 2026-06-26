@@ -48,4 +48,14 @@ git -c user.name="toyedeji" \
 
 git push
 log "Committed and pushed."
+
+# 5. Ping IndexNow so Bing/Yandex re-crawl promptly (only on real data changes)
+bash "${SCRAPER_DIR}/indexnow_ping.sh" \
+    "https://icesoak.com/sitemap.xml" \
+    "https://icesoak.com/" \
+    "https://icesoak.com/cold-plunge/denver" \
+    "https://icesoak.com/cold-plunge/dallas-fort-worth" \
+    "https://icesoak.com/cold-plunge/philadelphia" \
+    || log "IndexNow ping failed (non-fatal)"
+
 log "=== Done. ==="
