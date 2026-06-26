@@ -73,6 +73,15 @@ export function studioSchema(s: Studio) {
     "@id": url + "#business",
     name: s.name,
     url,
+    // Recommended optional fields — emitted ONLY when the source data exists.
+    telephone: val(s.telephone) ?? val(s.phone),
+    image: val(s.image),
+    priceRange: present(s.day_pass_price_usd)
+      ? `$${Math.round(Number(s.day_pass_price_usd))}`
+      : undefined,
+    openingHours: present(s.opening_hours)
+      ? (s.opening_hours as string[] | string)
+      : undefined,
     address: present(s.address) || present(s.city)
       ? {
           "@type": "PostalAddress",
@@ -122,17 +131,28 @@ export function itemListSchema(studios: Studio[], name: string) {
   });
 }
 
-// Guides / FAQ pages: FAQPage built from the question's FAQ entries.
+// Guides: FAQPage built from the guide's headline question (answered by its
+// answer-capsule + body prose), plus each explicit Q&A entry as its own question.
 export function faqSchema(q: Question) {
-  if (!q.faqs || q.faqs.length === 0) return undefined;
-  return prune({
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: q.faqs.map((f) => ({
+  const mainEntity = [
+    {
+      "@type": "Question",
+      name: q.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: [q.capsule, ...q.sections.map((s) => s.body)].join("\n\n"),
+      },
+    },
+    ...(q.faqs ?? []).map((f) => ({
       "@type": "Question",
       name: f.q,
       acceptedAnswer: { "@type": "Answer", text: f.a },
     })),
+  ];
+  return prune({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity,
   });
 }
 

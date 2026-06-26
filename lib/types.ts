@@ -13,6 +13,10 @@ export interface Studio {
   website?: string | null;
   booking_url?: string | null;
   instagram?: string | null;
+  telephone?: string | null;
+  phone?: string | null;
+  image?: string | null;
+  opening_hours?: string[] | string | null;
   modalities?: string[] | null;
   plunge_temp_f_min?: number | null;
   plunge_temp_f_max?: number | null;
