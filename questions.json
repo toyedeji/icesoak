@@ -1,318 +1,326 @@
 [
   {
-    "slug": "how-cold-should-a-cold-plunge-be",
-    "question": "How cold should a cold plunge be?",
-    "category": "cold-plunge",
-    "updated": "2026-06-25",
-    "author": "IceSoak Editorial",
-    "capsule": "Most cold plunges are set between 50 and 59°F (10–15°C). Beginners typically start near 59°F, while experienced users go to 45–50°F. Water below 50°F raises cold-shock risk, so colder is not automatically better. Pick a temperature you can breathe calmly in.",
-    "sections": [
-      {
-        "h2": "Typical temperature ranges",
-        "body": "A common starting range is 50–59°F (10–15°C). Many studio plunges and home tubs hold around 50°F. Going below 45°F increases the intensity of the cold-shock response without clear added benefit for most people, so it is generally reserved for experienced users with controlled exposure times."
-      },
-      {
-        "h2": "How to choose your temperature",
-        "body": "Choose the warmest temperature that still feels challenging. If you cannot control your breathing within the first 30 seconds, the water is too cold for you that day. Lower the temperature gradually over weeks rather than chasing the coldest possible setting."
-      }
-    ],
-    "faqs": [
-      { "q": "Is 39°F too cold for a cold plunge?", "a": "39°F (4°C) is at the extreme end and is generally only used by experienced people for very short exposures. Most users stay between 50 and 59°F." },
-      { "q": "Does colder water give better results?", "a": "Not necessarily. Beyond a moderately cold threshold, colder water mainly increases discomfort and cold-shock risk rather than additional measurable benefit." }
-    ]
+    "slug": "are-cold-plunges-actually-good-for-you",
+    "question": "Are cold plunges actually good for you?",
+    "type": "global",
+    "metro": null
   },
   {
-    "slug": "how-long-to-cold-plunge",
+    "slug": "how-often-should-you-do-the-cold-plunge",
+    "question": "How often should you do the cold plunge?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "what-happens-after-30-days-of-ice-baths",
+    "question": "What happens after 30 days of ice baths?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "is-a-3-minute-cold-plunge-safe",
+    "question": "Is a 3 minute cold plunge safe?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "is-a-10-minute-cold-plunge-good",
+    "question": "Is a 10 minute cold plunge good?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "how-long-is-too-long-to-cold-plunge",
+    "question": "How long is too long to cold plunge?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "what-is-the-1-10-1-rule-in-cold-water",
+    "question": "What is the 1 10 1 rule in cold water?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "do-ice-baths-reduce-doms",
+    "question": "Do ice baths reduce DOMs?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "what-does-sauna-do-for-your-body",
+    "question": "What does sauna do for your body?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "how-long-should-you-sit-in-sauna",
+    "question": "How long should you sit in sauna?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "how-often-is-a-sauna-good-for-you",
+    "question": "How often is a sauna good for you?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "what-toxins-do-saunas-remove",
+    "question": "What toxins do saunas remove?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "what-is-the-200-rule-for-saunas",
+    "question": "What is the 200 rule for saunas?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "what-is-the-downside-to-an-infrared-sauna",
+    "question": "What is the downside to an infrared sauna?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "what-do-10-minutes-in-an-infrared-sauna-do",
+    "question": "What do 10 minutes in an infrared sauna do?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "do-saunas-help-lower-cortisol",
+    "question": "Do saunas help lower cortisol?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "what-does-contrast-therapy-do-for-your-body",
+    "question": "What does contrast therapy do for your body?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "why-do-i-feel-so-good-after-contrast-therapy",
+    "question": "Why do I feel so good after contrast therapy?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "is-it-safe-to-do-contrast-therapy-daily",
+    "question": "Is it safe to do contrast therapy daily?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "is-contrast-therapy-worth-it",
+    "question": "Is contrast therapy worth it?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "what-temperature-should-my-ice-bath-be",
+    "question": "What temperature should my ice bath be?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "how-cold-is-joe-rogans-ice-bath",
+    "question": "How cold is Joe Rogan's ice bath?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "is-2-degrees-too-cold-for-an-ice-bath",
+    "question": "Is 2 degrees too cold for an ice bath?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "how-long-do-you-sit-in-an-ice-bath",
+    "question": "How long do you sit in an ice bath?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "how-frequently-should-you-do-a-cold-plunge",
+    "question": "How frequently should you do a cold plunge?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "can-cold-plunge-help-with-high-blood-pressure",
+    "question": "Can cold plunge help with high blood pressure?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "can-ice-baths-help-with-lipedema",
+    "question": "Can ice baths help with lipedema?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "what-does-10-minutes-in-a-sauna-do",
+    "question": "What does 10 minutes in a sauna do?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "what-is-the-200-rule-sauna",
+    "question": "What is the 200 rule sauna?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "does-sauna-decrease-bp",
+    "question": "Does sauna decrease BP?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "does-sauna-help-hashimotos",
+    "question": "Does sauna help Hashimoto's?",
+    "type": "global",
+    "metro": null
+  },
+  {
+    "slug": "is-sauna-good-for-the-spleen",
+    "question": "Is sauna good for the spleen?",
+    "type": "local",
+    "metro": "denver_co"
+  },
+  {
+    "slug": "what-sauna-does-joe-rogan-own",
+    "question": "What sauna does Joe Rogan own?",
+    "type": "local",
+    "metro": "denver_co"
+  },
+  {
+    "slug": "are-infrared-saunas-good-for-hashimotos",
+    "question": "Are infrared saunas good for Hashimoto's?",
+    "type": "local",
+    "metro": "denver_co"
+  },
+  {
+    "slug": "is-infrared-sauna-good-for-adrenal-fatigue",
+    "question": "Is infrared sauna good for adrenal fatigue?",
+    "type": "local",
+    "metro": "denver_co"
+  },
+  {
+    "slug": "do-cold-plunges-help-with-inflammation",
+    "question": "Do cold plunges help with inflammation?",
+    "type": "local",
+    "metro": "dallas_fort_worth_tx"
+  },
+  {
+    "slug": "does-sauna-help-lower-ldl",
+    "question": "Does sauna help lower LDL?",
+    "type": "local",
+    "metro": "dallas_fort_worth_tx"
+  },
+  {
+    "slug": "what-is-the-difference-between-ice-bath-and-cold-plunge",
+    "question": "What is the difference between ice bath and cold plunge?",
+    "type": "local",
+    "metro": "dallas_fort_worth_tx"
+  },
+  {
+    "slug": "how-long-should-you-stay-in-a-cold-plunge",
     "question": "How long should you stay in a cold plunge?",
-    "category": "cold-plunge",
-    "updated": "2026-06-25",
-    "author": "IceSoak Editorial",
-    "capsule": "Most people stay in a cold plunge for 2 to 5 minutes per session. Beginners often start with 30 to 60 seconds. A frequently cited weekly target is about 11 minutes of total cold exposure spread across several sessions. Exit early if shivering becomes uncontrollable.",
-    "sections": [
-      {
-        "h2": "Per-session duration",
-        "body": "Two to five minutes is a typical single-session range once you are acclimated. Beginners benefit from starting at 30–60 seconds and adding time gradually. There is little evidence that staying beyond a few minutes adds meaningful benefit, and longer exposures raise the risk of excessive heat loss."
-      },
-      {
-        "h2": "Weekly totals",
-        "body": "A commonly referenced guideline is roughly 11 minutes of total cold exposure per week, divided across two to four sessions. Total time matters more than any single long plunge."
-      }
-    ],
-    "faqs": [
-      { "q": "Is 10 minutes too long in a cold plunge?", "a": "For most people 10 minutes in one session is longer than necessary and increases the risk of excessive cooling. Two to five minutes is more typical." }
-    ]
+    "type": "local",
+    "metro": "dallas_fort_worth_tx"
   },
   {
-    "slug": "cold-plunge-benefits",
-    "question": "What are the benefits of cold plunging?",
-    "category": "cold-plunge",
-    "updated": "2026-06-25",
-    "author": "IceSoak Editorial",
-    "capsule": "Reported cold-plunge benefits include reduced muscle soreness after exercise, a temporary mood and alertness boost from elevated norepinephrine, and a sense of stress resilience. Evidence is strongest for perceived recovery and short-term mood. Claims about fat loss and immunity are weaker and less consistent.",
-    "sections": [
-      {
-        "h2": "What the evidence supports",
-        "body": "Controlled cold-water immersion is most consistently associated with reduced delayed-onset muscle soreness and a short-term rise in norepinephrine that many people experience as improved mood and alertness. These effects are measurable but modest."
-      },
-      {
-        "h2": "Claims that are less certain",
-        "body": "Popular claims about fat loss, metabolism, and immune function are based on smaller or mixed studies. Cold immersion immediately after strength training may also blunt some muscle-growth adaptations, so timing matters if hypertrophy is your goal."
-      }
-    ],
-    "faqs": [
-      { "q": "Does cold plunging help recovery?", "a": "Cold immersion is associated with reduced muscle soreness, which many athletes use for recovery between sessions or events." }
-    ]
+    "slug": "where-to-sauna-in-dallas",
+    "question": "Where to sauna in Dallas?",
+    "type": "local",
+    "metro": "dallas_fort_worth_tx"
   },
   {
-    "slug": "is-cold-plunge-safe",
-    "question": "Is cold plunging safe?",
-    "category": "cold-plunge",
-    "updated": "2026-06-25",
-    "author": "IceSoak Editorial",
-    "capsule": "Cold plunging is generally safe for healthy adults who acclimate gradually and never plunge alone. The main risks are cold-shock response in the first minute and reduced coordination. People with heart conditions, high blood pressure, or who are pregnant should consult a doctor first.",
-    "sections": [
-      {
-        "h2": "Main risks to manage",
-        "body": "The cold-shock response causes an involuntary gasp and rapid breathing in the first 30–60 seconds, which is the highest-risk window. Cold also reduces grip and coordination. Always have controlled entry, calm breathing, and another person present, especially in deeper tubs."
-      },
-      {
-        "h2": "Who should be cautious",
-        "body": "People with cardiovascular conditions, uncontrolled high blood pressure, Raynaud's, or who are pregnant should speak with a clinician before starting. Never combine cold plunging with alcohol."
-      }
-    ],
-    "faqs": [
-      { "q": "Can you cold plunge with a heart condition?", "a": "Cold immersion raises heart rate and blood pressure transiently, so anyone with a heart condition should get medical clearance first." }
-    ]
+    "slug": "can-saunas-help-with-ed",
+    "question": "Can saunas help with ED?",
+    "type": "local",
+    "metro": "dallas_fort_worth_tx"
   },
   {
-    "slug": "cold-plunge-vs-sauna",
-    "question": "Cold plunge vs sauna: which is better?",
-    "category": "comparison",
-    "updated": "2026-06-25",
-    "author": "IceSoak Editorial",
-    "capsule": "Cold plunges (around 50°F) and saunas (150–195°F) do opposite things: cold constricts blood vessels and sharpens alertness, while heat dilates them and aids relaxation. Neither is strictly better. Many studios pair them as contrast therapy, alternating heat and cold in a single session.",
-    "sections": [
-      {
-        "h2": "How they differ",
-        "body": "Cold immersion triggers vasoconstriction, a norepinephrine spike, and an alerting effect. Sauna heat causes vasodilation and sweating and is associated with relaxation and cardiovascular conditioning. They are complementary rather than competing tools."
-      },
-      {
-        "h2": "Using both together",
-        "body": "Contrast therapy alternates sauna and cold plunge, typically ending on cold. Many studios listed on IceSoak offer both modalities in the same visit."
-      }
-    ],
-    "faqs": [
-      { "q": "Should I do sauna or cold plunge first?", "a": "Most contrast routines start with heat and finish with cold, but order is flexible. Finishing cold leaves you alert; finishing warm leaves you relaxed." }
-    ]
+    "slug": "is-sauna-good-for-high-cortisol",
+    "question": "Is sauna good for high cortisol?",
+    "type": "local",
+    "metro": "dallas_fort_worth_tx"
   },
   {
-    "slug": "how-often-should-you-cold-plunge",
-    "question": "How often should you cold plunge?",
-    "category": "cold-plunge",
-    "updated": "2026-06-25",
-    "author": "IceSoak Editorial",
-    "capsule": "Two to four cold-plunge sessions per week is a common routine, totaling roughly 11 minutes of cold exposure weekly. Daily plunging is possible once acclimated but offers little added benefit over a few sessions. Let recovery and sleep quality guide your frequency.",
-    "sections": [
-      {
-        "h2": "A practical weekly cadence",
-        "body": "Two to four sessions per week balances adaptation with recovery for most people. Spreading a weekly target of about 11 minutes across several short plunges is more sustainable than a single long exposure."
-      },
-      {
-        "h2": "Timing around training",
-        "body": "If muscle growth is a priority, avoid plunging in the hours immediately after strength training, since cold may blunt some adaptations. On non-lifting days, timing is flexible."
-      }
-    ],
-    "faqs": [
-      { "q": "Can you cold plunge every day?", "a": "Yes, many people plunge daily once acclimated, but a few sessions per week provides most of the benefit." }
-    ]
+    "slug": "how-much-does-sweathouz-cost",
+    "question": "How much does Sweathouz cost?",
+    "type": "local",
+    "metro": "dallas_fort_worth_tx"
   },
   {
-    "slug": "cold-plunge-before-or-after-workout",
-    "question": "Should you cold plunge before or after a workout?",
-    "category": "cold-plunge",
-    "updated": "2026-06-25",
-    "author": "IceSoak Editorial",
-    "capsule": "For recovery and reduced soreness, cold plunge after a workout. If your goal is muscle growth, wait several hours after strength training, because immediate cold immersion can blunt hypertrophy. Plunging before a workout is uncommon and may reduce power output temporarily.",
-    "sections": [
-      {
-        "h2": "After training",
-        "body": "Post-workout cold immersion is associated with reduced delayed-onset muscle soreness, which is useful between events or hard sessions. The trade-off: cold right after lifting can interfere with the muscle-building signal, so separate them by several hours if hypertrophy matters."
-      },
-      {
-        "h2": "Before training",
-        "body": "Cold before training can reduce muscle power and is generally not recommended immediately before strength or power work. A pre-workout plunge is mainly used for an alertness boost, not performance."
-      }
-    ],
-    "faqs": [
-      { "q": "Does cold plunging after lifting reduce gains?", "a": "Cold immersion immediately after strength training may blunt some muscle-growth adaptations, so leave a gap if building muscle is the goal." }
-    ]
+    "slug": "how-long-should-you-stay-in-a-sweat-house",
+    "question": "How long should you stay in a sweat house?",
+    "type": "local",
+    "metro": "dallas_fort_worth_tx"
   },
   {
-    "slug": "what-to-wear-in-a-cold-plunge",
-    "question": "What should you wear in a cold plunge?",
-    "category": "cold-plunge",
-    "updated": "2026-06-25",
-    "author": "IceSoak Editorial",
-    "capsule": "Most people wear a standard swimsuit in a cold plunge. Neoprene booties and gloves can make the extremities more tolerable without reducing the core benefit. Many studios require swimwear for hygiene. A hat or headband is optional, since the head usually stays above water.",
-    "sections": [
-      {
-        "h2": "Standard attire",
-        "body": "A swimsuit is the norm and is required at most studios for hygiene. Tight-fitting suits stay put during entry and exit."
-      },
-      {
-        "h2": "Optional extras",
-        "body": "Neoprene booties and gloves reduce discomfort in the hands and feet, which often feel the cold most sharply, while still allowing core cold exposure. They are popular with people working toward colder temperatures."
-      }
-    ],
-    "faqs": [
-      { "q": "Do you wear gloves in a cold plunge?", "a": "Gloves are optional. Neoprene gloves make the hands more comfortable but are not required." }
-    ]
+    "slug": "what-should-i-wear-to-a-sweathouz-class",
+    "question": "What should I wear to a Sweathouz class?",
+    "type": "local",
+    "metro": "dallas_fort_worth_tx"
   },
   {
-    "slug": "cold-plunge-breathing-technique",
-    "question": "How should you breathe in a cold plunge?",
-    "category": "cold-plunge",
-    "updated": "2026-06-25",
-    "author": "IceSoak Editorial",
-    "capsule": "Slow, controlled breathing is the key skill in a cold plunge. On entry, resist the gasp reflex by exhaling slowly and lengthening each breath. Aim for a longer exhale than inhale. Never hyperventilate before or during immersion, and never practice breath-holds in the water.",
-    "sections": [
-      {
-        "h2": "Controlling the gasp reflex",
-        "body": "The first 30–60 seconds trigger an involuntary gasp and fast breathing. Counter it by exhaling slowly and deliberately, keeping breaths long and quiet. Within a minute most people settle into a calmer rhythm."
-      },
-      {
-        "h2": "Safety note on breathing",
-        "body": "Do not combine intense breath-hold or hyperventilation techniques with cold immersion. Hyperventilation before submersion can increase the risk of blackout. Keep breathing relaxed and continuous."
-      }
-    ],
-    "faqs": [
-      { "q": "Why do you gasp in cold water?", "a": "The cold-shock response causes an involuntary gasp and rapid breathing. Slow exhalation helps you regain control." }
-    ]
+    "slug": "can-saunas-help-lower-cholesterol",
+    "question": "Can saunas help lower cholesterol?",
+    "type": "local",
+    "metro": "philadelphia_pa"
   },
   {
-    "slug": "contrast-therapy-explained",
-    "question": "What is contrast therapy?",
-    "category": "contrast-therapy",
-    "updated": "2026-06-25",
-    "author": "IceSoak Editorial",
-    "capsule": "Contrast therapy alternates hot and cold exposure in one session, typically sauna or hot water followed by a cold plunge. A common pattern is several minutes of heat then 1–3 minutes of cold, repeated 2–4 rounds. Many people finish on cold for an alert, refreshed feeling.",
-    "sections": [
-      {
-        "h2": "A typical round structure",
-        "body": "A round is often 8–15 minutes of heat (sauna at 150–195°F or a hot tub) followed by 1–3 minutes of cold plunge near 50°F. People usually repeat two to four rounds, ending on cold."
-      },
-      {
-        "h2": "Why people use it",
-        "body": "The alternating vasoconstriction and vasodilation is reported to aid perceived recovery and leave a strong contrast sensation. Studios offering both sauna and cold plunge make contrast therapy convenient in a single visit."
-      }
-    ],
-    "faqs": [
-      { "q": "Should contrast therapy end on hot or cold?", "a": "Ending on cold is common and leaves you feeling alert; ending on heat leaves you more relaxed. Both are acceptable." }
-    ]
+    "slug": "how-much-should-a-sauna-session-cost",
+    "question": "How much should a sauna session cost?",
+    "type": "local",
+    "metro": "philadelphia_pa"
   },
   {
-    "slug": "sauna-benefits",
-    "question": "What are the benefits of using a sauna?",
-    "category": "sauna",
-    "updated": "2026-06-25",
-    "author": "IceSoak Editorial",
-    "capsule": "Regular sauna use is associated with relaxation, improved recovery, and, in long-term observational studies, better cardiovascular markers. Typical sessions run 10–20 minutes at 150–195°F for traditional saunas. Benefits relate to heat exposure and the cardiovascular response, not to sweating out toxins.",
-    "sections": [
-      {
-        "h2": "Reported benefits",
-        "body": "Heat exposure raises heart rate similarly to light exercise and is associated with relaxation and perceived recovery. Long-term observational research links frequent sauna use to favorable cardiovascular outcomes, though these are correlations rather than proof of cause."
-      },
-      {
-        "h2": "Typical session",
-        "body": "Traditional saunas run roughly 150–195°F for 10–20 minutes. Hydrate before and after, and leave if you feel lightheaded."
-      }
-    ],
-    "faqs": [
-      { "q": "Does a sauna remove toxins?", "a": "Sweating does not meaningfully detoxify the body; the liver and kidneys handle that. Sauna benefits come from heat exposure, not toxin removal." }
-    ]
+    "slug": "how-does-sweathouz-work",
+    "question": "How does Sweathouz work?",
+    "type": "local",
+    "metro": "philadelphia_pa"
   },
   {
-    "slug": "how-hot-is-an-infrared-sauna",
-    "question": "How hot is an infrared sauna?",
-    "category": "sauna",
-    "updated": "2026-06-25",
-    "author": "IceSoak Editorial",
-    "capsule": "Infrared saunas run cooler than traditional saunas, typically 110–135°F versus 150–195°F. Infrared heats the body directly rather than the air, so the lower air temperature still produces a deep sweat. Sessions usually last 20–45 minutes, longer than a traditional sauna.",
-    "sections": [
-      {
-        "h2": "Infrared vs traditional heat",
-        "body": "Traditional saunas heat the air to 150–195°F, while infrared saunas warm the body directly at a milder 110–135°F. Many people find the lower air temperature more tolerable for longer sessions."
-      },
-      {
-        "h2": "Session length",
-        "body": "Because the air is cooler, infrared sessions often run 20–45 minutes. Hydrate well, since the longer duration still produces significant sweating."
-      }
-    ],
-    "faqs": [
-      { "q": "Is an infrared sauna as effective as a traditional one?", "a": "Both produce heat exposure and sweating. Traditional saunas reach higher air temperatures; infrared achieves a deep sweat at lower temperatures over a longer session." }
-    ]
+    "slug": "is-sweathouz-worth-it-on-reddit",
+    "question": "Is Sweathouz worth it on Reddit?",
+    "type": "local",
+    "metro": "philadelphia_pa"
   },
   {
-    "slug": "cold-plunge-for-beginners",
-    "question": "How do beginners start cold plunging?",
-    "category": "cold-plunge",
-    "updated": "2026-06-25",
-    "author": "IceSoak Editorial",
-    "capsule": "Beginners should start around 59°F for 30–60 seconds, focusing on slow breathing rather than duration. Add time gradually over weeks and lower the temperature only as you adapt. Never plunge alone, avoid alcohol, and exit if shivering becomes uncontrollable or you feel faint.",
-    "sections": [
-      {
-        "h2": "First sessions",
-        "body": "Begin at a milder temperature near 59°F and aim for 30–60 seconds. The goal of early sessions is learning to control the gasp reflex with slow exhalations, not enduring extreme cold."
-      },
-      {
-        "h2": "Progressing safely",
-        "body": "Add 15–30 seconds per week and lower the temperature only once you can stay calm. Always have someone nearby, and warm up naturally afterward rather than jumping straight into a hot shower."
-      }
-    ],
-    "faqs": [
-      { "q": "What temperature should a beginner cold plunge be?", "a": "Around 59°F (15°C) is a sensible starting point. Beginners can lower the temperature gradually as they acclimate." }
-    ]
+    "slug": "what-is-the-sweat-house-roswell",
+    "question": "What is the sweat house Roswell?",
+    "type": "local",
+    "metro": "philadelphia_pa"
   },
   {
-    "slug": "do-cold-plunges-burn-fat",
-    "question": "Do cold plunges burn fat?",
-    "category": "cold-plunge",
-    "updated": "2026-06-25",
-    "author": "IceSoak Editorial",
-    "capsule": "Cold exposure can activate brown fat and slightly raise calorie burn through thermogenesis, but the effect is small and unlikely to drive meaningful weight loss on its own. Evidence for cold plunging as a fat-loss tool is weak. Treat any metabolic effect as a minor bonus.",
-    "sections": [
-      {
-        "h2": "What actually happens",
-        "body": "Cold activates brown adipose tissue and shivering, both of which burn some energy to generate heat. Studies show this raises metabolic rate modestly and temporarily."
-      },
-      {
-        "h2": "Why it is not a weight-loss strategy",
-        "body": "The added calorie burn from short plunges is small relative to diet and overall activity. Cold plunging may complement a healthy routine but should not be relied on for fat loss."
-      }
-    ],
-    "faqs": [
-      { "q": "Does cold water activate brown fat?", "a": "Yes, cold exposure can activate brown fat, which burns energy to produce heat, but the calorie effect is modest." }
-    ]
+    "slug": "where-to-avoid-staying-in-philly",
+    "question": "Where to avoid staying in Philly?",
+    "type": "local",
+    "metro": "philadelphia_pa"
   },
   {
-    "slug": "cold-plunge-and-muscle-recovery",
-    "question": "Does cold plunging help muscle recovery?",
-    "category": "cold-plunge",
-    "updated": "2026-06-25",
-    "author": "IceSoak Editorial",
-    "capsule": "Cold-water immersion is one of the better-supported recovery tools for reducing delayed-onset muscle soreness after hard exercise. It is useful between competitions or intense sessions. The caveat: cold immediately after strength training can blunt muscle-growth adaptations, so time it around your goals.",
-    "sections": [
-      {
-        "h2": "Soreness and perceived recovery",
-        "body": "Multiple studies link post-exercise cold immersion to reduced soreness and improved perceived recovery, which is why many athletes use it during heavy training blocks or tournaments."
-      },
-      {
-        "h2": "The hypertrophy trade-off",
-        "body": "Because cold can interfere with the signaling that drives muscle growth, lifters chasing size should separate cold plunges from strength sessions by several hours, or use them on rest days."
-      }
-    ],
-    "faqs": [
-      { "q": "Is cold plunge good for sore muscles?", "a": "Yes, cold-water immersion is associated with reduced muscle soreness and is commonly used for recovery after intense exercise." }
-    ]
+    "slug": "what-is-the-1-hospital-in-philadelphia",
+    "question": "What is the #1 hospital in Philadelphia?",
+    "type": "local",
+    "metro": "philadelphia_pa"
+  },
+  {
+    "slug": "is-bath-house-coming-to-philadelphia",
+    "question": "Is Bath House coming to Philadelphia?",
+    "type": "local",
+    "metro": "philadelphia_pa"
+  },
+  {
+    "slug": "what-is-the-mental-health-awareness-organization-in-philadelphia",
+    "question": "What is the mental health awareness organization in Philadelphia?",
+    "type": "local",
+    "metro": "philadelphia_pa"
   }
 ]
