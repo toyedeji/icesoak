@@ -1,0 +1,35 @@
+# IceSoak
+
+> IceSoak is a factual directory of cold plunge, sauna, and contrast-therapy
+> studios in the United States. Every studio listing includes available
+> modalities, location, and a last-verified date. Guides answer common recovery
+> questions using real temperatures, durations, and evidence — no marketing
+> language.
+
+Primary site: https://icesoak.com
+Launch coverage: Denver (CO), Dallas–Fort Worth (TX), and Philadelphia (PA).
+
+## How listings work
+- Directory pages are published only when backed by at least three verified
+  studios; thinner pages are marked noindex until coverage grows.
+- Studio facts (modalities, temperatures, prices) are shown only when known;
+  unknown fields are omitted rather than guessed.
+
+## Key sections
+- Cold plunge by metro: https://icesoak.com/cold-plunge/denver/
+- Sauna by metro: https://icesoak.com/sauna/dallas-fort-worth/
+- Infrared sauna by metro: https://icesoak.com/infrared-sauna/dallas-fort-worth/
+- Contrast therapy by metro: https://icesoak.com/contrast-therapy/denver/
+- Guides index: https://icesoak.com/guides/
+
+## Reference guides
+- How cold should a cold plunge be: https://icesoak.com/guides/how-cold-should-a-cold-plunge-be/
+- How long to cold plunge: https://icesoak.com/guides/how-long-to-cold-plunge/
+- Cold plunge benefits: https://icesoak.com/guides/cold-plunge-benefits/
+- Is cold plunging safe: https://icesoak.com/guides/is-cold-plunge-safe/
+- Cold plunge vs sauna: https://icesoak.com/guides/cold-plunge-vs-sauna/
+- Cold plunge vs ice bath: https://icesoak.com/cold-plunge-vs-ice-bath/
+- Infrared vs traditional sauna: https://icesoak.com/infrared-vs-traditional-sauna/
+
+## Sitemaps
+- Sitemap index: https://icesoak.com/sitemap_index.xml
