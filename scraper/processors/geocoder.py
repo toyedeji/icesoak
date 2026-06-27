@@ -97,6 +97,58 @@ def _nominatim_get(query: str) -> Optional[tuple[float, float]]:
         return None
 
 
+def _reverse_nominatim(lat: float, lng: float) -> Optional[dict]:
+    """Reverse-geocode a point to Nominatim's structured address dict, or None."""
+    params = urllib.parse.urlencode({
+        "lat": lat, "lon": lng, "format": "json",
+        "addressdetails": 1, "zoom": 18,
+    })
+    url = f"https://nominatim.openstreetmap.org/reverse?{params}"
+    req = urllib.request.Request(url, headers={"User-Agent": _USER_AGENT})
+    try:
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+        addr = data.get("address")
+        return addr if isinstance(addr, dict) else None
+    except (urllib.error.URLError, OSError, json.JSONDecodeError, KeyError, ValueError) as exc:
+        log.warning("Nominatim reverse failed (%s): %s", type(exc).__name__, exc)
+        return None
+
+
+# A scraped street is only trusted if it looks like "<number> <street words>"
+# and carries no hours/status noise. Otherwise we ignore it and rebuild the
+# street from the reverse-geocode result — never label a point with junk text.
+_STREET_OK_RE = re.compile(r"^\d{1,6}\s+[A-Za-z0-9].*[A-Za-z]")
+_STREET_JUNK_RE = re.compile(
+    r"(?i)\bopen\b|\bclos(?:ed|es|ing)\b|\bhours\b|\bam\b|\bpm\b|\bsleeps\b"
+    r"|\d{1,2}:\d{2}|\bmin\b|temporarily|permanently|\bsoon\b"
+)
+
+
+def _compose_address(street: Optional[str], rev: dict, state: str) -> Optional[str]:
+    """Build 'street, City, ST ZIP' from a scraped street + reverse-geocode result.
+
+    The street (if it is genuinely street-shaped) comes from the scraper; city/
+    ZIP come from reverse-geocoding the studio's EXACT coordinates; the state is
+    the studio's own field. A junk "street" is discarded and rebuilt from the
+    reverse result. Nothing is guessed — this only labels a known point.
+    """
+    city = (rev.get("city") or rev.get("town") or rev.get("village")
+            or rev.get("municipality") or rev.get("suburb") or rev.get("hamlet"))
+    postcode = rev.get("postcode")
+
+    street = (street or "").strip()
+    if not (_STREET_OK_RE.match(street) and not _STREET_JUNK_RE.search(street)):
+        # Untrusted scraped street → rebuild from the reverse-geocode result.
+        house, road = rev.get("house_number"), rev.get("road")
+        street = f"{house} {road}" if house and road else (road or "")
+
+    if not (street and city and state):
+        return None
+    tail = f"{city}, {state}" + (f" {postcode}" if postcode else "")
+    return f"{street}, {tail}"
+
+
 def _fetch_nominatim(address: str) -> Optional[tuple[float, float]]:
     """Return (lat, lng) for address or None on failure/no-result.
 
@@ -125,7 +177,36 @@ def geocode_studios(studios: list) -> tuple[list, dict]:
     stats = {
         "geocoded": 0, "from_cache": 0, "failed": 0,
         "no_address": 0, "junk_address": 0, "bbox_rejected": 0, "already_had": 0,
+        "reverse_geocoded": 0,
     }
+
+    # ── Reverse-geocode pass ────────────────────────────────────────────────
+    # Studios that already carry EXACT coordinates (e.g. parsed from a Google
+    # Maps place link) but whose address is null/junk/street-only: turn the
+    # point into an authoritative "street, City, ST ZIP" address.
+    rev_targets = [
+        s for s in studios
+        if s.get("lat") is not None and s.get("lng") is not None
+        and not _is_real_address(s.get("address") or "")
+    ]
+    if rev_targets:
+        log.info("Geocoder: reverse-geocoding %d studios with coords but no clean address", len(rev_targets))
+        last_request = 0.0
+        for s in rev_targets:
+            key = f"rev:{s['lat']:.6f},{s['lng']:.6f}"
+            rev = cache.get(key)
+            if rev is None and key not in cache:
+                elapsed = time.monotonic() - last_request
+                if elapsed < _INTERVAL:
+                    time.sleep(_INTERVAL - elapsed)
+                last_request = time.monotonic()
+                rev = _reverse_nominatim(s["lat"], s["lng"])
+                cache[key] = rev  # cache result (or None) to avoid re-querying
+            if rev:
+                composed = _compose_address(s.get("address"), rev, s.get("state") or "")
+                if composed and _is_real_address(composed):
+                    s["address"] = composed
+                    stats["reverse_geocoded"] += 1
 
     needs_geo = []
     for s in studios:
@@ -140,7 +221,9 @@ def geocode_studios(studios: list) -> tuple[list, dict]:
             needs_geo.append(s)
 
     if not needs_geo:
-        log.info("Geocoder: nothing to geocode (%d already had coords)", stats["already_had"])
+        _save_cache(cache)
+        log.info("Geocoder: no forward geocoding needed (%d already had coords, %d reverse-geocoded)",
+                 stats["already_had"], stats["reverse_geocoded"])
         return studios, stats
 
     cache_hits = sum(1 for s in needs_geo if s["address"] in cache)
@@ -194,9 +277,9 @@ def geocode_studios(studios: list) -> tuple[list, dict]:
     _save_cache(cache)
     log.info(
         "Geocoder done: %d new, %d cached, %d failed, %d bbox-rejected, "
-        "%d junk-addr, %d no-addr, %d already-had",
+        "%d junk-addr, %d no-addr, %d already-had, %d reverse-geocoded",
         stats["geocoded"], stats["from_cache"], stats["failed"],
         stats["bbox_rejected"], stats["junk_address"],
-        stats["no_address"], stats["already_had"],
+        stats["no_address"], stats["already_had"], stats["reverse_geocoded"],
     )
     return studios, stats

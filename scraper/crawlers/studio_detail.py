@@ -42,6 +42,21 @@ _AMENITY_RE = {
     "parking":          re.compile(r"parking\s*(?:available|included|free|on.?site)", re.I),
     "lockers":          re.compile(r"\blocker", re.I),
 }
+# Full US street address on a studio's own site: number + street + ", City, ST ZIP".
+# State stays uppercase ([A-Z]{2}) so we never accept a lowercased false match.
+_ADDRESS_RE = re.compile(
+    r"\d{1,6}\s+[\w .'-]+?\b"
+    r"(?:St|Street|Ave|Avenue|Blvd|Boulevard|Dr|Drive|Rd|Road|Way|Ln|Lane"
+    r"|Pkwy|Parkway|Pike|Hwy|Highway|Ct|Court|Pl|Place|Ter|Terrace|Cir|Circle"
+    r"|Ste|Suite|Unit)\b"
+    r"[^\n]*?,\s*[A-Za-z .'-]+,\s*[A-Z]{2}\s+\d{5}"
+)
+
+
+def _has_full_address(addr) -> bool:
+    return bool(addr and re.search(r"\d.*,.*\b[A-Z]{2}\b\s*\d{5}", addr))
+
+
 _IG_RE      = re.compile(r"instagram\.com/([a-zA-Z0-9_.]{2,30})", re.I)
 _BOOKING_RE = re.compile(
     r"(https?://(?:mindbodysoftware|mindbody|pike13|schedulicity|vagaro|glofox|healcode|book\.)?[^\s\"'>]*(?:book|schedule|reserve)[^\s\"'>]*)",
@@ -83,6 +98,13 @@ async def enrich_studios(studios: list, today: str) -> list:
 
 
 def _apply(studio: dict, content: str, source_url: str) -> None:
+    # Address — pull from the studio's own site when we don't already have a
+    # full one (recovers studios that listicles named but never gave an address).
+    if not _has_full_address(studio.get("address")):
+        m = _ADDRESS_RE.search(content)
+        if m:
+            studio["address"] = re.sub(r"\s+", " ", m.group(0)).strip()
+
     # Modalities
     for mod, pat in _MODALITY_RE.items():
         if pat.search(content) and mod not in studio.get("modalities", []):

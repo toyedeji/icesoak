@@ -107,11 +107,26 @@ def _extract_locations(content: str, franchise: dict, metro: dict, cities: list,
 
         # Peek at surrounding lines for an address
         context = "\n".join(lines[max(0, i - 2): i + 6])
-        addr_m = re.search(
-            r"\d+\s+[A-Z][a-zA-Z0-9 .]+(?:St|Ave|Blvd|Dr|Rd|Way|Ln|Pkwy|Suite|Ste)[^\n,]*",
+        # Prefer a complete "street, City, ST ZIP" match.
+        full_m = re.search(
+            r"\d+\s+[A-Z][\w .]+?(?:St|Street|Ave|Avenue|Blvd|Dr|Drive|Rd|Road|Way|Ln|Lane"
+            r"|Pkwy|Pike|Hwy|Ct|Pl|Ste|Suite|Unit)\b[^\n]*?,\s*[A-Za-z .]+,\s*[A-Z]{2}\s*\d{5}",
             context,
         )
-        address = addr_m.group(0).strip() if addr_m else None
+        if full_m:
+            address = full_m.group(0).strip()
+        else:
+            # Fall back to the street line and compose with the matched city +
+            # metro state (both known facts, not guesses) so it geocodes.
+            street_m = re.search(
+                r"\d+\s+[A-Z][\w .]+?(?:St|Street|Ave|Avenue|Blvd|Dr|Drive|Rd|Road|Way|Ln|Lane"
+                r"|Pkwy|Pike|Hwy|Ct|Pl|Ste|Suite|Unit)\b[^\n,]*",
+                context,
+            )
+            address = (
+                f"{street_m.group(0).strip()}, {city_name}, {metro['state']}"
+                if street_m else None
+            )
 
         name = f"{brand} {city_name}"
         seen_cities.add(city_name)

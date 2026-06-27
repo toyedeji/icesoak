@@ -125,9 +125,25 @@ def _parse_listicle(markdown: str, metro: dict, source_url: str) -> list:
         if len(name) < 4 or len(name) > 80:
             continue
 
-        context = "\n".join(lines[i: i + 6]).lower()
+        block = "\n".join(lines[i: i + 6])
+        context = block.lower()
         city_hit = next((c.title() for c in cities if c in context), None)
         city = city_hit or metro["name"].split("–")[0]
+
+        # Capture the studio's OWN website link (markdown) so the detail crawler
+        # can fetch its address. Skip the listicle host, aggregators and socials.
+        src_host = re.sub(r"^https?://(www\.)?", "", source_url).split("/")[0]
+        website = None
+        for lm in re.finditer(r"\]\((https?://[^)\s]+)\)", block):
+            u = lm.group(1).split("?")[0].rstrip("/")
+            low = u.lower()
+            if src_host in low or any(d in low for d in (
+                "google.", "facebook.", "instagram.", "yelp.", "twitter.", "x.com",
+                "tripadvisor.", "youtube.", "tiktok.", "maps.", "wikipedia.",
+            )):
+                continue
+            website = u
+            break
 
         studios.append({
             "id": _slug(name, city),
@@ -141,7 +157,7 @@ def _parse_listicle(markdown: str, metro: dict, source_url: str) -> list:
             "state": metro["state"],
             "neighborhood": None,
             "address": None,
-            "website": None,
+            "website": website,
             "booking_url": None,
             "instagram": None,
             "modalities": [],
