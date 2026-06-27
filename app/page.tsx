@@ -39,9 +39,10 @@ export default function Home() {
                   <strong>
                     {m.name}, {m.state}
                   </strong>
-                  <span>
-                    {count} {count === 1 ? "studio" : "studios"} · {m.blurb}
+                  <span className="tile__count">
+                    {count} {count === 1 ? "studio" : "studios"}
                   </span>
+                  <span className="tile__blurb">{m.blurb}</span>
                 </Link>
               );
             })}
@@ -52,21 +53,25 @@ export default function Home() {
           <h2>Browse by modality</h2>
           <div className="tiles">
             <ModalityTile
+              emoji="🧊"
               href="/cold-plunge/denver/"
               title="Cold plunge"
               sub="Cold-water immersion around 50°F"
             />
             <ModalityTile
+              emoji="🌡️"
               href="/sauna/dallas-fort-worth/"
               title="Sauna"
               sub="Traditional and infrared heat"
             />
             <ModalityTile
+              emoji="☀️"
               href="/infrared-sauna/dallas-fort-worth/"
               title="Infrared sauna"
               sub="Direct-heat sessions, 110–135°F"
             />
             <ModalityTile
+              emoji="♨️"
               href="/contrast-therapy/denver/"
               title="Contrast therapy"
               sub="Alternating heat and cold"
@@ -106,9 +111,20 @@ export default function Home() {
   );
 }
 
-function ModalityTile({ href, title, sub }: { href: string; title: string; sub: string }) {
+function ModalityTile({
+  href,
+  title,
+  sub,
+  emoji,
+}: {
+  href: string;
+  title: string;
+  sub: string;
+  emoji?: string;
+}) {
   return (
     <Link className="tile" href={href}>
+      {emoji && <span className="tile__emoji" aria-hidden="true">{emoji}</span>}
       <strong>{title}</strong>
       <span>{sub}</span>
     </Link>

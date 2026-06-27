@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: P): Promise<Metadata> {
   if (!q) return {};
   return pageMetadata({
     title: q.question,
-    description: clamp(q.capsule),
+    description: clamp(q.capsule ?? ""),
     path: `/guides/${q.slug}/`,
     index: true,
   });
@@ -55,7 +55,7 @@ export default async function Page({ params }: P) {
         </p>
         <AnswerCapsule text={q.capsule} />
 
-        {q.sections.map((sec) => (
+        {(q.sections ?? []).map((sec) => (
           <section key={sec.h2}>
             <h2>{sec.h2}</h2>
             <p>{sec.body}</p>

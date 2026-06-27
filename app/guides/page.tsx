@@ -22,7 +22,7 @@ export const metadata: Metadata = pageMetadata({
 });
 
 export default function GuidesIndex() {
-  const categories = Array.from(new Set(QUESTIONS.map((q) => q.category)));
+  const categories = Array.from(new Set(QUESTIONS.map((q) => q.category))).filter(Boolean);
   const listSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",

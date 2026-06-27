@@ -143,7 +143,7 @@ export default async function Page({ params }: P) {
         )}{" "}
         {present(s.booking_url) && (
           <a
-            className="btn btn--ghost"
+            className="btn"
             href={s.booking_url as string}
             rel="nofollow noopener"
             target="_blank"
@@ -157,9 +157,13 @@ export default async function Page({ params }: P) {
         <LazyMap studios={[s]} center={mapCenter} zoom={present(s.lat) ? 14 : 11} />
       </div>
 
-      <p className="card__verified">
-        {verified ? `Last verified ${verified}.` : "Verification pending."}{" "}
-        {present(s.source_urls) && "Source: studio website."}
+      <p>
+        <span className="verified-badge">
+          {verified ? `✓ Last verified ${verified}` : "⏱ Verification pending"}
+        </span>
+        {present(s.source_urls) && (
+          <span className="muted"> · Source: studio website.</span>
+        )}
       </p>
 
       {metro && (

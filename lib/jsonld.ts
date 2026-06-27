@@ -140,7 +140,7 @@ export function faqSchema(q: Question) {
       name: q.question,
       acceptedAnswer: {
         "@type": "Answer",
-        text: [q.capsule, ...q.sections.map((s) => s.body)].join("\n\n"),
+        text: [q.capsule, ...(q.sections ?? []).map((s) => s.body)].join("\n\n"),
       },
     },
     ...(q.faqs ?? []).map((f) => ({

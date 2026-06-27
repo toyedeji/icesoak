@@ -1,11 +1,11 @@
 import Link from "next/link";
 import type { Studio } from "@/lib/types";
-import { val, usd, tempRange, listModalities, formatDate, present } from "@/lib/format";
+import { val, usd, tempRange, modalityLabel, formatDate, present } from "@/lib/format";
 
 // Renders a studio summary. Every optional field is guarded — nothing prints
 // "null"; absent data is simply omitted.
 export default function StudioCard({ studio }: { studio: Studio }) {
-  const modalities = listModalities(studio.modalities);
+  const modalityCodes = Array.isArray(studio.modalities) ? studio.modalities : [];
   const dayPass = usd(studio.day_pass_price_usd);
   const member = usd(studio.membership_from_usd);
   const temps = tempRange(studio.plunge_temp_f_min, studio.plunge_temp_f_max);
@@ -20,7 +20,13 @@ export default function StudioCard({ studio }: { studio: Studio }) {
         <Link href={`/studio/${studio.id}/`}>{studio.name}</Link>
       </h3>
       {locality && <p className="card__meta">{locality}</p>}
-      {modalities && <p className="card__modalities">{modalities}</p>}
+      {modalityCodes.length > 0 && (
+        <div className="modality-chips">
+          {modalityCodes.map((m) => (
+            <span key={m} className="modality-chip">{modalityLabel(m)}</span>
+          ))}
+        </div>
+      )}
       <dl className="card__facts">
         {temps && (
           <div>
@@ -31,7 +37,7 @@ export default function StudioCard({ studio }: { studio: Studio }) {
         {dayPass && (
           <div>
             <dt>Day pass</dt>
-            <dd>from {dayPass}</dd>
+            <dd className="price-callout">from {dayPass}</dd>
           </div>
         )}
         {member && (
@@ -53,10 +59,11 @@ export default function StudioCard({ studio }: { studio: Studio }) {
         )}
       </dl>
       {verified ? (
-        <p className="card__verified">Last verified {verified}</p>
+        <p className="card__verified">✓ Last verified {verified}</p>
       ) : (
         <p className="card__verified card__verified--pending">Verification pending</p>
       )}
+      <Link href={`/studio/${studio.id}/`} className="card__cta">View studio →</Link>
     </article>
   );
 }
