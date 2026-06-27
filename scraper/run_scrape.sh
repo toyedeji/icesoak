@@ -31,7 +31,12 @@ podman run --rm \
 
 log "Scrape complete."
 
-# 4. Commit and push only if outputs changed
+# 4. Quality gate — inspect studios.json before touching git
+log "Running quality gate..."
+python3 "${SCRAPER_DIR}/processors/quality_gate.py" "${WORK_DIR}/studios.json" \
+    || { log "ABORT: quality gate failed — studios.json left on disk for inspection. Not committing."; exit 1; }
+
+# 5. Commit and push only if outputs changed
 cd "${WORK_DIR}"
 git add studios.json questions.json
 
@@ -49,7 +54,7 @@ git -c user.name="toyedeji" \
 git push
 log "Committed and pushed."
 
-# 5. Ping IndexNow so Bing/Yandex re-crawl promptly (only on real data changes)
+# 6. Ping IndexNow so Bing/Yandex re-crawl promptly (only on real data changes)
 bash "${SCRAPER_DIR}/indexnow_ping.sh" \
     "https://icesoak.com/sitemap.xml" \
     "https://icesoak.com/" \
