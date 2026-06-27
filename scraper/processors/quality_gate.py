@@ -158,16 +158,25 @@ def run(studios_path: Path) -> None:
                 sign = "+" if change >= 0 else ""
                 print(f"[quality-gate]   vs HEAD: {prev_total} → {total} ({sign}{change})")
 
-    # ── Hard abort: metro floor ──────────────────────────────────────────────
+    # ── Metro floor ──────────────────────────────────────────────────────────
+    # Hard abort ONLY if ALL launch metros collapse below the indexing floor
+    # (a total wipeout — the site would have no indexable directory pages).
+    # A single weak metro is a WARN: it just makes that one directory noindex,
+    # and must not block the deploy for the healthy metros.
     failing_metros = [m for m in LAUNCH_METROS if metro_counts.get(m, 0) < MIN_STUDIOS_PER_METRO]
     if failing_metros:
         detail = ", ".join(
             f"{_metro_label(m)}={metro_counts.get(m, 0)}"
             for m in sorted(failing_metros)
         )
-        aborts.append(
-            f"metro(s) below {MIN_STUDIOS_PER_METRO}-studio floor: {detail}"
-        )
+        if len(failing_metros) == len(LAUNCH_METROS):
+            aborts.append(
+                f"ALL launch metros below {MIN_STUDIOS_PER_METRO}-studio floor: {detail}"
+            )
+        else:
+            warns.append(
+                f"metro(s) below {MIN_STUDIOS_PER_METRO}-studio floor (will be noindex): {detail}"
+            )
 
     # ── Soft warn: address rate in the grey zone ─────────────────────────────
     if not aborts and ABORT_VALID_ADDR_RATE <= valid_rate < WARN_VALID_ADDR_RATE:
