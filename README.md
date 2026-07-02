@@ -8,7 +8,8 @@ Live at [icesoak.com](https://icesoak.com).
 
 IceSoak helps people find cold plunge and ice bath studios near them.
 The directory is built on scraped and curated data, updated weekly via
-an automated n8n pipeline, and deployed on Netlify with full SEO
+an automated Python scraper (containerized, orchestrated by n8n in the
+reference deployment), and deployed on Netlify with full SEO
 groundwork including Google and Bing Search Console verification,
 sitemap generation, and IndexNow pinging.
 
