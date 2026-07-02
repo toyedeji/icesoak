@@ -16,8 +16,8 @@ sitemap generation, and IndexNow pinging.
 
 ```
 ┌──────────────────────────┐        ┌───────────────────────────┐
-│  n8n scraper (weekly)    │───────▶│  studios.json (repo root) │
-│  self-hosted Proxmox LXC │        │  questions.json           │
+│  Python scraper (weekly) │───────▶│  studios.json (repo root) │
+│  podman, Proxmox LXC     │        │  questions.json           │
 └──────────────────────────┘        └────────────┬──────────────┘
                                                   │
                                                   ▼
@@ -36,9 +36,11 @@ sitemap generation, and IndexNow pinging.
 
 Data flow:
 
-1. n8n workflow runs on a weekly cron.
-2. Scraper crawls source directories, dedupes, and enforces an address
-   quality gate (records without a parseable address are dropped).
+1. `scraper/run_scrape.sh` runs on a weekly cron (orchestrated by n8n
+   in the reference deployment, but any cron/scheduler works).
+2. The bash wrapper builds a podman image and runs `scrape.py` inside it.
+   The scraper crawls source directories, dedupes, and enforces an
+   address quality gate (records without a parseable address are dropped).
 3. Output is written to `studios.json` and `questions.json` at the
    repo root — the single source of truth the Next.js build imports.
 4. Push to `main` triggers a Netlify build.
@@ -53,7 +55,8 @@ Data flow:
 |---|---|
 | Frontend | Next.js (TypeScript) |
 | Styling | Tailwind CSS |
-| Scraper | n8n (self-hosted, Proxmox LXC) |
+| Scraper | Python (crawl4ai, playwright, httpx) in a podman container |
+| Scheduler | Weekly cron (n8n in reference deployment; any scheduler works) |
 | Deploy | Netlify |
 | DNS | Custom domain (icesoak.com) |
 | SEO | Sitemap, robots.txt, Search Console, IndexNow |
@@ -64,7 +67,7 @@ Data flow:
 - City landing pages with filterable studio listings
 - Studio detail pages with amenities, pricing, and hours
 - Map pins for geocoded studios
-- Weekly automated data refresh via n8n scraper
+- Weekly automated data refresh via a containerized Python scraper
 - Address parsing with quality gate (filters incomplete records)
 - Mobile-responsive layout
 - Enterprise-grade security headers
@@ -79,13 +82,30 @@ IndexNow key registered for instant Bing indexing on updates.
 
 ## Self-Hosting the Scraper
 
-The n8n scraper workflow runs on a self-hosted Proxmox LXC container
-on a weekly schedule. To run your own:
+The scraper is a Python service (crawl4ai + playwright + httpx) that
+runs inside a podman container. `scraper/run_scrape.sh` is the entry
+point — it pulls the repo, builds the image, runs `scrape.py` with the
+repo root mounted at `/work`, and commits + pushes only if
+`studios.json` or `questions.json` changed.
 
-1. Install [n8n](https://n8n.io) (self-hosted or cloud)
-2. Import the workflow from `/scraper/`
-3. Configure your data output path
-4. Set a weekly cron trigger
+```bash
+git clone https://github.com/toyedeji/icesoak /opt/icesoak
+cd /opt/icesoak
+# Requires podman (or swap to docker in run_scrape.sh) — no host-side
+# pip install needed; the container has everything.
+bash scraper/run_scrape.sh
+```
+
+To schedule weekly runs, add to crontab:
+
+```
+0 3 * * 0 /opt/icesoak/scraper/run_scrape.sh >> /var/log/icesoak-scrape.log 2>&1
+```
+
+Runs at 03:00 every Sunday. Set `ICESOAK_WORK_DIR` to override the
+default `/opt/icesoak` path. In the reference deployment this is
+invoked from an n8n workflow rather than plain cron, but the
+scheduler is interchangeable — the bash script is the actual work.
 
 ## Local Development
 
