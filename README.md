@@ -1,75 +1,117 @@
 # IceSoak
 
-Static directory of cold plunge, sauna, and contrast-therapy studios, built to
-rank in Google and be citable by AI answer engines.
+A cold plunge studio directory for the United States — searchable by
+city, with studio details, amenities, pricing, and map pins.
+Live at [icesoak.com](https://icesoak.com).
 
-## Stack
-- **Next.js (App Router) with `output: 'export'`** — every page is fully static
-  HTML. No server, no database, no `localStorage`/`sessionStorage`.
-- **MapLibre/Leaflet + free OSM tiles** (no API key). The map is the only
-  client-side widget; all listing content is server-rendered into the HTML.
-- **Netlify** for hosting (see `netlify.toml`).
+## What It Is
 
-## Repo layout
-- Root — the Next.js static-export app (`app/`, `components/`, `lib/`, `public/`).
-- `scraper/` — the Python data pipeline (`scrape.py`, `crawlers/`, `processors/`,
-  `utils/`, `Dockerfile`, `run_scrape.sh`, `data/seed_studios.json`).
+IceSoak helps people find cold plunge and ice bath studios near them.
+The directory is built on scraped and curated data, updated weekly via
+an automated n8n pipeline, and deployed on Netlify with full SEO
+groundwork including Google and Bing Search Console verification,
+sitemap generation, and IndexNow pinging.
 
-## Data (single source of truth at the repo root)
-- `studios.json` (**repo root**) — array of studios (required: `id, name, metro,
-  city, lat, lng, status`; all else nullable). Missing fields are omitted, never
-  rendered as `null`. Build succeeds even with stub/empty data. Seeded from
-  `scraper/data/seed_studios.json`; the scraper **overwrites this file** on each run.
-- `questions.json` (**repo root**) — guide content (15 seeded guides). The scraper
-  overwrites this too when its questions crawler produces output.
-- `data/metros.json` — metro slug ↔ display name ↔ map center (static site config,
-  not scraper output).
+## Architecture
 
-## Scraper → site data flow
-`scraper/scrape.py` writes `studios.json` and `questions.json` to the **repo root**
-(the parent of `scraper/`), which is exactly what the Next.js build imports. Run it
-in the container with the repo mounted at `/work`:
-```bash
-podman run --rm --shm-size=1g -v /opt/icesoak:/work -w /work \
-  icesoak-scraper:latest python scraper/scrape.py
-# → /opt/icesoak/studios.json and /opt/icesoak/questions.json
+```
+┌──────────────────────────┐        ┌───────────────────────────┐
+│  n8n scraper (weekly)    │───────▶│  studios.json (repo root) │
+│  self-hosted Proxmox LXC │        │  questions.json           │
+└──────────────────────────┘        └────────────┬──────────────┘
+                                                  │
+                                                  ▼
+                                    ┌────────────────────────────┐
+                                    │  Next.js static export     │
+                                    │  App Router + output: export│
+                                    └────────────┬───────────────┘
+                                                  │
+                                                  ▼
+                                    ┌────────────────────────────┐
+                                    │  Netlify → icesoak.com     │
+                                    │  segmented sitemap,        │
+                                    │  IndexNow ping on updates  │
+                                    └────────────────────────────┘
 ```
 
-## Key conventions / decisions
-- **`[city]` URL segment = metro slug** (`denver`, `dallas-fort-worth`,
-  `philadelphia`). Launch scope is the 3 seeded metros.
-- **Indexing guardrail:** a directory page is `index` only when backed by **≥3
-  verified studios**; thinner pages render but are `noindex` (kept out of
-  sitemaps). Individual studio pages and guides are always indexable.
-- With the current seed, the indexable directory pages are **DFW sauna** and
-  **DFW infrared sauna**; everything else is noindex until coverage grows. This
-  is intentional — it respects the new-domain sandbox and avoids doorway pages.
-- The `/cold-plunge/[city]/[neighborhood]` template is **dense-metros-only** and
-  is omitted until neighborhood data exists.
-- Editorial byline is `IceSoak Editorial` (a real editorial entity) — authorship
-  is never fabricated as a fake person.
+Data flow:
 
-## SEO / GEO
-- Per-page templated `<title>`/meta, one `<h1>`, canonical, breadcrumbs.
-- JSON-LD per type: studios → `HealthAndBeautyBusiness` + `BreadcrumbList`;
-  guides → `Article` + `FAQPage`; city/list → `ItemList` + `BreadcrumbList`;
-  site-wide → `Organization` + `WebSite`.
-- `public/robots.txt` allows `GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot,
-  Google-Extended` and points at the sitemap index.
-- `public/llms.txt` summarizes the site and key sections.
-- `scripts/postexport.mjs` scans the exported HTML and writes **segmented
-  sitemaps** (`sitemap-pages/guides/studios.xml`) + a **sitemap index**
-  (`sitemap_index.xml`), excluding any `noindex` page.
+1. n8n workflow runs on a weekly cron.
+2. Scraper crawls source directories, dedupes, and enforces an address
+   quality gate (records without a parseable address are dropped).
+3. Output is written to `studios.json` and `questions.json` at the
+   repo root — the single source of truth the Next.js build imports.
+4. Push to `main` triggers a Netlify build.
+5. `scripts/postexport.mjs` scans the exported HTML and writes a
+   segmented sitemap index (pages / guides / studios), excluding
+   `noindex` pages.
+6. IndexNow pings Bing on updates for near-instant indexing.
 
-## Commands
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Frontend | Next.js (TypeScript) |
+| Styling | Tailwind CSS |
+| Scraper | n8n (self-hosted, Proxmox LXC) |
+| Deploy | Netlify |
+| DNS | Custom domain (icesoak.com) |
+| SEO | Sitemap, robots.txt, Search Console, IndexNow |
+| Security | CSP, HSTS, X-Frame-Options, Referrer-Policy headers |
+
+## Features
+
+- City landing pages with filterable studio listings
+- Studio detail pages with amenities, pricing, and hours
+- Map pins for geocoded studios
+- Weekly automated data refresh via n8n scraper
+- Address parsing with quality gate (filters incomplete records)
+- Mobile-responsive layout
+- Enterprise-grade security headers
+
+## SEO Architecture
+
+Each city gets a dedicated landing page optimized for
+`cold plunge studios in <city>` and related queries.
+Studio slugs are human-readable and stable.
+Sitemap submitted to both Google and Bing Search Console.
+IndexNow key registered for instant Bing indexing on updates.
+
+## Self-Hosting the Scraper
+
+The n8n scraper workflow runs on a self-hosted Proxmox LXC container
+on a weekly schedule. To run your own:
+
+1. Install [n8n](https://n8n.io) (self-hosted or cloud)
+2. Import the workflow from `/scraper/`
+3. Configure your data output path
+4. Set a weekly cron trigger
+
+## Local Development
+
 ```bash
+git clone https://github.com/toyedeji/icesoak
+cd icesoak
 npm install
-npm run dev      # local dev
-npm run build    # next build (static export to out/) + sitemap generation
-npm run start    # serve the built out/ directory locally
+npm run dev
+# Visit http://localhost:3000
 ```
 
-## Deploy (manual — requires your Netlify auth)
-1. `npx netlify deploy --prod` (or connect this repo in the Netlify UI).
-2. Point `icesoak.com` at the site; `theicesoak.com` and `www` 301 to it
-   (configured in `netlify.toml`).
+## Deployment
+
+Deployed via Netlify with automatic builds on push to main.
+
+```bash
+# Manual deploy via Netlify CLI
+netlify deploy --prod
+```
+
+## Project Status
+
+- ✅ Live at icesoak.com
+- ✅ ~141 studios scraped across multiple cities
+- ✅ Google + Bing Search Console verified
+- ✅ Sitemap indexed
+- ⏳ Geocoding lat/lng for all studios (map pins)
+- ⏳ City expansion (gated on Search Console data)
+- ⏳ Affiliate program integrations
