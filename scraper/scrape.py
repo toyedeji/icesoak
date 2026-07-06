@@ -205,8 +205,60 @@ async def run(metro_filter: list[str] | None = None) -> None:
     # ── Write studios.json ───────────────────────────────────────────────────
     WORK_DIR.mkdir(parents=True, exist_ok=True)
     out = WORK_DIR / "studios.json"
-    out.write_text(json.dumps(studios, indent=2, ensure_ascii=False), encoding="utf-8")
-    log.info("Wrote %d studios → %s", len(studios), out)
+
+    if metro_filter and out.exists():
+        # Partial run: merge new records into existing studios.json instead of
+        # overwriting it.  For each targeted metro, replace existing records
+        # only when the scrape actually returned data; if a metro came back
+        # empty (blocked / no results) keep the old records and warn.
+        scraped_metro_ids = {_METRO_ALIAS.get(m.lower(), m.lower()) for m in metro_filter}
+        new_by_metro: dict[str, list] = {mid: [] for mid in scraped_metro_ids}
+        for s in studios:
+            mid = s.get("metro")
+            if mid in new_by_metro:
+                new_by_metro[mid].append(s)
+
+        existing: list = json.loads(out.read_text(encoding="utf-8"))
+        kept: list = []
+        replaced_metros: list[str] = []
+        preserved_metros: list[str] = []
+        for s in existing:
+            mid = s.get("metro")
+            if mid not in scraped_metro_ids:
+                kept.append(s)  # not targeted — always keep
+            # targeted metros are rebuilt below; don't carry old records forward
+
+        added: list = []
+        for mid in scraped_metro_ids:
+            fresh = new_by_metro[mid]
+            if fresh:
+                added.extend(fresh)
+                replaced_metros.append(mid)
+            else:
+                # Zero-result protection: scraper was blocked — keep old data
+                old = [s for s in existing if s.get("metro") == mid]
+                kept.extend(old)
+                preserved_metros.append(mid)
+                log.warning(
+                    "WARNING: %s returned 0 studios — preserving existing %d records "
+                    "rather than wiping.",
+                    mid, len(old),
+                )
+
+        merged = kept + added
+        out.write_text(json.dumps(merged, indent=2, ensure_ascii=False), encoding="utf-8")
+        other_metros = sorted({s.get("metro") for s in kept})
+        log.info(
+            "Merged %d new records for metros %s. "
+            "Preserved %d records from %s. Total: %d studios → %s",
+            len(added), replaced_metros,
+            len(kept), other_metros,
+            len(merged), out,
+        )
+    else:
+        # Full run (or first run with no existing file): write fresh.
+        out.write_text(json.dumps(studios, indent=2, ensure_ascii=False), encoding="utf-8")
+        log.info("Wrote %d studios → %s", len(studios), out)
 
     # ── Questions ────────────────────────────────────────────────────────────
     from crawlers.questions import harvest_questions
