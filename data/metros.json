@@ -31,5 +31,71 @@
     "lng": -75.1652,
     "dense": false,
     "blurb": "Greater Philadelphia recovery studios for cold and heat therapy."
+  },
+  {
+    "metro": "austin_tx",
+    "slug": "austin",
+    "name": "Austin",
+    "state": "TX",
+    "stateName": "Texas",
+    "lat": 30.2672,
+    "lng": -97.7431,
+    "dense": false,
+    "blurb": "Austin's growing wellness scene features cold plunge, sauna, and contrast-therapy studios across the city and surrounding suburbs."
+  },
+  {
+    "metro": "chicago_il",
+    "slug": "chicago",
+    "name": "Chicago",
+    "state": "IL",
+    "stateName": "Illinois",
+    "lat": 41.8781,
+    "lng": -87.6298,
+    "dense": true,
+    "blurb": "Chicago's dense urban wellness market includes cold plunge, infrared sauna, and contrast-therapy studios across the city's neighborhoods and suburbs."
+  },
+  {
+    "metro": "atlanta_ga",
+    "slug": "atlanta",
+    "name": "Atlanta",
+    "state": "GA",
+    "stateName": "Georgia",
+    "lat": 33.749,
+    "lng": -84.388,
+    "dense": false,
+    "blurb": "Atlanta's recovery studio scene spans Buckhead, Midtown, and surrounding suburbs with cold plunge, sauna, and contrast-therapy options."
+  },
+  {
+    "metro": "seattle_wa",
+    "slug": "seattle",
+    "name": "Seattle",
+    "state": "WA",
+    "stateName": "Washington",
+    "lat": 47.6062,
+    "lng": -122.3321,
+    "dense": true,
+    "blurb": "Seattle's outdoor-oriented wellness culture supports a range of cold plunge, sauna, and contrast-therapy studios across the city and Eastside."
+  },
+  {
+    "metro": "miami_fl",
+    "slug": "miami",
+    "name": "Miami",
+    "state": "FL",
+    "stateName": "Florida",
+    "lat": 25.7617,
+    "lng": -80.1918,
+    "dense": false,
+    "blurb": "Miami's year-round warm climate makes cold plunge and contrast-therapy studios especially popular for recovery and performance."
+  },
+  {
+    "metro": "nashville_tn",
+    "slug": "nashville",
+    "name": "Nashville",
+    "state": "TN",
+    "stateName": "Tennessee",
+    "lat": 36.1627,
+    "lng": -86.7816,
+    "dense": false,
+    "blurb": "Nashville's fast-growing wellness scene includes cold plunge, sauna, and contrast-therapy studios across the city and surrounding communities."
   }
 ]

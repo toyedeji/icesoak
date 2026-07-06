@@ -29,6 +29,12 @@ _METRO_STATES = {
     "denver_co": {"CO"},
     "dallas_fort_worth_tx": {"TX"},
     "philadelphia_pa": {"PA", "NJ"},
+    "austin_tx": {"TX"},
+    "chicago_il": {"IL"},
+    "atlanta_ga": {"GA"},
+    "seattle_wa": {"WA"},
+    "miami_fl": {"FL"},
+    "nashville_tn": {"TN"},
 }
 _METRO_CITIES = {
     "denver_co": [
@@ -44,6 +50,34 @@ _METRO_CITIES = {
         "philadelphia", "king of prussia", "cherry hill", "ardmore",
         "conshohocken", "wayne", "horsham", "lansdale", "blue bell",
         "jenkintown", "media",
+    ],
+    "austin_tx": [
+        "austin", "round rock", "cedar park", "pflugerville", "georgetown",
+        "lakeway", "bee cave", "kyle", "buda", "manor",
+    ],
+    "chicago_il": [
+        "chicago", "evanston", "oak park", "naperville", "schaumburg",
+        "aurora", "joliet", "wicker park", "lincoln park", "river north",
+        "bucktown", "lakeview", "south loop",
+    ],
+    "atlanta_ga": [
+        "atlanta", "buckhead", "midtown", "decatur", "sandy springs",
+        "marietta", "alpharetta", "roswell", "dunwoody", "brookhaven",
+        "smyrna", "vinings", "virginia highland",
+    ],
+    "seattle_wa": [
+        "seattle", "bellevue", "redmond", "kirkland", "bothell",
+        "shoreline", "renton", "burien", "capitol hill", "queen anne",
+        "fremont", "ballard", "west seattle",
+    ],
+    "miami_fl": [
+        "miami", "miami beach", "coral gables", "brickell", "wynwood",
+        "coconut grove", "aventura", "hollywood", "fort lauderdale",
+        "doral", "hialeah", "south beach",
+    ],
+    "nashville_tn": [
+        "nashville", "brentwood", "franklin", "murfreesboro", "hendersonville",
+        "germantown", "east nashville", "12 south", "gulch", "bellevue",
     ],
 }
 

@@ -10,6 +10,7 @@ Next.js build reads a single source-of-truth file:
     <repo root>/studios.json   – deduplicated, schema-validated studio records
     <repo root>/questions.json – harvested PAA / Reddit questions
 """
+import argparse
 import asyncio
 import json
 import logging
@@ -33,7 +34,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 WORK_DIR = Path(os.environ["WORK_DIR"]) if os.environ.get("WORK_DIR") else REPO_ROOT
 SEED_FILE = Path(__file__).resolve().parent / "data" / "seed_studios.json"
 
-METROS = [
+ALL_METROS = [
     {
         "id": "denver_co",
         "name": "Denver",
@@ -63,12 +64,94 @@ METROS = [
             "Jenkintown", "Media",
         ],
     },
+    {
+        "id": "austin_tx",
+        "name": "Austin",
+        "state": "TX",
+        "cities": [
+            "Austin", "Round Rock", "Cedar Park", "Pflugerville", "Georgetown",
+            "Lakeway", "Bee Cave", "Kyle", "Buda", "Manor",
+        ],
+    },
+    {
+        "id": "chicago_il",
+        "name": "Chicago",
+        "state": "IL",
+        "cities": [
+            "Chicago", "Evanston", "Oak Park", "Naperville", "Schaumburg",
+            "Aurora", "Joliet", "Wicker Park", "Lincoln Park", "River North",
+            "Bucktown", "Lakeview", "South Loop",
+        ],
+    },
+    {
+        "id": "atlanta_ga",
+        "name": "Atlanta",
+        "state": "GA",
+        "cities": [
+            "Atlanta", "Buckhead", "Midtown", "Decatur", "Sandy Springs",
+            "Marietta", "Alpharetta", "Roswell", "Dunwoody", "Brookhaven",
+            "Smyrna", "Vinings", "Virginia Highland",
+        ],
+    },
+    {
+        "id": "seattle_wa",
+        "name": "Seattle",
+        "state": "WA",
+        "cities": [
+            "Seattle", "Bellevue", "Redmond", "Kirkland", "Bothell",
+            "Shoreline", "Renton", "Burien", "Capitol Hill", "Queen Anne",
+            "Fremont", "Ballard", "West Seattle",
+        ],
+    },
+    {
+        "id": "miami_fl",
+        "name": "Miami",
+        "state": "FL",
+        "cities": [
+            "Miami", "Miami Beach", "Coral Gables", "Brickell", "Wynwood",
+            "Coconut Grove", "Aventura", "Hollywood", "Fort Lauderdale",
+            "Doral", "Hialeah", "South Beach",
+        ],
+    },
+    {
+        "id": "nashville_tn",
+        "name": "Nashville",
+        "state": "TN",
+        "cities": [
+            "Nashville", "Brentwood", "Franklin", "Murfreesboro", "Hendersonville",
+            "Germantown", "East Nashville", "12 South", "Gulch", "Bellevue",
+        ],
+    },
 ]
 
+# Short alias map: scrape.py --metros austin chicago → resolves to full metro IDs
+_METRO_ALIAS = {m["id"]: m["id"] for m in ALL_METROS}
+_METRO_ALIAS.update({
+    "denver": "denver_co",
+    "dallas": "dallas_fort_worth_tx", "dfw": "dallas_fort_worth_tx",
+    "philadelphia": "philadelphia_pa", "philly": "philadelphia_pa",
+    "austin": "austin_tx",
+    "chicago": "chicago_il",
+    "atlanta": "atlanta_ga",
+    "seattle": "seattle_wa",
+    "miami": "miami_fl",
+    "nashville": "nashville_tn",
+})
 
-async def run() -> None:
+
+async def run(metro_filter: list[str] | None = None) -> None:
     today = date.today().isoformat()
     all_records: list = []
+
+    metros = ALL_METROS
+    if metro_filter:
+        resolved = {_METRO_ALIAS.get(m.lower(), m.lower()) for m in metro_filter}
+        metros = [m for m in ALL_METROS if m["id"] in resolved]
+        if not metros:
+            log.error("No known metros matched: %s", metro_filter)
+            sys.exit(1)
+        log.info("Filtering to metros: %s", [m["id"] for m in metros])
+
 
     # ── Seed baseline (provisional; crawler output overwrites) ──────────────
     if SEED_FILE.exists():
@@ -86,7 +169,7 @@ async def run() -> None:
     from processors.deduper import deduplicate
     from processors.merger import merge_sources
 
-    for metro in METROS:
+    for metro in metros:
         log.info("━━ Metro: %s ━━", metro["name"])
 
         gm = await scrape_google_maps(metro)
@@ -134,4 +217,11 @@ async def run() -> None:
 
 
 if __name__ == "__main__":
-    asyncio.run(run())
+    parser = argparse.ArgumentParser(description="IceSoak studio scraper")
+    parser.add_argument(
+        "--metros", nargs="+", metavar="METRO",
+        help="Limit scrape to specific metros (e.g. austin chicago). "
+             f"Available: {', '.join(_METRO_ALIAS.keys())}",
+    )
+    args = parser.parse_args()
+    asyncio.run(run(metro_filter=args.metros))
