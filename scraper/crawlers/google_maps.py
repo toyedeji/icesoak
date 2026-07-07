@@ -2,6 +2,7 @@
 import asyncio
 import logging
 import re
+import unicodedata
 from bs4 import BeautifulSoup
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
 
@@ -205,5 +206,6 @@ def _filter(studios: list) -> list:
 
 
 def _slug(name: str, city: str) -> str:
-    s = re.sub(r"[^\w\s-]", "", f"{name} {city}".lower())
+    text = unicodedata.normalize("NFKD", f"{name} {city}").encode("ascii", "ignore").decode("ascii")
+    s = re.sub(r"[^\w\s-]", "", text.lower())
     return re.sub(r"[\s_]+", "-", s).strip("-")[:64]

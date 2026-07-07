@@ -1,5 +1,6 @@
 import logging
 import re
+import unicodedata
 from typing import Optional
 from utils.schema import (
     VALID_STATUSES, VALID_MODALITIES, VALID_FORMATS,
@@ -113,6 +114,7 @@ def _clean(studio: dict) -> Optional[dict]:  # noqa: F821
 
 
 def _slug(name: str, city: str) -> str:
-    s = re.sub(r"[^\w\s-]", "", f"{name} {city}".lower())
+    text = unicodedata.normalize("NFKD", f"{name} {city}").encode("ascii", "ignore").decode("ascii")
+    s = re.sub(r"[^\w\s-]", "", text.lower())
     s = re.sub(r"[\s_]+", "-", s).strip("-")
     return s[:64]

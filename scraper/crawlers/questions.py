@@ -2,6 +2,7 @@
 import asyncio
 import logging
 import re
+import unicodedata
 from bs4 import BeautifulSoup
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
 
@@ -161,5 +162,6 @@ def _parse_reddit(html: str) -> list:
 
 
 def _qslug(question: str) -> str:
-    s = re.sub(r"[^\w\s-]", "", question.lower())
+    text = unicodedata.normalize("NFKD", question).encode("ascii", "ignore").decode("ascii")
+    s = re.sub(r"[^\w\s-]", "", text.lower())
     return re.sub(r"[\s_]+", "-", s).strip("-")[:80]
