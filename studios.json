@@ -14,7 +14,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "cold_plunge"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -24,7 +26,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x8644cb63f33b0205:0x399a9ede451b452b",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 1,
     "source_urls": [
       "https://www.google.com/maps/place/Cold+Plunge+Austin/data=!4m7!3m6!1s0x8644cb63f33b0205:0x399a9ede451b452b!8m2!3d30.3739829!4d-97.7410337!16s%2Fg%2F11vq3vq3pb!19sChIJBQI782PLRIYRK0UbRd6emjk?authuser=0&hl=en&rclk=1"
@@ -78,7 +80,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -110,7 +114,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -216,7 +222,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x865b2d6788dfe59f:0xea95113978f140d9",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 13,
     "source_urls": [
       "https://www.google.com/maps/place/Cryofit+Cedar+Park/data=!4m7!3m6!1s0x865b2d6788dfe59f:0xea95113978f140d9!8m2!3d30.5227775!4d-97.8226459!16s%2Fg%2F11stvlvxg1!19sChIJn-XfiGctW4YR2UDxeDkRleo?authuser=0&hl=en&rclk=1"
@@ -280,7 +286,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x865b32b77ba562f3:0xffdf0090bff67991",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 72,
     "source_urls": [
       "https://www.google.com/maps/place/R3+CryoSpa+%2FR3+Vitality/data=!4m7!3m6!1s0x865b32b77ba562f3:0xffdf0090bff67991!8m2!3d30.5218039!4d-97.7763651!16s%2Fg%2F11b6z_x0z_!19sChIJ82Kle7cyW4YRkXn2v5AA3_8?authuser=0&hl=en&rclk=1"
@@ -302,7 +308,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -312,7 +320,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x8644cb004ad9f63b:0x8ccf48b05d7bc6f2",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 71,
     "source_urls": [
       "https://www.google.com/maps/place/Sauna+House+North+Loop/data=!4m7!3m6!1s0x8644cb004ad9f63b:0x8ccf48b05d7bc6f2!8m2!3d30.3247522!4d-97.7380251!16s%2Fg%2F11yn5fsn__!19sChIJO_bZSgDLRIYR8sZ7XbBIz4w?authuser=0&hl=en&rclk=1"
@@ -334,7 +342,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -366,7 +376,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -376,7 +388,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x8644dbe0f19fe53b:0xdf306b2687a9fe43",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 23,
     "source_urls": [
       "https://www.google.com/maps/place/Perspire+Sauna+Studio/data=!4m7!3m6!1s0x8644dbe0f19fe53b:0xdf306b2687a9fe43!8m2!3d30.5047877!4d-97.580291!16s%2Fg%2F11yz_hkm32!19sChIJO-Wf8eDbRIYRQ_6phyZrMN8?authuser=0&hl=en&rclk=1"
@@ -398,7 +410,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -472,7 +486,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x8644cb3d62239bad:0x75c5989f0268ab50",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 76,
     "source_urls": [
       "https://www.google.com/maps/place/The+Recovery+Lab+and+Cryo/data=!4m7!3m6!1s0x8644cb3d62239bad:0x75c5989f0268ab50!8m2!3d30.3444838!4d-97.7154653!16s%2Fg%2F11rgc6p1lm!19sChIJrZsjYj3LRIYRUKtoAp-YxXU?authuser=0&hl=en&rclk=1"
@@ -504,7 +518,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x8644b59fda798005:0xb5c6e5d3d0853081",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 44,
     "source_urls": [
       "https://www.google.com/maps/place/ULU+Recovery+%26+Wellness/data=!4m7!3m6!1s0x8644b59fda798005:0xb5c6e5d3d0853081!8m2!3d30.2488782!4d-97.755692!16s%2Fg%2F11x1s_t_kz!19sChIJBYB52p-1RIYRgTCF0NPlxrU?authuser=0&hl=en&rclk=1"
@@ -536,7 +550,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x8644cb8fa2c9351d:0x5f1172a4383e7fcd",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 3,
     "source_urls": [
       "https://www.google.com/maps/place/Active+Recovery+Massage/data=!4m7!3m6!1s0x8644cb8fa2c9351d:0x5f1172a4383e7fcd!8m2!3d30.3415589!4d-97.7549546!16s%2Fg%2F11z9pgmr1c!19sChIJHTXJoo_LRIYRzX8-OKRyEV8?authuser=0&hl=en&rclk=1"
@@ -568,7 +582,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x865b4d209354c369:0x3d374f1fd66ace8a",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 50,
     "source_urls": [
       "https://www.google.com/maps/place/Sweatcity+Health+and+Recovery/data=!4m7!3m6!1s0x865b4d209354c369:0x3d374f1fd66ace8a!8m2!3d30.2642859!4d-97.7616189!16s%2Fg%2F11vjh_dnwv!19sChIJacNUkyBNW4YRis5q1h9PNz0?authuser=0&hl=en&rclk=1"
@@ -600,7 +614,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x8644cb453d3eee7f:0xe228960bb6c37107",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 72,
     "source_urls": [
       "https://www.google.com/maps/place/Knead+Recovery/data=!4m7!3m6!1s0x8644cb453d3eee7f:0xe228960bb6c37107!8m2!3d30.3100624!4d-97.7410337!16s%2Fg%2F11rftc7pj4!19sChIJf-4-PUXLRIYRB3HDtguWKOI?authuser=0&hl=en&rclk=1"
@@ -632,7 +646,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x865b2bf4eea1ca7b:0x2da17bd70926a006",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 3,
     "source_urls": [
       "https://www.google.com/maps/place/The+Wellness+%2B+Recovery+Center+at+LAC/data=!4m7!3m6!1s0x865b2bf4eea1ca7b:0x2da17bd70926a006!8m2!3d30.5734544!4d-97.8700843!16s%2Fg%2F11sskm4sk1!19sChIJe8qh7vQrW4YRBqAmCdd7oS0?authuser=0&hl=en&rclk=1"
@@ -782,7 +796,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -814,7 +830,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -824,7 +842,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x880fd382f6be1edd:0xa2aafa25df60d0a8",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 2,
     "source_urls": [
       "https://www.google.com/maps/place/Fire+and+Ice+Sauna+Experience/data=!4m7!3m6!1s0x880fd382f6be1edd:0xa2aafa25df60d0a8!8m2!3d41.9141307!4d-87.625018!16s%2Fg%2F11yqt2qkt5!19sChIJ3R6-9oLTD4gRqNBg3yX6qqI?authuser=0&hl=en&rclk=1"
@@ -846,7 +864,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -856,7 +876,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x880fd12165049bfb:0xbf45e6b1d164637d",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 22,
     "source_urls": [
       "https://www.google.com/maps/place/Sauna+Club/data=!4m7!3m6!1s0x880fd12165049bfb:0xbf45e6b1d164637d!8m2!3d42.0422715!4d-87.6712155!16s%2Fg%2F11tt5qfqkj!19sChIJ-5sEZSHRD4gRfWNk0bHmRb8?authuser=0&hl=en&rclk=1"
@@ -878,7 +898,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -888,7 +910,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x880fdb93cf333905:0x97faaf657a25d4f8",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 35,
     "source_urls": [
       "https://www.google.com/maps/place/Campfire+Sauna+and+Social/data=!4m7!3m6!1s0x880fdb93cf333905:0x97faaf657a25d4f8!8m2!3d42.080002!4d-87.687125!16s%2Fg%2F11x_std5x1!19sChIJBTkzz5PbD4gR-NQlemWv-pc?authuser=0&hl=en&rclk=1"
@@ -910,7 +932,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -1038,7 +1062,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -1070,7 +1096,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -1102,7 +1130,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -1134,7 +1164,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -1144,7 +1176,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x880fc7126bdea3d7:0x1c3156fe8020475",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 1,
     "source_urls": [
       "https://www.google.com/maps/place/Glow+Sauna+Studios+%7C+Glenview/data=!4m7!3m6!1s0x880fc7126bdea3d7:0x1c3156fe8020475!8m2!3d42.0822593!4d-87.7996126!16s%2Fg%2F11nbwth02q!19sChIJ16PeaxLHD4gRdQQC6G8VwwE?authuser=0&hl=en&rclk=1"
@@ -1176,7 +1208,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x880fd19535bbad2d:0xa181e62c5393a4e3",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 90,
     "source_urls": [
       "https://www.google.com/maps/place/Whole+Woman+Fitness+%26+Recovery+Spa/data=!4m7!3m6!1s0x880fd19535bbad2d:0xa181e62c5393a4e3!8m2!3d42.0322366!4d-87.7052983!16s%2Fg%2F11sjv38zs4!19sChIJLa27NZXRD4gR46STUyzmgaE?authuser=0&hl=en&rclk=1"
@@ -1198,7 +1230,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -1230,7 +1264,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -1262,7 +1298,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -1304,7 +1342,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x880b992a9c5ff275:0xa292b568e3a2ecde",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 1,
     "source_urls": [
       "https://www.google.com/maps/place/The+Recovery+Room/data=!4m7!3m6!1s0x880b992a9c5ff275:0xa292b568e3a2ecde!8m2!3d40.7362844!4d-89.0414188!16s%2Fg%2F11z1v_whmm!19sChIJdfJfnCqZC4gR3uyi42i1kqI?authuser=0&hl=en&rclk=1"
@@ -1390,7 +1428,11 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "cold_plunge",
+      "sauna_infrared",
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -1400,7 +1442,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x880fbf005c9766c9:0x2fac639bbf1afd72",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 59,
     "source_urls": [
       "https://www.google.com/maps/place/ELEOS+Float+Spa+%E2%80%93+Float+Therapy,+Infrared+Sauna+and+Cold+Plunge/data=!4m7!3m6!1s0x880fbf005c9766c9:0x2fac639bbf1afd72!8m2!3d42.1988676!4d-87.8586201!16s%2Fg%2F11vxrd8pl2!19sChIJyWaXXAC_D4gRcv0av5tjrC8?authuser=0&hl=en&rclk=1"
@@ -1422,7 +1464,10 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna_infrared",
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -1454,7 +1499,10 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna_infrared",
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -1518,7 +1566,10 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna_infrared",
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -1582,7 +1633,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -1614,7 +1667,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -1646,7 +1701,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -1656,7 +1713,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x88f5a16e23bb9343:0x7b1142bf112737a0",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 96,
     "source_urls": [
       "https://www.google.com/maps/place/Perspire+Sauna+Studio/data=!4m7!3m6!1s0x88f5a16e23bb9343:0x7b1142bf112737a0!8m2!3d33.9790494!4d-84.2185296!16s%2Fg%2F11x21r73t8!19sChIJQ5O7I26h9YgRoDcnEb9CEXs?authuser=0&hl=en&rclk=1"
@@ -1678,7 +1735,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -1720,7 +1779,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x88f53f2ddfc4b80b:0x46c2c1b319388d28",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 178,
     "source_urls": [
       "https://www.google.com/maps/place/Studio+Recovery/data=!4m7!3m6!1s0x88f53f2ddfc4b80b:0x46c2c1b319388d28!8m2!3d33.9680584!4d-84.665035!16s%2Fg%2F11p74smfbt!19sChIJC7jE3y0_9YgRKI04GbPBwkY?authuser=0&hl=en&rclk=1"
@@ -1838,7 +1897,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -1870,7 +1931,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -1880,7 +1943,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x54901592b080b2a1:0xf5e32bd7a5f433e0",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 214,
     "source_urls": [
       "https://www.google.com/maps/place/Seattle+Sauna/data=!4m7!3m6!1s0x54901592b080b2a1:0xf5e32bd7a5f433e0!8m2!3d47.6503297!4d-122.3305096!16s%2Fg%2F11wtk99vc4!19sChIJobKAsJIVkFQR4DP0pdcr4_U?authuser=0&hl=en&rclk=1"
@@ -1902,7 +1965,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -1966,7 +2031,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -1998,7 +2065,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -2008,7 +2077,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x549017b459491deb:0x113c0807911a1682",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 86,
     "source_urls": [
       "https://www.google.com/maps/place/Bywater+Sauna/data=!4m7!3m6!1s0x549017b459491deb:0x113c0807911a1682!8m2!3d47.6926008!4d-122.4042438!16s%2Fg%2F11w3tfcdth!19sChIJ6x1JWbQXkFQRghYakQcIPBE?authuser=0&hl=en&rclk=1"
@@ -2030,7 +2099,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -2040,7 +2111,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x549041000cb30b23:0x878b514a02254ef2",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": null,
     "source_urls": [
       "https://www.google.com/maps/place/Bywater+Sauna/data=!4m7!3m6!1s0x549041000cb30b23:0x878b514a02254ef2!8m2!3d47.5797206!4d-122.410161!16s%2Fg%2F11wqxt0nmg!19sChIJIwuzDABBkFQR8k4lAkpRi4c?authuser=0&hl=en&rclk=1"
@@ -2094,7 +2165,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -2104,7 +2177,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x54906f003a166c31:0x7b5f4712a70ca89d",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 145,
     "source_urls": [
       "https://www.google.com/maps/place/Vihta+Sauna/data=!4m7!3m6!1s0x54906f003a166c31:0x7b5f4712a70ca89d!8m2!3d47.5770398!4d-122.1118198!16s%2Fg%2F11ymfgb2yw!19sChIJMWwWOgBvkFQRnagMpxJHX3s?authuser=0&hl=en&rclk=1"
@@ -2126,7 +2199,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -2158,7 +2233,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -2168,7 +2245,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x213b1bd32311366b:0x5e23530e4ef7806e",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 4,
     "source_urls": [
       "https://www.google.com/maps/place/Sauna+Sanctuary+LLC/data=!4m7!3m6!1s0x213b1bd32311366b:0x5e23530e4ef7806e!8m2!3d47.6942626!4d-122.1123699!16s%2Fg%2F11wfvrx07g!19sChIJazYRI9MbOyERboD3Tg5TI14?authuser=0&hl=en&rclk=1"
@@ -2190,7 +2267,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -2200,7 +2279,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x549072b1d8e15a1d:0x9a4891b04dc2a938",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 1,
     "source_urls": [
       "https://www.google.com/maps/place/SunSauna+LLC/data=!4m7!3m6!1s0x549072b1d8e15a1d:0x9a4891b04dc2a938!8m2!3d47.6795027!4d-122.1404168!16s%2Fg%2F1tm68myn!19sChIJHVrh2LFykFQROKnCTbCRSJo?authuser=0&hl=en&rclk=1"
@@ -2222,7 +2301,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -2254,7 +2335,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -2264,7 +2347,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x549013498aaa9a85:0x6fbc3233ef302fae",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 568,
     "source_urls": [
       "https://www.google.com/maps/place/Von+Sauna/data=!4m7!3m6!1s0x549013498aaa9a85:0x6fbc3233ef302fae!8m2!3d47.6562527!4d-122.2077014!16s%2Fg%2F11vm8v217v!19sChIJhZqqikkTkFQRri8w7zMyvG8?authuser=0&hl=en&rclk=1"
@@ -2318,7 +2401,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -2360,7 +2445,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x549015ea4e74a743:0x15a61483fd64a548",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 92,
     "source_urls": [
       "https://www.google.com/maps/place/Cold+Club+by+Matt+Soule/data=!4m7!3m6!1s0x549015ea4e74a743:0x15a61483fd64a548!8m2!3d47.7049698!4d-122.3562627!16s%2Fg%2F11nh9bbxsy!19sChIJQ6d0TuoVkFQRSKVk_YMUphU?authuser=0&hl=en&rclk=1"
@@ -2382,7 +2467,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -2414,7 +2501,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -2424,7 +2513,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x549015bb21b8ba1d:0x6bbf26f7c1e94e93",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 22,
     "source_urls": [
       "https://www.google.com/maps/place/Salt+%26+Cedar+Sauna+Seattle/data=!4m7!3m6!1s0x549015bb21b8ba1d:0x6bbf26f7c1e94e93!8m2!3d47.6488274!4d-122.357129!16s%2Fg%2F11lz7dxpp_!19sChIJHbq4IbsVkFQRk07pwfcmv2s?authuser=0&hl=en&rclk=1"
@@ -2456,7 +2545,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x549015d86f368f47:0x1f0e97886d1e0f48",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 18,
     "source_urls": [
       "https://www.google.com/maps/place/The+Recovery+Space/data=!4m7!3m6!1s0x549015d86f368f47:0x1f0e97886d1e0f48!8m2!3d47.6212666!4d-122.3375556!16s%2Fg%2F11s0h268g5!19sChIJR482b9gVkFQRSA8ebYiXDh8?authuser=0&hl=en&rclk=1"
@@ -2542,7 +2631,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "cold_plunge"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -2574,7 +2665,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -2616,7 +2709,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x88d9b7b835570a77:0x9632cf27cb7db076",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 85,
     "source_urls": [
       "https://www.google.com/maps/place/The+Ice+Room+Miami/data=!4m7!3m6!1s0x88d9b7b835570a77:0x9632cf27cb7db076!8m2!3d25.7617655!4d-80.1904094!16s%2Fg%2F11xdfvlsh_!19sChIJdwpXNbi32YgRdrB9yyfPMpY?authuser=0&hl=en&rclk=1"
@@ -2638,7 +2731,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "cold_plunge"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -2648,7 +2743,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x88d9b5db8df55567:0x6d0a1c47fee9d1d3",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 6,
     "source_urls": [
       "https://www.google.com/maps/place/Cold+Plunge+at+Prestige+Miami+Fitness+Club/data=!4m7!3m6!1s0x88d9b5db8df55567:0x6d0a1c47fee9d1d3!8m2!3d25.7810642!4d-80.1426465!16s%2Fg%2F11wqs2r9lt!19sChIJZ1X1jdu12YgR09Hp_kccCm0?authuser=0&hl=en&rclk=1"
@@ -2680,7 +2775,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x88d9b48fd2918acb:0x8df6b621847ad423",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 26,
     "source_urls": [
       "https://www.google.com/maps/place/Cryotherapy+Miami/data=!4m7!3m6!1s0x88d9b48fd2918acb:0x8df6b621847ad423!8m2!3d25.7852739!4d-80.1323255!16s%2Fg%2F11c5bt960x!19sChIJy4qR0o-02YgRI9R6hCG29o0?authuser=0&hl=en&rclk=1"
@@ -2744,7 +2839,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x88d9c7bad05bc68f:0x69006b20093a8513",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 87,
     "source_urls": [
       "https://www.google.com/maps/place/Electric+Ice+Cryo+South+Miami+Cryotherapy+Cold+Therapy+Coral+Gables+Florida/data=!4m7!3m6!1s0x88d9c7bad05bc68f:0x69006b20093a8513!8m2!3d25.7089861!4d-80.2858331!16s%2Fg%2F11rvh_wc_8!19sChIJj8Zb0LrH2YgRE4U6CSBrAGk?authuser=0&hl=en&rclk=1"
@@ -2766,7 +2861,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -2776,7 +2873,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x88d9ad652f785f57:0x309e8783dc6e0256",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 6,
     "source_urls": [
       "https://www.google.com/maps/place/ROYAL+STANDARD+LLC+sauna/data=!4m7!3m6!1s0x88d9ad652f785f57:0x309e8783dc6e0256!8m2!3d25.9094965!4d-80.1657982!16s%2Fg%2F11lv8wb1cl!19sChIJV194L2Wt2YgRVgJu3IOHnjA?authuser=0&hl=en&rclk=1"
@@ -2798,7 +2895,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -2808,7 +2907,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x88d9b74f9288ec6d:0x51542c2315c2f616",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 7,
     "source_urls": [
       "https://www.google.com/maps/place/Miami+Custom+Saunas/data=!4m7!3m6!1s0x88d9b74f9288ec6d:0x51542c2315c2f616!8m2!3d25.802897!4d-80.2566103!16s%2Fg%2F11zkcvt565!19sChIJbeyIkk-32YgRFvbCFSMsVFE?authuser=0&hl=en&rclk=1"
@@ -2830,7 +2929,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -2862,7 +2963,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -2872,7 +2975,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x88d9c68de93a8705:0xfcc959a1f3332502",
-    "google_rating": 4.0,
+    "google_rating": 4,
     "google_reviews_count": 4,
     "source_urls": [
       "https://www.google.com/maps/place/My+Sauna+Studio+by+DermaSpalogy/data=!4m7!3m6!1s0x88d9c68de93a8705:0xfcc959a1f3332502!8m2!3d25.6442859!4d-80.3313616!16s%2Fg%2F11cm81rdjr!19sChIJBYc66Y3G2YgRAiUz86FZyfw?authuser=0&hl=en&rclk=1"
@@ -2894,7 +2997,10 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna_infrared",
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -2926,7 +3032,10 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna_infrared",
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -2936,7 +3045,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x88d9b77801122b91:0x369d3b2912d12e7b",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 1,
     "source_urls": [
       "https://www.google.com/maps/place/Miami+Infrared+Sauna+Wholesaler/data=!4m7!3m6!1s0x88d9b77801122b91:0x369d3b2912d12e7b!8m2!3d25.7521256!4d-80.2552342!16s%2Fg%2F11jx2t8t6w!19sChIJkSsSAXi32YgRey7REik7nTY?authuser=0&hl=en&rclk=1"
@@ -3000,7 +3109,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x88d9b9006e4ed507:0xcdb6048ee023452",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 3,
     "source_urls": [
       "https://www.google.com/maps/place/Nexus+Recovery+Lab/data=!4m7!3m6!1s0x88d9b9006e4ed507:0xcdb6048ee023452!8m2!3d25.7472329!4d-80.3150102!16s%2Fg%2F11ys1__t2y!19sChIJB9VObgC52YgRUjQC7khg2ww?authuser=0&hl=en&rclk=1"
@@ -3032,7 +3141,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x88d9b901aa61320d:0x77dae9cda16b4238",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 83,
     "source_urls": [
       "https://www.google.com/maps/place/RecoveryLab/data=!4m7!3m6!1s0x88d9b901aa61320d:0x77dae9cda16b4238!8m2!3d25.8074902!4d-80.3015805!16s%2Fg%2F11whj36kws!19sChIJDTJhqgG52YgROEJroc3p2nc?authuser=0&hl=en&rclk=1"
@@ -3096,7 +3205,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x88d9b76d40d74f1f:0x39c46bdfd0b34da9",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 9,
     "source_urls": [
       "https://www.google.com/maps/place/Helix+Performance+Recovery/data=!4m7!3m6!1s0x88d9b76d40d74f1f:0x39c46bdfd0b34da9!8m2!3d25.800114!4d-80.1931295!16s%2Fg%2F11y95z_hlb!19sChIJH0_XQG232YgRqU2z0N9rxDk?authuser=0&hl=en&rclk=1"
@@ -3128,7 +3237,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x88d9b7b897de37a3:0xb42cebba2b7bd1fc",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 207,
     "source_urls": [
       "https://www.google.com/maps/place/RIVERA+Performance+%26+Recovery/data=!4m7!3m6!1s0x88d9b7b897de37a3:0xb42cebba2b7bd1fc!8m2!3d25.757568!4d-80.2590859!16s%2Fg%2F11s34jg2l2!19sChIJozfel7i32YgR_NF7K7rrLLQ?authuser=0&hl=en&rclk=1"
@@ -3182,7 +3291,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -3192,7 +3303,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x88646725b4f65b57:0xdfd460a491f32093",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 178,
     "source_urls": [
       "https://www.google.com/maps/place/Pure+Sweat+Sauna+Studio,+The+Gulch/data=!4m7!3m6!1s0x88646725b4f65b57:0xdfd460a491f32093!8m2!3d36.1501879!4d-86.7800542!16s%2Fg%2F11ld8919c4!19sChIJV1v2tCVnZIgRkyDzkaRg1N8?authuser=0&hl=en&rclk=1"
@@ -3246,7 +3357,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -3256,7 +3369,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x8864652907c5fc15:0x77e4d7bfb243e4fa",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 197,
     "source_urls": [
       "https://www.google.com/maps/place/Pure+Sweat+Sauna+Studio,+12+South/data=!4m7!3m6!1s0x8864652907c5fc15:0x77e4d7bfb243e4fa!8m2!3d36.1227529!4d-86.79058!16s%2Fg%2F11fqpt3mms!19sChIJFfzFByllZIgR-uRDsr_X5Hc?authuser=0&hl=en&rclk=1"
@@ -3320,7 +3433,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x88646250ac5c0f57:0x75511c691a95cd1b",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 280,
     "source_urls": [
       "https://www.google.com/maps/place/Pure+Sweat+%2B+Float+Studio,+Belle+Meade/data=!4m7!3m6!1s0x88646250ac5c0f57:0x75511c691a95cd1b!8m2!3d36.097718!4d-86.8719467!16s%2Fg%2F11g7_4d5c5!19sChIJVw9crFBiZIgRG82VGmkcUXU?authuser=0&hl=en&rclk=1"
@@ -3342,7 +3455,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -3352,7 +3467,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x8864695690ea5291:0xf2a9930bf896898e",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 31,
     "source_urls": [
       "https://www.google.com/maps/place/Ritual+Community+Sauna+%26+Wellness+Space/data=!4m7!3m6!1s0x8864695690ea5291:0xf2a9930bf896898e!8m2!3d36.1884432!4d-86.7294829!16s%2Fg%2F11ms2jq04k!19sChIJkVLqkFZpZIgRjomW-AuTqfI?authuser=0&hl=en&rclk=1"
@@ -3416,7 +3531,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x88646730de95ed6b:0x20162e1302df21b6",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": null,
     "source_urls": [
       "https://www.google.com/maps/place/Urban+Sweat+WEHO/data=!4m7!3m6!1s0x88646730de95ed6b:0x20162e1302df21b6!8m2!3d36.1403443!4d-86.7729916!16s%2Fg%2F11vm4p_x9h!19sChIJa-2V3jBnZIgRtiHfAhMuFiA?authuser=0&hl=en&rclk=1"
@@ -3448,7 +3563,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x886465c725eb3219:0xf72426ebe4e8fb28",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": null,
     "source_urls": [
       "https://www.google.com/maps/place/Urban+Sweat+Green+Hills/data=!4m7!3m6!1s0x886465c725eb3219:0xf72426ebe4e8fb28!8m2!3d36.1014234!4d-86.8192535!16s%2Fg%2F11wjfk4n59!19sChIJGTLrJcdlZIgRKPvo5OsmJPc?authuser=0&hl=en&rclk=1"
@@ -3502,7 +3617,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -3512,7 +3629,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x8864797646faef7b:0x63ccf4feb1e1578b",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 279,
     "source_urls": [
       "https://www.google.com/maps/place/s%C4%93k+Sauna+Studio/data=!4m7!3m6!1s0x8864797646faef7b:0x63ccf4feb1e1578b!8m2!3d35.9225897!4d-86.8158689!16s%2Fg%2F11qmqm_v1w!19sChIJe-_6RnZ5ZIgRi1fhsf70zGM?authuser=0&hl=en&rclk=1",
@@ -3577,7 +3694,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x886465eaf639cdb9:0x62c211b1f929c936",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 19,
     "source_urls": [
       "https://www.google.com/maps/place/Contrast+Club/data=!4m7!3m6!1s0x886465eaf639cdb9:0x62c211b1f929c936!8m2!3d36.1043806!4d-86.8166637!16s%2Fg%2F11xkwjk2tj!19sChIJuc059uplZIgRNskp-bERwmI?authuser=0&hl=en&rclk=1"
@@ -3609,7 +3726,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x8864656f02408795:0xcd8211fb5b7e989f",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 88,
     "source_urls": [
       "https://www.google.com/maps/place/The+Recovery+Studio+-+Chiropractor+Clinic/data=!4m7!3m6!1s0x8864656f02408795:0xcd8211fb5b7e989f!8m2!3d36.1147017!4d-86.7648436!16s%2Fg%2F11rr8cz3wf!19sChIJlYdAAm9lZIgRn5h-W_sRgs0?authuser=0&hl=en&rclk=1"
@@ -3673,7 +3790,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x886379616d252d8d:0xc05dbea673e5a87d",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 29,
     "source_urls": [
       "https://www.google.com/maps/place/Recovery+Zone/data=!4m7!3m6!1s0x886379616d252d8d:0xc05dbea673e5a87d!8m2!3d35.7555279!4d-86.9249854!16s%2Fg%2F11ldq9f9_r!19sChIJjS0lbWF5Y4gRfajlc6a-XcA?authuser=0&hl=en&rclk=1"
@@ -3737,7 +3854,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x88647fb94991781d:0x2f100f6e87b9a940",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 11,
     "source_urls": [
       "https://www.google.com/maps/place/The+Recovery+Lounge/data=!4m7!3m6!1s0x88647fb94991781d:0x2f100f6e87b9a940!8m2!3d35.9307886!4d-86.8586832!16s%2Fg%2F11j19r1lq8!19sChIJHXiRSbl_ZIgRQKm5h24PEC8?authuser=0&hl=en&rclk=1"
@@ -3863,7 +3980,9 @@
     "website": "https://c.tile.openstreetmap.org/12/936/1685.png",
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -4766,7 +4885,10 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna_infrared",
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -5141,7 +5263,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -5313,7 +5437,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -5346,7 +5472,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -5410,7 +5538,10 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "cold_plunge",
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -5420,7 +5551,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x876c7fe47f60749f:0x5a1784de3d69f406",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 149,
     "source_urls": [
       "https://www.google.com/maps/place/The+Cove+Sauna+and+Cold+Plunge/data=!4m7!3m6!1s0x876c7fe47f60749f:0x5a1784de3d69f406!8m2!3d39.6918093!4d-104.9878629!16s%2Fg%2F11mdnxhb94!19sChIJn3Rgf-R_bIcRBvRpPd6EF1o?authuser=0&hl=en&rclk=1"
@@ -5442,7 +5573,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -5452,7 +5585,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x4a0b99a57cad8b39:0xb0aed349d9a588b9",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 249,
     "source_urls": [
       "https://www.google.com/maps/place/Red+Rock+Sauna/data=!4m7!3m6!1s0x4a0b99a57cad8b39:0xb0aed349d9a588b9!8m2!3d39.7582472!4d-105.0450791!16s%2Fg%2F11vylj6m46!19sChIJOYutfKWZC0oRuYil2UnTrrA?authuser=0&hl=en&rclk=1"
@@ -5474,7 +5607,10 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "cold_plunge",
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -5506,7 +5642,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -5570,7 +5708,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -5580,7 +5720,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x876c7d5db52e49c3:0xaa528368e6230672",
-    "google_rating": 4.0,
+    "google_rating": 4,
     "google_reviews_count": 553,
     "source_urls": [
       "https://www.google.com/maps/place/Havana+Sauna/data=!4m7!3m6!1s0x876c7d5db52e49c3:0xaa528368e6230672!8m2!3d39.6794251!4d-104.8651112!16s%2Fg%2F1264jpylj!19sChIJw0kutV19bIcRcgYj5miDUqo?authuser=0&hl=en&rclk=1"
@@ -5634,7 +5774,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -5644,7 +5786,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x876b811718af606d:0x5103d478a30c3b9b",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 28,
     "source_urls": [
       "https://www.google.com/maps/place/Simply+Sauna/data=!4m7!3m6!1s0x876b811718af606d:0x5103d478a30c3b9b!8m2!3d39.6922844!4d-105.0801248!16s%2Fg%2F11tms617vz!19sChIJbWCvGBeBa4cRmzsMo3jUA1E?authuser=0&hl=en&rclk=1"
@@ -5666,7 +5808,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -5676,7 +5820,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x876b81fa2ff66ecb:0xa40e97eb5b236841",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 5,
     "source_urls": [
       "https://www.google.com/maps/place/Apr%C3%A9s+Sauna/data=!4m7!3m6!1s0x876b81fa2ff66ecb:0xa40e97eb5b236841!8m2!3d39.7097988!4d-105.0786661!16s%2Fg%2F11mzfrb3p0!19sChIJy272L_qBa4cRQWgjW-uXDqQ?authuser=0&hl=en&rclk=1"
@@ -5698,7 +5842,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -5708,7 +5854,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x876b7fa68873a7f3:0xf9b95219f1dc604a",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 26,
     "source_urls": [
       "https://www.google.com/maps/place/Dear+Sauna/data=!4m7!3m6!1s0x876b7fa68873a7f3:0xf9b95219f1dc604a!8m2!3d39.6102074!4d-105.0361844!16s%2Fg%2F11y5gctm1j!19sChIJ86dziKZ_a4cRSmDc8RlSufk?authuser=0&hl=en&rclk=1"
@@ -5740,7 +5886,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x876b87d66862e7d3:0x603977e098b8f1e0",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 134,
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Tennyson+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x876b87d66862e7d3:0x603977e098b8f1e0!8m2!3d39.7696067!4d-105.0436726!16s%2Fg%2F11n3d_wjb3!19sChIJ0-diaNaHa4cR4PG4mOB3OWA?authuser=0&hl=en&rclk=1"
@@ -5762,7 +5908,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -5804,7 +5952,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x876c871737e3ed71:0xd9b06b718e07e846",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 13,
     "source_urls": [
       "https://www.google.com/maps/place/Peak+Recovery+Inc/data=!4m7!3m6!1s0x876c871737e3ed71:0xd9b06b718e07e846!8m2!3d39.5923894!4d-104.8677902!16s%2Fg%2F11x7n9mp7d!19sChIJce3jNxeHbIcRRugHjnFrsNk?authuser=0&hl=en&rclk=1"
@@ -5826,7 +5974,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -5858,7 +6008,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -5890,7 +6042,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -5900,7 +6054,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x2b3ea0afc00ae5e7:0x18663d3d4b0252f2",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 10,
     "source_urls": [
       "https://www.google.com/maps/place/Sauna+To-Go+Denver/data=!4m7!3m6!1s0x2b3ea0afc00ae5e7:0x18663d3d4b0252f2!8m2!3d39.6954712!4d-104.6983006!16s%2Fg%2F11vrvjbj_t!19sChIJ5-UKwK-gPisR8lICSz09Zhg?authuser=0&hl=en&rclk=1"
@@ -5922,7 +6076,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -5996,7 +6152,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x876c8574ee4e73eb:0x86d890d8ef902fe8",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 55,
     "source_urls": [
       "https://www.google.com/maps/place/Recovery+One/data=!4m7!3m6!1s0x876c8574ee4e73eb:0x86d890d8ef902fe8!8m2!3d39.5389645!4d-104.8728113!16s%2Fg%2F11scj0n_xy!19sChIJ63NO7nSFbIcR6C-Q79iQ2IY?authuser=0&hl=en&rclk=1"
@@ -6028,7 +6184,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x87694d7b19d23511:0x197b55b4ae9d9434",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 53,
     "source_urls": [
       "https://www.google.com/maps/place/Recovery+Studio+%2B+Spa/data=!4m7!3m6!1s0x87694d7b19d23511:0x197b55b4ae9d9434!8m2!3d40.5219848!4d-105.0576542!16s%2Fg%2F11j_2flksr!19sChIJETXSGXtNaYcRNJSdrrRVexk?authuser=0&hl=en&rclk=1"
@@ -6082,7 +6238,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -6114,7 +6272,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -6124,7 +6284,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x864c27f6ba2c1273:0x8c2128a67653ab64",
-    "google_rating": 4.0,
+    "google_rating": 4,
     "google_reviews_count": null,
     "source_urls": [
       "https://www.google.com/maps/place/King+Spa+%26+Sauna/data=!4m7!3m6!1s0x864c27f6ba2c1273:0x8c2128a67653ab64!8m2!3d32.8935706!4d-96.9058523!16s%2Fg%2F11g9mypq40!19sChIJcxIsuvYnTIYRZKtTdqYoIYw?authuser=0&hl=en&rclk=1"
@@ -6146,7 +6306,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -6178,7 +6340,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -6210,7 +6374,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -6274,7 +6440,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -6306,7 +6474,10 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna_infrared",
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -6338,7 +6509,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -6370,7 +6543,10 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "cold_plunge",
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -6380,7 +6556,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x864c3d2a34506109:0xadfd84cbc6635199",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 4,
     "source_urls": [
       "https://www.google.com/maps/place/West+Plano+-+Sauna+%2FCold+Plunge+%2FHot+Tub/data=!4m11!3m10!1s0x864c3d2a34506109:0xadfd84cbc6635199!5m2!4m1!1i2!8m2!3d33.0785408!4d-96.7897568!16s%2Fg%2F11w1vmh0k3!17BQ0FF!19sChIJCWFQNCo9TIYRmVFjxsuE_a0?authuser=0&hl=en&rclk=1"
@@ -6434,7 +6610,10 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "cold_plunge",
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -6444,7 +6623,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x864c3d2a34500797:0x9fdd316e69cdb02",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 36,
     "source_urls": [
       "https://www.google.com/maps/place/West+Plano+-+Sauna%2FCold+Plunge%2FHot+Tub/data=!4m11!3m10!1s0x864c3d2a34500797:0x9fdd316e69cdb02!5m2!4m1!1i2!8m2!3d33.0785446!4d-96.7897644!16s%2Fg%2F11w1d_3hfn!17BQ0FF!19sChIJlwdQNCo9TIYRAtuc5hbT_Qk?authuser=0&hl=en&rclk=1"
@@ -6476,7 +6655,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x864c2fae0ecf50f5:0x5fde165baafeff23",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 257,
     "source_urls": [
       "https://www.google.com/maps/place/SWTHZ+Coppell+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x864c2fae0ecf50f5:0x5fde165baafeff23!8m2!3d32.9737566!4d-96.9942875!16s%2Fg%2F11vw_g23mw!19sChIJ9VDPDq4vTIYRI__-qlsW3l8?authuser=0&hl=en&rclk=1"
@@ -6572,7 +6751,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x864e9f20c8ca1a5b:0x7eb3c4dbb285b945",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 46,
     "source_urls": [
       "https://www.google.com/maps/place/Katy+Trail+Cryo/data=!4m7!3m6!1s0x864e9f20c8ca1a5b:0x7eb3c4dbb285b945!8m2!3d32.8223132!4d-96.7904277!16s%2Fg%2F11dymb2fkw!19sChIJWxrKyCCfToYRRbmFstvEs34?authuser=0&hl=en&rclk=1"
@@ -6604,7 +6783,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x864e791c0cac35f1:0xf2b57f5844500f36",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 37,
     "source_urls": [
       "https://www.google.com/maps/place/Integrity+Cryo+%26+Recovery/data=!4m7!3m6!1s0x864e791c0cac35f1:0xf2b57f5844500f36!8m2!3d32.8599211!4d-97.1963878!16s%2Fg%2F11kk6xfchm!19sChIJ8TWsDBx5ToYRNg9QRFh_tfI?authuser=0&hl=en&rclk=1"
@@ -6626,7 +6805,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -6636,7 +6817,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x864e6db137444841:0xec3bfbc46d53a8d5",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 30,
     "source_urls": [
       "https://www.google.com/maps/place/Halsa+Nordic+Saunas/data=!4m7!3m6!1s0x864e6db137444841:0xec3bfbc46d53a8d5!8m2!3d32.6466879!4d-97.427235!16s%2Fg%2F11wy3wvf2h!19sChIJQUhEN7FtToYR1ahTbcT7O-w?authuser=0&hl=en&rclk=1"
@@ -6722,7 +6903,11 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "cold_plunge",
+      "sauna_infrared",
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -6732,7 +6917,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x89c6a7689a32bc95:0xcbac64be668415c4",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 197,
     "source_urls": [
       "https://www.google.com/maps/place/Recover+Cold+Plunge+Contrast+Therapy+Float+Spa+and+Infrared+Sauna/data=!4m7!3m6!1s0x89c6a7689a32bc95:0xcbac64be668415c4!8m2!3d40.2976708!4d-75.1896251!16s%2Fg%2F11lzslghms!19sChIJlbwymminxokRxBWEZr5krMs?authuser=0&hl=en&rclk=1"
@@ -6754,7 +6939,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -6786,7 +6973,10 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "cold_plunge",
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -6796,7 +6986,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x89c6f5cccc49ab2f:0x2345bfae3a898ccd",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 48,
     "source_urls": [
       "https://www.google.com/maps/place/Surge+Sauna+%26+Cold+Plunge+LLC/data=!4m7!3m6!1s0x89c6f5cccc49ab2f:0x2345bfae3a898ccd!8m2!3d40.0058677!4d-75.6647062!16s%2Fg%2F11wvqqrkdq!19sChIJL6tJzMz1xokRzYyJOq6_RSM?authuser=0&hl=en&rclk=1"
@@ -6850,7 +7040,10 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna_infrared",
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -6860,7 +7053,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x89c693e5faafb33b:0xf30ba8cda6194f95",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 50,
     "source_urls": [
       "https://www.google.com/maps/place/dtXfy+Infrared+Sauna+Studio/data=!4m7!3m6!1s0x89c693e5faafb33b:0xf30ba8cda6194f95!8m2!3d40.072643!4d-75.4352083!16s%2Fg%2F11sskp31ps!19sChIJO7Ov-uWTxokRlU8Zps2oC_M?authuser=0&hl=en&rclk=1"
@@ -6892,7 +7085,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x89c6f3d2e989693d:0x61629afc04c35474",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 9,
     "source_urls": [
       "https://www.google.com/maps/place/Elite+Edge+Recovery/data=!4m7!3m6!1s0x89c6f3d2e989693d:0x61629afc04c35474!8m2!3d40.0452685!4d-75.5813402!16s%2Fg%2F11n3lddm_c!19sChIJPWmJ6dLzxokRdFTDBPyaYmE?authuser=0&hl=en&rclk=1"
@@ -6924,7 +7117,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x89c6cb6f8a0f79b3:0x3d6049ebce155b13",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 43,
     "source_urls": [
       "https://www.google.com/maps/place/Fire+%26+Ice+Express/data=!4m7!3m6!1s0x89c6cb6f8a0f79b3:0x3d6049ebce155b13!8m2!3d39.9475032!4d-74.9719282!16s%2Fg%2F11vjhnnrrk!19sChIJs3kPim_LxokRE1sVzutJYD0?authuser=0&hl=en&rclk=1"
@@ -7010,7 +7203,10 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna_infrared",
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -7020,7 +7216,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x89c6b96602042d73:0x11cdaf81a55e0663",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 70,
     "source_urls": [
       "https://www.google.com/maps/place/dtXfy+Infrared+Sauna+Studio/data=!4m7!3m6!1s0x89c6b96602042d73:0x11cdaf81a55e0663!8m2!3d40.0251315!4d-75.2230893!16s%2Fg%2F11t7vt1g2n!19sChIJcy0EAma5xokRYwZepYGvzRE?authuser=0&hl=en&rclk=1"
@@ -7042,7 +7238,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -7052,7 +7250,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x89c6c91d7e47c22d:0xb3bfd6d8e4ae9c78",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 57,
     "source_urls": [
       "https://www.google.com/maps/place/Sauna+PHL/data=!4m7!3m6!1s0x89c6c91d7e47c22d:0xb3bfd6d8e4ae9c78!8m2!3d39.9614835!4d-75.1410989!16s%2Fg%2F11xrhjm18n!19sChIJLcJHfh3JxokReJyu5NjWv7M?authuser=0&hl=en&rclk=1"
@@ -7084,7 +7282,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x89c6c9baef5cf7b7:0xffcb206590ce735f",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 30,
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Northern+Liberties+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x89c6c9baef5cf7b7:0xffcb206590ce735f!8m2!3d39.9666442!4d-75.1390108!16s%2Fg%2F11y08ph_wt!19sChIJt_dc77rJxokRX3POkGUgy_8?authuser=0&hl=en&rclk=1"
@@ -7106,7 +7304,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -7116,7 +7316,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x89c6c7144043a0eb:0x13ddc6e7f592fbc0",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 3,
     "source_urls": [
       "https://www.google.com/maps/place/Philadelphia+Custom+Saunas/data=!4m7!3m6!1s0x89c6c7144043a0eb:0x13ddc6e7f592fbc0!8m2!3d39.9464712!4d-75.1625951!16s%2Fg%2F11xvjb865b!19sChIJ66BDQBTHxokRwPuS9efG3RM?authuser=0&hl=en&rclk=1"
@@ -7276,7 +7476,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x89c695e9a2a89f1b:0xf42689e49089d3c2",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 115,
     "source_urls": [
       "https://www.google.com/maps/place/Dynamic+Recovery+%26+Restore+%28Mobile+IV+Therapy%29/data=!4m7!3m6!1s0x89c695e9a2a89f1b:0xf42689e49089d3c2!8m2!3d40.0437891!4d-75.35683!16s%2Fg%2F11vcxw5wxl!19sChIJG5-ooumVxokRwtOJkOSJJvQ?authuser=0&hl=en&rclk=1"
@@ -7308,7 +7508,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x89c6954ad6000d99:0x7dd68b166259edb6",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 108,
     "source_urls": [
       "https://www.google.com/maps/place/Blueview+Recovery+%7C+Drug+%26+Alcohol+Rehab+PA/data=!4m7!3m6!1s0x89c6954ad6000d99:0x7dd68b166259edb6!8m2!3d40.0991471!4d-75.408888!16s%2Fg%2F11g04gn43t!19sChIJmQ0A1kqVxokRtu1ZYhaL1n0?authuser=0&hl=en&rclk=1"
@@ -7436,7 +7636,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": "0x89c6af4969eeff7b:0xdb87013de40ed714",
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 10,
     "source_urls": [
       "https://www.google.com/maps/place/Unwind+Recovery+Club/data=!4m7!3m6!1s0x89c6af4969eeff7b:0xdb87013de40ed714!8m2!3d40.1714398!4d-75.1023127!16s%2Fg%2F11z2x9dz90!19sChIJe__uaUmvxokRFNcO5D0Bh9s?authuser=0&hl=en&rclk=1"
@@ -7469,13 +7669,13 @@
     "format": "private_suite",
     "session_style": "free_flow",
     "access": "both",
-    "day_pass_price_usd": 80.0,
+    "day_pass_price_usd": 80,
     "membership_from_usd": null,
     "amenities": [
       "showers"
     ],
     "google_place_id": null,
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 106,
     "source_urls": [
       "https://sweathouz.com/south-broadway-book-now/"
@@ -7507,7 +7707,7 @@
     "format": "communal",
     "session_style": null,
     "access": "both",
-    "day_pass_price_usd": 42.0,
+    "day_pass_price_usd": 42,
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": null,
@@ -7544,8 +7744,8 @@
     "format": "communal",
     "session_style": null,
     "access": "both",
-    "day_pass_price_usd": 35.0,
-    "membership_from_usd": 149.0,
+    "day_pass_price_usd": 35,
+    "membership_from_usd": 149,
     "amenities": [],
     "google_place_id": null,
     "google_rating": null,
@@ -7580,8 +7780,8 @@
     "format": "communal",
     "session_style": null,
     "access": "both",
-    "day_pass_price_usd": 65.0,
-    "membership_from_usd": 99.0,
+    "day_pass_price_usd": 65,
+    "membership_from_usd": 99,
     "amenities": [
       "showers",
       "lockers"
@@ -7619,8 +7819,8 @@
     "format": "private_suite",
     "session_style": null,
     "access": "both",
-    "day_pass_price_usd": 50.0,
-    "membership_from_usd": 99.0,
+    "day_pass_price_usd": 50,
+    "membership_from_usd": 99,
     "amenities": [
       "showers"
     ],
@@ -7660,7 +7860,7 @@
     "session_style": null,
     "access": "both",
     "day_pass_price_usd": null,
-    "membership_from_usd": 190.0,
+    "membership_from_usd": 190,
     "amenities": [],
     "google_place_id": null,
     "google_rating": null,
@@ -7698,8 +7898,8 @@
     "format": "private_suite",
     "session_style": null,
     "access": "both",
-    "day_pass_price_usd": 59.0,
-    "membership_from_usd": 79.0,
+    "day_pass_price_usd": 59,
+    "membership_from_usd": 79,
     "amenities": [],
     "google_place_id": null,
     "google_rating": 4.8,
@@ -7736,7 +7936,7 @@
     "session_style": "free_flow",
     "access": "both",
     "day_pass_price_usd": null,
-    "membership_from_usd": 129.0,
+    "membership_from_usd": 129,
     "amenities": [
       "showers"
     ],
@@ -7776,7 +7976,7 @@
     "session_style": "free_flow",
     "access": "both",
     "day_pass_price_usd": null,
-    "membership_from_usd": 129.0,
+    "membership_from_usd": 129,
     "amenities": [
       "showers"
     ],
@@ -7815,7 +8015,7 @@
     "session_style": "free_flow",
     "access": "both",
     "day_pass_price_usd": null,
-    "membership_from_usd": 129.0,
+    "membership_from_usd": 129,
     "amenities": [
       "showers"
     ],
@@ -7852,8 +8052,8 @@
     "format": "private_suite",
     "session_style": null,
     "access": "both",
-    "day_pass_price_usd": 50.0,
-    "membership_from_usd": 99.0,
+    "day_pass_price_usd": 50,
+    "membership_from_usd": 99,
     "amenities": [
       "showers"
     ],
@@ -7890,8 +8090,8 @@
     "format": "private_suite",
     "session_style": null,
     "access": "both",
-    "day_pass_price_usd": 49.0,
-    "membership_from_usd": 99.0,
+    "day_pass_price_usd": 49,
+    "membership_from_usd": 99,
     "amenities": [
       "showers"
     ],
@@ -7934,7 +8134,7 @@
     "session_style": null,
     "access": "both",
     "day_pass_price_usd": null,
-    "membership_from_usd": 89.0,
+    "membership_from_usd": 89,
     "amenities": [],
     "google_place_id": null,
     "google_rating": null,
@@ -7970,7 +8170,7 @@
     "format": "private_suite",
     "session_style": null,
     "access": "day_pass",
-    "day_pass_price_usd": 25.0,
+    "day_pass_price_usd": 25,
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": null,
@@ -8010,7 +8210,7 @@
     "session_style": null,
     "access": "both",
     "day_pass_price_usd": null,
-    "membership_from_usd": 190.0,
+    "membership_from_usd": 190,
     "amenities": [],
     "google_place_id": null,
     "google_rating": null,
@@ -8090,7 +8290,7 @@
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": null,
-    "google_rating": 5.0,
+    "google_rating": 5,
     "google_reviews_count": 204,
     "source_urls": [
       "https://www.restore.com/locations/pa-philadelphia-center-city-pa019"
@@ -8161,7 +8361,7 @@
     "format": "private_suite",
     "session_style": null,
     "access": "both",
-    "day_pass_price_usd": 40.0,
+    "day_pass_price_usd": 40,
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": null,
@@ -8198,7 +8398,7 @@
     "format": null,
     "session_style": null,
     "access": "day_pass",
-    "day_pass_price_usd": 20.0,
+    "day_pass_price_usd": 20,
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": null,
@@ -8237,8 +8437,8 @@
     "format": "both",
     "session_style": "free_flow",
     "access": "both",
-    "day_pass_price_usd": 35.0,
-    "membership_from_usd": 85.0,
+    "day_pass_price_usd": 35,
+    "membership_from_usd": 85,
     "amenities": [],
     "google_place_id": null,
     "google_rating": null,
@@ -8272,7 +8472,7 @@
     "format": null,
     "session_style": null,
     "access": "day_pass",
-    "day_pass_price_usd": 35.0,
+    "day_pass_price_usd": 35,
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": null,
@@ -8312,7 +8512,7 @@
     "session_style": null,
     "access": null,
     "day_pass_price_usd": null,
-    "membership_from_usd": 69.0,
+    "membership_from_usd": 69,
     "amenities": [],
     "google_place_id": null,
     "google_rating": 4.9,
@@ -8349,7 +8549,7 @@
     "format": "communal",
     "session_style": "guided_social",
     "access": "day_pass",
-    "day_pass_price_usd": 45.0,
+    "day_pass_price_usd": 45,
     "membership_from_usd": null,
     "amenities": [],
     "google_place_id": null,
@@ -8516,7 +8716,10 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "cold_plunge",
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -8837,7 +9040,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -9011,7 +9216,10 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "cold_plunge",
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -9152,7 +9360,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "cold_plunge"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
