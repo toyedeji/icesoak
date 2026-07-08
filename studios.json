@@ -9190,7 +9190,7 @@
   },
   {
     "id": "red-rock-saunahttpsredrocksaunacom-denver",
-    "name": "[Red Rock Sauna](https://redrocksauna.com/)",
+    "name": "Red Rock Sauna",
     "metro": "denver_co",
     "city": "Denver",
     "lat": null,
@@ -9230,7 +9230,7 @@
   },
   {
     "id": "garden-saunahttpswwwgardensaunadenvercom-denver",
-    "name": "[Garden Sauna](https://www.gardensaunadenver.com/)",
+    "name": "Garden Sauna",
     "metro": "denver_co",
     "city": "Denver",
     "lat": null,
@@ -9272,7 +9272,7 @@
   },
   {
     "id": "the-covehttpsthecovesaunacom-denver",
-    "name": "[The Cove](https://thecovesauna.com/)",
+    "name": "The Cove",
     "metro": "denver_co",
     "city": "Denver",
     "lat": null,
@@ -9723,7 +9723,7 @@
   },
   {
     "id": "aura-esthetic-spa-saunahttpsauraspasaunacom-philadelphia",
-    "name": "[Aura Esthetic Spa & Sauna](https://auraspasauna.com/)",
+    "name": "Aura Esthetic Spa & Sauna",
     "metro": "philadelphia_pa",
     "city": "Philadelphia",
     "lat": 40.148662,
@@ -9762,7 +9762,7 @@
   },
   {
     "id": "formation-sauna-wellnesshttpswwwformationsaunacom-philadelphia",
-    "name": "[Formation Sauna + Wellness](https://www.formationsauna.com/)",
+    "name": "Formation Sauna + Wellness",
     "metro": "philadelphia_pa",
     "city": "Philadelphia",
     "lat": null,
@@ -9802,7 +9802,7 @@
   },
   {
     "id": "surge-sauna-cold-plungehttpswwwsurgesaunacoldplungecom-philadelp",
-    "name": "[Surge Sauna & Cold Plunge](https://www.surgesaunacoldplunge.com/)",
+    "name": "Surge Sauna & Cold Plunge",
     "metro": "philadelphia_pa",
     "city": "Philadelphia",
     "lat": 40.0059198,

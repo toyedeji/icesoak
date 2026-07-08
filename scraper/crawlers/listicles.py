@@ -122,6 +122,9 @@ def _parse_listicle(markdown: str, metro: dict, source_url: str) -> list:
             continue
 
         name = name_m.group(1).strip().rstrip("*").strip()
+        # The bold/header regexes above can capture a markdown link whole
+        # (e.g. "**[Garden Sauna](https://...)**") — keep only the display text.
+        name = re.sub(r"\[([^\]]+)\]\(https?://[^)\s]+\)", r"\1", name).strip()
         if len(name) < 4 or len(name) > 80:
             continue
 
