@@ -31,7 +31,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Cold+Plunge+Austin/data=!4m7!3m6!1s0x8644cb63f33b0205:0x399a9ede451b452b!8m2!3d30.3739829!4d-97.7410337!16s%2Fg%2F11vq3vq3pb!19sChIJBQI782PLRIYRK0UbRd6emjk?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "the-ocean-lab-contrast-therapy-austin",
@@ -63,7 +65,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/The+Ocean+Lab+%7C+Contrast+Therapy/data=!4m7!3m6!1s0x8644b5504a8f01b5:0x585148d58f20cd0d!8m2!3d30.2915438!4d-97.7234213!16s%2Fg%2F11fk1swf_0!19sChIJtQGPSlC1RIYRDc0gj9VIUVg?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "melt-well-sauna-plunge-studio-austin",
@@ -97,7 +101,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Melt+Well+Sauna+%26+Plunge+Studio/data=!4m7!3m6!1s0x865b4ba0f8554efb:0x7416eba1f9426371!8m2!3d30.2291284!4d-97.8226778!16s%2Fg%2F11yff2w_05!19sChIJ-05V-KBLW4YRcWNC-aHrFnQ?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "perspire-sauna-studio-austin",
@@ -131,7 +137,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Perspire+Sauna+Studio/data=!4m7!3m6!1s0x8644cbcd0cec2469:0x7c4ab07352e0a72b!8m2!3d30.3151485!4d-97.7356655!16s%2Fg%2F11fwb1r7sq!19sChIJaSTsDM3LRIYRK6fgUnOwSnw?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "wylu-cryospa-round-rock",
@@ -163,7 +171,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Wylu+Cryospa/data=!4m7!3m6!1s0x8644d1b0390ae6ff:0xbf96506d285defde!8m2!3d30.5330061!4d-97.686989!16s%2Fg%2F11r_gn142m!19sChIJ_-YKObDRRIYR3u9dKG1Qlr8?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "cryo-512-round-rock",
@@ -195,7 +205,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Cryo+512/data=!4m7!3m6!1s0x8644d02f05784d93:0x954968bb6e3fbc6f!8m2!3d30.4499344!4d-97.6398146!16s%2Fg%2F11f36wnp0n!19sChIJk014BS_QRIYRb7w_brtoSZU?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "cryofit-cedar-park-cedar-park",
@@ -227,7 +239,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Cryofit+Cedar+Park/data=!4m7!3m6!1s0x865b2d6788dfe59f:0xea95113978f140d9!8m2!3d30.5227775!4d-97.8226459!16s%2Fg%2F11stvlvxg1!19sChIJn-XfiGctW4YR2UDxeDkRleo?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-the-grove-contrast-therapy-studio-austin",
@@ -259,7 +273,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+The+Grove+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x8644cb70c34a4b0b:0x89504a7854e6acb6!8m2!3d30.318368!4d-97.752161!16s%2Fg%2F11zb3xx6lr!19sChIJC0tKw3DLRIYRtqzmVHhKUIk?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "r3-cryospa-r3-vitality-cedar-park",
@@ -291,7 +307,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/R3+CryoSpa+%2FR3+Vitality/data=!4m7!3m6!1s0x865b32b77ba562f3:0xffdf0090bff67991!8m2!3d30.5218039!4d-97.7763651!16s%2Fg%2F11b6z_x0z_!19sChIJ82Kle7cyW4YRkXn2v5AA3_8?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sauna-house-north-loop-austin",
@@ -325,7 +343,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Sauna+House+North+Loop/data=!4m7!3m6!1s0x8644cb004ad9f63b:0x8ccf48b05d7bc6f2!8m2!3d30.3247522!4d-97.7380251!16s%2Fg%2F11yn5fsn__!19sChIJO_bZSgDLRIYR8sZ7XbBIz4w?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "perspire-sauna-studio---austin-sw-austin",
@@ -359,7 +379,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Perspire+Sauna+Studio+-+Austin+SW/data=!4m7!3m6!1s0x865b4b12374f7179:0xfdca1582a4820946!8m2!3d30.2238852!4d-97.839144!16s%2Fg%2F11tnhsfm9x!19sChIJeXFPNxJLW4YRRgmCpIIVyv0?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "perspire-sauna-studio-round-rock",
@@ -393,7 +415,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Perspire+Sauna+Studio/data=!4m7!3m6!1s0x8644dbe0f19fe53b:0xdf306b2687a9fe43!8m2!3d30.5047877!4d-97.580291!16s%2Fg%2F11yz_hkm32!19sChIJO-Wf8eDbRIYRQ_6phyZrMN8?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "perspire-sauna-studio-round-rock-2",
@@ -427,7 +451,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Perspire+Sauna+Studio/data=!4m7!3m6!1s0x8644d74ef2ae18a5:0x8f88367d98ae80cd!8m2!3d30.6315969!4d-97.695322!16s%2Fg%2F11xg4gz40j!19sChIJpRiu8k7XRIYRzYCumH02iI8?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-belterra-contrast-therapy-studio-cedar-park",
@@ -459,7 +485,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Belterra+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x865b4767bd8f22bf:0x5461abc033a85bc3!8m2!3d30.2077173!4d-97.9763723!16s%2Fg%2F11vz8g3jyv!19sChIJvyKPvWdHW4YRw1uoM8CrYVQ?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "the-recovery-lab-and-cryo-austin",
@@ -491,7 +519,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/The+Recovery+Lab+and+Cryo/data=!4m7!3m6!1s0x8644cb3d62239bad:0x75c5989f0268ab50!8m2!3d30.3444838!4d-97.7154653!16s%2Fg%2F11rgc6p1lm!19sChIJrZsjYj3LRIYRUKtoAp-YxXU?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "ulu-recovery-wellness-austin",
@@ -523,7 +553,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/ULU+Recovery+%26+Wellness/data=!4m7!3m6!1s0x8644b59fda798005:0xb5c6e5d3d0853081!8m2!3d30.2488782!4d-97.755692!16s%2Fg%2F11x1s_t_kz!19sChIJBYB52p-1RIYRgTCF0NPlxrU?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "active-recovery-massage-austin",
@@ -555,7 +587,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Active+Recovery+Massage/data=!4m7!3m6!1s0x8644cb8fa2c9351d:0x5f1172a4383e7fcd!8m2!3d30.3415589!4d-97.7549546!16s%2Fg%2F11z9pgmr1c!19sChIJHTXJoo_LRIYRzX8-OKRyEV8?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweatcity-health-and-recovery-austin",
@@ -587,7 +621,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Sweatcity+Health+and+Recovery/data=!4m7!3m6!1s0x865b4d209354c369:0x3d374f1fd66ace8a!8m2!3d30.2642859!4d-97.7616189!16s%2Fg%2F11vjh_dnwv!19sChIJacNUkyBNW4YRis5q1h9PNz0?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "knead-recovery-austin",
@@ -619,7 +655,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Knead+Recovery/data=!4m7!3m6!1s0x8644cb453d3eee7f:0xe228960bb6c37107!8m2!3d30.3100624!4d-97.7410337!16s%2Fg%2F11rftc7pj4!19sChIJf-4-PUXLRIYRB3HDtguWKOI?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "the-wellness-recovery-center-at-lac-cedar-park",
@@ -651,7 +689,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/The+Wellness+%2B+Recovery+Center+at+LAC/data=!4m7!3m6!1s0x865b2bf4eea1ca7b:0x2da17bd70926a006!8m2!3d30.5734544!4d-97.8700843!16s%2Fg%2F11sskm4sk1!19sChIJe8qh7vQrW4YRBqAmCdd7oS0?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "subzero-plunge-austin",
@@ -683,7 +723,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Subzero+plunge/data=!4m7!3m6!1s0x8644cd4b75ff0327:0xf83f4a4c65c4b961!8m2!3d30.442294!4d-97.77373!16s%2Fg%2F11w3ghkmth!19sChIJJwP_dUvNRIYRYbnEZUxKP_g?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "chicago-sweatlodge-chicago",
@@ -715,7 +757,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Chicago+Sweatlodge/data=!4m7!3m6!1s0x880fcc5a62d83329:0xb8111f69c7b8c80!8m2!3d41.9444444!4d-87.7472222!16s%2Fg%2F1xcbq6kp!19sChIJKTPYYlrMD4gRgIx7nPYRgQs?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-old-town-chicago-contrast-therapy-studio-chicago",
@@ -747,7 +791,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Old+Town+Chicago+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x880fd3380d440ecf:0xd04c5b8a40c64209!8m2!3d41.9087633!4d-87.6344154!16s%2Fg%2F11lf94zczz!19sChIJzw5EDTjTD4gRCULGQIpbTNA?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "contrast-hot-cold-chicago",
@@ -779,7 +825,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Contrast+Hot+%2B+Cold/data=!4m7!3m6!1s0x880e2dd5ab00581f:0xbd760072a587bec0!8m2!3d41.895066!4d-87.6537099!16s%2Fg%2F11y34lwyh5!19sChIJH1gAq9UtDogRwL6HpXIAdr0?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sauna-chicago",
@@ -813,7 +861,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Sauna/data=!4m7!3m6!1s0x880fcc5a62d834d7:0x5fd1a5c431d84e41!8m2!3d41.9445972!4d-87.7474073!16s%2Fg%2F11gbkpsj2z!19sChIJ1zTYYlrMD4gRQU7YMcSl0V8?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "fire-and-ice-sauna-experience-chicago",
@@ -847,7 +897,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Fire+and+Ice+Sauna+Experience/data=!4m7!3m6!1s0x880fd382f6be1edd:0xa2aafa25df60d0a8!8m2!3d41.9141307!4d-87.625018!16s%2Fg%2F11yqt2qkt5!19sChIJ3R6-9oLTD4gRqNBg3yX6qqI?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sauna-club-evanston",
@@ -881,7 +933,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Sauna+Club/data=!4m7!3m6!1s0x880fd12165049bfb:0xbf45e6b1d164637d!8m2!3d42.0422715!4d-87.6712155!16s%2Fg%2F11tt5qfqkj!19sChIJ-5sEZSHRD4gRfWNk0bHmRb8?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "campfire-sauna-and-social-evanston",
@@ -915,7 +969,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Campfire+Sauna+and+Social/data=!4m7!3m6!1s0x880fdb93cf333905:0x97faaf657a25d4f8!8m2!3d42.080002!4d-87.687125!16s%2Fg%2F11x_std5x1!19sChIJBTkzz5PbD4gR-NQlemWv-pc?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "oak-st-sauna-oak-park",
@@ -949,7 +1005,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Oak+St.+Sauna/data=!4m7!3m6!1s0x880fd349073775cf:0xe28575abfee795ed!8m2!3d41.9018302!4d-87.6210795!16s%2Fg%2F11ymfx8mx8!19sChIJz3U3B0nTD4gR7ZXn_qt1heI?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-west-loop-contrast-therapy-studio-chicago",
@@ -981,7 +1039,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+West+Loop+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x880e2d95c48b5717:0xd04960c1663cfdc4!8m2!3d41.8815837!4d-87.6503525!16s%2Fg%2F11m6ljcz8y!19sChIJF1eLxJUtDogRxP08ZsFgSdA?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "swthz-lakeview-contrast-therapy-studio-chicago",
@@ -1013,7 +1073,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/SWTHZ+Lakeview+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x880fd36f871e8857:0x4ec1fb6bdbc4a440!8m2!3d41.9381127!4d-87.6489436!16s%2Fg%2F11wqzc5bwy!19sChIJV4geh2_TD4gRQKTE22v7wU4?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-naperville-contrast-therapy-studio-evanston",
@@ -1045,7 +1107,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Naperville+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x880ef9a17a5e382b:0xf9dca616d7246732!8m2!3d41.7478683!4d-88.1990224!16s%2Fg%2F11x7nf6xnz!19sChIJKzheeqH5DogRMmck1xam3Pk?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "perspire-sauna-studio-chicago",
@@ -1079,7 +1143,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Perspire+Sauna+Studio/data=!4m7!3m6!1s0x880e2da9b0686217:0xdcc11bacb9dbf6fd!8m2!3d41.8817479!4d-87.6575691!16s%2Fg%2F11vy9zfzqz!19sChIJF2JosKktDogR_fbbuawbwdw?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "perspire-sauna-studio-chicago-2",
@@ -1113,7 +1179,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Perspire+Sauna+Studio/data=!4m7!3m6!1s0x880fd392b509893b:0x553089ac997d8c36!8m2!3d41.9423915!4d-87.6446819!16s%2Fg%2F11j_2m07bj!19sChIJO4kJtZLTD4gRNox9mayJMFU?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "perspire-sauna-studio-chicago-3",
@@ -1147,7 +1215,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Perspire+Sauna+Studio/data=!4m7!3m6!1s0x880fd3cd0d4881a1:0x364cd014224f3794!8m2!3d41.8962956!4d-87.6340328!16s%2Fg%2F11z03k719x!19sChIJoYFIDc3TD4gRlDdPIhTQTDY?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "glow-sauna-studios-glenview-evanston",
@@ -1181,7 +1251,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Glow+Sauna+Studios+%7C+Glenview/data=!4m7!3m6!1s0x880fc7126bdea3d7:0x1c3156fe8020475!8m2!3d42.0822593!4d-87.7996126!16s%2Fg%2F11nbwth02q!19sChIJ16PeaxLHD4gRdQQC6G8VwwE?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "whole-woman-fitness-recovery-spa-evanston",
@@ -1213,7 +1285,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Whole+Woman+Fitness+%26+Recovery+Spa/data=!4m7!3m6!1s0x880fd19535bbad2d:0xa181e62c5393a4e3!8m2!3d42.0322366!4d-87.7052983!16s%2Fg%2F11sjv38zs4!19sChIJLa27NZXRD4gR46STUyzmgaE?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "perspire-sauna-studio-oak-park",
@@ -1247,7 +1321,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Perspire+Sauna+Studio/data=!4m7!3m6!1s0x880e574834d0736d:0xcbbc139bdc99f56f!8m2!3d41.7492509!4d-88.117224!16s%2Fg%2F11jyjfvwvg!19sChIJbXPQNEhXDogRb_WZ3JsTvMs?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "perspire-sauna-studio-oak-park-2",
@@ -1281,7 +1357,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Perspire+Sauna+Studio/data=!4m7!3m6!1s0x880e4f8364f48f55:0xa496f6efee273158!8m2!3d41.8096757!4d-88.0010824!16s%2Fg%2F11nngg0b5y!19sChIJVY_0ZINPDogRWDEn7u_2lqQ?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "haloheat-sauna-studios-oak-park",
@@ -1315,7 +1393,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/HaloHeat+Sauna+Studios/data=!4m7!3m6!1s0x880ef9708f56e139:0x9d120e6fa9e43c09!8m2!3d41.7601028!4d-88.2190408!16s%2Fg%2F11y43ywt1z!19sChIJOeFWj3D5DogRCTzkqW8OEp0?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "the-recovery-room-oak-park",
@@ -1347,7 +1427,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/The+Recovery+Room/data=!4m7!3m6!1s0x880b992a9c5ff275:0xa292b568e3a2ecde!8m2!3d40.7362844!4d-89.0414188!16s%2Fg%2F11z1v_whmm!19sChIJdfJfnCqZC4gR3uyi42i1kqI?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "chicago-cryospa-chicago",
@@ -1379,7 +1461,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Chicago+CryoSpa/data=!4m7!3m6!1s0x880fd303d02cc283:0xc166e37a016cbec5!8m2!3d41.9298157!4d-87.6552106!16s%2Fg%2F1jglz7qs1!19sChIJg8Is0APTD4gRxb5sAXrjZsE?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "the-cryobar-chicago",
@@ -1411,7 +1495,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/The+CryoBar/data=!4m7!3m6!1s0x880fd2e20e6da38d:0xc62c75a3aa76ea63!8m2!3d41.8813063!4d-87.6578136!16s%2Fg%2F11cnrfk0zn!19sChIJjaNtDuLSD4gRY-p2qqN1LMY?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "eleos-float-spa-float-therapy-infrared-sauna-and-cold-plunge-eva",
@@ -1447,7 +1533,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/ELEOS+Float+Spa+%E2%80%93+Float+Therapy,+Infrared+Sauna+and+Cold+Plunge/data=!4m7!3m6!1s0x880fbf005c9766c9:0x2fac639bbf1afd72!8m2!3d42.1988676!4d-87.8586201!16s%2Fg%2F11vxrd8pl2!19sChIJyWaXXAC_D4gRcv0av5tjrC8?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-infrared-sauna-studio-atlanta",
@@ -1482,7 +1570,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Infrared+Sauna+Studio/data=!4m7!3m6!1s0x88f505113d42c343:0xc0eed64a55e44024!8m2!3d33.7836005!4d-84.3839545!16s%2Fg%2F11kgk4hhl7!19sChIJQ8NCPREF9YgRJEDkVUrW7sA?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-infrared-sauna-studio-atlanta-2",
@@ -1517,7 +1607,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Infrared+Sauna+Studio/data=!4m7!3m6!1s0x88f5054cc0143f0d:0x2d01495240b6924e!8m2!3d33.8368539!4d-84.3811022!16s%2Fg%2F11mv1fhy_8!19sChIJDT8UwEwF9YgRTpK2QFJJAS0?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-krog-st-contrast-therapy-studio-atlanta",
@@ -1549,7 +1641,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Krog+St+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x88f503d19d0fe151:0x232e6268d116adc1!8m2!3d33.7558872!4d-84.364189!16s%2Fg%2F11yfg07_p9!19sChIJUeEPndED9YgRwa0W0WhiLiM?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-infrared-sauna-studio-atlanta-3",
@@ -1584,7 +1678,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Infrared+Sauna+Studio/data=!4m7!3m6!1s0x88f505217eb58a43:0x74fe45397d5d4cbd!8m2!3d33.7809584!4d-84.4109976!16s%2Fg%2F11rwkv2mlz!19sChIJQ4q1fiEF9YgRvUxdfTlF_nQ?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz---vinings-atlanta",
@@ -1616,7 +1712,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+-+Vinings/data=!4m7!3m6!1s0x88f51154dc7f0cc1:0x48bf38dc4e1ffb32!8m2!3d33.8646646!4d-84.4658173!16s%2Fg%2F11j0h97w11!19sChIJwQx_3FQR9YgRMvsfTtw4v0g?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "glow-sauna-studios-sandy-springs-atlanta",
@@ -1650,7 +1748,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Glow+Sauna+Studios+%7C+Sandy+Springs/data=!4m7!3m6!1s0x88f50f002c32a571:0x8933eab332e1792c!8m2!3d33.918472!4d-84.3819156!16s%2Fg%2F11lmnqwsb1!19sChIJcaUyLAAP9YgRLHnhMrPqM4k?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "perspire-sauna-studio-atlanta",
@@ -1684,7 +1784,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Perspire+Sauna+Studio/data=!4m7!3m6!1s0x88f50f648a9e6f53:0x21915dbd6fe19a0!8m2!3d33.9343988!4d-84.3649991!16s%2Fg%2F11kh2vyh_g!19sChIJU2-eimQP9YgRoBn-1tsVGQI?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "perspire-sauna-studio-atlanta-2",
@@ -1718,7 +1820,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Perspire+Sauna+Studio/data=!4m7!3m6!1s0x88f5a16e23bb9343:0x7b1142bf112737a0!8m2!3d33.9790494!4d-84.2185296!16s%2Fg%2F11x21r73t8!19sChIJQ5O7I26h9YgRoDcnEb9CEXs?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "beem-light-sauna---atlanta-glenwood-atlanta",
@@ -1752,7 +1856,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/beem%C2%AE+Light+Sauna+-+Atlanta+Glenwood/data=!4m7!3m6!1s0x88f503d6146f813b:0x2c5f8c448fc514f9!8m2!3d33.7408217!4d-84.3582825!16s%2Fg%2F11y1c38x5t!19sChIJO4FvFNYD9YgR-RTFj0SMXyw?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "studio-recovery-atlanta",
@@ -1784,7 +1890,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Studio+Recovery/data=!4m7!3m6!1s0x88f53f2ddfc4b80b:0x46c2c1b319388d28!8m2!3d33.9680584!4d-84.665035!16s%2Fg%2F11p74smfbt!19sChIJC7jE3y0_9YgRKI04GbPBwkY?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "lisa-jones---recovery-studio-atlanta",
@@ -1816,7 +1924,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Lisa+Jones+-+Recovery+Studio/data=!4m7!3m6!1s0x88f50359173d3749:0xda6dde2eb0bb930c!8m2!3d33.7569345!4d-84.3659534!16s%2Fg%2F11x8r0n2my!19sChIJSTc9F1kD9YgRDJO7sC7ebdo?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "icebox-cryotherapy-atlanta",
@@ -1848,7 +1958,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Icebox+Cryotherapy/data=!4m7!3m6!1s0x88f50f6f339fbdb7:0x67603c84e6961ae7!8m2!3d33.8599153!4d-84.3814546!16s%2Fg%2F1q6jh597p!19sChIJt72fM28P9YgR5xqW5oQ8YGc?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "icebox-cryotherapy-atlanta-2",
@@ -1880,7 +1992,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Icebox+Cryotherapy/data=!4m7!3m6!1s0x88f50443e2d21d1d:0xd646bed6cfeba196!8m2!3d33.7813467!4d-84.3683032!16s%2Fg%2F11d_v6mxr4!19sChIJHR3S4kME9YgRlqHrz9a-RtY?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "hothouse-spa-sauna-seattle",
@@ -1914,7 +2028,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Hothouse+Spa+%26+Sauna/data=!4m7!3m6!1s0x54906acc37f8ca15:0xe9aa084c14ef7098!8m2!3d47.613966!4d-122.3185145!16s%2Fg%2F1tmclygk!19sChIJFcr4N8xqkFQRmHDvFEwIquk?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "seattle-sauna-seattle",
@@ -1948,7 +2064,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Seattle+Sauna/data=!4m7!3m6!1s0x54901592b080b2a1:0xf5e32bd7a5f433e0!8m2!3d47.6503297!4d-122.3305096!16s%2Fg%2F11wtk99vc4!19sChIJobKAsJIVkFQR4DP0pdcr4_U?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sauna-moon-seattle-seattle",
@@ -1982,7 +2100,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Sauna+Moon+Seattle/data=!4m7!3m6!1s0x5490413ccd7bc989:0x7eab3ff9a610ca92!8m2!3d47.5796944!4d-122.4096486!16s%2Fg%2F11yxhkt2vw!19sChIJicl7zTxBkFQRksoQpvk_q34?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "city-sweats---wallingford-seattle",
@@ -2014,7 +2134,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/City+Sweats+-+Wallingford/data=!4m7!3m6!1s0x5490145422c93edb:0xadd66e89ffab790e!8m2!3d47.6587!4d-122.342033!16s%2Fg%2F11df06pkxz!19sChIJ2z7JIlQUkFQRDnmr_4lu1q0?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "wild-haus-floating-saunas-seattle",
@@ -2048,7 +2170,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Wild+Haus+Floating+Saunas/data=!4m7!3m6!1s0x5490154ab0204e23:0x548ce1e8c1028f9c!8m2!3d47.6494245!4d-122.3254393!16s%2Fg%2F11wv44js18!19sChIJI04gsEoVkFQRnI8CwejhjFQ?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "bywater-sauna-seattle",
@@ -2082,7 +2206,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Bywater+Sauna/data=!4m7!3m6!1s0x549017b459491deb:0x113c0807911a1682!8m2!3d47.6926008!4d-122.4042438!16s%2Fg%2F11w3tfcdth!19sChIJ6x1JWbQXkFQRghYakQcIPBE?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "bywater-sauna-seattle-2",
@@ -2116,7 +2242,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Bywater+Sauna/data=!4m7!3m6!1s0x549041000cb30b23:0x878b514a02254ef2!8m2!3d47.5797206!4d-122.410161!16s%2Fg%2F11wqxt0nmg!19sChIJIwuzDABBkFQR8k4lAkpRi4c?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "city-sweats---bellevue-bellevue",
@@ -2148,7 +2276,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/City+Sweats+-+Bellevue/data=!4m7!3m6!1s0x54906d3030e24f47:0x7dcc86fd253a73b!8m2!3d47.6179787!4d-122.2021872!16s%2Fg%2F11j4687xgb!19sChIJR0_iMDBtkFQRO6dT0m_I3Ac?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "vihta-sauna-bellevue",
@@ -2182,7 +2312,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Vihta+Sauna/data=!4m7!3m6!1s0x54906f003a166c31:0x7b5f4712a70ca89d!8m2!3d47.5770398!4d-122.1118198!16s%2Fg%2F11ymfgb2yw!19sChIJMWwWOgBvkFQRnagMpxJHX3s?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "fyre-sauna-redmond",
@@ -2216,7 +2348,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Fyre+Sauna/data=!4m7!3m6!1s0x74d04c0c3496ad5:0x2f20c2bb3b2f02be!8m2!3d47.7265889!4d-122.1384768!16s%2Fg%2F11v5dqh1jb!19sChIJ1WpJw8AETQcRvgIvO7vCIC8?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sauna-sanctuary-llc-redmond",
@@ -2250,7 +2384,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Sauna+Sanctuary+LLC/data=!4m7!3m6!1s0x213b1bd32311366b:0x5e23530e4ef7806e!8m2!3d47.6942626!4d-122.1123699!16s%2Fg%2F11wfvrx07g!19sChIJazYRI9MbOyERboD3Tg5TI14?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sunsauna-llc-redmond",
@@ -2284,7 +2420,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/SunSauna+LLC/data=!4m7!3m6!1s0x549072b1d8e15a1d:0x9a4891b04dc2a938!8m2!3d47.6795027!4d-122.1404168!16s%2Fg%2F1tm68myn!19sChIJHVrh2LFykFQROKnCTbCRSJo?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "perspire-sauna-studio-redmond",
@@ -2318,7 +2456,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Perspire+Sauna+Studio/data=!4m7!3m6!1s0x5490730126556b2b:0xfa331dbdce313735!8m2!3d47.6731241!4d-122.1203991!16s%2Fg%2F11z9bfsc7b!19sChIJK2tVJgFzkFQRNTcxzr0dM_o?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "von-sauna-redmond",
@@ -2352,7 +2492,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Von+Sauna/data=!4m7!3m6!1s0x549013498aaa9a85:0x6fbc3233ef302fae!8m2!3d47.6562527!4d-122.2077014!16s%2Fg%2F11vm8v217v!19sChIJhZqqikkTkFQRri8w7zMyvG8?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "city-sweats---west-seattle-seattle",
@@ -2384,7 +2526,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/City+Sweats+-+West+Seattle/data=!4m7!3m6!1s0x54904126c7278303:0xb012106ecbc761bf!8m2!3d47.5605621!4d-122.3816978!16s%2Fg%2F11kfrjn3yh!19sChIJA4MnxyZBkFQRv2HHy24QErA?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "soak-sage---a-social-wellness-sauna-spa-seattle",
@@ -2418,7 +2562,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Soak+%26+Sage+-+A+Social+Wellness+Sauna+Spa/data=!4m7!3m6!1s0x549069356181f363:0x7c1c1d92e9368eeb!8m2!3d47.5026539!4d-122.2016996!16s%2Fg%2F11vm7d3z2z!19sChIJY_OBYTVpkFQR64426ZIdHHw?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "cold-club-by-matt-soule-seattle",
@@ -2450,7 +2596,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Cold+Club+by+Matt+Soule/data=!4m7!3m6!1s0x549015ea4e74a743:0x15a61483fd64a548!8m2!3d47.7049698!4d-122.3562627!16s%2Fg%2F11nh9bbxsy!19sChIJQ6d0TuoVkFQRSKVk_YMUphU?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sauna-hut-green-lake-seattle",
@@ -2484,7 +2632,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Sauna+Hut+Green+Lake/data=!4m7!3m6!1s0x54901516b3fa6231:0xf1b5cf43db5e6f61!8m2!3d47.6789169!4d-122.3237406!16s%2Fg%2F11qpq6nyrt!19sChIJMWL6sxYVkFQRYW9e20PPtfE?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "salt-cedar-sauna-seattle-seattle",
@@ -2518,7 +2668,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Salt+%26+Cedar+Sauna+Seattle/data=!4m7!3m6!1s0x549015bb21b8ba1d:0x6bbf26f7c1e94e93!8m2!3d47.6488274!4d-122.357129!16s%2Fg%2F11lz7dxpp_!19sChIJHbq4IbsVkFQRk07pwfcmv2s?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "the-recovery-space-seattle",
@@ -2550,7 +2702,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/The+Recovery+Space/data=!4m7!3m6!1s0x549015d86f368f47:0x1f0e97886d1e0f48!8m2!3d47.6212666!4d-122.3375556!16s%2Fg%2F11s0h268g5!19sChIJR482b9gVkFQRSA8ebYiXDh8?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "recovery-cafe-seattle",
@@ -2582,7 +2736,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Recovery+Cafe/data=!4m7!3m6!1s0x54901535de02749f:0xafe5365e079cddf1!8m2!3d47.6183737!4d-122.3349093!16s%2Fg%2F1v4k66ff!19sChIJn3QC3jUVkFQR8d2cB1425a8?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "recovery-cafe-sodo-seattle",
@@ -2614,7 +2770,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Recovery+Caf%C3%A9+SODO/data=!4m7!3m6!1s0x54904196a6b23a2f:0x6bd1176e50a826be!8m2!3d47.565834!4d-122.3262557!16s%2Fg%2F11fs630w33!19sChIJLzqyppZBkFQRviaoUG4X0Ws?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "bluecube-cold-plunge-tubs-redmond",
@@ -2648,7 +2806,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/BlueCube+Cold+Plunge+Tubs/data=!4m7!3m6!1s0x86b4a72e1eec8505:0xa5552dfdc47b6d7d!8m2!3d44.2665631!4d-121.1686678!16s%2Fg%2F11qgh8zjc0!19sChIJBYXsHi6ntIYRfW17xP0tVaU?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "the-plunge-and-sauna-method-miami",
@@ -2682,7 +2842,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/The+Plunge+and+Sauna+Method/data=!4m7!3m6!1s0x88d9c746b774ad09:0x578ddeb85f6db9f4!8m2!3d25.695046!4d-80.3032472!16s%2Fg%2F11y3m238c2!19sChIJCa10t0bH2YgR9LltX7jejVc?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "the-ice-room-miami-miami",
@@ -2714,7 +2876,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/The+Ice+Room+Miami/data=!4m7!3m6!1s0x88d9b7b835570a77:0x9632cf27cb7db076!8m2!3d25.7617655!4d-80.1904094!16s%2Fg%2F11xdfvlsh_!19sChIJdwpXNbi32YgRdrB9yyfPMpY?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "cold-plunge-at-prestige-miami-fitness-club-miami",
@@ -2748,7 +2912,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Cold+Plunge+at+Prestige+Miami+Fitness+Club/data=!4m7!3m6!1s0x88d9b5db8df55567:0x6d0a1c47fee9d1d3!8m2!3d25.7810642!4d-80.1426465!16s%2Fg%2F11wqs2r9lt!19sChIJZ1X1jdu12YgR09Hp_kccCm0?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "cryotherapy-miami-miami-beach",
@@ -2780,7 +2946,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Cryotherapy+Miami/data=!4m7!3m6!1s0x88d9b48fd2918acb:0x8df6b621847ad423!8m2!3d25.7852739!4d-80.1323255!16s%2Fg%2F11c5bt960x!19sChIJy4qR0o-02YgRI9R6hCG29o0?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-aventura-contrast-therapy-studio-miami",
@@ -2812,7 +2980,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Aventura+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x88d9ad6a29939985:0x9ee0e865014d2d78!8m2!3d25.9542159!4d-80.1454876!16s%2Fg%2F11myzm98n8!19sChIJhZmTKWqt2YgReC1NAWXo4J4?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "electric-ice-cryo-south-miami-cryotherapy-cold-therapy-coral-gab",
@@ -2844,7 +3014,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Electric+Ice+Cryo+South+Miami+Cryotherapy+Cold+Therapy+Coral+Gables+Florida/data=!4m7!3m6!1s0x88d9c7bad05bc68f:0x69006b20093a8513!8m2!3d25.7089861!4d-80.2858331!16s%2Fg%2F11rvh_wc_8!19sChIJj8Zb0LrH2YgRE4U6CSBrAGk?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "royal-standard-llc-sauna-miami",
@@ -2878,7 +3050,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/ROYAL+STANDARD+LLC+sauna/data=!4m7!3m6!1s0x88d9ad652f785f57:0x309e8783dc6e0256!8m2!3d25.9094965!4d-80.1657982!16s%2Fg%2F11lv8wb1cl!19sChIJV194L2Wt2YgRVgJu3IOHnjA?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "miami-custom-saunas-miami",
@@ -2912,7 +3086,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Miami+Custom+Saunas/data=!4m7!3m6!1s0x88d9b74f9288ec6d:0x51542c2315c2f616!8m2!3d25.802897!4d-80.2566103!16s%2Fg%2F11zkcvt565!19sChIJbeyIkk-32YgRFvbCFSMsVFE?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "five-star-sauna-spa-miami",
@@ -2946,7 +3122,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Five+Star+Sauna+Spa/data=!4m7!3m6!1s0x88d9ad3d6ebeb425:0x2f21c7a48aa1df1b!8m2!3d25.9319365!4d-80.1625254!16s%2Fg%2F11grr3fyzs!19sChIJJbS-bj2t2YgRG9-hiqTHIS8?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "my-sauna-studio-by-dermaspalogy-miami",
@@ -2980,7 +3158,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/My+Sauna+Studio+by+DermaSpalogy/data=!4m7!3m6!1s0x88d9c68de93a8705:0xfcc959a1f3332502!8m2!3d25.6442859!4d-80.3313616!16s%2Fg%2F11cm81rdjr!19sChIJBYc66Y3G2YgRAiUz86FZyfw?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "infrared-sauna-store-of-coral-gables-coral-gables",
@@ -3015,7 +3195,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Infrared+Sauna+Store+of+Coral+Gables/data=!4m7!3m6!1s0x88d9b8203f53dfaf:0x1d25d22fb15da43!8m2!3d25.7408186!4d-80.2784533!16s%2Fg%2F11hd9nxxvf!19sChIJr99TPyC42YgRQ9oV-yJd0gE?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "miami-infrared-sauna-wholesaler-coral-gables",
@@ -3050,7 +3232,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Miami+Infrared+Sauna+Wholesaler/data=!4m7!3m6!1s0x88d9b77801122b91:0x369d3b2912d12e7b!8m2!3d25.7521256!4d-80.2552342!16s%2Fg%2F11jx2t8t6w!19sChIJkSsSAXi32YgRey7REik7nTY?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "blue-recovery-lounge-miami",
@@ -3082,7 +3266,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Blue+recovery+lounge/data=!4m7!3m6!1s0x88d9bb1e258cdeb5:0xe1ea795aaa6e6a2a!8m2!3d25.7457651!4d-80.3686882!16s%2Fg%2F11z4pyx700!19sChIJtd6MJR672YgRKmpuqlp56uE?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "nexus-recovery-lab-miami",
@@ -3114,7 +3300,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Nexus+Recovery+Lab/data=!4m7!3m6!1s0x88d9b9006e4ed507:0xcdb6048ee023452!8m2!3d25.7472329!4d-80.3150102!16s%2Fg%2F11ys1__t2y!19sChIJB9VObgC52YgRUjQC7khg2ww?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "recoverylab-miami",
@@ -3146,7 +3334,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/RecoveryLab/data=!4m7!3m6!1s0x88d9b901aa61320d:0x77dae9cda16b4238!8m2!3d25.8074902!4d-80.3015805!16s%2Fg%2F11whj36kws!19sChIJDTJhqgG52YgROEJroc3p2nc?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "the-recovery-room-miami-miami-beach",
@@ -3178,7 +3368,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/The+Recovery+Room+Miami/data=!4m7!3m6!1s0x88d9b51b002997cd:0x73a64cae240ca1df!8m2!3d25.7953657!4d-80.1441365!16s%2Fg%2F11kqkzwv18!19sChIJzZcpABu12YgR36EMJK5MpnM?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "helix-performance-recovery-miami-beach",
@@ -3210,7 +3402,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Helix+Performance+Recovery/data=!4m7!3m6!1s0x88d9b76d40d74f1f:0x39c46bdfd0b34da9!8m2!3d25.800114!4d-80.1931295!16s%2Fg%2F11y95z_hlb!19sChIJH0_XQG232YgRqU2z0N9rxDk?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "rivera-performance-recovery-coral-gables",
@@ -3242,7 +3436,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/RIVERA+Performance+%26+Recovery/data=!4m7!3m6!1s0x88d9b7b897de37a3:0xb42cebba2b7bd1fc!8m2!3d25.757568!4d-80.2590859!16s%2Fg%2F11s34jg2l2!19sChIJozfel7i32YgR_NF7K7rrLLQ?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "cryo-miami-coral-gables",
@@ -3274,7 +3470,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Cryo+Miami/data=!4m7!3m6!1s0x88d9b7e59e615035:0x6387edd3f6d788b6!8m2!3d25.725365!4d-80.262807!16s%2Fg%2F11crzv4f63!19sChIJNVBhnuW32YgRtojX9tPth2M?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "pure-sweat-sauna-studio-the-gulch-nashville",
@@ -3308,7 +3506,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Pure+Sweat+Sauna+Studio,+The+Gulch/data=!4m7!3m6!1s0x88646725b4f65b57:0xdfd460a491f32093!8m2!3d36.1501879!4d-86.7800542!16s%2Fg%2F11ld8919c4!19sChIJV1v2tCVnZIgRkyDzkaRg1N8?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "urban-sweat---the-nations-nashville",
@@ -3340,7 +3540,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Urban+Sweat+-+The+Nations/data=!4m7!3m6!1s0x8864612e2513c113:0x9b9e668cf98a19c!8m2!3d36.1649188!4d-86.852938!16s%2Fg%2F11rhbrmzvz!19sChIJE8ETJS5hZIgRnKGYz2jmuQk?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "pure-sweat-sauna-studio-12-south-nashville",
@@ -3374,7 +3576,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Pure+Sweat+Sauna+Studio,+12+South/data=!4m7!3m6!1s0x8864652907c5fc15:0x77e4d7bfb243e4fa!8m2!3d36.1227529!4d-86.79058!16s%2Fg%2F11fqpt3mms!19sChIJFfzFByllZIgR-uRDsr_X5Hc?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-germantown-contrast-therapy-studio-nashville",
@@ -3406,7 +3610,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Germantown+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x88646768c66bbd83:0x5c2577b6a3dfa38e!8m2!3d36.1720874!4d-86.7835637!16s%2Fg%2F11ynb1kb93!19sChIJg71rxmhnZIgRjqPfo7Z3JVw?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "pure-sweat-float-studio-belle-meade-nashville",
@@ -3438,7 +3644,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Pure+Sweat+%2B+Float+Studio,+Belle+Meade/data=!4m7!3m6!1s0x88646250ac5c0f57:0x75511c691a95cd1b!8m2!3d36.097718!4d-86.8719467!16s%2Fg%2F11g7_4d5c5!19sChIJVw9crFBiZIgRG82VGmkcUXU?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "ritual-community-sauna-wellness-space-nashville",
@@ -3472,7 +3680,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Ritual+Community+Sauna+%26+Wellness+Space/data=!4m7!3m6!1s0x8864695690ea5291:0xf2a9930bf896898e!8m2!3d36.1884432!4d-86.7294829!16s%2Fg%2F11ms2jq04k!19sChIJkVLqkFZpZIgRjomW-AuTqfI?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweat-plunge-repeat-nashville",
@@ -3504,7 +3714,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Sweat+Plunge+Repeat/data=!4m7!3m6!1s0x8864896e7c8659b9:0x11a88226601ba32d!8m2!3d36.0725444!4d-86.925052!16s%2Fg%2F11w36yrc9n!19sChIJuVmGfG6JZIgRLaMbYCaCqBE?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "urban-sweat-weho-nashville",
@@ -3536,7 +3748,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Urban+Sweat+WEHO/data=!4m7!3m6!1s0x88646730de95ed6b:0x20162e1302df21b6!8m2!3d36.1403443!4d-86.7729916!16s%2Fg%2F11vm4p_x9h!19sChIJa-2V3jBnZIgRtiHfAhMuFiA?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "urban-sweat-green-hills-nashville",
@@ -3568,7 +3782,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Urban+Sweat+Green+Hills/data=!4m7!3m6!1s0x886465c725eb3219:0xf72426ebe4e8fb28!8m2!3d36.1014234!4d-86.8192535!16s%2Fg%2F11wjfk4n59!19sChIJGTLrJcdlZIgRKPvo5OsmJPc?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "pure-sweat-float-studio-brentwood-brentwood",
@@ -3600,7 +3816,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Pure+Sweat+%2B+Float+Studio,+Brentwood/data=!4m7!3m6!1s0x88647bf32e6e83b9:0x5dadbb36a8cb806!8m2!3d36.0330615!4d-86.7912695!16s%2Fg%2F11fr68ctg8!19sChIJuYNuLvN7ZIgRBriMarPb2gU?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sek-sauna-studio-brentwood",
@@ -3635,7 +3853,9 @@
       "https://www.google.com/maps/place/s%C4%93k+Sauna+Studio/data=!4m7!3m6!1s0x8864797646faef7b:0x63ccf4feb1e1578b!8m2!3d35.9225897!4d-86.8158689!16s%2Fg%2F11qmqm_v1w!19sChIJe-_6RnZ5ZIgRi1fhsf70zGM?authuser=0&hl=en&rclk=1",
       "https://www.google.com/maps/place/s%C4%93k+Sauna+Studio/data=!4m7!3m6!1s0x8864797646faef7b:0x63ccf4feb1e1578b!8m2!3d35.92259!4d-86.815869!16s%2Fg%2F11qmqm_v1w!19sChIJe-_6RnZ5ZIgRi1fhsf70zGM?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "the-sweat-shack--franklin-brentwood",
@@ -3667,7 +3887,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/The+Sweat+Shack-+Franklin/data=!4m7!3m6!1s0x88647dd703d0f769:0x6533ec9effa48f2a!8m2!3d35.971532!4d-86.835728!16s%2Fg%2F11s4ws8w8d!19sChIJaffQA9d9ZIgRKo-k_57sM2U?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "contrast-club-nashville",
@@ -3699,7 +3921,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Contrast+Club/data=!4m7!3m6!1s0x886465eaf639cdb9:0x62c211b1f929c936!8m2!3d36.1043806!4d-86.8166637!16s%2Fg%2F11xkwjk2tj!19sChIJuc059uplZIgRNskp-bERwmI?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "the-recovery-studio---chiropractor-clinic-brentwood",
@@ -3731,7 +3955,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/The+Recovery+Studio+-+Chiropractor+Clinic/data=!4m7!3m6!1s0x8864656f02408795:0xcd8211fb5b7e989f!8m2!3d36.1147017!4d-86.7648436!16s%2Fg%2F11rr8cz3wf!19sChIJlYdAAm9lZIgRn5h-W_sRgs0?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "nashville-wellness-recovery-and-detox-brentwood",
@@ -3763,7 +3989,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Nashville+Wellness+Recovery+and+Detox/data=!4m7!3m6!1s0x88647b626d77b485:0x25de0152c425f142!8m2!3d35.9694867!4d-86.8111996!16s%2Fg%2F11n9w81dq1!19sChIJhbR3bWJ7ZIgRQvElxFIB3iU?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "recovery-zone-brentwood",
@@ -3795,7 +4023,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Recovery+Zone/data=!4m7!3m6!1s0x886379616d252d8d:0xc05dbea673e5a87d!8m2!3d35.7555279!4d-86.9249854!16s%2Fg%2F11ldq9f9_r!19sChIJjS0lbWF5Y4gRfajlc6a-XcA?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "recovery-lounge-franklin",
@@ -3827,7 +4057,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Recovery+Lounge/data=!4m7!3m6!1s0x88647fa59a42b69b:0x2042ae25533be2bb!8m2!3d35.9501339!4d-86.8259563!16s%2Fg%2F11rhmh9bs_!19sChIJm7ZCmqV_ZIgRu-I7UyWuQiA?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "the-recovery-lounge-franklin",
@@ -3859,7 +4091,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/The+Recovery+Lounge/data=!4m7!3m6!1s0x88647fb94991781d:0x2f100f6e87b9a940!8m2!3d35.9307886!4d-86.8586832!16s%2Fg%2F11j19r1lq8!19sChIJHXiRSbl_ZIgRQKm5h24PEC8?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-austin-austin",
@@ -3894,7 +4128,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-georgetown-georgetown",
@@ -3929,7 +4165,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "perspire-sauna-studio-austin-austin",
@@ -3963,7 +4201,9 @@
     "source_urls": [
       "https://www.perspire.com/find-a-studio"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "best-saunas-in-austin-united-states-austin",
@@ -3997,7 +4237,9 @@
     "source_urls": [
       "https://findmysauna.com/austin#:~:text=Best%20Saunas%20in%20Austin%2C%20United,States&text=Ceremony%20Spa&text=Alive%20and%20Well&text=Austin%20Bouldering%20Project%20Springdale&text=Fairmont%20Spa%20Austin&text=KOKORO%20Wellness%20Center&text=Kuya%20Wellness"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "fetch_failed"
   },
   {
     "id": "sweathouz-naperville-naperville",
@@ -4032,7 +4274,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-chicago-chicago",
@@ -4067,7 +4311,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-lakeview-lakeview",
@@ -4102,7 +4348,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "perspire-sauna-studio-chicago-chicago",
@@ -4136,7 +4384,9 @@
     "source_urls": [
       "https://www.perspire.com/find-a-studio"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-vinings-vinings",
@@ -4171,7 +4421,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-atlanta-atlanta",
@@ -4206,7 +4458,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-roswell-roswell",
@@ -4241,7 +4495,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-alpharetta-alpharetta",
@@ -4276,7 +4532,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-sandy-springs-sandy-springs",
@@ -4311,7 +4569,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-midtown-midtown",
@@ -4346,7 +4606,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-buckhead-buckhead",
@@ -4381,7 +4643,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "perspire-sauna-studio-atlanta-atlanta",
@@ -4415,7 +4679,9 @@
     "source_urls": [
       "https://www.perspire.com/find-a-studio"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "contrast-therapy-atlanta",
@@ -4448,7 +4714,9 @@
       "https://bestselfatlanta.com/contrast-therapy/",
       "https://bestselfatlanta.com/contrast-therapy/#:~:text=While%20an%20ancient%20greek%20and,studios%20across%20Atlanta%20and%20beyond."
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "best-way-to-do-contrast-therapy-for-the-best-experience-atlanta",
@@ -4480,7 +4748,9 @@
     "source_urls": [
       "https://sweathouz.com/best-way-to-do-contrast-therapy-for-the-best-experience/#:~:text=Alternate%20Between%20Heat%20and%20Cold,3%20minutes%20in%20the%20cold."
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "what-is-contrast-therapy-and-how-does-it-work-atlanta",
@@ -4512,7 +4782,9 @@
     "source_urls": [
       "https://sweathouz.com/best-way-to-do-contrast-therapy-for-the-best-experience/#:~:text=Alternate%20Between%20Heat%20and%20Cold,3%20minutes%20in%20the%20cold."
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "key-benefits-of-contrast-therapy-atlanta",
@@ -4544,7 +4816,9 @@
     "source_urls": [
       "https://sweathouz.com/best-way-to-do-contrast-therapy-for-the-best-experience/#:~:text=Alternate%20Between%20Heat%20and%20Cold,3%20minutes%20in%20the%20cold."
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "how-to-use-contrast-therapy-for-the-best-experience-atlanta",
@@ -4576,7 +4850,9 @@
     "source_urls": [
       "https://sweathouz.com/best-way-to-do-contrast-therapy-for-the-best-experience/#:~:text=Alternate%20Between%20Heat%20and%20Cold,3%20minutes%20in%20the%20cold."
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "tips-for-getting-the-most-out-of-contrast-therapy-atlanta",
@@ -4608,7 +4884,9 @@
     "source_urls": [
       "https://sweathouz.com/best-way-to-do-contrast-therapy-for-the-best-experience/#:~:text=Alternate%20Between%20Heat%20and%20Cold,3%20minutes%20in%20the%20cold."
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "the-science-behind-contrast-therapy-how-hot-and-cold-work-togeth",
@@ -4640,7 +4918,9 @@
     "source_urls": [
       "https://sweathouz.com/best-way-to-do-contrast-therapy-for-the-best-experience/#:~:text=Alternate%20Between%20Heat%20and%20Cold,3%20minutes%20in%20the%20cold."
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "contrast-therapy-a-powerful-recovery-tool-for-athletes-atlanta",
@@ -4672,7 +4952,9 @@
     "source_urls": [
       "https://sweathouz.com/best-way-to-do-contrast-therapy-for-the-best-experience/#:~:text=Alternate%20Between%20Heat%20and%20Cold,3%20minutes%20in%20the%20cold."
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "the-benefits-of-contrast-therapy-for-mental-clarity-and-relaxati",
@@ -4704,7 +4986,9 @@
     "source_urls": [
       "https://sweathouz.com/best-way-to-do-contrast-therapy-for-the-best-experience/#:~:text=Alternate%20Between%20Heat%20and%20Cold,3%20minutes%20in%20the%20cold."
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "how-often-should-you-do-contrast-therapy-atlanta",
@@ -4736,7 +5020,9 @@
     "source_urls": [
       "https://sweathouz.com/best-way-to-do-contrast-therapy-for-the-best-experience/#:~:text=Alternate%20Between%20Heat%20and%20Cold,3%20minutes%20in%20the%20cold."
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "incorporating-contrast-therapy-into-your-wellness-routine-atlant",
@@ -4768,7 +5054,9 @@
     "source_urls": [
       "https://sweathouz.com/best-way-to-do-contrast-therapy-for-the-best-experience/#:~:text=Alternate%20Between%20Heat%20and%20Cold,3%20minutes%20in%20the%20cold."
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "relax-and-recharge-in-these-top-3-recovery-studios-in-atlanta-at",
@@ -4802,7 +5090,9 @@
       "https://thefitatlanta.beehiiv.com/p/top-sauna-studios-in-atlanta#:~:text=BackYard%20Recovery%20is%20a%20fantastic,to%20feeling%20your%20best%20quick.",
       "https://www.threads.net/intent/post"
     ],
-    "last_verified": "2026-07-06"
+    "last_verified": "2026-07-06",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "fetch_failed"
   },
   {
     "id": "but-what-is-a-recovery-studio-atlanta",
@@ -4835,7 +5125,9 @@
       "https://thefitatlanta.beehiiv.com/p/top-sauna-studios-in-atlanta",
       "https://thefitatlanta.beehiiv.com/p/top-sauna-studios-in-atlanta#:~:text=BackYard%20Recovery%20is%20a%20fantastic,to%20feeling%20your%20best%20quick."
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "fetch_failed"
   },
   {
     "id": "recovery-studio-1-backyard-recovery-atlanta",
@@ -4868,7 +5160,9 @@
       "https://thefitatlanta.beehiiv.com/p/top-sauna-studios-in-atlanta",
       "https://thefitatlanta.beehiiv.com/p/top-sauna-studios-in-atlanta#:~:text=BackYard%20Recovery%20is%20a%20fantastic,to%20feeling%20your%20best%20quick."
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "infrared-sauna-therapy-atlanta",
@@ -4904,7 +5198,9 @@
       "https://thefitatlanta.beehiiv.com/p/top-sauna-studios-in-atlanta",
       "https://thefitatlanta.beehiiv.com/p/top-sauna-studios-in-atlanta#:~:text=BackYard%20Recovery%20is%20a%20fantastic,to%20feeling%20your%20best%20quick."
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "recovery-studio-2-the-salt-room-atlanta",
@@ -4937,7 +5233,9 @@
       "https://thefitatlanta.beehiiv.com/p/top-sauna-studios-in-atlanta",
       "https://thefitatlanta.beehiiv.com/p/top-sauna-studios-in-atlanta#:~:text=BackYard%20Recovery%20is%20a%20fantastic,to%20feeling%20your%20best%20quick."
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "recovery-studio-3-restore-hyper-wellness-atlanta",
@@ -4970,7 +5268,9 @@
       "https://thefitatlanta.beehiiv.com/p/top-sauna-studios-in-atlanta",
       "https://thefitatlanta.beehiiv.com/p/top-sauna-studios-in-atlanta#:~:text=BackYard%20Recovery%20is%20a%20fantastic,to%20feeling%20your%20best%20quick."
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "cryotherapy-atlanta",
@@ -5003,7 +5303,9 @@
       "https://thefitatlanta.beehiiv.com/p/top-sauna-studios-in-atlanta",
       "https://thefitatlanta.beehiiv.com/p/top-sauna-studios-in-atlanta#:~:text=BackYard%20Recovery%20is%20a%20fantastic,to%20feeling%20your%20best%20quick."
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-seattle-seattle",
@@ -5038,7 +5340,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "perspire-sauna-studio-seattle-seattle",
@@ -5072,7 +5376,9 @@
     "source_urls": [
       "https://www.perspire.com/find-a-studio"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-hollywood-hollywood",
@@ -5107,7 +5413,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-miami-miami",
@@ -5142,7 +5450,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-fort-lauderdale-fort-lauderdale",
@@ -5177,7 +5487,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-aventura-aventura",
@@ -5212,7 +5524,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "perspire-sauna-studio-miami-miami",
@@ -5246,7 +5560,9 @@
     "source_urls": [
       "https://www.perspire.com/find-a-studio"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "best-saunas-and-coldplunge-near-wynwoodedgewater-miami",
@@ -5280,7 +5596,9 @@
     "source_urls": [
       "https://www.reddit.com/r/Miami/comments/1n74345/best_saunas_and_coldplunge_near_wynwoodedgewater/"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-nashville-nashville",
@@ -5315,7 +5633,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-germantown-germantown",
@@ -5350,7 +5670,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-gulch-gulch",
@@ -5385,7 +5707,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-franklin-franklin",
@@ -5420,7 +5744,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "the-5-best-saunas-in-nashville-to-visit-for-your-overall-wellnes",
@@ -5455,7 +5781,9 @@
       "https://www.nashvilleexplored.com/best-saunas-nashville/",
       "https://www.nashvilleexplored.com/best-saunas-nashville/#:~:text=Pure%20Sweat%20%2B%20Float%20Studio,cold%20plunge%20or%20float%20therapy."
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "pure-sweat-sauna-studio-nashville",
@@ -5489,7 +5817,9 @@
     "source_urls": [
       "https://nashvilleguru.com/70803/detox-and-alternative-therapy-in-nashville#:~:text=Pure%20Sweat%20Sauna%20Studio&text=Best%20Known%20For%3A%20Infrared%20saunas%2C,cold%20plunging%2C%20and%20contrast%20therapy&text=Neighborhood%3A%2012%20South%20%7C%20Gulch"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "the-recovery-studio---chiropractor-clinic-nashville",
@@ -5521,7 +5851,9 @@
     "source_urls": [
       "https://maps.google.com/maps?sca_esv=4b04a474141781e0&output=search&q=best+recovery+studio+Nashville&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLyK4ERdJZ5WXX5biY7ThytPUwhDZ4zWlposZegQheFJtnTwoZbPaayv6_YtEefpWCjmz73Jyr7IRuf_2vYvmmHv_Ae_segOg_jjMs94adRyxBv0ZuL_36pwSVuX6tnn0JlPBABUG4oP6upLMGD8RPYMYVRy6g&entry=mc&ved=1t:200715&ictx=111"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "the-cove-sauna-and-cold-plunge-denver",
@@ -5556,7 +5888,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/The+Cove+Sauna+and+Cold+Plunge/data=!4m7!3m6!1s0x876c7fe47f60749f:0x5a1784de3d69f406!8m2!3d39.6918093!4d-104.9878629!16s%2Fg%2F11mdnxhb94!19sChIJn3Rgf-R_bIcRBvRpPd6EF1o?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "red-rock-sauna-denver",
@@ -5590,7 +5924,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Red+Rock+Sauna/data=!4m7!3m6!1s0x4a0b99a57cad8b39:0xb0aed349d9a588b9!8m2!3d39.7582472!4d-105.0450791!16s%2Fg%2F11vylj6m46!19sChIJOYutfKWZC0oRuYil2UnTrrA?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "r3-spa-sauna-cold-plunge-denver",
@@ -5625,7 +5961,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/R3+Spa:+Sauna+%2B+Cold+Plunge/data=!4m7!3m6!1s0x876c7fa86ccd870b:0xf7642fe3ddb16cdf!8m2!3d39.6656437!4d-104.9881965!16s%2Fg%2F11xf6sgsbd!19sChIJC4fNbKh_bIcR32yx3eMvZPc?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "garden-sauna-denver-denver",
@@ -5659,7 +5997,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Garden+Sauna+Denver/data=!4m7!3m6!1s0x876c7f343825a06b:0x9c534428a932bb31!8m2!3d39.7386761!4d-104.9754315!16s%2Fg%2F11y98xmkyx!19sChIJa6AlODR_bIcRMbsyqShEU5w?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-south-broadway-contrast-therapy-studio-denver",
@@ -5691,7 +6031,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+South+Broadway+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x876c7ffad690228d:0xeee7f6ebdd556e13!8m2!3d39.6779896!4d-104.9878367!16s%2Fg%2F11w9jhnysh!19sChIJjSKQ1vp_bIcRE25V3ev25-4?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "havana-sauna-denver",
@@ -5725,7 +6067,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Havana+Sauna/data=!4m7!3m6!1s0x876c7d5db52e49c3:0xaa528368e6230672!8m2!3d39.6794251!4d-104.8651112!16s%2Fg%2F1264jpylj!19sChIJw0kutV19bIcRcgYj5miDUqo?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "urban-sweat-cherry-creek-denver",
@@ -5757,7 +6101,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Urban+Sweat+Cherry+Creek/data=!4m7!3m6!1s0x876c7f83b58abf3d:0xd175f833226f1d3e!8m2!3d39.7211735!4d-104.957458!16s%2Fg%2F11jn0rmd96!19sChIJPb-KtYN_bIcRPh1vIjP4ddE?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "simply-sauna-lakewood",
@@ -5791,7 +6137,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Simply+Sauna/data=!4m7!3m6!1s0x876b811718af606d:0x5103d478a30c3b9b!8m2!3d39.6922844!4d-105.0801248!16s%2Fg%2F11tms617vz!19sChIJbWCvGBeBa4cRmzsMo3jUA1E?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "apres-sauna-lakewood",
@@ -5825,7 +6173,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Apr%C3%A9s+Sauna/data=!4m7!3m6!1s0x876b81fa2ff66ecb:0xa40e97eb5b236841!8m2!3d39.7097988!4d-105.0786661!16s%2Fg%2F11mzfrb3p0!19sChIJy272L_qBa4cRQWgjW-uXDqQ?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "dear-sauna-lakewood",
@@ -5859,7 +6209,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Dear+Sauna/data=!4m7!3m6!1s0x876b7fa68873a7f3:0xf9b95219f1dc604a!8m2!3d39.6102074!4d-105.0361844!16s%2Fg%2F11y5gctm1j!19sChIJ86dziKZ_a4cRSmDc8RlSufk?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-tennyson-contrast-therapy-studio-lakewood",
@@ -5891,7 +6243,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Tennyson+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x876b87d66862e7d3:0x603977e098b8f1e0!8m2!3d39.7696067!4d-105.0436726!16s%2Fg%2F11n3d_wjb3!19sChIJ0-diaNaHa4cR4PG4mOB3OWA?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "naosu-sauna-denver",
@@ -5925,7 +6279,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/NAOSU+SAUNA/data=!4m7!3m6!1s0x876c791f428ca72f:0x1b5a85b0676536!8m2!3d39.7639995!4d-104.9788062!16s%2Fg%2F11m6b9wlb2!19sChIJL6eMQh95bIcRNmVnsIVaGwA?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "peak-recovery-inc-aurora",
@@ -5957,7 +6313,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Peak+Recovery+Inc/data=!4m7!3m6!1s0x876c871737e3ed71:0xd9b06b718e07e846!8m2!3d39.5923894!4d-104.8677902!16s%2Fg%2F11x7n9mp7d!19sChIJce3jNxeHbIcRRugHjnFrsNk?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "the-sauna-room-lakewood",
@@ -5991,7 +6349,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/The+Sauna+Room/data=!4m7!3m6!1s0x876b87f50731002d:0x81907a7ab2a3a912!8m2!3d39.740483!4d-105.10578!16s%2Fg%2F11tp66sb_6!19sChIJLQAxB_WHa4cREqmjsnp6kIE?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "perspire-sauna-studio-denver",
@@ -6025,7 +6385,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Perspire+Sauna+Studio/data=!4m7!3m6!1s0x876c7f79f24297c7:0x49bf8b95df03667d!8m2!3d39.6720597!4d-104.9591108!16s%2Fg%2F11vjxlvyq_!19sChIJx5dC8nl_bIcRfWYD35WLv0k?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sauna-to-go-denver-aurora",
@@ -6059,7 +6421,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Sauna+To-Go+Denver/data=!4m7!3m6!1s0x2b3ea0afc00ae5e7:0x18663d3d4b0252f2!8m2!3d39.6954712!4d-104.6983006!16s%2Fg%2F11vrvjbj_t!19sChIJ5-UKwK-gPisR8lICSz09Zhg?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "perspire-sauna-studio-aurora",
@@ -6093,7 +6457,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Perspire+Sauna+Studio/data=!4m7!3m6!1s0x876c836e887c9353:0xb7007f103213544b!8m2!3d39.5416723!4d-104.9409812!16s%2Fg%2F11t13r4gsl!19sChIJU5N8iG6DbIcRS1QTMhB_ALc?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "recovery-lounge-spa-denver",
@@ -6125,7 +6491,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Recovery+Lounge+%26+Spa/data=!4m7!3m6!1s0x876c7fe5554e3b4d:0xef268afc780474b!8m2!3d39.7497132!4d-105.0225586!16s%2Fg%2F11hn0m8ghj!19sChIJTTtOVeV_bIcRS0eAx69o8g4?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "recovery-one-denver",
@@ -6157,7 +6525,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Recovery+One/data=!4m7!3m6!1s0x876c8574ee4e73eb:0x86d890d8ef902fe8!8m2!3d39.5389645!4d-104.8728113!16s%2Fg%2F11scj0n_xy!19sChIJ63NO7nSFbIcR6C-Q79iQ2IY?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "recovery-studio-spa-aurora",
@@ -6189,7 +6559,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Recovery+Studio+%2B+Spa/data=!4m7!3m6!1s0x87694d7b19d23511:0x197b55b4ae9d9434!8m2!3d40.5219848!4d-105.0576542!16s%2Fg%2F11j_2flksr!19sChIJETXSGXtNaYcRNJSdrrRVexk?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "denver-sports-recovery-lakewood",
@@ -6221,7 +6593,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Denver+Sports+Recovery/data=!4m7!3m6!1s0x876c7894231f0c6b:0x25eae7438d58bfdf!8m2!3d39.7581883!4d-105.0140806!16s%2Fg%2F11cmv1wqsr!19sChIJawwfI5R4bIcR379YjUPn6iU?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "nomadic-fire-mobile-sauna-lakewood",
@@ -6255,7 +6629,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Nomadic+Fire+Mobile+Sauna/data=!4m7!3m6!1s0x876b9b231cf6005f:0x47133f716566422a!8m2!3d39.7580832!4d-105.2242509!16s%2Fg%2F11lnk_jtcr!19sChIJXwD2HCOba4cRKkJmZXE_E0c?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "king-spa-sauna-dallas",
@@ -6289,7 +6665,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/King+Spa+%26+Sauna/data=!4m7!3m6!1s0x864c27f6ba2c1273:0x8c2128a67653ab64!8m2!3d32.8935706!4d-96.9058523!16s%2Fg%2F11g9mypq40!19sChIJcxIsuvYnTIYRZKtTdqYoIYw?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sauna-house-recovery-studio-dallas",
@@ -6323,7 +6701,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Sauna+House+Recovery+Studio/data=!4m7!3m6!1s0x864e9ff6a14cfb3f:0x85d952e4fb4f843e!8m2!3d32.8516515!4d-96.770271!16s%2Fg%2F11x80hdss8!19sChIJP_tMofafToYRPoRP--RS2YU?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "glow-sauna-studios-prestonwood-dallas",
@@ -6357,7 +6737,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Glow+Sauna+Studios+%7C+Prestonwood/data=!4m7!3m6!1s0x864c21860056168b:0x5ee13f4bddf7bb9f!8m2!3d32.952474!4d-96.817453!16s%2Fg%2F11pd07bb_y!19sChIJixZWAIYhTIYRn7v33Us_4V4?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "glow-sauna-studios-mockingbird-dallas",
@@ -6391,7 +6773,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Glow+Sauna+Studios+%7C+Mockingbird/data=!4m7!3m6!1s0x864e9f0aaa283fd5:0x7ae60b31cdd3f23!8m2!3d32.8384272!4d-96.7763785!16s%2Fg%2F11flc4b7j8!19sChIJ1T8oqgqfToYRIz_dHLNgrgc?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-camp-bowie-contrast-therapy-studio-fort-worth",
@@ -6423,7 +6807,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Camp+Bowie+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x864e733ba5d90df1:0x18ca27bf47aeed8!8m2!3d32.7283146!4d-97.4178781!16s%2Fg%2F11x39m_s5v!19sChIJ8Q3ZpTtzToYR2O569HuijAE?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "perspire-sauna-studio-fort-worth",
@@ -6457,7 +6843,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Perspire+Sauna+Studio/data=!4m7!3m6!1s0x864e73c829610e73:0xe2c093a576374a79!8m2!3d32.7007332!4d-97.4129957!16s%2Fg%2F11tkb631vd!19sChIJcw5hKchzToYReUo3dqWTwOI?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-infrared-sauna-studio-plano",
@@ -6492,7 +6880,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Infrared+Sauna+Studio/data=!4m7!3m6!1s0x864c17f1325104c9:0xa898a0c574f42669!8m2!3d33.0871513!4d-96.6841919!16s%2Fg%2F11rp5ckb7g!19sChIJyQRRMvEXTIYRaSb0dMWgmKg?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "beem-light-sauna-west-plano-plano",
@@ -6526,7 +6916,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/beem%C2%AE+Light+Sauna+West+Plano/data=!4m7!3m6!1s0x864c2360f8855e25:0x2ef543c086b43513!8m2!3d33.028927!4d-96.8277766!16s%2Fg%2F11vhx5h49g!19sChIJJV6F-GAjTIYREzW0hsBD9S4?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "west-plano---sauna-cold-plunge-hot-tub-plano",
@@ -6561,7 +6953,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/West+Plano+-+Sauna+%2FCold+Plunge+%2FHot+Tub/data=!4m11!3m10!1s0x864c3d2a34506109:0xadfd84cbc6635199!5m2!4m1!1i2!8m2!3d33.0785408!4d-96.7897568!16s%2Fg%2F11w1vmh0k3!17BQ0FF!19sChIJCWFQNCo9TIYRmVFjxsuE_a0?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-frisco-contrast-therapy-studio-plano",
@@ -6593,7 +6987,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Frisco+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x864c3f3f22e7454d:0x257a6de81b473804!8m2!3d33.1730353!4d-96.7701223!16s%2Fg%2F11y46qyckk!19sChIJTUXnIj8_TIYRBDhHG-hteiU?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "west-plano---saunacold-plungehot-tub-plano",
@@ -6628,7 +7024,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/West+Plano+-+Sauna%2FCold+Plunge%2FHot+Tub/data=!4m11!3m10!1s0x864c3d2a34500797:0x9fdd316e69cdb02!5m2!4m1!1i2!8m2!3d33.0785446!4d-96.7897644!16s%2Fg%2F11w1d_3hfn!17BQ0FF!19sChIJlwdQNCo9TIYRAtuc5hbT_Qk?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "swthz-coppell-contrast-therapy-studio-dallas",
@@ -6660,7 +7058,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/SWTHZ+Coppell+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x864c2fae0ecf50f5:0x5fde165baafeff23!8m2!3d32.9737566!4d-96.9942875!16s%2Fg%2F11vw_g23mw!19sChIJ9VDPDq4vTIYRI__-qlsW3l8?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "urban-sweat---dallas-dallas",
@@ -6692,7 +7092,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Urban+Sweat+-+Dallas/data=!4m7!3m6!1s0x864e9fa89538ab0f:0x544618343120b7ee!8m2!3d32.851833!4d-96.7690763!16s%2Fg%2F11fn9vs866!19sChIJD6s4laifToYR7rcgMTQYRlQ?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "icryo-cryotherapy-iv-therapy-fort-worth",
@@ -6724,7 +7126,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/iCRYO+Cryotherapy+%2B+iV+Therapy/data=!4m7!3m6!1s0x864e71c4e9d23d77:0x5541cb1c5d01fb7d!8m2!3d32.7522693!4d-97.3494397!16s%2Fg%2F11t3h2_0dk!19sChIJdz3S6cRxToYRffsBXRzLQVU?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "katy-trail-cryo-dallas",
@@ -6756,7 +7160,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Katy+Trail+Cryo/data=!4m7!3m6!1s0x864e9f20c8ca1a5b:0x7eb3c4dbb285b945!8m2!3d32.8223132!4d-96.7904277!16s%2Fg%2F11dymb2fkw!19sChIJWxrKyCCfToYRRbmFstvEs34?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "integrity-cryo-recovery-fort-worth",
@@ -6788,7 +7194,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Integrity+Cryo+%26+Recovery/data=!4m7!3m6!1s0x864e791c0cac35f1:0xf2b57f5844500f36!8m2!3d32.8599211!4d-97.1963878!16s%2Fg%2F11kk6xfchm!19sChIJ8TWsDBx5ToYRNg9QRFh_tfI?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "halsa-nordic-saunas-fort-worth",
@@ -6822,7 +7230,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Halsa+Nordic+Saunas/data=!4m7!3m6!1s0x864e6db137444841:0xec3bfbc46d53a8d5!8m2!3d32.6466879!4d-97.427235!16s%2Fg%2F11wy3wvf2h!19sChIJQUhEN7FtToYR1ahTbcT7O-w?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "icebox-cryotherapy-frisco-plano",
@@ -6854,7 +7264,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Icebox+Cryotherapy+Frisco/data=!4m7!3m6!1s0x864c3b48eb22e207:0xec9435499582aea5!8m2!3d33.118686!4d-96.8614833!16s%2Fg%2F11p64qw301!19sChIJB-Ii60g7TIYRpa6ClUk1lOw?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "cryo-boost-plano",
@@ -6886,7 +7298,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Cryo+Boost/data=!4m7!3m6!1s0x864c1756b01b7c3d:0x5b2cb71ed4cc4c47!8m2!3d33.086362!4d-96.6705355!16s%2Fg%2F11b7fctcdv!19sChIJPXwbsFYXTIYRR0zM1B63LFs?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "recover-cold-plunge-contrast-therapy-float-spa-and-infrared-saun",
@@ -6922,7 +7336,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Recover+Cold+Plunge+Contrast+Therapy+Float+Spa+and+Infrared+Sauna/data=!4m7!3m6!1s0x89c6a7689a32bc95:0xcbac64be668415c4!8m2!3d40.2976708!4d-75.1896251!16s%2Fg%2F11lzslghms!19sChIJlbwymminxokRxBWEZr5krMs?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "formation-sauna-wellness-philadelphia",
@@ -6956,7 +7372,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Formation+Sauna+%2B+Wellness/data=!4m7!3m6!1s0x89c6c935cba80f2d:0x575e2df8fab4ed9b!8m2!3d39.9637852!4d-75.1433648!16s%2Fg%2F11j92l49f0!19sChIJLQ-oyzXJxokRm-20-vgtXlc?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "surge-sauna-cold-plunge-llc-king-of-prussia",
@@ -6991,7 +7409,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Surge+Sauna+%26+Cold+Plunge+LLC/data=!4m7!3m6!1s0x89c6f5cccc49ab2f:0x2345bfae3a898ccd!8m2!3d40.0058677!4d-75.6647062!16s%2Fg%2F11wvqqrkdq!19sChIJL6tJzMz1xokRzYyJOq6_RSM?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-bryn-mawr-king-of-prussia",
@@ -7023,7 +7443,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Bryn+Mawr/data=!4m7!3m6!1s0x89c6bf901be727a9:0x1e3bcd26f1ffab89!8m2!3d40.0235175!4d-75.3213684!16s%2Fg%2F11ybknmr3h!19sChIJqSfnG5C_xokRiav_8SbNOx4?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "dtxfy-infrared-sauna-studio-king-of-prussia",
@@ -7058,7 +7480,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/dtXfy+Infrared+Sauna+Studio/data=!4m7!3m6!1s0x89c693e5faafb33b:0xf30ba8cda6194f95!8m2!3d40.072643!4d-75.4352083!16s%2Fg%2F11sskp31ps!19sChIJO7Ov-uWTxokRlU8Zps2oC_M?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "elite-edge-recovery-king-of-prussia",
@@ -7090,7 +7514,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Elite+Edge+Recovery/data=!4m7!3m6!1s0x89c6f3d2e989693d:0x61629afc04c35474!8m2!3d40.0452685!4d-75.5813402!16s%2Fg%2F11n3lddm_c!19sChIJPWmJ6dLzxokRdFTDBPyaYmE?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "fire-ice-express-cherry-hill",
@@ -7122,7 +7548,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Fire+%26+Ice+Express/data=!4m7!3m6!1s0x89c6cb6f8a0f79b3:0x3d6049ebce155b13!8m2!3d39.9475032!4d-74.9719282!16s%2Fg%2F11vjhnnrrk!19sChIJs3kPim_LxokRE1sVzutJYD0?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-media-contrast-therapy-studio-king-of-prussia",
@@ -7154,7 +7582,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Media+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x89c6e90ff955a83f:0xb79ac13f0ac7a72!8m2!3d39.9140468!4d-75.4355616!16s%2Fg%2F11ywp5r2cl!19sChIJP6hV-Q_pxokRcnqs8BOseQs?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-pike-and-rose-contrast-therapy-studio-cherry-hill",
@@ -7186,7 +7616,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Pike+and+Rose+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x89b7cd2ffc988617:0x38b04123d3be3748!8m2!3d39.0489249!4d-77.1184095!16s%2Fg%2F11x851bjps!19sChIJF4aY_C_Nt4kRSDe-0yNBsDg?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "dtxfy-infrared-sauna-studio-philadelphia",
@@ -7221,7 +7653,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/dtXfy+Infrared+Sauna+Studio/data=!4m7!3m6!1s0x89c6b96602042d73:0x11cdaf81a55e0663!8m2!3d40.0251315!4d-75.2230893!16s%2Fg%2F11t7vt1g2n!19sChIJcy0EAma5xokRYwZepYGvzRE?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sauna-phl-philadelphia",
@@ -7255,7 +7689,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Sauna+PHL/data=!4m7!3m6!1s0x89c6c91d7e47c22d:0xb3bfd6d8e4ae9c78!8m2!3d39.9614835!4d-75.1410989!16s%2Fg%2F11xrhjm18n!19sChIJLcJHfh3JxokReJyu5NjWv7M?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-northern-liberties-contrast-therapy-studio-philadelphi",
@@ -7287,7 +7723,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Northern+Liberties+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x89c6c9baef5cf7b7:0xffcb206590ce735f!8m2!3d39.9666442!4d-75.1390108!16s%2Fg%2F11y08ph_wt!19sChIJt_dc77rJxokRX3POkGUgy_8?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "philadelphia-custom-saunas-philadelphia",
@@ -7321,7 +7759,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Philadelphia+Custom+Saunas/data=!4m7!3m6!1s0x89c6c7144043a0eb:0x13ddc6e7f592fbc0!8m2!3d39.9464712!4d-75.1625951!16s%2Fg%2F11xvjb865b!19sChIJ66BDQBTHxokRwPuS9efG3RM?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-upper-dublin-contrast-therapy-studio-king-of-prussia",
@@ -7353,7 +7793,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Upper+Dublin+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x89c6afc69e334cb1:0x90c3a78de13639cf!8m2!3d40.1580984!4d-75.1494848!16s%2Fg%2F11x2vwz1lb!19sChIJsUwznsavxokRzzk24Y2nw5A?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "philadelphia-recovery-community-center-philadelphia",
@@ -7385,7 +7827,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Philadelphia+Recovery+Community+Center/data=!4m7!3m6!1s0x89c6c7feb30db825:0x6b0ee683b7fb0bd5!8m2!3d39.9948587!4d-75.1600488!16s%2Fg%2F1tcx7zpf!19sChIJJbgNs_7HxokR1Qv7t4PmDms?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "pennsylvania-recovery-center---philadelphia-philadelphia",
@@ -7417,7 +7861,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Pennsylvania+Recovery+Center+-+Philadelphia/data=!4m7!3m6!1s0x89c6c92c7e501825:0xd02492204d06b159!8m2!3d39.9566025!4d-75.1565876!16s%2Fg%2F11f79501v6!19sChIJJRhQfizJxokRWbEGTSCSJNA?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "recovery-centers-of-america-king-of-prussia",
@@ -7449,7 +7895,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Recovery+Centers+of+America/data=!4m7!3m6!1s0x89c6bf159542c2e5:0x746684ec9ce42f1b!8m2!3d40.0826207!4d-75.337665!16s%2Fg%2F11txhv9bkk!19sChIJ5cJClRW_xokRGy_knOyEZnQ?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "dynamic-recovery-restore-mobile-iv-therapy-king-of-prussia",
@@ -7481,7 +7929,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Dynamic+Recovery+%26+Restore+%28Mobile+IV+Therapy%29/data=!4m7!3m6!1s0x89c695e9a2a89f1b:0xf42689e49089d3c2!8m2!3d40.0437891!4d-75.35683!16s%2Fg%2F11vcxw5wxl!19sChIJG5-ooumVxokRwtOJkOSJJvQ?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "blueview-recovery-drug-alcohol-rehab-pa-king-of-prussia",
@@ -7513,7 +7963,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Blueview+Recovery+%7C+Drug+%26+Alcohol+Rehab+PA/data=!4m7!3m6!1s0x89c6954ad6000d99:0x7dd68b166259edb6!8m2!3d40.0991471!4d-75.408888!16s%2Fg%2F11g04gn43t!19sChIJmQ0A1kqVxokRtu1ZYhaL1n0?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "cryo-philadelphia-philadelphia",
@@ -7545,7 +7997,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/CRYO+Philadelphia/data=!4m7!3m6!1s0x89c6c630883ce7e7:0x4a3e786f45d4c30d!8m2!3d40.0711619!4d-75.2009327!16s%2Fg%2F11cnb8bny5!19sChIJ5-c8iDDGxokRDcPURW94Pko?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "orange-cryo-wellness-king-of-prussia",
@@ -7577,7 +8031,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Orange+Cryo+Wellness/data=!4m7!3m6!1s0x89c6be82887845f7:0x824d84ad9a1278bd!8m2!3d40.0949311!4d-75.2856613!16s%2Fg%2F11c5t1hkmm!19sChIJ90V4iIK-xokRvXgSmq2ETYI?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "warriors-garden-body-recovery-king-of-prussia",
@@ -7609,7 +8065,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Warrior%27s+Garden+Body+Recovery/data=!4m7!3m6!1s0x89c6b1131dea26c3:0x180397bee9cc22e7!8m2!3d40.0824923!4d-75.0918393!16s%2Fg%2F11kqclhnxr!19sChIJwybqHROxxokR5yLM6b6XAxg?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "unwind-recovery-club-cherry-hill",
@@ -7641,7 +8099,9 @@
     "source_urls": [
       "https://www.google.com/maps/place/Unwind+Recovery+Club/data=!4m7!3m6!1s0x89c6af4969eeff7b:0xdb87013de40ed714!8m2!3d40.1714398!4d-75.1023127!16s%2Fg%2F11z2x9dz90!19sChIJe__uaUmvxokRFNcO5D0Bh9s?authuser=0&hl=en&rclk=1"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-south-broadway-denver",
@@ -7680,7 +8140,10 @@
     "source_urls": [
       "https://sweathouz.com/south-broadway-book-now/"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "phone": "303-997-3395",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "rok-spas-denver",
@@ -7717,7 +8180,11 @@
       "https://rokspas.com/",
       "https://rokspas.com/cold-plunge/"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "email": "hello@rokspas.com",
+    "phone": "720-769-0838",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "r3-experience-englewood",
@@ -7753,7 +8220,11 @@
     "source_urls": [
       "https://www.r3experience.com/"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "email": "info@r3experience.com",
+    "phone": "720-313-4768",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "portal-denver-denver",
@@ -7792,7 +8263,11 @@
     "source_urls": [
       "https://www.portalthermaculture.com/denver"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "email": "contact@portalthermaculture.com",
+    "phone": "720-925-2246",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "perspire-sauna-studio-cherry-hills-denver",
@@ -7830,7 +8305,11 @@
     "source_urls": [
       "https://www.perspiresaunastudio.com/locations/cherry-hills"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "email": "cherryhills@perspiresaunastudio.com",
+    "phone": "720-605-0774",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "restore-hyper-wellness-cherry-hills-denver",
@@ -7868,7 +8347,11 @@
     "source_urls": [
       "https://www.restore.com/locations/co-denver-cherry-hills-co033"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "email": "frontdeskco033@restore.com",
+    "phone": "720-704-6115",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "sauna-house-dallas-dallas",
@@ -7907,7 +8390,11 @@
     "source_urls": [
       "https://mysaunahouse.com/"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "email": "info@mysaunahouse.com",
+    "phone": "214-380-2589",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "sweathouz-frisco-frisco",
@@ -7947,7 +8434,9 @@
       "https://sweathouz.com/frisco-book-now/",
       "https://sweathouz.com/locations"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "fetch_failed"
   },
   {
     "id": "sweathouz-camp-bowie-fort-worth",
@@ -7986,7 +8475,9 @@
     "source_urls": [
       "https://sweathouz.com/camp-bowie-book-now/"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "fetch_failed"
   },
   {
     "id": "sweathouz-coppell-coppell",
@@ -8025,7 +8516,9 @@
     "source_urls": [
       "https://sweathouz.com/coppell-book-now/"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "fetch_failed"
   },
   {
     "id": "perspire-sauna-studio-fort-worth-waterside-fort-worth",
@@ -8063,7 +8556,11 @@
     "source_urls": [
       "https://www.perspiresaunastudio.com/locations/fw-waterside"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "email": "fortworthws@perspiresaunastudio.com",
+    "phone": "817-810-0542",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "perspire-sauna-studio-southlake-southlake",
@@ -8101,7 +8598,11 @@
     "source_urls": [
       "https://www.perspiresaunastudio.com/locations/southlake"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "email": "southlake@perspiresauanastudio.com",
+    "phone": "817-663-1642",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "pause-studio-southlake-southlake",
@@ -8142,7 +8643,11 @@
     "source_urls": [
       "https://pausestudio.com/locations/southlake"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "email": "southlake@pausestudio.com",
+    "phone": "682-204-1808",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "restore-revive-wellness-center-fort-worth",
@@ -8180,7 +8685,11 @@
       "https://www.restoreandrevivefw.com/cold-plunge",
       "https://www.restoreandrevivefw.com/"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "email": "info@restoreandrevivefw.com",
+    "phone": "817-720-6220",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "restore-hyper-wellness-plano-plano",
@@ -8218,7 +8727,11 @@
     "source_urls": [
       "https://www.restore.com/locations/tx-plano-tx005"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "email": "frontdesktx005@restore.com",
+    "phone": "469-969-2878",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "altered-states-wellness-coppell-coppell",
@@ -8257,7 +8770,11 @@
       "https://www.alteredstateswellness.com/locations",
       "https://www.alteredstateswellness.com/coppell-tx-float-therapy-sauna-cold-plunge-red-light-therapy"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "email": "hello@alteredstateswellness.com",
+    "phone": "972-393-0913",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "restore-hyper-wellness-center-city-philadelphia",
@@ -8295,7 +8812,11 @@
     "source_urls": [
       "https://www.restore.com/locations/pa-philadelphia-center-city-pa019"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "email": "frontdeskpa019@restore.com",
+    "phone": "215-982-2637",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "restore-hyper-wellness-plymouth-meeting-plymouth-meeting",
@@ -8333,7 +8854,11 @@
     "source_urls": [
       "https://www.restore.com/locations/pa-plymouth-meeting-pa003"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "email": "frontdeskpa003@restore.com",
+    "phone": "484-368-3492",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "mvmnt-center-queen-village-philadelphia",
@@ -8370,7 +8895,10 @@
     "source_urls": [
       "https://mvmnt.life/locations/queen-village/"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "phone": "215-607-7826",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "warriors-garden-spa-and-recovery-jenkintown",
@@ -8407,7 +8935,11 @@
     "source_urls": [
       "https://warriorsgardenspa.com/"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "email": "support@example.com",
+    "phone": "267-667-3537",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "surge-sauna-cold-plunge-downingtown",
@@ -8446,7 +8978,11 @@
     "source_urls": [
       "https://www.surgesaunacoldplunge.com/"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "email": "surgesaunacoldplunge@gmail.com",
+    "phone": "610-455-4555",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "cure-de-repos-chestnut-hill-philadelphia",
@@ -8482,7 +9018,11 @@
       "https://curederepos.com/pages/zen-garden-infrared-sauna",
       "https://curederepos.com/"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "email": "hello@curederepos.com",
+    "phone": "202-643-7377",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "main-line-float-and-freeze-ardmore",
@@ -8521,7 +9061,11 @@
       "https://www.floatandfreeze.com/infrared-sauna",
       "https://www.floatandfreeze.com/"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "email": "info@floatandfreeze.com",
+    "phone": "484-416-3795",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "the-fox-den-wellness-exton",
@@ -8559,7 +9103,11 @@
       "https://www.thefoxdenwellness.com/services",
       "https://www.thefoxdenwellness.com/"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "email": "em@thefoxdenwellness.com",
+    "phone": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "sweathouz-denver-denver",
@@ -8594,7 +9142,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-highlands-ranch-highlands-ranch",
@@ -8629,7 +9179,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "perspire-sauna-studio-denver-denver",
@@ -8663,7 +9215,9 @@
     "source_urls": [
       "https://www.perspire.com/find-a-studio"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "contrast-studio-denver-denver",
@@ -8699,7 +9253,9 @@
     "source_urls": [
       "https://contraststudio.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "the-best-saunas-and-cold-plunges-in-the-denver-area-denver",
@@ -8735,7 +9291,9 @@
       "https://5280.com/best-saunas-cold-plunges-in-denver/",
       "https://5280.com/best-saunas-cold-plunges-in-denver/#:~:text=The%20Best%20Saunas%20and%20Cold,Plunges%20in%20the%20Denver%20Area&text=Red%20Rock%20Sauna&text=Garden%20Sauna&text=Upswell&text=R%C3%B6k%20Spas&text=Third%20Space%20%26%20Co.&text=The%20Cove&text=Denver%20Sports%20Recovery"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "red-rock-saunahttpsredrocksaunacom-denver",
@@ -8771,7 +9329,11 @@
       "https://5280.com/best-saunas-cold-plunges-in-denver/#:~:text=The%20Best%20Saunas%20and%20Cold,Plunges%20in%20the%20Denver%20Area&text=Red%20Rock%20Sauna&text=Garden%20Sauna&text=Upswell&text=R%C3%B6k%20Spas&text=Third%20Space%20%26%20Co.&text=The%20Cove&text=Denver%20Sports%20Recovery",
       "https://redrocksauna.com"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "email": "info@redrocksauna.com",
+    "phone": "515-975-4420",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "garden-saunahttpswwwgardensaunadenvercom-denver",
@@ -8809,7 +9371,11 @@
       "https://5280.com/best-saunas-cold-plunges-in-denver/#:~:text=The%20Best%20Saunas%20and%20Cold,Plunges%20in%20the%20Denver%20Area&text=Red%20Rock%20Sauna&text=Garden%20Sauna&text=Upswell&text=R%C3%B6k%20Spas&text=Third%20Space%20%26%20Co.&text=The%20Cove&text=Denver%20Sports%20Recovery",
       "https://www.gardensaunadenver.com"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "email": "hello@gardensaunadenver.com",
+    "phone": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "the-covehttpsthecovesaunacom-denver",
@@ -8848,7 +9414,11 @@
       "https://5280.com/best-saunas-cold-plunges-in-denver/#:~:text=The%20Best%20Saunas%20and%20Cold,Plunges%20in%20the%20Denver%20Area&text=Red%20Rock%20Sauna&text=Garden%20Sauna&text=Upswell&text=R%C3%B6k%20Spas&text=Third%20Space%20%26%20Co.&text=The%20Cove&text=Denver%20Sports%20Recovery",
       "https://thecovesauna.com"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "email": "admin@thecovesauna.com",
+    "phone": "720-465-1636",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "sweathouz-fort-worth-fort-worth",
@@ -8883,7 +9453,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-plano-plano",
@@ -8918,7 +9490,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-allen-allen",
@@ -8953,7 +9527,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-dallas-dallas",
@@ -8988,7 +9564,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-arlington-arlington",
@@ -9023,7 +9601,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "best-wet-dry-saunas-in-dfw-dallas",
@@ -9057,7 +9637,9 @@
     "source_urls": [
       "https://www.reddit.com/r/Dallas/comments/16hz0pj/best_wet_dry_saunas_in_dfw/k0gpzdp/"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-philadelphia-philadelphia",
@@ -9092,7 +9674,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "sweathouz-media-media",
@@ -9127,7 +9711,9 @@
     "source_urls": [
       "https://sweathouz.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "contrast-studio-media-media",
@@ -9163,7 +9749,9 @@
     "source_urls": [
       "https://contraststudio.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "contrast-studio-philadelphia-philadelphia",
@@ -9199,7 +9787,9 @@
     "source_urls": [
       "https://contraststudio.com/locations"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "where-to-find-saunas-and-cold-plunges-under-one-roof-around-phil",
@@ -9234,7 +9824,9 @@
     "source_urls": [
       "https://www.phillymag.com/be-well-philly/sauna-cold-plunge-contrast-therapy/"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   },
   {
     "id": "aura-esthetic-spa-saunahttpsauraspasaunacom-philadelphia",
@@ -9269,7 +9861,11 @@
       "https://www.phillymag.com/be-well-philly/sauna-cold-plunge-contrast-therapy/",
       "https://auraspasauna.com"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "email": "mail@auraspasauna.com",
+    "phone": "215-322-3033",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "formation-sauna-wellnesshttpswwwformationsaunacom-philadelphia",
@@ -9305,7 +9901,11 @@
       "https://www.phillymag.com/be-well-philly/cold-plunge-philadelphia/",
       "https://www.formationsauna.com"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "email": "hello@formationsauna.com",
+    "phone": "267-324-3193",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "surge-sauna-cold-plungehttpswwwsurgesaunacoldplungecom-philadelp",
@@ -9343,7 +9943,11 @@
       "https://www.phillymag.com/be-well-philly/sauna-cold-plunge-contrast-therapy/",
       "https://www.surgesaunacoldplunge.com"
     ],
-    "last_verified": "2026-06-28"
+    "last_verified": "2026-06-28",
+    "email": "surgesaunacoldplunge@gmail.com",
+    "phone": "610-455-4555",
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "success"
   },
   {
     "id": "embrace-the-chill-in-these-philly-area-cold-plunges-philadelphia",
@@ -9377,6 +9981,8 @@
     "source_urls": [
       "https://www.phillymag.com/be-well-philly/cold-plunge-philadelphia/"
     ],
-    "last_verified": null
+    "last_verified": null,
+    "enriched_at": "2026-07-08",
+    "enrichment_status": "no_website"
   }
 ]
