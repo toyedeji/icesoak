@@ -12,9 +12,11 @@ interface PageSeo {
 // canonical, robots, and Open Graph. Titles are kept under ~60 chars + brand.
 export function pageMetadata({ title, description, path, index }: PageSeo): Metadata {
   const url = abs(path);
+  // Root layout applies `%s | ${SITE.name}` via its title template, so the
+  // page title here must stay unsuffixed or it renders "X | IceSoak | IceSoak".
   const fullTitle = title.includes(SITE.name) ? title : `${title} | ${SITE.name}`;
   return {
-    title: fullTitle,
+    title,
     description,
     alternates: { canonical: url },
     robots: index
