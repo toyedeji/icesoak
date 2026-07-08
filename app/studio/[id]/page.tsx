@@ -135,12 +135,12 @@ export default async function Page({ params }: P) {
         )}
       </dl>
 
-      <p>
+      <div className="detail__cta">
         {present(s.website) && (
           <a className="btn" href={s.website as string} rel="nofollow noopener" target="_blank">
             Visit website
           </a>
-        )}{" "}
+        )}
         {present(s.booking_url) && (
           <a
             className="btn"
@@ -148,10 +148,10 @@ export default async function Page({ params }: P) {
             rel="nofollow noopener"
             target="_blank"
           >
-            Book a session
+            Book a session →
           </a>
         )}
-      </p>
+      </div>
 
       <div className="section">
         <LazyMap studios={[s]} center={mapCenter} zoom={present(s.lat) ? 14 : 11} />

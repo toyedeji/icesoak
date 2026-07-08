@@ -429,6 +429,23 @@ main { display: block; padding: 1.4rem 0 3rem; }
   color: #fff;
 }
 
+/* CTA row on studio detail page — "Visit website" + "Book a session" */
+.detail__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.4rem 0;
+}
+@media (max-width: 640px) {
+  .detail__cta {
+    flex-direction: column;
+  }
+  .detail__cta .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /* =====================================================
    TILES — metro + modality cards
    ===================================================== */

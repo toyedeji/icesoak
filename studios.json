@@ -4206,42 +4206,6 @@
     "enrichment_status": "no_website"
   },
   {
-    "id": "best-saunas-in-austin-united-states-austin",
-    "name": "Best Saunas in Austin, United States",
-    "metro": "austin_tx",
-    "city": "Austin",
-    "lat": null,
-    "lng": null,
-    "status": "active",
-    "brand": null,
-    "state": "TX",
-    "neighborhood": null,
-    "address": null,
-    "website": "https://c.tile.openstreetmap.org/12/936/1685.png",
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "sauna"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": null,
-    "google_rating": null,
-    "google_reviews_count": null,
-    "source_urls": [
-      "https://findmysauna.com/austin#:~:text=Best%20Saunas%20in%20Austin%2C%20United,States&text=Ceremony%20Spa&text=Alive%20and%20Well&text=Austin%20Bouldering%20Project%20Springdale&text=Fairmont%20Spa%20Austin&text=KOKORO%20Wellness%20Center&text=Kuya%20Wellness"
-    ],
-    "last_verified": null,
-    "enriched_at": "2026-07-08",
-    "enrichment_status": "fetch_failed"
-  },
-  {
     "id": "sweathouz-naperville-naperville",
     "name": "SweatHouz Naperville",
     "metro": "chicago_il",
@@ -5057,77 +5021,6 @@
     "last_verified": null,
     "enriched_at": "2026-07-08",
     "enrichment_status": "no_website"
-  },
-  {
-    "id": "relax-and-recharge-in-these-top-3-recovery-studios-in-atlanta-at",
-    "name": "Relax and Recharge in These Top 3 Recovery Studios in Atlanta",
-    "metro": "atlanta_ga",
-    "city": "Atlanta",
-    "lat": null,
-    "lng": null,
-    "status": "active",
-    "brand": null,
-    "state": "GA",
-    "neighborhood": null,
-    "address": null,
-    "website": "https://www.threads.net/intent/post",
-    "booking_url": null,
-    "instagram": "@rsrc.php",
-    "modalities": [],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": null,
-    "google_rating": null,
-    "google_reviews_count": null,
-    "source_urls": [
-      "https://thefitatlanta.beehiiv.com/p/top-sauna-studios-in-atlanta",
-      "https://thefitatlanta.beehiiv.com/p/top-sauna-studios-in-atlanta#:~:text=BackYard%20Recovery%20is%20a%20fantastic,to%20feeling%20your%20best%20quick.",
-      "https://www.threads.net/intent/post"
-    ],
-    "last_verified": "2026-07-06",
-    "enriched_at": "2026-07-08",
-    "enrichment_status": "fetch_failed"
-  },
-  {
-    "id": "but-what-is-a-recovery-studio-atlanta",
-    "name": "But What is a Recovery Studio?",
-    "metro": "atlanta_ga",
-    "city": "Atlanta",
-    "lat": null,
-    "lng": null,
-    "status": "active",
-    "brand": null,
-    "state": "GA",
-    "neighborhood": null,
-    "address": null,
-    "website": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/59ae3242-04e0-4020-8ac6-7caddbc9aec0/backyardrecovery.jpg",
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": null,
-    "google_rating": null,
-    "google_reviews_count": null,
-    "source_urls": [
-      "https://thefitatlanta.beehiiv.com/p/top-sauna-studios-in-atlanta",
-      "https://thefitatlanta.beehiiv.com/p/top-sauna-studios-in-atlanta#:~:text=BackYard%20Recovery%20is%20a%20fantastic,to%20feeling%20your%20best%20quick."
-    ],
-    "last_verified": null,
-    "enriched_at": "2026-07-08",
-    "enrichment_status": "fetch_failed"
   },
   {
     "id": "recovery-studio-1-backyard-recovery-atlanta",
@@ -8282,7 +8175,7 @@
     "neighborhood": "University",
     "address": "2450 S University Blvd Ste D1, Denver, CO 80210",
     "website": "https://www.perspiresaunastudio.com/locations/cherry-hills",
-    "booking_url": "https://www.facebook.com/perspiresaunastudio)[Instagram](https://www.instagram.com/perspiresaunastudio/)[Linkedin](https://www.linkedin.com/company/perspire-sauna-studio)[TikTok](https://www.tiktok.com/@perspiresaunastudio)[Youtube](https://www.youtube.com/@perspiresaunastudio)",
+    "booking_url": null,
     "instagram": "@perspiresaunastudio",
     "modalities": [
       "sauna_infrared",
@@ -8533,7 +8426,7 @@
     "neighborhood": "Waterside",
     "address": "3700 Vision Dr Ste 112, Fort Worth, TX 76109",
     "website": "https://www.perspiresaunastudio.com/locations/fw-waterside",
-    "booking_url": "https://www.facebook.com/perspiresaunastudio)[Instagram](https://www.instagram.com/perspiresaunastudio/)[Linkedin](https://www.linkedin.com/company/perspire-sauna-studio)[TikTok](https://www.tiktok.com/@perspiresaunastudio)[Youtube](https://www.youtube.com/@perspiresaunastudio)",
+    "booking_url": null,
     "instagram": "@perspiresaunastudio",
     "modalities": [
       "sauna_infrared",
@@ -8575,7 +8468,7 @@
     "neighborhood": null,
     "address": "2251 E Southlake Blvd, Southlake, TX 76092",
     "website": "https://www.perspiresaunastudio.com/locations/southlake",
-    "booking_url": "https://www.facebook.com/perspiresaunastudio)[Instagram](https://www.instagram.com/perspiresaunastudio/)[Linkedin](https://www.linkedin.com/company/perspire-sauna-studio)[TikTok](https://www.tiktok.com/@perspiresaunastudio)[Youtube](https://www.youtube.com/@perspiresaunastudio)",
+    "booking_url": null,
     "instagram": "@perspiresaunastudio",
     "modalities": [
       "sauna_infrared",
@@ -8617,7 +8510,7 @@
     "neighborhood": null,
     "address": "1241 E State Hwy 114 Ste 180, Southlake, TX 76092",
     "website": "https://pausestudio.com/locations/southlake",
-    "booking_url": "https://www.instagram.com/_pause.studio_/)[](https://www.facebook.com/pausestudio.la/)",
+    "booking_url": "https://www.instagram.com/_pause.studio_/",
     "instagram": "@pause.southlake",
     "modalities": [
       "cold_plunge",
@@ -8873,7 +8766,7 @@
     "neighborhood": "Queen Village",
     "address": "609 E Passyunk Ave, Philadelphia, PA 19147",
     "website": "https://mvmnt.life/locations/queen-village/",
-    "booking_url": "https://mvmnt.life/locations/queen-village/#schedule)",
+    "booking_url": "https://mvmnt.life/locations/queen-village/#schedule",
     "instagram": null,
     "modalities": [
       "cold_plunge",
@@ -9308,7 +9201,7 @@
     "neighborhood": null,
     "address": null,
     "website": "https://redrocksauna.com",
-    "booking_url": "https://www.facebook.com/Redrocksauna)",
+    "booking_url": null,
     "instagram": "@redrock.sauna",
     "modalities": [
       "cold_plunge"
@@ -9348,7 +9241,7 @@
     "neighborhood": null,
     "address": null,
     "website": "https://www.gardensaunadenver.com",
-    "booking_url": "https://www.gardensaunadenver.com/book-now)",
+    "booking_url": "https://www.gardensaunadenver.com/book-now",
     "instagram": "@gardensaunadenver",
     "modalities": [
       "cold_plunge"
@@ -9390,7 +9283,7 @@
     "neighborhood": null,
     "address": null,
     "website": "https://thecovesauna.com",
-    "booking_url": "https://book.peek.com/s/45387d14-26af-4e92-8659-80bccb334938/RdxWA)",
+    "booking_url": "https://book.peek.com/s/45387d14-26af-4e92-8659-80bccb334938/RdxWA",
     "instagram": "@thecovesaunaandcoldplunge",
     "modalities": [
       "cold_plunge",
@@ -9841,7 +9734,7 @@
     "neighborhood": null,
     "address": "98 Buck Rd, Southampton, PA 18966",
     "website": "https://auraspasauna.com",
-    "booking_url": "https://www.facebook.com/auraspasauna/)",
+    "booking_url": null,
     "instagram": "@auraspa98",
     "modalities": [
       "cold_plunge"
@@ -9880,7 +9773,7 @@
     "neighborhood": null,
     "address": null,
     "website": "https://www.formationsauna.com",
-    "booking_url": "https://go.booker.com/location/FormationSaunaWellness/service-menu)",
+    "booking_url": "https://go.booker.com/location/FormationSaunaWellness/service-menu",
     "instagram": "@formation_sauna",
     "modalities": [
       "sauna_traditional"
@@ -9920,7 +9813,7 @@
     "neighborhood": null,
     "address": "1150 Boot Rd Suite 5, Downingtown, PA 19335",
     "website": "https://www.surgesaunacoldplunge.com",
-    "booking_url": "https://surgesaunacoldplunge.pushpress.com/open/purchase-old/prd_32b8d3ff581795)[Book",
+    "booking_url": "https://surgesaunacoldplunge.pushpress.com/open/purchase-old/prd_32b8d3ff581795",
     "instagram": "@surgesaunacoldplunge",
     "modalities": [
       "cold_plunge",
