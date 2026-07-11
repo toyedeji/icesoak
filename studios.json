@@ -984,7 +984,7 @@
     "brand": null,
     "state": "IL",
     "neighborhood": null,
-    "address": null,
+    "address": "113 N Oak Park Ave, Oak Park, IL 60301",
     "website": null,
     "booking_url": null,
     "instagram": null,
@@ -3926,40 +3926,6 @@
     "enrichment_status": "no_website"
   },
   {
-    "id": "the-recovery-studio---chiropractor-clinic-brentwood",
-    "name": "The Recovery Studio - Chiropractor Clinic",
-    "metro": "nashville_tn",
-    "city": "Brentwood",
-    "lat": 36.1147017,
-    "lng": -86.7648436,
-    "status": "active",
-    "brand": null,
-    "state": "TN",
-    "neighborhood": null,
-    "address": "2819 Dogwood Pl, Berry Hill, TN 37204",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x8864656f02408795:0xcd8211fb5b7e989f",
-    "google_rating": 5,
-    "google_reviews_count": 88,
-    "source_urls": [
-      "https://www.google.com/maps/place/The+Recovery+Studio+-+Chiropractor+Clinic/data=!4m7!3m6!1s0x8864656f02408795:0xcd8211fb5b7e989f!8m2!3d36.1147017!4d-86.7648436!16s%2Fg%2F11rr8cz3wf!19sChIJlYdAAm9lZIgRn5h-W_sRgs0?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null,
-    "enriched_at": "2026-07-08",
-    "enrichment_status": "no_website"
-  },
-  {
     "id": "nashville-wellness-recovery-and-detox-brentwood",
     "name": "Nashville Wellness Recovery and Detox",
     "metro": "nashville_tn",
@@ -4180,7 +4146,7 @@
     "brand": "Perspire Sauna Studio",
     "state": "TX",
     "neighborhood": null,
-    "address": null,
+    "address": "4601 N Lamar Blvd, Austin, TX 78751",
     "website": null,
     "booking_url": null,
     "instagram": null,
@@ -4203,7 +4169,8 @@
     ],
     "last_verified": null,
     "enriched_at": "2026-07-08",
-    "enrichment_status": "no_website"
+    "enrichment_status": "no_website",
+    "phone": "512-243-6799"
   },
   {
     "id": "sweathouz-naperville-naperville",
@@ -4327,7 +4294,7 @@
     "brand": "Perspire Sauna Studio",
     "state": "IL",
     "neighborhood": null,
-    "address": null,
+    "address": "3320 N Broadway, Chicago, IL 60657",
     "website": null,
     "booking_url": null,
     "instagram": null,
@@ -4350,7 +4317,8 @@
     ],
     "last_verified": null,
     "enriched_at": "2026-07-08",
-    "enrichment_status": "no_website"
+    "enrichment_status": "no_website",
+    "phone": "872-804-3412"
   },
   {
     "id": "sweathouz-vinings-vinings",
@@ -4622,7 +4590,7 @@
     "brand": "Perspire Sauna Studio",
     "state": "GA",
     "neighborhood": null,
-    "address": null,
+    "address": "322 Pharr Rd NE, Atlanta, GA 30305",
     "website": null,
     "booking_url": null,
     "instagram": null,
@@ -4645,115 +4613,8 @@
     ],
     "last_verified": null,
     "enriched_at": "2026-07-08",
-    "enrichment_status": "no_website"
-  },
-  {
-    "id": "contrast-therapy-atlanta",
-    "name": "Contrast Therapy",
-    "metro": "atlanta_ga",
-    "city": "Atlanta",
-    "lat": null,
-    "lng": null,
-    "status": "active",
-    "brand": null,
-    "state": "GA",
-    "neighborhood": null,
-    "address": null,
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": null,
-    "google_rating": null,
-    "google_reviews_count": null,
-    "source_urls": [
-      "https://bestselfatlanta.com/contrast-therapy/",
-      "https://bestselfatlanta.com/contrast-therapy/#:~:text=While%20an%20ancient%20greek%20and,studios%20across%20Atlanta%20and%20beyond."
-    ],
-    "last_verified": null,
-    "enriched_at": "2026-07-08",
-    "enrichment_status": "no_website"
-  },
-  {
-    "id": "recovery-studio-1-backyard-recovery-atlanta",
-    "name": "BackYard Recovery",
-    "metro": "atlanta_ga",
-    "city": "Atlanta",
-    "lat": null,
-    "lng": null,
-    "status": "active",
-    "brand": null,
-    "state": "GA",
-    "neighborhood": null,
-    "address": null,
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": null,
-    "google_rating": null,
-    "google_reviews_count": null,
-    "source_urls": [
-      "https://thefitatlanta.beehiiv.com/p/top-sauna-studios-in-atlanta",
-      "https://thefitatlanta.beehiiv.com/p/top-sauna-studios-in-atlanta#:~:text=BackYard%20Recovery%20is%20a%20fantastic,to%20feeling%20your%20best%20quick."
-    ],
-    "last_verified": null,
-    "enriched_at": "2026-07-08",
-    "enrichment_status": "no_website"
-  },
-  {
-    "id": "infrared-sauna-therapy-atlanta",
-    "name": "Infrared Sauna Therapy",
-    "metro": "atlanta_ga",
-    "city": "Atlanta",
-    "lat": null,
-    "lng": null,
-    "status": "active",
-    "brand": null,
-    "state": "GA",
-    "neighborhood": null,
-    "address": null,
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "sauna_infrared",
-      "sauna"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": null,
-    "google_rating": null,
-    "google_reviews_count": null,
-    "source_urls": [
-      "https://thefitatlanta.beehiiv.com/p/top-sauna-studios-in-atlanta",
-      "https://thefitatlanta.beehiiv.com/p/top-sauna-studios-in-atlanta#:~:text=BackYard%20Recovery%20is%20a%20fantastic,to%20feeling%20your%20best%20quick."
-    ],
-    "last_verified": null,
-    "enriched_at": "2026-07-08",
-    "enrichment_status": "no_website"
+    "enrichment_status": "no_website",
+    "phone": "678-705-9257"
   },
   {
     "id": "recovery-studio-2-the-salt-room-atlanta",
@@ -4766,7 +4627,7 @@
     "brand": null,
     "state": "GA",
     "neighborhood": null,
-    "address": null,
+    "address": "1 Buckhead Plaza, 3060 Peachtree Rd NW, Atlanta, GA 30305",
     "website": null,
     "booking_url": null,
     "instagram": null,
@@ -4794,49 +4655,14 @@
     "id": "recovery-studio-3-restore-hyper-wellness-atlanta",
     "name": "Restore Hyper Wellness",
     "metro": "atlanta_ga",
-    "city": "Atlanta",
+    "city": "Vinings",
     "lat": null,
     "lng": null,
     "status": "active",
     "brand": null,
     "state": "GA",
     "neighborhood": null,
-    "address": null,
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": null,
-    "google_rating": null,
-    "google_reviews_count": null,
-    "source_urls": [
-      "https://thefitatlanta.beehiiv.com/p/top-sauna-studios-in-atlanta",
-      "https://thefitatlanta.beehiiv.com/p/top-sauna-studios-in-atlanta#:~:text=BackYard%20Recovery%20is%20a%20fantastic,to%20feeling%20your%20best%20quick."
-    ],
-    "last_verified": null,
-    "enriched_at": "2026-07-08",
-    "enrichment_status": "no_website"
-  },
-  {
-    "id": "cryotherapy-atlanta",
-    "name": "Cryotherapy",
-    "metro": "atlanta_ga",
-    "city": "Atlanta",
-    "lat": null,
-    "lng": null,
-    "status": "active",
-    "brand": null,
-    "state": "GA",
-    "neighborhood": null,
-    "address": null,
+    "address": "4300 Paces Ferry Rd SE Suite 240, Atlanta, GA 30339",
     "website": null,
     "booking_url": null,
     "instagram": null,
@@ -4931,7 +4757,8 @@
     ],
     "last_verified": null,
     "enriched_at": "2026-07-08",
-    "enrichment_status": "no_website"
+    "enrichment_status": "no_website",
+    "needs_address_review": true
   },
   {
     "id": "sweathouz-hollywood-hollywood",
@@ -5115,43 +4942,8 @@
     ],
     "last_verified": null,
     "enriched_at": "2026-07-08",
-    "enrichment_status": "no_website"
-  },
-  {
-    "id": "best-saunas-and-coldplunge-near-wynwoodedgewater-miami",
-    "name": "Best saunas and coldplunge near Wynwood/Edgewater",
-    "metro": "miami_fl",
-    "city": "Miami",
-    "lat": null,
-    "lng": null,
-    "status": "active",
-    "brand": null,
-    "state": "FL",
-    "neighborhood": null,
-    "address": null,
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "sauna"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": null,
-    "google_rating": null,
-    "google_reviews_count": null,
-    "source_urls": [
-      "https://www.reddit.com/r/Miami/comments/1n74345/best_saunas_and_coldplunge_near_wynwoodedgewater/"
-    ],
-    "last_verified": null,
-    "enriched_at": "2026-07-08",
-    "enrichment_status": "no_website"
+    "enrichment_status": "no_website",
+    "needs_address_review": true
   },
   {
     "id": "sweathouz-nashville-nashville",
@@ -5194,14 +4986,14 @@
     "id": "sweathouz-germantown-germantown",
     "name": "SweatHouz Germantown",
     "metro": "nashville_tn",
-    "city": "Germantown",
+    "city": "Nashville",
     "lat": null,
     "lng": null,
     "status": "active",
     "brand": "SweatHouz",
     "state": "TN",
     "neighborhood": null,
-    "address": null,
+    "address": "820 4th Ave N, Nashville, TN 37208",
     "website": null,
     "booking_url": null,
     "instagram": null,
@@ -5302,43 +5094,6 @@
     "enrichment_status": "no_website"
   },
   {
-    "id": "the-5-best-saunas-in-nashville-to-visit-for-your-overall-wellnes",
-    "name": "The 5 Best Saunas in Nashville to Visit for Your Overall Wellness and Relaxation",
-    "metro": "nashville_tn",
-    "city": "Nashville",
-    "lat": null,
-    "lng": null,
-    "status": "active",
-    "brand": null,
-    "state": "TN",
-    "neighborhood": null,
-    "address": null,
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "sauna"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": null,
-    "google_rating": null,
-    "google_reviews_count": null,
-    "source_urls": [
-      "https://www.nashvilleexplored.com/best-saunas-nashville/",
-      "https://www.nashvilleexplored.com/best-saunas-nashville/#:~:text=Pure%20Sweat%20%2B%20Float%20Studio,cold%20plunge%20or%20float%20therapy."
-    ],
-    "last_verified": null,
-    "enriched_at": "2026-07-08",
-    "enrichment_status": "no_website"
-  },
-  {
     "id": "pure-sweat-sauna-studio-nashville",
     "name": "Pure Sweat Sauna Studio",
     "metro": "nashville_tn",
@@ -5349,7 +5104,7 @@
     "brand": null,
     "state": "TN",
     "neighborhood": null,
-    "address": null,
+    "address": "2813 12th Ave S, Nashville, TN 37204",
     "website": null,
     "booking_url": null,
     "instagram": null,
@@ -5369,40 +5124,6 @@
     "google_reviews_count": null,
     "source_urls": [
       "https://nashvilleguru.com/70803/detox-and-alternative-therapy-in-nashville#:~:text=Pure%20Sweat%20Sauna%20Studio&text=Best%20Known%20For%3A%20Infrared%20saunas%2C,cold%20plunging%2C%20and%20contrast%20therapy&text=Neighborhood%3A%2012%20South%20%7C%20Gulch"
-    ],
-    "last_verified": null,
-    "enriched_at": "2026-07-08",
-    "enrichment_status": "no_website"
-  },
-  {
-    "id": "the-recovery-studio---chiropractor-clinic-nashville",
-    "name": "The Recovery Studio - Chiropractor Clinic",
-    "metro": "nashville_tn",
-    "city": "Nashville",
-    "lat": null,
-    "lng": null,
-    "status": "active",
-    "brand": null,
-    "state": "TN",
-    "neighborhood": null,
-    "address": null,
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": null,
-    "google_rating": null,
-    "google_reviews_count": null,
-    "source_urls": [
-      "https://maps.google.com/maps?sca_esv=4b04a474141781e0&output=search&q=best+recovery+studio+Nashville&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLyK4ERdJZ5WXX5biY7ThytPUwhDZ4zWlposZegQheFJtnTwoZbPaayv6_YtEefpWCjmz73Jyr7IRuf_2vYvmmHv_Ae_segOg_jjMs94adRyxBv0ZuL_36pwSVuX6tnn0JlPBABUG4oP6upLMGD8RPYMYVRy6g&entry=mc&ved=1t:200715&ictx=111"
     ],
     "last_verified": null,
     "enriched_at": "2026-07-08",
@@ -5479,7 +5200,8 @@
     ],
     "last_verified": null,
     "enriched_at": "2026-07-08",
-    "enrichment_status": "no_website"
+    "enrichment_status": "no_website",
+    "needs_address_review": true
   },
   {
     "id": "r3-spa-sauna-cold-plunge-denver",
@@ -6927,7 +6649,8 @@
     ],
     "last_verified": null,
     "enriched_at": "2026-07-08",
-    "enrichment_status": "no_website"
+    "enrichment_status": "no_website",
+    "needs_address_review": true
   },
   {
     "id": "surge-sauna-cold-plunge-llc-king-of-prussia",
@@ -8673,7 +8396,7 @@
     "brand": "SweatHouz",
     "state": "CO",
     "neighborhood": null,
-    "address": null,
+    "address": "2101 S Broadway St, Denver, CO 80210",
     "website": null,
     "booking_url": null,
     "instagram": null,
@@ -8697,7 +8420,8 @@
     ],
     "last_verified": null,
     "enriched_at": "2026-07-08",
-    "enrichment_status": "no_website"
+    "enrichment_status": "no_website",
+    "phone": "303-997-3395"
   },
   {
     "id": "sweathouz-highlands-ranch-highlands-ranch",
@@ -8747,7 +8471,7 @@
     "brand": "Perspire Sauna Studio",
     "state": "CO",
     "neighborhood": null,
-    "address": null,
+    "address": "2450 S University Blvd, Denver, CO 80210",
     "website": null,
     "booking_url": null,
     "instagram": null,
@@ -8770,7 +8494,8 @@
     ],
     "last_verified": null,
     "enriched_at": "2026-07-08",
-    "enrichment_status": "no_website"
+    "enrichment_status": "no_website",
+    "phone": "720-605-0774"
   },
   {
     "id": "contrast-studio-denver-denver",
@@ -8808,45 +8533,8 @@
     ],
     "last_verified": null,
     "enriched_at": "2026-07-08",
-    "enrichment_status": "no_website"
-  },
-  {
-    "id": "the-best-saunas-and-cold-plunges-in-the-denver-area-denver",
-    "name": "The Best Saunas and Cold Plunges in the Denver Area",
-    "metro": "denver_co",
-    "city": "Denver",
-    "lat": null,
-    "lng": null,
-    "status": "active",
-    "brand": null,
-    "state": "CO",
-    "neighborhood": null,
-    "address": null,
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "cold_plunge",
-      "sauna"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": null,
-    "google_rating": null,
-    "google_reviews_count": null,
-    "source_urls": [
-      "https://5280.com/best-saunas-cold-plunges-in-denver/",
-      "https://5280.com/best-saunas-cold-plunges-in-denver/#:~:text=The%20Best%20Saunas%20and%20Cold,Plunges%20in%20the%20Denver%20Area&text=Red%20Rock%20Sauna&text=Garden%20Sauna&text=Upswell&text=R%C3%B6k%20Spas&text=Third%20Space%20%26%20Co.&text=The%20Cove&text=Denver%20Sports%20Recovery"
-    ],
-    "last_verified": null,
-    "enriched_at": "2026-07-08",
-    "enrichment_status": "no_website"
+    "enrichment_status": "no_website",
+    "needs_address_review": true
   },
   {
     "id": "red-rock-saunahttpsredrocksaunacom-denver",
@@ -8886,7 +8574,8 @@
     "email": "info@redrocksauna.com",
     "phone": "515-975-4420",
     "enriched_at": "2026-07-08",
-    "enrichment_status": "success"
+    "enrichment_status": "success",
+    "needs_address_review": true
   },
   {
     "id": "garden-saunahttpswwwgardensaunadenvercom-denver",
@@ -8928,7 +8617,8 @@
     "email": "hello@gardensaunadenver.com",
     "phone": null,
     "enriched_at": "2026-07-08",
-    "enrichment_status": "success"
+    "enrichment_status": "success",
+    "needs_address_review": true
   },
   {
     "id": "the-covehttpsthecovesaunacom-denver",
@@ -8971,7 +8661,8 @@
     "email": "admin@thecovesauna.com",
     "phone": "720-465-1636",
     "enriched_at": "2026-07-08",
-    "enrichment_status": "success"
+    "enrichment_status": "success",
+    "needs_address_review": true
   },
   {
     "id": "sweathouz-fort-worth-fort-worth",
@@ -9159,42 +8850,6 @@
     "enrichment_status": "no_website"
   },
   {
-    "id": "best-wet-dry-saunas-in-dfw-dallas",
-    "name": "Best wet & dry saunas in DFW?",
-    "metro": "dallas_fort_worth_tx",
-    "city": "Dallas",
-    "lat": null,
-    "lng": null,
-    "status": "active",
-    "brand": null,
-    "state": "TX",
-    "neighborhood": null,
-    "address": null,
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "sauna"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": null,
-    "google_rating": null,
-    "google_reviews_count": null,
-    "source_urls": [
-      "https://www.reddit.com/r/Dallas/comments/16hz0pj/best_wet_dry_saunas_in_dfw/k0gpzdp/"
-    ],
-    "last_verified": null,
-    "enriched_at": "2026-07-08",
-    "enrichment_status": "no_website"
-  },
-  {
     "id": "sweathouz-philadelphia-philadelphia",
     "name": "SweatHouz Philadelphia",
     "metro": "philadelphia_pa",
@@ -9304,7 +8959,8 @@
     ],
     "last_verified": null,
     "enriched_at": "2026-07-08",
-    "enrichment_status": "no_website"
+    "enrichment_status": "no_website",
+    "needs_address_review": true
   },
   {
     "id": "contrast-studio-philadelphia-philadelphia",
@@ -9342,44 +8998,8 @@
     ],
     "last_verified": null,
     "enriched_at": "2026-07-08",
-    "enrichment_status": "no_website"
-  },
-  {
-    "id": "where-to-find-saunas-and-cold-plunges-under-one-roof-around-phil",
-    "name": "Where to Find Saunas and Cold Plunges Under One Roof Around Philly",
-    "metro": "philadelphia_pa",
-    "city": "Philadelphia",
-    "lat": null,
-    "lng": null,
-    "status": "active",
-    "brand": null,
-    "state": "PA",
-    "neighborhood": null,
-    "address": null,
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "cold_plunge",
-      "sauna"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": null,
-    "google_rating": null,
-    "google_reviews_count": null,
-    "source_urls": [
-      "https://www.phillymag.com/be-well-philly/sauna-cold-plunge-contrast-therapy/"
-    ],
-    "last_verified": null,
-    "enriched_at": "2026-07-08",
-    "enrichment_status": "no_website"
+    "enrichment_status": "no_website",
+    "needs_address_review": true
   },
   {
     "id": "aura-esthetic-spa-saunahttpsauraspasaunacom-philadelphia",
@@ -9458,7 +9078,8 @@
     "email": "hello@formationsauna.com",
     "phone": "267-324-3193",
     "enriched_at": "2026-07-08",
-    "enrichment_status": "success"
+    "enrichment_status": "success",
+    "needs_address_review": true
   },
   {
     "id": "surge-sauna-cold-plungehttpswwwsurgesaunacoldplungecom-philadelp",
@@ -9501,41 +9122,5 @@
     "phone": "610-455-4555",
     "enriched_at": "2026-07-08",
     "enrichment_status": "success"
-  },
-  {
-    "id": "embrace-the-chill-in-these-philly-area-cold-plunges-philadelphia",
-    "name": "Embrace the Chill in These Philly-Area Cold Plunges",
-    "metro": "philadelphia_pa",
-    "city": "Philadelphia",
-    "lat": null,
-    "lng": null,
-    "status": "active",
-    "brand": null,
-    "state": "PA",
-    "neighborhood": null,
-    "address": null,
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "cold_plunge"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": null,
-    "google_rating": null,
-    "google_reviews_count": null,
-    "source_urls": [
-      "https://www.phillymag.com/be-well-philly/cold-plunge-philadelphia/"
-    ],
-    "last_verified": null,
-    "enriched_at": "2026-07-08",
-    "enrichment_status": "no_website"
   }
 ]
