@@ -10,3 +10,4 @@ __pycache__/
 *.pyc
 scraper/.last_studio_count
 scraper/quality_gate.log
+.claude/skills/
