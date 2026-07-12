@@ -28,6 +28,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={inter.variable}>
+      <head>
+        <meta name="impact-site-verification" content="4ca40c7d-f208-4ed2-b039-762c1152e9bb"/>
+      </head>
       <body>
         {/* Site-wide Organization + WebSite structured data */}
         <JsonLd data={[organizationSchema(), websiteSchema()]} />
