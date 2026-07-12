@@ -35,6 +35,12 @@ def _clean(studio: dict) -> Optional[dict]:  # noqa: F821
     if not studio.get("name") or not studio.get("metro") or not studio.get("city"):
         return None
 
+    # Reject junk names (article titles, generic modality names, questions)
+    from processors.quality_gate import is_valid_studio_name
+    if not is_valid_studio_name(studio["name"]):
+        log.debug("Rejected junk name: %s", studio["name"])
+        return None
+
     name_lower = studio["name"].lower()
     EXCLUDED = ["nail salon", "hair salon", "barber", "dental", "urgent care", "medical spa"]
     if any(t in name_lower for t in EXCLUDED):

@@ -216,3 +216,77 @@ if __name__ == "__main__":
         print("Usage: quality_gate.py <path/to/studios.json>", file=sys.stderr)
         sys.exit(1)
     run(Path(sys.argv[1]))
+
+# ── Studio name validator ─────────────────────────────────────────────────────
+# Patterns that indicate a scraper-noise name rather than a real business.
+_NAME_JUNK_RE = re.compile(
+    r"(?i)"
+    r"^(how|what|why|when|where|who|which|the best|best|top \d|tips|key |"
+    r"incorporating|a powerful|the science|benefits of|the benefits|"
+    r"how often|recovery studio #\d|infrared sauna therapy$|"
+    r"contrast therapy$|cryotherapy$|sauna therapy$)"
+)
+
+# A real business name must have at least 2 words and not be a question/listicle.
+_NAME_QUESTION_RE = re.compile(r"\?$")
+
+def is_valid_studio_name(name: str) -> bool:
+    """Return True if name looks like a real business, False if it's scraper noise."""
+    if not name or not name.strip():
+        return False
+    name = name.strip()
+    # Must have at least 2 characters
+    if len(name) < 4:
+        return False
+    # Reject question titles
+    if _NAME_QUESTION_RE.search(name):
+        return False
+    # Reject known junk patterns
+    if _NAME_JUNK_RE.search(name):
+        return False
+    # Must contain at least one letter
+    if not re.search(r'[A-Za-z]', name):
+        return False
+    return True
+
+def validate_incoming_studios(new_studios: list, existing_studios: list) -> tuple[list, list]:
+    """Filter new studios before merging into the main dataset.
+    
+    Returns (accepted, rejected) lists.
+    Rejects:
+      - Junk names (article titles, generic modality names)
+      - Duplicates of existing studios (same name + metro)
+      - Studios missing both city and state
+    """
+    existing_keys = {
+        f"{s.get('name','').lower().strip()}::{s.get('metro','')}"
+        for s in existing_studios
+    }
+    
+    accepted = []
+    rejected = []
+    
+    for s in new_studios:
+        name = s.get('name', '').strip()
+        metro = s.get('metro', '')
+        
+        # Name validation
+        if not is_valid_studio_name(name):
+            rejected.append({'studio': s, 'reason': f'junk_name: {name}'})
+            continue
+        
+        # Duplicate check
+        key = f"{name.lower()}::{metro}"
+        if key in existing_keys:
+            rejected.append({'studio': s, 'reason': 'duplicate'})
+            continue
+        
+        # Must have city or address
+        if not s.get('city') and not s.get('address'):
+            rejected.append({'studio': s, 'reason': 'no_location'})
+            continue
+        
+        existing_keys.add(key)
+        accepted.append(s)
+    
+    return accepted, rejected
