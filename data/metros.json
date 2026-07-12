@@ -13,7 +13,7 @@
   {
     "metro": "dallas_fort_worth_tx",
     "slug": "dallas-fort-worth",
-    "name": "Dallas–Fort Worth",
+    "name": "Dallas\u2013Fort Worth",
     "state": "TX",
     "stateName": "Texas",
     "lat": 32.7767,
@@ -97,5 +97,27 @@
     "lng": -86.7816,
     "dense": false,
     "blurb": "Nashville's fast-growing wellness scene includes cold plunge, sauna, and contrast-therapy studios across the city and surrounding communities."
+  },
+  {
+    "metro": "los_angeles_ca",
+    "slug": "los-angeles",
+    "name": "Los Angeles",
+    "state": "CA",
+    "stateName": "California",
+    "lat": 34.0522,
+    "lng": -118.2437,
+    "dense": true,
+    "blurb": "LA's wellness culture runs deep \u2014 from Venice Beach recovery studios to Beverly Hills contrast therapy suites."
+  },
+  {
+    "metro": "phoenix_az",
+    "slug": "phoenix",
+    "name": "Phoenix",
+    "state": "AZ",
+    "stateName": "Arizona",
+    "lat": 33.4484,
+    "lng": -112.074,
+    "dense": true,
+    "blurb": "Phoenix's year-round heat makes cold plunge and contrast therapy a serious lifestyle staple for athletes and wellness seekers."
   }
 ]
