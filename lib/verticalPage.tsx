@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import CollectionView from "@/components/CollectionView";
+import AffiliateSection from "@/components/AffiliateSection";
 import { METROS, metroBySlug } from "./data";
 import { studiosForVertical, isIndexable, VERTICALS, type Vertical } from "./studios";
 import { cityCapsule, cityDescription } from "./copy";
@@ -13,6 +14,14 @@ export interface CityParams {
 
 function basePath(v: Vertical, slug: string) {
   return `/${v}/${slug}/`;
+}
+
+// Only cold-plunge and sauna city pages carry the "Practice at Home" affiliate
+// section — infrared-sauna and contrast-therapy pages are unaffected.
+function affiliateTypeFor(v: Vertical): "cold_plunge" | "sauna" | null {
+  if (v === "cold-plunge") return "cold_plunge";
+  if (v === "sauna") return "sauna";
+  return null;
 }
 
 // Generate a page for every metro that has at least one qualifying studio for
@@ -58,6 +67,8 @@ export function VerticalCityPage(v: Vertical, params: CityParams) {
     itemListSchema(studios, `${label} studios in ${metro.name}, ${metro.state}`),
   ];
 
+  const affiliateType = affiliateTypeFor(v);
+
   return (
     <CollectionView
       crumbs={crumbs}
@@ -71,6 +82,7 @@ export function VerticalCityPage(v: Vertical, params: CityParams) {
         <p className="lead">{metro.blurb}</p>
       }
     >
+      {affiliateType && <AffiliateSection type={affiliateType} />}
       <SiblingLinks v={v} citySlug={metro.slug} cityName={metro.name} />
     </CollectionView>
   );

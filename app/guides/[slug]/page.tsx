@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import AnswerCapsule from "@/components/AnswerCapsule";
+import AffiliateSection from "@/components/AffiliateSection";
 import JsonLd from "@/components/JsonLd";
 import { QUESTIONS, questionBySlug } from "@/lib/data";
 import { pageMetadata, clamp } from "@/lib/seo";
@@ -87,6 +88,8 @@ export default async function Page({ params }: P) {
           </ul>
         </section>
       )}
+
+      <AffiliateSection type="general" />
     </div>
   );
 }
