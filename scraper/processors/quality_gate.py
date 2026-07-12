@@ -224,7 +224,9 @@ _NAME_JUNK_RE = re.compile(
     r"^(how|what|why|when|where|who|which|the best|best|top \d|tips|key |"
     r"incorporating|a powerful|the science|benefits of|the benefits|"
     r"how often|recovery studio #\d|infrared sauna therapy$|"
-    r"contrast therapy$|cryotherapy$|sauna therapy$)"
+    r"contrast therapy$|cryotherapy$|sauna therapy$|"
+    r"cold plunge spots$|gym with|massage &|sauna in [a-z]+$|"
+    r"location with|sauna recommendation|icepass cold plunge)"
 )
 
 # A real business name must have at least 2 words and not be a question/listicle.

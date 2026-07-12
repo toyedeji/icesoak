@@ -122,6 +122,27 @@ ALL_METROS = [
             "Germantown", "East Nashville", "12 South", "Gulch", "Bellevue",
         ],
     },
+    {
+        "id": "los_angeles_ca",
+        "name": "Los Angeles",
+        "state": "CA",
+        "cities": [
+            "Los Angeles", "West Hollywood", "Beverly Hills", "Santa Monica",
+            "Culver City", "Brentwood", "West LA", "Silver Lake", "Los Feliz",
+            "Echo Park", "Venice", "Marina del Rey", "Playa Vista",
+            "Pasadena", "Burbank", "Glendale", "Studio City", "Sherman Oaks",
+        ],
+    },
+    {
+        "id": "phoenix_az",
+        "name": "Phoenix",
+        "state": "AZ",
+        "cities": [
+            "Phoenix", "Scottsdale", "Tempe", "Mesa", "Chandler",
+            "Gilbert", "Peoria", "Glendale", "Surprise", "Goodyear",
+            "Paradise Valley", "Fountain Hills", "Cave Creek",
+        ],
+    },
 ]
 
 # Short alias map: scrape.py --metros austin chicago → resolves to full metro IDs
@@ -136,6 +157,8 @@ _METRO_ALIAS.update({
     "seattle": "seattle_wa",
     "miami": "miami_fl",
     "nashville": "nashville_tn",
+    "los_angeles": "los_angeles_ca", "la": "los_angeles_ca", "los angeles": "los_angeles_ca",
+    "phoenix": "phoenix_az", "phx": "phoenix_az",
 })
 
 
