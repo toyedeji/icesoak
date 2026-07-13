@@ -1,5 +1,7 @@
 // Central config for the "Practice at Home" affiliate product section.
 // Amazon Associates tag: icesoak-20.
+// Other affiliate links: Plunge (Impact.com), Sweaty Yeti (direct), Ice Barrel (AWIN - pending)
+
 export type AffiliateProduct = {
   id: string;
   name: string;
@@ -8,9 +10,20 @@ export type AffiliateProduct = {
   amazonUrl: string;
   brand: string;
   priceRange: string;
+  couponCode?: string;
+  couponNote?: string;
 };
 
 export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
+  {
+    id: "plunge-tub",
+    name: "Plunge Cold Plunge",
+    description: "Temperature-controlled cold plunge tub. No ice needed — plug in and plunge daily.",
+    category: "cold_plunge",
+    amazonUrl: "https://plunge.pxf.io/c/7476185/1068315/13696",
+    brand: "Plunge",
+    priceRange: "$1,290–$4,990",
+  },
   {
     id: "ice-barrel-400",
     name: "Ice Barrel 400",
@@ -21,13 +34,15 @@ export const AFFILIATE_PRODUCTS: AffiliateProduct[] = [
     priceRange: "$900–$1,200",
   },
   {
-    id: "plunge-tub",
-    name: "Cold Plunge Tub",
-    description: "Filtered, chilled cold plunge tub for daily home use.",
-    category: "cold_plunge",
-    amazonUrl: "https://www.amazon.com/s?k=cold+plunge+tub+home&tag=icesoak-20",
-    brand: "Various",
-    priceRange: "$300–$5,000",
+    id: "sweaty-yeti-sauna",
+    name: "Sweaty Yeti Outdoor Sauna",
+    description: "Premium outdoor sauna and cold plunge combos. Built for serious home wellness setups.",
+    category: "sauna",
+    amazonUrl: "https://sweatyyetisauna.com/?sId=16",
+    brand: "Sweaty Yeti",
+    priceRange: "$3,000–$15,000",
+    couponCode: "icesoak5",
+    couponNote: "5% off with code icesoak5",
   },
   {
     id: "infrared-sauna-blanket",
