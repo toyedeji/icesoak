@@ -18,8 +18,8 @@
     "metro": null
   },
   {
-    "slug": "what-are-the-disadvantages-of-a-cold-plunge",
-    "question": "What are the disadvantages of a cold plunge?",
+    "slug": "can-you-cold-plunge-if-you-have-raynauds",
+    "question": "Can you cold plunge if you have Raynaud's?",
     "type": "global",
     "metro": null
   },
@@ -31,7 +31,7 @@
   },
   {
     "slug": "how-long-does-joe-rogan-stay-in-cold-plunge",
-    "question": "How long does Joe Rogan stay in cold Plunge?",
+    "question": "How long does Joe Rogan stay in Cold Plunge?",
     "type": "global",
     "metro": null
   },
@@ -96,14 +96,14 @@
     "metro": null
   },
   {
-    "slug": "what-are-the-downsides-of-contrast-therapy",
-    "question": "What are the downsides of contrast therapy?",
+    "slug": "why-do-i-feel-so-good-after-contrast-therapy",
+    "question": "Why do I feel so good after contrast therapy?",
     "type": "global",
     "metro": null
   },
   {
-    "slug": "why-do-i-feel-so-good-after-contrast-therapy",
-    "question": "Why do I feel so good after contrast therapy?",
+    "slug": "what-are-the-disadvantages-of-contrast-therapy",
+    "question": "What are the disadvantages of contrast therapy?",
     "type": "global",
     "metro": null
   },
@@ -138,8 +138,8 @@
     "metro": null
   },
   {
-    "slug": "is-60-degrees-cold-enough-for-a-cold-plunge",
-    "question": "Is 60 degrees cold enough for a cold plunge?",
+    "slug": "how-long-do-you-sit-in-an-ice-bath",
+    "question": "How long do you sit in an ice bath?",
     "type": "global",
     "metro": null
   },
@@ -178,6 +178,18 @@
     "question": "Does sauna help Hashimoto's?",
     "type": "global",
     "metro": null
+  },
+  {
+    "slug": "what-gyms-in-denver-have-a-sauna",
+    "question": "What gyms in Denver have a sauna?",
+    "type": "local",
+    "metro": "denver_co"
+  },
+  {
+    "slug": "can-saunas-help-lower-cholesterol",
+    "question": "Can saunas help lower cholesterol?",
+    "type": "local",
+    "metro": "denver_co"
   },
   {
     "slug": "how-many-days-a-week-is-contrast-therapy",
@@ -228,44 +240,20 @@
     "metro": "dallas_fort_worth_tx"
   },
   {
-    "slug": "can-saunas-help-lower-cholesterol",
-    "question": "Can saunas help lower cholesterol?",
-    "type": "local",
-    "metro": "dallas_fort_worth_tx"
-  },
-  {
     "slug": "is-sauna-good-for-the-spleen",
     "question": "Is sauna good for the spleen?",
     "type": "local",
     "metro": "dallas_fort_worth_tx"
   },
   {
-    "slug": "is-contrast-therapy-actually-good-for-you",
-    "question": "Is contrast therapy actually good for you?",
+    "slug": "does-contrast-therapy-actually-work",
+    "question": "Does contrast therapy actually work?",
     "type": "local",
     "metro": "dallas_fort_worth_tx"
   },
   {
     "slug": "what-is-the-most-effective-contrast-therapy",
     "question": "What is the most effective contrast therapy?",
-    "type": "local",
-    "metro": "dallas_fort_worth_tx"
-  },
-  {
-    "slug": "what-is-the-contrast-therapy",
-    "question": "What is the contrast therapy?",
-    "type": "local",
-    "metro": "dallas_fort_worth_tx"
-  },
-  {
-    "slug": "what-part-of-dallas-to-stay-away-from",
-    "question": "What part of Dallas to stay away from?",
-    "type": "local",
-    "metro": "dallas_fort_worth_tx"
-  },
-  {
-    "slug": "where-to-make-friends-in-dallas",
-    "question": "Where to make friends in Dallas?",
     "type": "local",
     "metro": "dallas_fort_worth_tx"
   },
@@ -278,6 +266,18 @@
   {
     "slug": "what-is-a-recovery-studio",
     "question": "What is a recovery studio?",
+    "type": "local",
+    "metro": "dallas_fort_worth_tx"
+  },
+  {
+    "slug": "what-to-do-in-dallas-to-relax",
+    "question": "What to do in Dallas to relax?",
+    "type": "local",
+    "metro": "dallas_fort_worth_tx"
+  },
+  {
+    "slug": "where-to-walk-indoors-in-dallas",
+    "question": "Where to walk indoors in Dallas?",
     "type": "local",
     "metro": "dallas_fort_worth_tx"
   },
@@ -296,6 +296,12 @@
   {
     "slug": "what-does-joe-rogan-use-for-cold-plunge",
     "question": "What does Joe Rogan use for cold plunge?",
+    "type": "local",
+    "metro": "philadelphia_pa"
+  },
+  {
+    "slug": "is-contrast-therapy-really-good-for-you",
+    "question": "Is contrast therapy really good for you?",
     "type": "local",
     "metro": "philadelphia_pa"
   },
