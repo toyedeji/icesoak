@@ -31,6 +31,11 @@ podman run --rm \
 
 log "Scrape complete."
 
+# 3b. Auto-clean — purge junk records and merge duplicates before quality gate
+log "Running auto-cleaner..."
+python3 "${SCRAPER_DIR}/auto_clean.py" || log "Auto-cleaner failed (non-fatal)"
+log "Auto-clean complete."
+
 # 4. Quality gate — validate the freshly generated studios.json BEFORE any git
 #    commit/push (and therefore before the Netlify deploy).
 #    ABORT checks (exit 1, no push):
