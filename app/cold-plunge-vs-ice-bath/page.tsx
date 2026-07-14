@@ -3,6 +3,7 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import AnswerCapsule from "@/components/AnswerCapsule";
 import JsonLd from "@/components/JsonLd";
+import InternalLinks from "@/components/InternalLinks";
 import { pageMetadata } from "@/lib/seo";
 import { breadcrumbSchema, type Crumb } from "@/lib/jsonld";
 import { SITE, abs } from "@/lib/site";
@@ -109,13 +110,18 @@ export default function Page() {
 
         <p>
           Related reading:{" "}
-          <Link href="/guides/how-cold-should-a-cold-plunge-be/">
-            how cold should a cold plunge be
+          <Link href="/guides/is-a-40-degree-ice-bath-safe/">
+            is a 40°F ice bath safe
           </Link>{" "}
           and{" "}
-          <Link href="/guides/how-long-to-cold-plunge/">how long to cold plunge</Link>.
+          <Link href="/guides/how-long-should-you-stay-in-a-cold-plunge/">
+            how long you should stay in a cold plunge
+          </Link>
+          .
         </p>
       </article>
+
+      <InternalLinks type="guide" slug="cold-plunge-vs-ice-bath" />
     </div>
   );
 }

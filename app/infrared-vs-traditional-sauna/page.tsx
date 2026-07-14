@@ -3,6 +3,7 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import AnswerCapsule from "@/components/AnswerCapsule";
 import JsonLd from "@/components/JsonLd";
+import InternalLinks from "@/components/InternalLinks";
 import { pageMetadata } from "@/lib/seo";
 import { breadcrumbSchema, type Crumb } from "@/lib/jsonld";
 import { SITE, abs } from "@/lib/site";
@@ -107,12 +108,18 @@ export default function Page() {
 
         <p>
           Related reading:{" "}
-          <Link href="/guides/how-hot-is-an-infrared-sauna/">
-            how hot is an infrared sauna
+          <Link href="/guides/what-do-10-minutes-in-an-infrared-sauna-do/">
+            what 10 minutes in an infrared sauna does
           </Link>{" "}
-          and <Link href="/guides/sauna-benefits/">sauna benefits</Link>.
+          and{" "}
+          <Link href="/guides/how-often-is-a-sauna-good-for-you/">
+            how often a sauna is good for you
+          </Link>
+          .
         </p>
       </article>
+
+      <InternalLinks type="guide" slug="infrared-vs-traditional-sauna" />
     </div>
   );
 }

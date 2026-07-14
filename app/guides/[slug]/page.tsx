@@ -4,8 +4,10 @@ import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import AnswerCapsule from "@/components/AnswerCapsule";
 import AffiliateSection from "@/components/AffiliateSection";
+import InternalLinks from "@/components/InternalLinks";
 import JsonLd from "@/components/JsonLd";
 import { QUESTIONS, questionBySlug } from "@/lib/data";
+import { GUIDE_FAQS } from "@/lib/guideFAQs";
 import { pageMetadata, clamp } from "@/lib/seo";
 import { articleSchema, faqSchema, breadcrumbSchema, type Crumb } from "@/lib/jsonld";
 import { formatDate } from "@/lib/format";
@@ -28,8 +30,15 @@ export async function generateMetadata({ params }: P): Promise<Metadata> {
 }
 
 export default async function Page({ params }: P) {
-  const q = questionBySlug((await params).slug);
-  if (!q) notFound();
+  const base = questionBySlug((await params).slug);
+  if (!base) notFound();
+
+  // Merge any curated supplemental FAQs into the guide's own list. This enriches
+  // both the visible FAQ section and the FAQPage JSON-LD (faqSchema reads .faqs).
+  const extraFaqs = GUIDE_FAQS[base.slug] ?? [];
+  const q = extraFaqs.length
+    ? { ...base, faqs: [...(base.faqs ?? []), ...extraFaqs] }
+    : base;
 
   const path = `/guides/${q.slug}/`;
   const crumbs: Crumb[] = [
@@ -88,6 +97,8 @@ export default async function Page({ params }: P) {
           </ul>
         </section>
       )}
+
+      <InternalLinks type="guide" slug={q.slug} />
 
       <AffiliateSection type="general" />
     </div>

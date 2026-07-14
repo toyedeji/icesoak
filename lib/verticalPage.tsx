@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import CollectionView from "@/components/CollectionView";
 import AffiliateSection from "@/components/AffiliateSection";
+import InternalLinks from "@/components/InternalLinks";
 import { METROS, metroBySlug } from "./data";
 import { studiosForVertical, isIndexable, VERTICALS, type Vertical } from "./studios";
 import { cityCapsule, cityDescription } from "./copy";
@@ -82,6 +83,7 @@ export function VerticalCityPage(v: Vertical, params: CityParams) {
         <p className="lead">{metro.blurb}</p>
       }
     >
+      <InternalLinks type="city" slug={metro.slug} />
       {affiliateType && <AffiliateSection type={affiliateType} />}
       <SiblingLinks v={v} citySlug={metro.slug} cityName={metro.name} />
     </CollectionView>
