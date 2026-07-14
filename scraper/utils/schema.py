@@ -1,6 +1,9 @@
 VALID_STATUSES = {"active", "coming_soon", "closed"}
+# "sauna" = a sauna of unspecified type. The site's hasSauna() predicate treats
+# it as a sauna, and the name-keyword backfill emits it when a listing mentions
+# a sauna without saying which kind. Kept valid so it is never silently stripped.
 VALID_MODALITIES = {
-    "cold_plunge", "sauna_traditional", "sauna_infrared", "contrast",
+    "cold_plunge", "sauna", "sauna_traditional", "sauna_infrared", "contrast",
     "red_light", "compression", "breathwork", "float", "cryo", "iv",
 }
 VALID_FORMATS = {"private_suite", "communal", "both"}

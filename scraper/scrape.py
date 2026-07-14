@@ -162,6 +162,38 @@ _METRO_ALIAS.update({
 })
 
 
+def _apply_sticky_modalities(records: list, prev_path: Path) -> int:
+    """Carry previously-known modalities onto records that re-scraped with an
+    empty modalities list, keyed by the stable studio id (_slug of name+city).
+
+    The crawl only derives modalities for known franchises and for studios whose
+    website text matches a modality pattern; every other record comes back with
+    an empty list. Without this, hand-curated / backfilled modality tags would be
+    wiped on every weekly run. Fresh, non-empty modalities always win — this only
+    fills gaps, so a studio that genuinely changes its services still updates.
+    Returns the number of records patched.
+    """
+    if not prev_path.exists():
+        return 0
+    try:
+        previous = json.loads(prev_path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return 0
+    prev_mods = {
+        s.get("id"): s["modalities"]
+        for s in previous
+        if s.get("id") and s.get("modalities")
+    }
+    patched = 0
+    for s in records:
+        if not s.get("modalities"):
+            inherited = prev_mods.get(s.get("id"))
+            if inherited:
+                s["modalities"] = list(inherited)
+                patched += 1
+    return patched
+
+
 async def run(metro_filter: list[str] | None = None) -> None:
     today = date.today().isoformat()
     all_records: list = []
@@ -269,6 +301,9 @@ async def run(metro_filter: list[str] | None = None) -> None:
                 )
 
         merged = kept + added
+        sticky = _apply_sticky_modalities(merged, out)
+        if sticky:
+            log.info("Preserved modalities on %d re-scraped studios (empty crawl result).", sticky)
         out.write_text(json.dumps(merged, indent=2, ensure_ascii=False), encoding="utf-8")
         other_metros = sorted({s.get("metro") for s in kept})
         log.info(
@@ -279,7 +314,12 @@ async def run(metro_filter: list[str] | None = None) -> None:
             len(merged), out,
         )
     else:
-        # Full run (or first run with no existing file): write fresh.
+        # Full run (or first run with no existing file): write fresh, but keep
+        # any modality tags a studio had before if this run's crawl couldn't
+        # re-derive them (see _apply_sticky_modalities).
+        sticky = _apply_sticky_modalities(studios, out)
+        if sticky:
+            log.info("Preserved modalities on %d studios that re-scraped empty.", sticky)
         out.write_text(json.dumps(studios, indent=2, ensure_ascii=False), encoding="utf-8")
         log.info("Wrote %d studios → %s", len(studios), out)
 
