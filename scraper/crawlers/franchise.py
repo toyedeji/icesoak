@@ -4,6 +4,9 @@ import logging
 import re
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
 from crawlers.google_maps import _slug
+# Known modalities by brand — shared with processors/merger.py so future scrapes
+# tag these franchises automatically (see utils/franchise_map.py).
+from utils.franchise_map import BRAND_MODALITIES as _BRAND_MODALITIES
 
 log = logging.getLogger(__name__)
 
@@ -14,15 +17,6 @@ FRANCHISES = [
     {"brand": "Pause", "url": "https://pause.com/studios"},
     {"brand": "Contrast Studio", "url": "https://contraststudio.com/locations"},
 ]
-
-# Known modalities by brand
-_BRAND_MODALITIES = {
-    "sweathouz": ["sauna_infrared", "cold_plunge"],
-    "perspire sauna studio": ["sauna_infrared"],
-    "restore hyper wellness": ["cryo", "red_light", "compression", "iv"],
-    "pause": ["sauna_infrared", "cold_plunge", "contrast"],
-    "contrast studio": ["sauna_infrared", "cold_plunge", "contrast"],
-}
 
 # Metro → states and city keywords for filtering franchise pages
 _METRO_STATES = {

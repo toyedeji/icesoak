@@ -6,6 +6,7 @@ from utils.schema import (
     VALID_STATUSES, VALID_MODALITIES, VALID_FORMATS,
     VALID_SESSION_STYLES, VALID_ACCESS, VALID_AMENITIES,
 )
+from utils.franchise_map import modalities_for_name
 
 log = logging.getLogger(__name__)
 
@@ -51,6 +52,10 @@ def _clean(studio: dict) -> Optional[dict]:  # noqa: F821
 
     studio["status"] = studio.get("status") if studio.get("status") in VALID_STATUSES else "active"
     studio["modalities"] = [m for m in (studio.get("modalities") or []) if m in VALID_MODALITIES]
+    # Backfill from the franchise brand map when the crawl derived nothing, so
+    # known chains stay tagged on every run without a manual enrichment pass.
+    if not studio["modalities"]:
+        studio["modalities"] = modalities_for_name(studio["name"])
     studio["amenities"] = [a for a in (studio.get("amenities") or []) if a in VALID_AMENITIES]
     studio["format"] = studio.get("format") if studio.get("format") in VALID_FORMATS else None
     studio["session_style"] = studio.get("session_style") if studio.get("session_style") in VALID_SESSION_STYLES else None
