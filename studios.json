@@ -737,7 +737,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -1255,7 +1257,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -1670,7 +1674,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -1702,7 +1708,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -2485,7 +2493,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -2757,7 +2767,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -3136,7 +3148,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -8234,7 +8248,9 @@
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
