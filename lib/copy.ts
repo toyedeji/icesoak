@@ -54,7 +54,7 @@ export function cityDescription(metro: Metro, v: Vertical, studios: Studio[]): s
   if (n === 0) {
     return `${VERTICALS[v].label} studios in ${metro.name}, ${metro.state}. IceSoak tracks verified ${noun} locations with modalities, maps, and last-verified dates.`;
   }
-  return `${n} verified ${noun} ${n === 1 ? "studio" : "studios"} in ${metro.name}, ${metro.state}${brandClause(studios)}. Compare modalities, locations, and verification dates on IceSoak.`;
+  return `Find and compare ${n} verified ${noun} ${n === 1 ? "studio" : "studios"} in ${metro.name}, ${metro.state}. Browse locations, modalities, and nearby options on IceSoak.`;
 }
 
 export function bestCapsule(metro: Metro, studios: Studio[]): string {

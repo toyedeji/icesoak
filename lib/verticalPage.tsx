@@ -40,7 +40,7 @@ export function verticalMetadata(v: Vertical, params: CityParams): Metadata {
   const studios = studiosForVertical(metro, v);
   const label = VERTICALS[v].label;
   return pageMetadata({
-    title: `${label} in ${metro.name}, ${metro.state}`,
+    title: `${label} Studios in ${metro.name}, ${metro.state}`,
     description: clamp(cityDescription(metro, v, studios)),
     path: basePath(v, metro.slug),
     index: isIndexable(studios.length),
