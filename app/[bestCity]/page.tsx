@@ -30,9 +30,9 @@ export async function generateMetadata({ params }: P): Promise<Metadata> {
   const r = resolve((await params).bestCity);
   if (!r) return {};
   return pageMetadata({
-    title: `Best Cold Plunge in ${r.metro.name}, ${r.metro.state}`,
+    title: `Best Cold Plunge Studios in ${r.metro.name}, ${r.metro.state}`,
     description: clamp(
-      `${r.studios.length} verified cold plunge ${r.studios.length === 1 ? "studio" : "studios"} in ${r.metro.name}, ${r.metro.state}, compared by modalities, location, and verification date. Ranked on data, not paid placement.`,
+      `Find and compare ${r.studios.length} verified cold plunge ${r.studios.length === 1 ? "studio" : "studios"} in ${r.metro.name}, ${r.metro.state}. Ranked by verification completeness, not paid placement.`,
     ),
     path: `/${PREFIX}${r.metro.slug}/`,
     index: r.indexable,
