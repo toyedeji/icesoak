@@ -31,6 +31,14 @@
   status = 301
   force = true
 
+# Legacy studio slugs (older slugify version emitted 2 dashes where the current
+# rule emits 3). Preserves indexed GSC URLs pointing to the same business.
+[[redirects]]
+  from = "/studio/city-sweats--wallingford-seattle/"
+  to = "/studio/city-sweats---wallingford-seattle/"
+  status = 301
+  force = true
+
 # Long-cache hashed static assets.
 [[headers]]
   for = "/_next/static/*"
