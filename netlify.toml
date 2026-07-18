@@ -47,6 +47,14 @@
   status = 301
   force = true
 
+# Orphaned studio URL (Belterra location no longer in data). Send to Austin
+# metro landing page to preserve link equity without misidentifying a business.
+[[redirects]]
+  from = "/studio/sweathouz-belterra-contrast-therapy-studio-cedar-park/"
+  to = "/cold-plunge/austin/"
+  status = 301
+  force = true
+
 # Long-cache hashed static assets.
 [[headers]]
   for = "/_next/static/*"
