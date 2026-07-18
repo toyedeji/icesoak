@@ -24,6 +24,13 @@
   status = 301
   force = true
 
+# Legacy sitemap name → canonical sitemap index.
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap_index.xml"
+  status = 301
+  force = true
+
 # Long-cache hashed static assets.
 [[headers]]
   for = "/_next/static/*"
