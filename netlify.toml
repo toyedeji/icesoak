@@ -39,6 +39,14 @@
   status = 301
   force = true
 
+# Deduped studio slug — an older data snapshot suffixed a duplicate with "-3";
+# current data holds a single canonical entry.
+[[redirects]]
+  from = "/studio/sweathouz-infrared-sauna-studio-atlanta-3/"
+  to = "/studio/sweathouz-infrared-sauna-studio-atlanta/"
+  status = 301
+  force = true
+
 # Long-cache hashed static assets.
 [[headers]]
   for = "/_next/static/*"
