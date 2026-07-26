@@ -28,43 +28,9 @@
     "amenities": [],
     "google_place_id": "0x876c7fe47f60749f:0x5a1784de3d69f406",
     "google_rating": 5.0,
-    "google_reviews_count": 151,
+    "google_reviews_count": 152,
     "source_urls": [
       "https://www.google.com/maps/place/The+Cove+Sauna+and+Cold+Plunge/data=!4m7!3m6!1s0x876c7fe47f60749f:0x5a1784de3d69f406!8m2!3d39.6918093!4d-104.9878629!16s%2Fg%2F11mdnxhb94!19sChIJn3Rgf-R_bIcRBvRpPd6EF1o?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
-    "id": "red-rock-sauna-denver",
-    "name": "Red Rock Sauna",
-    "metro": "denver_co",
-    "city": "Denver",
-    "lat": 39.7582472,
-    "lng": -105.0450791,
-    "status": "active",
-    "brand": null,
-    "state": "CO",
-    "neighborhood": null,
-    "address": "4460 W 29th Ave, Denver, CO 80212",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "cold_plunge"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x4a0b99a57cad8b39:0xb0aed349d9a588b9",
-    "google_rating": 5.0,
-    "google_reviews_count": 252,
-    "source_urls": [
-      "https://www.google.com/maps/place/Red+Rock+Sauna/data=!4m7!3m6!1s0x4a0b99a57cad8b39:0xb0aed349d9a588b9!8m2!3d39.7582472!4d-105.0450791!16s%2Fg%2F11vylj6m46!19sChIJOYutfKWZC0oRuYil2UnTrrA?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -97,7 +63,7 @@
     "amenities": [],
     "google_place_id": "0x876c7fa86ccd870b:0xf7642fe3ddb16cdf",
     "google_rating": 4.9,
-    "google_reviews_count": 387,
+    "google_reviews_count": 390,
     "source_urls": [
       "https://www.google.com/maps/place/R3+Spa:+Sauna+%2B+Cold+Plunge/data=!4m7!3m6!1s0x876c7fa86ccd870b:0xf7642fe3ddb16cdf!8m2!3d39.6656437!4d-104.9881965!16s%2Fg%2F11xf6sgsbd!19sChIJC4fNbKh_bIcR32yx3eMvZPc?authuser=0&hl=en&rclk=1"
     ],
@@ -174,6 +140,40 @@
     "last_verified": null
   },
   {
+    "id": "red-rock-sauna-denver",
+    "name": "Red Rock Sauna",
+    "metro": "denver_co",
+    "city": "Denver",
+    "lat": 39.7582472,
+    "lng": -105.0450791,
+    "status": "active",
+    "brand": null,
+    "state": "CO",
+    "neighborhood": null,
+    "address": "4460 W 29th Ave, Denver, CO 80212",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [
+      "cold_plunge"
+    ],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x4a0b99a57cad8b39:0xb0aed349d9a588b9",
+    "google_rating": 5.0,
+    "google_reviews_count": 253,
+    "source_urls": [
+      "https://www.google.com/maps/place/Red+Rock+Sauna/data=!4m7!3m6!1s0x4a0b99a57cad8b39:0xb0aed349d9a588b9!8m2!3d39.7582472!4d-105.0450791!16s%2Fg%2F11vylj6m46!19sChIJOYutfKWZC0oRuYil2UnTrrA?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
     "id": "sweathouz-south-broadway-contrast-therapy-studio-denver",
     "name": "SweatHouz South Broadway Contrast Therapy Studio",
     "metro": "denver_co",
@@ -203,7 +203,7 @@
     "amenities": [],
     "google_place_id": "0x876c7ffad690228d:0xeee7f6ebdd556e13",
     "google_rating": 4.9,
-    "google_reviews_count": 227,
+    "google_reviews_count": 232,
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+South+Broadway+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x876c7ffad690228d:0xeee7f6ebdd556e13!8m2!3d39.6779896!4d-104.9878367!16s%2Fg%2F11w9jhnysh!19sChIJjSKQ1vp_bIcRE25V3ev25-4?authuser=0&hl=en&rclk=1"
     ],
@@ -237,43 +237,9 @@
     "amenities": [],
     "google_place_id": "0x876c7d5db52e49c3:0xaa528368e6230672",
     "google_rating": 4.0,
-    "google_reviews_count": 554,
+    "google_reviews_count": 556,
     "source_urls": [
       "https://www.google.com/maps/place/Havana+Sauna/data=!4m7!3m6!1s0x876c7d5db52e49c3:0xaa528368e6230672!8m2!3d39.6794251!4d-104.8651112!16s%2Fg%2F1264jpylj!19sChIJw0kutV19bIcRcgYj5miDUqo?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
-    "id": "naosu-sauna-denver",
-    "name": "NAOSU SAUNA",
-    "metro": "denver_co",
-    "city": "Denver",
-    "lat": 39.7639995,
-    "lng": -104.9788062,
-    "status": "active",
-    "brand": null,
-    "state": "CO",
-    "neighborhood": null,
-    "address": "3145 Larimer St, Denver, CO 80205",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "sauna_infrared"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x876c791f428ca72f:0x1b5a85b0676536",
-    "google_rating": 4.9,
-    "google_reviews_count": 130,
-    "source_urls": [
-      "https://www.google.com/maps/place/NAOSU+SAUNA/data=!4m7!3m6!1s0x876c791f428ca72f:0x1b5a85b0676536!8m2!3d39.7639995!4d-104.9788062!16s%2Fg%2F11m6b9wlb2!19sChIJL6eMQh95bIcRNmVnsIVaGwA?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -312,6 +278,42 @@
     "last_verified": null
   },
   {
+    "id": "sweathouz-tennyson-contrast-therapy-studio-denver",
+    "name": "SweatHouz Tennyson Contrast Therapy Studio",
+    "metro": "denver_co",
+    "city": "Denver",
+    "lat": 39.7696067,
+    "lng": -105.0436726,
+    "status": "active",
+    "brand": null,
+    "state": "CO",
+    "neighborhood": null,
+    "address": "3800 Tennyson St #110, Denver, CO 80212",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [
+      "sauna_infrared",
+      "cold_plunge",
+      "contrast"
+    ],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x876b87d66862e7d3:0x603977e098b8f1e0",
+    "google_rating": 5.0,
+    "google_reviews_count": 156,
+    "source_urls": [
+      "https://www.google.com/maps/place/SweatHouz+Tennyson+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x876b87d66862e7d3:0x603977e098b8f1e0!8m2!3d39.7696067!4d-105.0436726!16s%2Fg%2F11n3d_wjb3!19sChIJ0-diaNaHa4cR4PG4mOB3OWA?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
     "id": "apres-sauna-lakewood",
     "name": "Aprés Sauna",
     "metro": "denver_co",
@@ -346,76 +348,6 @@
     "last_verified": null
   },
   {
-    "id": "sweathouz-tennyson-contrast-therapy-studio-denver",
-    "name": "SweatHouz Tennyson Contrast Therapy Studio",
-    "metro": "denver_co",
-    "city": "Denver",
-    "lat": 39.7696067,
-    "lng": -105.0436726,
-    "status": "active",
-    "brand": null,
-    "state": "CO",
-    "neighborhood": null,
-    "address": "3800 Tennyson St #110, Denver, CO 80212",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "sauna_infrared",
-      "cold_plunge",
-      "contrast"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x876b87d66862e7d3:0x603977e098b8f1e0",
-    "google_rating": 5.0,
-    "google_reviews_count": 148,
-    "source_urls": [
-      "https://www.google.com/maps/place/SweatHouz+Tennyson+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x876b87d66862e7d3:0x603977e098b8f1e0!8m2!3d39.7696067!4d-105.0436726!16s%2Fg%2F11n3d_wjb3!19sChIJ0-diaNaHa4cR4PG4mOB3OWA?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
-    "id": "the-sauna-room-lakewood",
-    "name": "The Sauna Room",
-    "metro": "denver_co",
-    "city": "Lakewood",
-    "lat": 39.740483,
-    "lng": -105.10578,
-    "status": "active",
-    "brand": null,
-    "state": "CO",
-    "neighborhood": null,
-    "address": "9635 W Colfax Ave Ste 304, Lakewood, CO 80215",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "sauna_infrared"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x876b87f50731002d:0x81907a7ab2a3a912",
-    "google_rating": 4.8,
-    "google_reviews_count": 17,
-    "source_urls": [
-      "https://www.google.com/maps/place/The+Sauna+Room/data=!4m7!3m6!1s0x876b87f50731002d:0x81907a7ab2a3a912!8m2!3d39.740483!4d-105.10578!16s%2Fg%2F11tp66sb_6!19sChIJLQAxB_WHa4cREqmjsnp6kIE?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
     "id": "perspire-sauna-studio-denver",
     "name": "Perspire Sauna Studio",
     "metro": "denver_co",
@@ -443,44 +375,9 @@
     "amenities": [],
     "google_place_id": "0x876c7f79f24297c7:0x49bf8b95df03667d",
     "google_rating": 4.9,
-    "google_reviews_count": 105,
+    "google_reviews_count": 108,
     "source_urls": [
       "https://www.google.com/maps/place/Perspire+Sauna+Studio/data=!4m7!3m6!1s0x876c7f79f24297c7:0x49bf8b95df03667d!8m2!3d39.6720597!4d-104.9591108!16s%2Fg%2F11vjxlvyq_!19sChIJx5dC8nl_bIcRfWYD35WLv0k?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
-    "id": "urban-sweat-cherry-creek-denver",
-    "name": "Urban Sweat Cherry Creek",
-    "metro": "denver_co",
-    "city": "Denver",
-    "lat": 39.7211735,
-    "lng": -104.957458,
-    "status": "active",
-    "brand": null,
-    "state": "CO",
-    "neighborhood": null,
-    "address": "2445 E 3rd Ave #2, Denver, CO 80206",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "sauna_infrared",
-      "cold_plunge"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x876c7f83b58abf3d:0xd175f833226f1d3e",
-    "google_rating": 4.5,
-    "google_reviews_count": 46,
-    "source_urls": [
-      "https://www.google.com/maps/place/Urban+Sweat+Cherry+Creek/data=!4m7!3m6!1s0x876c7f83b58abf3d:0xd175f833226f1d3e!8m2!3d39.7211735!4d-104.957458!16s%2Fg%2F11jn0rmd96!19sChIJPb-KtYN_bIcRPh1vIjP4ddE?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -519,6 +416,40 @@
     "last_verified": null
   },
   {
+    "id": "the-sauna-room-lakewood",
+    "name": "The Sauna Room",
+    "metro": "denver_co",
+    "city": "Lakewood",
+    "lat": 39.740483,
+    "lng": -105.10578,
+    "status": "active",
+    "brand": null,
+    "state": "CO",
+    "neighborhood": null,
+    "address": "9635 W Colfax Ave Ste 304, Lakewood, CO 80215",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [
+      "sauna_infrared"
+    ],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x876b87f50731002d:0x81907a7ab2a3a912",
+    "google_rating": 4.8,
+    "google_reviews_count": 17,
+    "source_urls": [
+      "https://www.google.com/maps/place/The+Sauna+Room/data=!4m7!3m6!1s0x876b87f50731002d:0x81907a7ab2a3a912!8m2!3d39.740483!4d-105.10578!16s%2Fg%2F11tp66sb_6!19sChIJLQAxB_WHa4cREqmjsnp6kIE?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
     "id": "recovery-lounge-spa-denver",
     "name": "Recovery Lounge & Spa",
     "metro": "denver_co",
@@ -547,7 +478,7 @@
     "amenities": [],
     "google_place_id": "0x876c7fe5554e3b4d:0xef268afc780474b",
     "google_rating": 4.9,
-    "google_reviews_count": 131,
+    "google_reviews_count": 132,
     "source_urls": [
       "https://www.google.com/maps/place/Recovery+Lounge+%26+Spa/data=!4m7!3m6!1s0x876c7fe5554e3b4d:0xef268afc780474b!8m2!3d39.7497132!4d-105.0225586!16s%2Fg%2F11hn0m8ghj!19sChIJTTtOVeV_bIcRS0eAx69o8g4?authuser=0&hl=en&rclk=1"
     ],
@@ -589,21 +520,24 @@
     "last_verified": null
   },
   {
-    "id": "denver-recovery-group-aurora-aurora",
-    "name": "Denver Recovery Group Aurora",
+    "id": "recovery-studio-spa-aurora",
+    "name": "Recovery Studio + Spa",
     "metro": "denver_co",
     "city": "Aurora",
-    "lat": 39.7376446,
-    "lng": -104.8074892,
+    "lat": 40.5219848,
+    "lng": -105.0576542,
     "status": "active",
     "brand": null,
     "state": "CO",
     "neighborhood": null,
-    "address": "15501 E 13th Ave, Aurora, CO 80011",
+    "address": "1112 Oakridge Dr Ste 105, Fort Collins, CO 80528",
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [],
+    "modalities": [
+      "cold_plunge",
+      "sauna"
+    ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -612,11 +546,11 @@
     "day_pass_price_usd": null,
     "membership_from_usd": null,
     "amenities": [],
-    "google_place_id": "0x876c63736b37d995:0xa0ca9002d4dcdf3c",
+    "google_place_id": "0x87694d7b19d23511:0x197b55b4ae9d9434",
     "google_rating": 5.0,
-    "google_reviews_count": 16,
+    "google_reviews_count": 51,
     "source_urls": [
-      "https://www.google.com/maps/place/Denver+Recovery+Group+Aurora/data=!4m7!3m6!1s0x876c63736b37d995:0xa0ca9002d4dcdf3c!8m2!3d39.7376446!4d-104.8074892!16s%2Fg%2F11ltytmqjs!19sChIJldk3a3NjbIcRPN_c1AKQyqA?authuser=0&hl=en&rclk=1"
+      "https://www.google.com/maps/place/Recovery+Studio+%2B+Spa/data=!4m7!3m6!1s0x87694d7b19d23511:0x197b55b4ae9d9434!8m2!3d40.5219848!4d-105.0576542!16s%2Fg%2F11j_2flksr!19sChIJETXSGXtNaYcRNJSdrrRVexk?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -649,6 +583,74 @@
     "google_reviews_count": 55,
     "source_urls": [
       "https://www.google.com/maps/place/Recovery+One/data=!4m7!3m6!1s0x876c8574ee4e73eb:0x86d890d8ef902fe8!8m2!3d39.5389645!4d-104.8728113!16s%2Fg%2F11scj0n_xy!19sChIJ63NO7nSFbIcR6C-Q79iQ2IY?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
+    "id": "nomadic-fire-mobile-sauna-lakewood",
+    "name": "Nomadic Fire Mobile Sauna",
+    "metro": "denver_co",
+    "city": "Lakewood",
+    "lat": 39.7580832,
+    "lng": -105.2242509,
+    "status": "active",
+    "brand": null,
+    "state": "CO",
+    "neighborhood": null,
+    "address": "900 Washington Ave, Golden, CO 80403",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [
+      "sauna_traditional"
+    ],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x876b9b231cf6005f:0x47133f716566422a",
+    "google_rating": 4.9,
+    "google_reviews_count": 32,
+    "source_urls": [
+      "https://www.google.com/maps/place/Nomadic+Fire+Mobile+Sauna/data=!4m7!3m6!1s0x876b9b231cf6005f:0x47133f716566422a!8m2!3d39.7580832!4d-105.2242509!16s%2Fg%2F11lnk_jtcr!19sChIJXwD2HCOba4cRKkJmZXE_E0c?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
+    "id": "dear-sauna-lakewood",
+    "name": "Dear Sauna",
+    "metro": "denver_co",
+    "city": "Lakewood",
+    "lat": 39.6102074,
+    "lng": -105.0361844,
+    "status": "active",
+    "brand": null,
+    "state": "CO",
+    "neighborhood": null,
+    "address": "3625 W Bowles Ave Unit 12, Littleton, CO 80201",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [
+      "sauna_traditional"
+    ],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x876b7fa68873a7f3:0xf9b95219f1dc604a",
+    "google_rating": 5.0,
+    "google_reviews_count": 27,
+    "source_urls": [
+      "https://www.google.com/maps/place/Dear+Sauna/data=!4m7!3m6!1s0x876b7fa68873a7f3:0xf9b95219f1dc604a!8m2!3d39.6102074!4d-105.0361844!16s%2Fg%2F11y5gctm1j!19sChIJ86dziKZ_a4cRSmDc8RlSufk?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -820,7 +822,7 @@
     "amenities": [],
     "google_place_id": "0x864c17f1325104c9:0xa898a0c574f42669",
     "google_rating": 4.7,
-    "google_reviews_count": 260,
+    "google_reviews_count": 261,
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Infrared+Sauna+Studio/data=!4m7!3m6!1s0x864c17f1325104c9:0xa898a0c574f42669!8m2!3d33.0871513!4d-96.6841919!16s%2Fg%2F11rp5ckb7g!19sChIJyQRRMvEXTIYRaSb0dMWgmKg?authuser=0&hl=en&rclk=1"
     ],
@@ -856,29 +858,29 @@
     "amenities": [],
     "google_place_id": "0x864e733ba5d90df1:0x18ca27bf47aeed8",
     "google_rating": 4.9,
-    "google_reviews_count": 123,
+    "google_reviews_count": 126,
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Camp+Bowie+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x864e733ba5d90df1:0x18ca27bf47aeed8!8m2!3d32.7283146!4d-97.4178781!16s%2Fg%2F11x39m_s5v!19sChIJ8Q3ZpTtzToYR2O569HuijAE?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
   {
-    "id": "perspire-sauna-studio-fort-worth",
-    "name": "Perspire Sauna Studio",
+    "id": "beem-light-sauna-west-plano-plano",
+    "name": "beem® Light Sauna West Plano",
     "metro": "dallas_fort_worth_tx",
-    "city": "Fort Worth",
-    "lat": 32.7007332,
-    "lng": -97.4129957,
+    "city": "Plano",
+    "lat": 33.028927,
+    "lng": -96.8277766,
     "status": "active",
     "brand": null,
     "state": "TX",
     "neighborhood": null,
-    "address": "3700 Vision Dr Unit 112, Fort Worth, TX 76109",
+    "address": "2108 Dallas Pkwy #216A, Plano, TX 75093",
     "website": null,
     "booking_url": null,
     "instagram": null,
     "modalities": [
-      "sauna_infrared"
+      "sauna"
     ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
@@ -888,79 +890,11 @@
     "day_pass_price_usd": null,
     "membership_from_usd": null,
     "amenities": [],
-    "google_place_id": "0x864e73c829610e73:0xe2c093a576374a79",
+    "google_place_id": "0x864c2360f8855e25:0x2ef543c086b43513",
     "google_rating": 4.9,
-    "google_reviews_count": 121,
+    "google_reviews_count": 72,
     "source_urls": [
-      "https://www.google.com/maps/place/Perspire+Sauna+Studio/data=!4m7!3m6!1s0x864e73c829610e73:0xe2c093a576374a79!8m2!3d32.7007332!4d-97.4129957!16s%2Fg%2F11tkb631vd!19sChIJcw5hKchzToYReUo3dqWTwOI?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
-    "id": "drip-sauna-cold-plunge-fort-worth",
-    "name": "Drip Sauna + Cold Plunge",
-    "metro": "dallas_fort_worth_tx",
-    "city": "Fort Worth",
-    "lat": 32.3405264,
-    "lng": -97.4032433,
-    "status": "active",
-    "brand": null,
-    "state": "TX",
-    "neighborhood": null,
-    "address": "1301 W Henderson St, Cleburne, TX 76033",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x864e47704960f64f:0x8893504d46a9c5d3",
-    "google_rating": 4.7,
-    "google_reviews_count": 35,
-    "source_urls": [
-      "https://www.google.com/maps/place/Drip+Sauna+%2B+Cold+Plunge/data=!4m7!3m6!1s0x864e47704960f64f:0x8893504d46a9c5d3!8m2!3d32.3405264!4d-97.4032433!16s%2Fg%2F11l5fbs423!19sChIJT_ZgSXBHToYR08WpRk1Qk4g?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
-    "id": "swthz-coppell-contrast-therapy-studio-dallas",
-    "name": "SWTHZ Coppell Contrast Therapy Studio",
-    "metro": "dallas_fort_worth_tx",
-    "city": "Dallas",
-    "lat": 32.9737566,
-    "lng": -96.9942875,
-    "status": "active",
-    "brand": null,
-    "state": "TX",
-    "neighborhood": null,
-    "address": "205 N Denton Tap Rd #150, Coppell, TX 75019",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "sauna_infrared",
-      "cold_plunge",
-      "contrast"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x864c2fae0ecf50f5:0x5fde165baafeff23",
-    "google_rating": 5.0,
-    "google_reviews_count": 271,
-    "source_urls": [
-      "https://www.google.com/maps/place/SWTHZ+Coppell+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x864c2fae0ecf50f5:0x5fde165baafeff23!8m2!3d32.9737566!4d-96.9942875!16s%2Fg%2F11vw_g23mw!19sChIJ9VDPDq4vTIYRI__-qlsW3l8?authuser=0&hl=en&rclk=1"
+      "https://www.google.com/maps/place/beem%C2%AE+Light+Sauna+West+Plano/data=!4m7!3m6!1s0x864c2360f8855e25:0x2ef543c086b43513!8m2!3d33.028927!4d-96.8277766!16s%2Fg%2F11vhx5h49g!19sChIJJV6F-GAjTIYREzW0hsBD9S4?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -1001,6 +935,42 @@
     "last_verified": null
   },
   {
+    "id": "swthz-coppell-contrast-therapy-studio-dallas",
+    "name": "SWTHZ Coppell Contrast Therapy Studio",
+    "metro": "dallas_fort_worth_tx",
+    "city": "Dallas",
+    "lat": 32.9737566,
+    "lng": -96.9942875,
+    "status": "active",
+    "brand": null,
+    "state": "TX",
+    "neighborhood": null,
+    "address": "205 N Denton Tap Rd #150, Coppell, TX 75019",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [
+      "sauna_infrared",
+      "cold_plunge",
+      "contrast"
+    ],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x864c2fae0ecf50f5:0x5fde165baafeff23",
+    "google_rating": 5.0,
+    "google_reviews_count": 276,
+    "source_urls": [
+      "https://www.google.com/maps/place/SWTHZ+Coppell+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x864c2fae0ecf50f5:0x5fde165baafeff23!8m2!3d32.9737566!4d-96.9942875!16s%2Fg%2F11vw_g23mw!19sChIJ9VDPDq4vTIYRI__-qlsW3l8?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
     "id": "urban-sweat---dallas-dallas",
     "name": "Urban Sweat - Dallas",
     "metro": "dallas_fort_worth_tx",
@@ -1029,43 +999,9 @@
     "amenities": [],
     "google_place_id": "0x864e9fa89538ab0f:0x544618343120b7ee",
     "google_rating": 4.3,
-    "google_reviews_count": 40,
+    "google_reviews_count": 39,
     "source_urls": [
       "https://www.google.com/maps/place/Urban+Sweat+-+Dallas/data=!4m7!3m6!1s0x864e9fa89538ab0f:0x544618343120b7ee!8m2!3d32.851833!4d-96.7690763!16s%2Fg%2F11fn9vs866!19sChIJD6s4laifToYR7rcgMTQYRlQ?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
-    "id": "beem-light-sauna-west-plano-plano",
-    "name": "beem® Light Sauna West Plano",
-    "metro": "dallas_fort_worth_tx",
-    "city": "Plano",
-    "lat": 33.028927,
-    "lng": -96.8277766,
-    "status": "active",
-    "brand": null,
-    "state": "TX",
-    "neighborhood": null,
-    "address": "2108 Dallas Pkwy #216A, Plano, TX 75093",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "sauna"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x864c2360f8855e25:0x2ef543c086b43513",
-    "google_rating": 4.9,
-    "google_reviews_count": 72,
-    "source_urls": [
-      "https://www.google.com/maps/place/beem%C2%AE+Light+Sauna+West+Plano/data=!4m7!3m6!1s0x864c2360f8855e25:0x2ef543c086b43513!8m2!3d33.028927!4d-96.8277766!16s%2Fg%2F11vhx5h49g!19sChIJJV6F-GAjTIYREzW0hsBD9S4?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -1102,6 +1038,38 @@
     "last_verified": null
   },
   {
+    "id": "integrity-cryo-recovery-fort-worth",
+    "name": "Integrity Cryo & Recovery",
+    "metro": "dallas_fort_worth_tx",
+    "city": "Fort Worth",
+    "lat": 32.8599211,
+    "lng": -97.1963878,
+    "status": "active",
+    "brand": null,
+    "state": "TX",
+    "neighborhood": null,
+    "address": "8851 Ice House Dr, North Richland Hills, TX 76182",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x864e791c0cac35f1:0xf2b57f5844500f36",
+    "google_rating": 5.0,
+    "google_reviews_count": 38,
+    "source_urls": [
+      "https://www.google.com/maps/place/Integrity+Cryo+%26+Recovery/data=!4m7!3m6!1s0x864e791c0cac35f1:0xf2b57f5844500f36!8m2!3d32.8599211!4d-97.1963878!16s%2Fg%2F11kk6xfchm!19sChIJ8TWsDBx5ToYRNg9QRFh_tfI?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
     "id": "icebox-cryotherapy-frisco-plano",
     "name": "Icebox Cryotherapy Frisco",
     "metro": "dallas_fort_worth_tx",
@@ -1133,6 +1101,38 @@
     "google_reviews_count": 131,
     "source_urls": [
       "https://www.google.com/maps/place/Icebox+Cryotherapy+Frisco/data=!4m7!3m6!1s0x864c3b48eb22e207:0xec9435499582aea5!8m2!3d33.118686!4d-96.8614833!16s%2Fg%2F11p64qw301!19sChIJB-Ii60g7TIYRpa6ClUk1lOw?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
+    "id": "cryo-n-more-plano",
+    "name": "Cryo N More",
+    "metro": "dallas_fort_worth_tx",
+    "city": "Plano",
+    "lat": 33.1982584,
+    "lng": -96.6435875,
+    "status": "active",
+    "brand": null,
+    "state": "TX",
+    "neighborhood": null,
+    "address": "2411 Virginia Pkwy Ste 1, McKinney, TX 75069",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x864c139fa082eee7:0x7e6baa0c07d978ea",
+    "google_rating": 5.0,
+    "google_reviews_count": 89,
+    "source_urls": [
+      "https://www.google.com/maps/place/Cryo+N+More/data=!4m7!3m6!1s0x864c139fa082eee7:0x7e6baa0c07d978ea!8m2!3d33.1982584!4d-96.6435875!16s%2Fg%2F11j42w5g9l!19sChIJ5-6CoJ8TTIYR6njZBwyqa34?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -1244,42 +1244,6 @@
     "last_verified": null
   },
   {
-    "id": "sweathouz-bryn-mawr-king-of-prussia",
-    "name": "SweatHouz Bryn Mawr",
-    "metro": "philadelphia_pa",
-    "city": "King of Prussia",
-    "lat": 40.0235175,
-    "lng": -75.3213684,
-    "status": "active",
-    "brand": null,
-    "state": "PA",
-    "neighborhood": null,
-    "address": "925 W Lancaster Ave Ste 130, Lower Merion Township, PA 19010",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "sauna_infrared",
-      "cold_plunge",
-      "contrast"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x89c6bf901be727a9:0x1e3bcd26f1ffab89",
-    "google_rating": 4.9,
-    "google_reviews_count": 167,
-    "source_urls": [
-      "https://www.google.com/maps/place/SweatHouz+Bryn+Mawr/data=!4m7!3m6!1s0x89c6bf901be727a9:0x1e3bcd26f1ffab89!8m2!3d40.0235175!4d-75.3213684!16s%2Fg%2F11ybknmr3h!19sChIJqSfnG5C_xokRiav_8SbNOx4?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
     "id": "dtxfy-infrared-sauna-studio-king-of-prussia",
     "name": "dtXfy Infrared Sauna Studio",
     "metro": "philadelphia_pa",
@@ -1314,10 +1278,114 @@
     "last_verified": null
   },
   {
-    "id": "sweathouz-media-contrast-therapy-studio-king-of-prussia",
-    "name": "SweatHouz Media Contrast Therapy Studio",
+    "id": "sweathouz-bryn-mawr-king-of-prussia",
+    "name": "SweatHouz Bryn Mawr",
     "metro": "philadelphia_pa",
     "city": "King of Prussia",
+    "lat": 40.0235175,
+    "lng": -75.3213684,
+    "status": "active",
+    "brand": null,
+    "state": "PA",
+    "neighborhood": null,
+    "address": "925 W Lancaster Ave Ste 130, Lower Merion Township, PA 19010",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [
+      "sauna_infrared",
+      "cold_plunge",
+      "contrast"
+    ],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x89c6bf901be727a9:0x1e3bcd26f1ffab89",
+    "google_rating": 4.9,
+    "google_reviews_count": 170,
+    "source_urls": [
+      "https://www.google.com/maps/place/SweatHouz+Bryn+Mawr/data=!4m7!3m6!1s0x89c6bf901be727a9:0x1e3bcd26f1ffab89!8m2!3d40.0235175!4d-75.3213684!16s%2Fg%2F11ybknmr3h!19sChIJqSfnG5C_xokRiav_8SbNOx4?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
+    "id": "sweathouz-upper-dublin-contrast-therapy-studio-cherry-hill",
+    "name": "SweatHouz Upper Dublin Contrast Therapy Studio",
+    "metro": "philadelphia_pa",
+    "city": "Cherry Hill",
+    "lat": 40.1580984,
+    "lng": -75.1494848,
+    "status": "active",
+    "brand": null,
+    "state": "PA",
+    "neighborhood": null,
+    "address": "1099 Market St, Upper Dublin Township, PA 19025",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [
+      "sauna_infrared",
+      "cold_plunge",
+      "contrast"
+    ],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x89c6afc69e334cb1:0x90c3a78de13639cf",
+    "google_rating": 4.9,
+    "google_reviews_count": 125,
+    "source_urls": [
+      "https://www.google.com/maps/place/SweatHouz+Upper+Dublin+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x89c6afc69e334cb1:0x90c3a78de13639cf!8m2!3d40.1580984!4d-75.1494848!16s%2Fg%2F11x2vwz1lb!19sChIJsUwznsavxokRzzk24Y2nw5A?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
+    "id": "fire-ice-express-cherry-hill",
+    "name": "Fire & Ice Express",
+    "metro": "philadelphia_pa",
+    "city": "Cherry Hill",
+    "lat": 39.9475032,
+    "lng": -74.9719282,
+    "status": "active",
+    "brand": null,
+    "state": "PA",
+    "neighborhood": null,
+    "address": "300 S Lenola Rd #20, Maple Shade Township, PA 08052",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x89c6cb6f8a0f79b3:0x3d6049ebce155b13",
+    "google_rating": 5.0,
+    "google_reviews_count": 43,
+    "source_urls": [
+      "https://www.google.com/maps/place/Fire+%26+Ice+Express/data=!4m7!3m6!1s0x89c6cb6f8a0f79b3:0x3d6049ebce155b13!8m2!3d39.9475032!4d-74.9719282!16s%2Fg%2F11vjhnnrrk!19sChIJs3kPim_LxokRE1sVzutJYD0?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
+    "id": "sweathouz-media-contrast-therapy-studio-cherry-hill",
+    "name": "SweatHouz Media Contrast Therapy Studio",
+    "metro": "philadelphia_pa",
+    "city": "Cherry Hill",
     "lat": 39.9140468,
     "lng": -75.4355616,
     "status": "active",
@@ -1346,6 +1414,38 @@
     "google_reviews_count": 15,
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Media+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x89c6e90ff955a83f:0xb79ac13f0ac7a72!8m2!3d39.9140468!4d-75.4355616!16s%2Fg%2F11ywp5r2cl!19sChIJP6hV-Q_pxokRcnqs8BOseQs?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
+    "id": "cryo-philadelphia-cherry-hill",
+    "name": "CRYO Philadelphia",
+    "metro": "philadelphia_pa",
+    "city": "Cherry Hill",
+    "lat": 40.0711619,
+    "lng": -75.2009327,
+    "status": "active",
+    "brand": null,
+    "state": "PA",
+    "neighborhood": null,
+    "address": "8011 Germantown Ave, Philadelphia, PA 19118",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x89c6c630883ce7e7:0x4a3e786f45d4c30d",
+    "google_rating": 4.9,
+    "google_reviews_count": 45,
+    "source_urls": [
+      "https://www.google.com/maps/place/CRYO+Philadelphia/data=!4m7!3m6!1s0x89c6c630883ce7e7:0x4a3e786f45d4c30d!8m2!3d40.0711619!4d-75.2009327!16s%2Fg%2F11cnb8bny5!19sChIJ5-c8iDDGxokRDcPURW94Pko?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -1418,6 +1518,40 @@
     "last_verified": null
   },
   {
+    "id": "cold-plunge-philly-cherry-hill",
+    "name": "Cold Plunge Philly",
+    "metro": "philadelphia_pa",
+    "city": "Cherry Hill",
+    "lat": 39.9782618,
+    "lng": -75.3037233,
+    "status": "active",
+    "brand": null,
+    "state": "PA",
+    "neighborhood": null,
+    "address": "1213 Darby Rd, Haverford Township, PA 19083",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [
+      "cold_plunge"
+    ],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x89c6c185571b72ab:0x4a352cbb048f35e8",
+    "google_rating": 5.0,
+    "google_reviews_count": 335,
+    "source_urls": [
+      "https://www.google.com/maps/place/Cold+Plunge+Philly/data=!4m7!3m6!1s0x89c6c185571b72ab:0x4a352cbb048f35e8!8m2!3d39.9782618!4d-75.3037233!16s%2Fg%2F11wj5mklst!19sChIJq3IbV4XBxokR6DWPBLssNUo?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
     "id": "sauna-phl-philadelphia",
     "name": "Sauna PHL",
     "metro": "philadelphia_pa",
@@ -1445,7 +1579,7 @@
     "amenities": [],
     "google_place_id": "0x89c6c91d7e47c22d:0xb3bfd6d8e4ae9c78",
     "google_rating": 5.0,
-    "google_reviews_count": 59,
+    "google_reviews_count": 60,
     "source_urls": [
       "https://www.google.com/maps/place/Sauna+PHL/data=!4m7!3m6!1s0x89c6c91d7e47c22d:0xb3bfd6d8e4ae9c78!8m2!3d39.9614835!4d-75.1410989!16s%2Fg%2F11xrhjm18n!19sChIJLcJHfh3JxokReJyu5NjWv7M?authuser=0&hl=en&rclk=1"
     ],
@@ -1479,209 +1613,9 @@
     "amenities": [],
     "google_place_id": "0x89c6c7144043a0eb:0x13ddc6e7f592fbc0",
     "google_rating": 5.0,
-    "google_reviews_count": 9,
+    "google_reviews_count": 10,
     "source_urls": [
       "https://www.google.com/maps/place/Philadelphia+Custom+Saunas/data=!4m7!3m6!1s0x89c6c7144043a0eb:0x13ddc6e7f592fbc0!8m2!3d39.9464712!4d-75.1625951!16s%2Fg%2F11xvjb865b!19sChIJ66BDQBTHxokRwPuS9efG3RM?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
-    "id": "sweathouz-upper-dublin-contrast-therapy-studio-king-of-prussia",
-    "name": "SweatHouz Upper Dublin Contrast Therapy Studio",
-    "metro": "philadelphia_pa",
-    "city": "King of Prussia",
-    "lat": 40.1580984,
-    "lng": -75.1494848,
-    "status": "active",
-    "brand": null,
-    "state": "PA",
-    "neighborhood": null,
-    "address": "1099 Market St, Upper Dublin Township, PA 19025",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "sauna_infrared",
-      "cold_plunge",
-      "contrast"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x89c6afc69e334cb1:0x90c3a78de13639cf",
-    "google_rating": 4.9,
-    "google_reviews_count": 122,
-    "source_urls": [
-      "https://www.google.com/maps/place/SweatHouz+Upper+Dublin+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x89c6afc69e334cb1:0x90c3a78de13639cf!8m2!3d40.1580984!4d-75.1494848!16s%2Fg%2F11x2vwz1lb!19sChIJsUwznsavxokRzzk24Y2nw5A?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
-    "id": "aura-sauna-studio-cherry-hill",
-    "name": "AURA Sauna Studio",
-    "metro": "philadelphia_pa",
-    "city": "Cherry Hill",
-    "lat": 40.3467275,
-    "lng": -80.0517755,
-    "status": "active",
-    "brand": null,
-    "state": "PA",
-    "neighborhood": null,
-    "address": "4000 Oxford Dr Unit 101, Bethel Park, PA 15102",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "sauna_infrared"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x8834f9b2695d4547:0xdd70b3385609b5f0",
-    "google_rating": 4.9,
-    "google_reviews_count": 8,
-    "source_urls": [
-      "https://www.google.com/maps/place/AURA+Sauna+Studio/data=!4m7!3m6!1s0x8834f9b2695d4547:0xdd70b3385609b5f0!8m2!3d40.3467275!4d-80.0517755!16s%2Fg%2F11y6d2y247!19sChIJR0VdabL5NIgR8LUJVjizcN0?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
-    "id": "pennsylvania-recovery-center---philadelphia-philadelphia",
-    "name": "Pennsylvania Recovery Center - Philadelphia",
-    "metro": "philadelphia_pa",
-    "city": "Philadelphia",
-    "lat": 39.9566025,
-    "lng": -75.1565876,
-    "status": "active",
-    "brand": null,
-    "state": "PA",
-    "neighborhood": null,
-    "address": "1026 Winter St, Philadelphia, PA 19107",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x89c6c92c7e501825:0xd02492204d06b159",
-    "google_rating": 4.7,
-    "google_reviews_count": 31,
-    "source_urls": [
-      "https://www.google.com/maps/place/Pennsylvania+Recovery+Center+-+Philadelphia/data=!4m7!3m6!1s0x89c6c92c7e501825:0xd02492204d06b159!8m2!3d39.9566025!4d-75.1565876!16s%2Fg%2F11f79501v6!19sChIJJRhQfizJxokRWbEGTSCSJNA?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
-    "id": "level-forty-recovery-center-king-of-prussia",
-    "name": "Level Forty Recovery Center",
-    "metro": "philadelphia_pa",
-    "city": "King of Prussia",
-    "lat": 40.0893179,
-    "lng": -75.3567947,
-    "status": "active",
-    "brand": null,
-    "state": "PA",
-    "neighborhood": null,
-    "address": "320 S Henderson Rd, Upper Merion Township, PA 19405",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x89c69598e7e5ba6b:0x8a55d3846cdb5998",
-    "google_rating": null,
-    "google_reviews_count": null,
-    "source_urls": [
-      "https://www.google.com/maps/place/Level+Forty+Recovery+Center/data=!4m7!3m6!1s0x89c69598e7e5ba6b:0x8a55d3846cdb5998!8m2!3d40.0893179!4d-75.3567947!16s%2Fg%2F11q4hhr1l7!19sChIJa7rl55iVxokRmFnbbITTVYo?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
-    "id": "elite-edge-recovery-king-of-prussia",
-    "name": "Elite Edge Recovery",
-    "metro": "philadelphia_pa",
-    "city": "King of Prussia",
-    "lat": 40.0452685,
-    "lng": -75.5813402,
-    "status": "active",
-    "brand": null,
-    "state": "PA",
-    "neighborhood": null,
-    "address": "11 N Bacton Hill Rd, East Whiteland Township, PA 19355",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "sauna"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x89c6f3d2e989693d:0x61629afc04c35474",
-    "google_rating": 5.0,
-    "google_reviews_count": 8,
-    "source_urls": [
-      "https://www.google.com/maps/place/Elite+Edge+Recovery/data=!4m7!3m6!1s0x89c6f3d2e989693d:0x61629afc04c35474!8m2!3d40.0452685!4d-75.5813402!16s%2Fg%2F11n3lddm_c!19sChIJPWmJ6dLzxokRdFTDBPyaYmE?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
-    "id": "cryo-philadelphia-philadelphia",
-    "name": "CRYO Philadelphia",
-    "metro": "philadelphia_pa",
-    "city": "Philadelphia",
-    "lat": 40.0711619,
-    "lng": -75.2009327,
-    "status": "active",
-    "brand": null,
-    "state": "PA",
-    "neighborhood": null,
-    "address": "8011 Germantown Ave, Philadelphia, PA 19118",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x89c6c630883ce7e7:0x4a3e786f45d4c30d",
-    "google_rating": 4.9,
-    "google_reviews_count": 45,
-    "source_urls": [
-      "https://www.google.com/maps/place/CRYO+Philadelphia/data=!4m7!3m6!1s0x89c6c630883ce7e7:0x4a3e786f45d4c30d!8m2!3d40.0711619!4d-75.2009327!16s%2Fg%2F11cnb8bny5!19sChIJ5-c8iDDGxokRDcPURW94Pko?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -1748,7 +1682,7 @@
     "amenities": [],
     "google_place_id": "0x8644b5504a8f01b5:0x585148d58f20cd0d",
     "google_rating": 4.9,
-    "google_reviews_count": 218,
+    "google_reviews_count": 217,
     "source_urls": [
       "https://www.google.com/maps/place/The+Ocean+Lab+%7C+Contrast+Therapy/data=!4m7!3m6!1s0x8644b5504a8f01b5:0x585148d58f20cd0d!8m2!3d30.2915438!4d-97.7234213!16s%2Fg%2F11fk1swf_0!19sChIJtQGPSlC1RIYRDc0gj9VIUVg?authuser=0&hl=en&rclk=1"
     ],
@@ -1852,9 +1786,43 @@
     "amenities": [],
     "google_place_id": "0x8644cb004ad9f63b:0x8ccf48b05d7bc6f2",
     "google_rating": 5.0,
-    "google_reviews_count": 75,
+    "google_reviews_count": 76,
     "source_urls": [
       "https://www.google.com/maps/place/Sauna+House+North+Loop/data=!4m7!3m6!1s0x8644cb004ad9f63b:0x8ccf48b05d7bc6f2!8m2!3d30.3247522!4d-97.7380251!16s%2Fg%2F11yn5fsn__!19sChIJO_bZSgDLRIYR8sZ7XbBIz4w?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
+    "id": "perspire-sauna-studio-austin",
+    "name": "Perspire Sauna Studio",
+    "metro": "austin_tx",
+    "city": "Austin",
+    "lat": 30.3151485,
+    "lng": -97.7356655,
+    "status": "active",
+    "brand": null,
+    "state": "TX",
+    "neighborhood": null,
+    "address": "4601 N Lamar Blvd #501, Austin, TX 78751",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [
+      "sauna_infrared"
+    ],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x8644cbcd0cec2469:0x7c4ab07352e0a72b",
+    "google_rating": 4.5,
+    "google_reviews_count": 165,
+    "source_urls": [
+      "https://www.google.com/maps/place/Perspire+Sauna+Studio/data=!4m7!3m6!1s0x8644cbcd0cec2469:0x7c4ab07352e0a72b!8m2!3d30.3151485!4d-97.7356655!16s%2Fg%2F11fwb1r7sq!19sChIJaSTsDM3LRIYRK6fgUnOwSnw?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -1886,7 +1854,7 @@
     "amenities": [],
     "google_place_id": "0x8644b505597275cd:0xedb6822e2c2fb0d4",
     "google_rating": 5.0,
-    "google_reviews_count": null,
+    "google_reviews_count": 19,
     "source_urls": [
       "https://www.google.com/maps/place/Crockpot+Saunas/data=!4m7!3m6!1s0x8644b505597275cd:0xedb6822e2c2fb0d4!8m2!3d30.2424094!4d-97.7526732!16s%2Fg%2F11yzbls7pj!19sChIJzXVyWQW1RIYR1LAvLC6Ctu0?authuser=0&hl=en&rclk=1"
     ],
@@ -1921,30 +1889,28 @@
     "amenities": [],
     "google_place_id": "0x8644b59fda798005:0xb5c6e5d3d0853081",
     "google_rating": 5.0,
-    "google_reviews_count": 44,
+    "google_reviews_count": 45,
     "source_urls": [
       "https://www.google.com/maps/place/ULU+Recovery+%26+Wellness/data=!4m7!3m6!1s0x8644b59fda798005:0xb5c6e5d3d0853081!8m2!3d30.2488782!4d-97.755692!16s%2Fg%2F11x1s_t_kz!19sChIJBYB52p-1RIYRgTCF0NPlxrU?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
   {
-    "id": "perspire-sauna-studio-austin",
-    "name": "Perspire Sauna Studio",
+    "id": "evolve-cryo-wellness-austin",
+    "name": "EvolvE Cryo + Wellness",
     "metro": "austin_tx",
     "city": "Austin",
-    "lat": 30.3151485,
-    "lng": -97.7356655,
+    "lat": 30.2405172,
+    "lng": -97.7861991,
     "status": "active",
     "brand": null,
     "state": "TX",
     "neighborhood": null,
-    "address": "4601 N Lamar Blvd #501, Austin, TX 78751",
+    "address": "3411 S Lamar Blvd, Austin, TX 78704",
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [
-      "sauna_infrared"
-    ],
+    "modalities": [],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -1953,11 +1919,43 @@
     "day_pass_price_usd": null,
     "membership_from_usd": null,
     "amenities": [],
-    "google_place_id": "0x8644cbcd0cec2469:0x7c4ab07352e0a72b",
-    "google_rating": 4.5,
-    "google_reviews_count": 164,
+    "google_place_id": "0x865b4b2d38b460f9:0xb2b34a152772aa81",
+    "google_rating": 4.9,
+    "google_reviews_count": 298,
     "source_urls": [
-      "https://www.google.com/maps/place/Perspire+Sauna+Studio/data=!4m7!3m6!1s0x8644cbcd0cec2469:0x7c4ab07352e0a72b!8m2!3d30.3151485!4d-97.7356655!16s%2Fg%2F11fwb1r7sq!19sChIJaSTsDM3LRIYRK6fgUnOwSnw?authuser=0&hl=en&rclk=1"
+      "https://www.google.com/maps/place/EvolvE+Cryo+%2B+Wellness/data=!4m7!3m6!1s0x865b4b2d38b460f9:0xb2b34a152772aa81!8m2!3d30.2405172!4d-97.7861991!16s%2Fg%2F11cn9445zy!19sChIJ-WC0OC1LW4YRgapyJxVKs7I?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
+    "id": "cryofit-cedar-park-cedar-park",
+    "name": "Cryofit Cedar Park",
+    "metro": "austin_tx",
+    "city": "Cedar Park",
+    "lat": 30.5227775,
+    "lng": -97.8226459,
+    "status": "active",
+    "brand": null,
+    "state": "TX",
+    "neighborhood": null,
+    "address": "700 E Whitestone Blvd #203, Cedar Park, TX 78613",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x865b2d6788dfe59f:0xea95113978f140d9",
+    "google_rating": 5.0,
+    "google_reviews_count": 13,
+    "source_urls": [
+      "https://www.google.com/maps/place/Cryofit+Cedar+Park/data=!4m7!3m6!1s0x865b2d6788dfe59f:0xea95113978f140d9!8m2!3d30.5227775!4d-97.8226459!16s%2Fg%2F11stvlvxg1!19sChIJn-XfiGctW4YR2UDxeDkRleo?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -1991,9 +1989,110 @@
     "amenities": [],
     "google_place_id": "0x8644cb70c34a4b0b:0x89504a7854e6acb6",
     "google_rating": 4.9,
-    "google_reviews_count": 43,
+    "google_reviews_count": 44,
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+The+Grove+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x8644cb70c34a4b0b:0x89504a7854e6acb6!8m2!3d30.318368!4d-97.752161!16s%2Fg%2F11zb3xx6lr!19sChIJC0tKw3DLRIYRtqzmVHhKUIk?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
+    "id": "r3-cryospa-cedar-park",
+    "name": "R3 CryoSpa",
+    "metro": "austin_tx",
+    "city": "Cedar Park",
+    "lat": 30.5218039,
+    "lng": -97.7763651,
+    "status": "active",
+    "brand": null,
+    "state": "TX",
+    "neighborhood": null,
+    "address": "205 Denali Pass Dr B, Cedar Park, TX 78613",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [
+      "cryo",
+      "cold_plunge"
+    ],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x865b32b77ba562f3:0xffdf0090bff67991",
+    "google_rating": 5.0,
+    "google_reviews_count": 72,
+    "source_urls": [
+      "https://www.google.com/maps/place/R3+CryoSpa/data=!4m7!3m6!1s0x865b32b77ba562f3:0xffdf0090bff67991!8m2!3d30.5218039!4d-97.7763651!16s%2Fg%2F11b6z_x0z_!19sChIJ82Kle7cyW4YRkXn2v5AA3_8?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
+    "id": "contrast-collective-cedar-park",
+    "name": "Contrast Collective",
+    "metro": "austin_tx",
+    "city": "Cedar Park",
+    "lat": 30.2823966,
+    "lng": -97.7020745,
+    "status": "active",
+    "brand": null,
+    "state": "TX",
+    "neighborhood": null,
+    "address": "3241 E Martin Luther King Jr Blvd, Austin, TX 78722",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x8644b5aa5ef35fff:0x95e51da613d96b08",
+    "google_rating": null,
+    "google_reviews_count": null,
+    "source_urls": [
+      "https://www.google.com/maps/place/Contrast+Collective/data=!4m7!3m6!1s0x8644b5aa5ef35fff:0x95e51da613d96b08!8m2!3d30.2823966!4d-97.7020745!16s%2Fg%2F11zcml31_0!19sChIJ_1_zXqq1RIYRCGvZE6Yd5ZU?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
+    "id": "perspire-sauna-studio---kyle-austin",
+    "name": "Perspire Sauna Studio - Kyle",
+    "metro": "austin_tx",
+    "city": "Austin",
+    "lat": 30.0305582,
+    "lng": -97.8746049,
+    "status": "active",
+    "brand": null,
+    "state": "TX",
+    "neighborhood": null,
+    "address": null,
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [
+      "sauna_infrared"
+    ],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x865b51e276c230e7:0x24d5389070168f1c",
+    "google_rating": 5.0,
+    "google_reviews_count": 38,
+    "source_urls": [
+      "https://www.google.com/maps/place/Perspire+Sauna+Studio+-+Kyle/data=!4m7!3m6!1s0x865b51e276c230e7:0x24d5389070168f1c!8m2!3d30.0305582!4d-97.8746049!16s%2Fg%2F11mls_67ft!19sChIJ5zDCduJRW4YRHI8WcJA41SQ?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -2064,6 +2163,102 @@
     "last_verified": null
   },
   {
+    "id": "sweatcity-health-and-recovery-austin",
+    "name": "Sweatcity Health and Recovery",
+    "metro": "austin_tx",
+    "city": "Austin",
+    "lat": 30.2642859,
+    "lng": -97.7616189,
+    "status": "active",
+    "brand": null,
+    "state": "TX",
+    "neighborhood": null,
+    "address": "1701 Toomey Rd, Austin, TX 78704",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x865b4d209354c369:0x3d374f1fd66ace8a",
+    "google_rating": 5.0,
+    "google_reviews_count": 51,
+    "source_urls": [
+      "https://www.google.com/maps/place/Sweatcity+Health+and+Recovery/data=!4m7!3m6!1s0x865b4d209354c369:0x3d374f1fd66ace8a!8m2!3d30.2642859!4d-97.7616189!16s%2Fg%2F11vjh_dnwv!19sChIJacNUkyBNW4YRis5q1h9PNz0?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
+    "id": "active-recovery-massage-austin",
+    "name": "Active Recovery Massage",
+    "metro": "austin_tx",
+    "city": "Austin",
+    "lat": 30.3415589,
+    "lng": -97.7549546,
+    "status": "active",
+    "brand": null,
+    "state": "TX",
+    "neighborhood": null,
+    "address": "5900 Balcones Dr Ste 180, Austin, TX 78731",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x8644cb8fa2c9351d:0x5f1172a4383e7fcd",
+    "google_rating": 5.0,
+    "google_reviews_count": 3,
+    "source_urls": [
+      "https://www.google.com/maps/place/Active+Recovery+Massage/data=!4m7!3m6!1s0x8644cb8fa2c9351d:0x5f1172a4383e7fcd!8m2!3d30.3415589!4d-97.7549546!16s%2Fg%2F11z9pgmr1c!19sChIJHTXJoo_LRIYRzX8-OKRyEV8?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
+    "id": "knead-recovery-austin",
+    "name": "Knead Recovery",
+    "metro": "austin_tx",
+    "city": "Austin",
+    "lat": 30.3100624,
+    "lng": -97.7410337,
+    "status": "active",
+    "brand": null,
+    "state": "TX",
+    "neighborhood": null,
+    "address": "4111 Marathon Blvd Ste 110, Austin, TX 78756",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x8644cb453d3eee7f:0xe228960bb6c37107",
+    "google_rating": 5.0,
+    "google_reviews_count": 72,
+    "source_urls": [
+      "https://www.google.com/maps/place/Knead+Recovery/data=!4m7!3m6!1s0x8644cb453d3eee7f:0xe228960bb6c37107!8m2!3d30.3100624!4d-97.7410337!16s%2Fg%2F11rftc7pj4!19sChIJf-4-PUXLRIYRB3HDtguWKOI?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
     "id": "the-wellness-recovery-center-at-lac-cedar-park",
     "name": "The Wellness + Recovery Center at LAC",
     "metro": "austin_tx",
@@ -2092,75 +2287,6 @@
     "google_reviews_count": 3,
     "source_urls": [
       "https://www.google.com/maps/place/The+Wellness+%2B+Recovery+Center+at+LAC/data=!4m7!3m6!1s0x865b2bf4eea1ca7b:0x2da17bd70926a006!8m2!3d30.5734544!4d-97.8700843!16s%2Fg%2F11sskm4sk1!19sChIJe8qh7vQrW4YRBqAmCdd7oS0?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
-    "id": "r3-cryospa-cedar-park",
-    "name": "R3 CryoSpa",
-    "metro": "austin_tx",
-    "city": "Cedar Park",
-    "lat": 30.5218039,
-    "lng": -97.7763651,
-    "status": "active",
-    "brand": null,
-    "state": "TX",
-    "neighborhood": null,
-    "address": "205 Denali Pass Dr B, Cedar Park, TX 78613",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "cryo",
-      "cold_plunge"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x865b32b77ba562f3:0xffdf0090bff67991",
-    "google_rating": 5.0,
-    "google_reviews_count": 72,
-    "source_urls": [
-      "https://www.google.com/maps/place/R3+CryoSpa/data=!4m7!3m6!1s0x865b32b77ba562f3:0xffdf0090bff67991!8m2!3d30.5218039!4d-97.7763651!16s%2Fg%2F11b6z_x0z_!19sChIJ82Kle7cyW4YRkXn2v5AA3_8?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
-    "id": "evolve-cryo-facials-austin",
-    "name": "EvolvE Cryo + Facials",
-    "metro": "austin_tx",
-    "city": "Austin",
-    "lat": 30.2405172,
-    "lng": -97.7861991,
-    "status": "active",
-    "brand": null,
-    "state": "TX",
-    "neighborhood": null,
-    "address": "3411 S Lamar Blvd, Austin, TX 78704",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "sauna"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x865b4b2d38b460f9:0xb2b34a152772aa81",
-    "google_rating": 4.9,
-    "google_reviews_count": 297,
-    "source_urls": [
-      "https://www.google.com/maps/place/EvolvE+Cryo+%2B+Facials/data=!4m7!3m6!1s0x865b4b2d38b460f9:0xb2b34a152772aa81!8m2!3d30.2405172!4d-97.7861991!16s%2Fg%2F11cn9445zy!19sChIJ-WC0OC1LW4YRgapyJxVKs7I?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -2231,38 +2357,6 @@
     "last_verified": null
   },
   {
-    "id": "cryofit-cedar-park-cedar-park",
-    "name": "Cryofit Cedar Park",
-    "metro": "austin_tx",
-    "city": "Cedar Park",
-    "lat": 30.5227775,
-    "lng": -97.8226459,
-    "status": "active",
-    "brand": null,
-    "state": "TX",
-    "neighborhood": null,
-    "address": "700 E Whitestone Blvd #203, Cedar Park, TX 78613",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x865b2d6788dfe59f:0xea95113978f140d9",
-    "google_rating": 5.0,
-    "google_reviews_count": 13,
-    "source_urls": [
-      "https://www.google.com/maps/place/Cryofit+Cedar+Park/data=!4m7!3m6!1s0x865b2d6788dfe59f:0xea95113978f140d9!8m2!3d30.5227775!4d-97.8226459!16s%2Fg%2F11stvlvxg1!19sChIJn-XfiGctW4YR2UDxeDkRleo?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
     "id": "chicago-sweatlodge-chicago",
     "name": "Chicago Sweatlodge",
     "metro": "chicago_il",
@@ -2290,7 +2384,7 @@
     "amenities": [],
     "google_place_id": "0x880fcc5a62d83329:0xb8111f69c7b8c80",
     "google_rating": 4.8,
-    "google_reviews_count": null,
+    "google_reviews_count": 826,
     "source_urls": [
       "https://www.google.com/maps/place/Chicago+Sweatlodge/data=!4m7!3m6!1s0x880fcc5a62d83329:0xb8111f69c7b8c80!8m2!3d41.9444444!4d-87.7472222!16s%2Fg%2F1xcbq6kp!19sChIJKTPYYlrMD4gRgIx7nPYRgQs?authuser=0&hl=en&rclk=1"
     ],
@@ -2362,7 +2456,7 @@
     "amenities": [],
     "google_place_id": "0x880fd3380d440ecf:0xd04c5b8a40c64209",
     "google_rating": 4.8,
-    "google_reviews_count": 147,
+    "google_reviews_count": 148,
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Old+Town+Chicago+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x880fd3380d440ecf:0xd04c5b8a40c64209!8m2!3d41.9087633!4d-87.6344154!16s%2Fg%2F11lf94zczz!19sChIJzw5EDTjTD4gRCULGQIpbTNA?authuser=0&hl=en&rclk=1"
     ],
@@ -2508,6 +2602,38 @@
     "last_verified": null
   },
   {
+    "id": "cold-plunge-studios-evanston",
+    "name": "Cold Plunge Studios",
+    "metro": "chicago_il",
+    "city": "Evanston",
+    "lat": 40.0008118,
+    "lng": -86.1133681,
+    "status": "active",
+    "brand": null,
+    "state": "IL",
+    "neighborhood": null,
+    "address": "2792 E 146th St, Carmel, IL 46033",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x8814af363cba2e97:0x663d12710b6d1e98",
+    "google_rating": 4.9,
+    "google_reviews_count": 121,
+    "source_urls": [
+      "https://www.google.com/maps/place/Cold+Plunge+Studios/data=!4m7!3m6!1s0x8814af363cba2e97:0x663d12710b6d1e98!8m2!3d40.0008118!4d-86.1133681!16s%2Fg%2F11k4y9m7ms!19sChIJly66PDavFIgRmB5tC3ESPWY?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
     "id": "sweathouz-west-loop-contrast-therapy-studio-chicago",
     "name": "SweatHouz West Loop Contrast Therapy Studio",
     "metro": "chicago_il",
@@ -2537,7 +2663,7 @@
     "amenities": [],
     "google_place_id": "0x880e2d95c48b5717:0xd04960c1663cfdc4",
     "google_rating": 4.4,
-    "google_reviews_count": 58,
+    "google_reviews_count": 60,
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+West+Loop+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x880e2d95c48b5717:0xd04960c1663cfdc4!8m2!3d41.8815837!4d-87.6503525!16s%2Fg%2F11m6ljcz8y!19sChIJF1eLxJUtDogRxP08ZsFgSdA?authuser=0&hl=en&rclk=1"
     ],
@@ -2573,7 +2699,7 @@
     "amenities": [],
     "google_place_id": "0x880fd36f871e8857:0x4ec1fb6bdbc4a440",
     "google_rating": 4.8,
-    "google_reviews_count": 78,
+    "google_reviews_count": 81,
     "source_urls": [
       "https://www.google.com/maps/place/SWTHZ+Lakeview+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x880fd36f871e8857:0x4ec1fb6bdbc4a440!8m2!3d41.9381127!4d-87.6489436!16s%2Fg%2F11wqzc5bwy!19sChIJV4geh2_TD4gRQKTE22v7wU4?authuser=0&hl=en&rclk=1"
     ],
@@ -2612,6 +2738,42 @@
     "google_reviews_count": null,
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Highland+Park+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x880fc1d29ed453ed:0x94998780eb3aa2aa!8m2!3d42.1870521!4d-87.801632!16s%2Fg%2F11nqsmq63p!19sChIJ7VPUntLBD4gRqqI664CHmZQ?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
+    "id": "sweathouz-naperville-contrast-therapy-studio-evanston",
+    "name": "SweatHouz Naperville Contrast Therapy Studio",
+    "metro": "chicago_il",
+    "city": "Evanston",
+    "lat": 41.7478683,
+    "lng": -88.1990224,
+    "status": "active",
+    "brand": null,
+    "state": "IL",
+    "neighborhood": null,
+    "address": "2555 W 75th St #125, Naperville, IL 60540",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [
+      "sauna_infrared",
+      "cold_plunge",
+      "contrast"
+    ],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x880ef9a17a5e382b:0xf9dca616d7246732",
+    "google_rating": 4.6,
+    "google_reviews_count": 120,
+    "source_urls": [
+      "https://www.google.com/maps/place/SweatHouz+Naperville+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x880ef9a17a5e382b:0xf9dca616d7246732!8m2!3d41.7478683!4d-88.1990224!16s%2Fg%2F11x7nf6xnz!19sChIJKzheeqH5DogRMmck1xam3Pk?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -2718,38 +2880,6 @@
     "last_verified": null
   },
   {
-    "id": "ayon-sports-recovery-oak-park",
-    "name": "Ayon Sports Recovery",
-    "metro": "chicago_il",
-    "city": "Oak Park",
-    "lat": 42.0515807,
-    "lng": -88.0801912,
-    "status": "active",
-    "brand": null,
-    "state": "IL",
-    "neighborhood": null,
-    "address": "1238 N Roselle Rd Ste B, Schaumburg, IL 60195",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x880fafca69315595:0x86605014af9ed439",
-    "google_rating": 5.0,
-    "google_reviews_count": 150,
-    "source_urls": [
-      "https://www.google.com/maps/place/Ayon+Sports+Recovery/data=!4m7!3m6!1s0x880fafca69315595:0x86605014af9ed439!8m2!3d42.0515807!4d-88.0801912!16s%2Fg%2F11ptnll5j2!19sChIJlVUxacqvD4gROdSerxRQYIY?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
     "id": "the-recovery-room-oak-park",
     "name": "The Recovery Room",
     "metro": "chicago_il",
@@ -2850,38 +2980,6 @@
     "last_verified": null
   },
   {
-    "id": "fire-ice-sauna-oak-park",
-    "name": "Fire & Ice Sauna",
-    "metro": "chicago_il",
-    "city": "Oak Park",
-    "lat": 41.7250466,
-    "lng": -88.0369274,
-    "status": "active",
-    "brand": null,
-    "state": "IL",
-    "neighborhood": null,
-    "address": "726 E Boughton Rd, Bolingbrook, IL 60440",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x880e5bed08018845:0xc954f90a89e4fc99",
-    "google_rating": 5.0,
-    "google_reviews_count": 114,
-    "source_urls": [
-      "https://www.google.com/maps/place/Fire+%26+Ice+Sauna/data=!4m7!3m6!1s0x880e5bed08018845:0xc954f90a89e4fc99!8m2!3d41.7250466!4d-88.0369274!16s%2Fg%2F11yh3__b21!19sChIJRYgBCO1bDogRmfzkiQr5VMk?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
     "id": "sweathouz-infrared-sauna-studio-atlanta",
     "name": "SweatHouz Infrared Sauna Studio",
     "metro": "atlanta_ga",
@@ -2911,7 +3009,7 @@
     "amenities": [],
     "google_place_id": "0x88f505113d42c343:0xc0eed64a55e44024",
     "google_rating": 4.5,
-    "google_reviews_count": 255,
+    "google_reviews_count": 256,
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Infrared+Sauna+Studio/data=!4m7!3m6!1s0x88f505113d42c343:0xc0eed64a55e44024!8m2!3d33.7836005!4d-84.3839545!16s%2Fg%2F11kgk4hhl7!19sChIJQ8NCPREF9YgRJEDkVUrW7sA?authuser=0&hl=en&rclk=1"
     ],
@@ -2947,7 +3045,7 @@
     "amenities": [],
     "google_place_id": "0x88f503d19d0fe151:0x232e6268d116adc1",
     "google_rating": 4.9,
-    "google_reviews_count": 101,
+    "google_reviews_count": 102,
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Krog+St+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x88f503d19d0fe151:0x232e6268d116adc1!8m2!3d33.7558872!4d-84.364189!16s%2Fg%2F11yfg07_p9!19sChIJUeEPndED9YgRwa0W0WhiLiM?authuser=0&hl=en&rclk=1"
     ],
@@ -2983,43 +3081,9 @@
     "amenities": [],
     "google_place_id": "0x88f51154dc7f0cc1:0x48bf38dc4e1ffb32",
     "google_rating": 4.7,
-    "google_reviews_count": 368,
+    "google_reviews_count": 369,
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+-+Vinings/data=!4m7!3m6!1s0x88f51154dc7f0cc1:0x48bf38dc4e1ffb32!8m2!3d33.8646646!4d-84.4658173!16s%2Fg%2F11j0h97w11!19sChIJwQx_3FQR9YgRMvsfTtw4v0g?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
-    "id": "glow-sauna-studios-sandy-springs-atlanta",
-    "name": "Glow Sauna Studios | Sandy Springs",
-    "metro": "atlanta_ga",
-    "city": "Atlanta",
-    "lat": 33.918472,
-    "lng": -84.3819156,
-    "status": "active",
-    "brand": null,
-    "state": "GA",
-    "neighborhood": null,
-    "address": "5982 Roswell Rd NE, Sandy Springs, GA 30328",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "sauna_infrared"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x88f50f002c32a571:0x8933eab332e1792c",
-    "google_rating": 4.9,
-    "google_reviews_count": 127,
-    "source_urls": [
-      "https://www.google.com/maps/place/Glow+Sauna+Studios+%7C+Sandy+Springs/data=!4m7!3m6!1s0x88f50f002c32a571:0x8933eab332e1792c!8m2!3d33.918472!4d-84.3819156!16s%2Fg%2F11lmnqwsb1!19sChIJcaUyLAAP9YgRLHnhMrPqM4k?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -3058,6 +3122,76 @@
     "last_verified": null
   },
   {
+    "id": "sweathouz---sandy-springs-atlanta",
+    "name": "SweatHouz - Sandy Springs",
+    "metro": "atlanta_ga",
+    "city": "Atlanta",
+    "lat": 33.9198656,
+    "lng": -84.3793385,
+    "status": "active",
+    "brand": null,
+    "state": "GA",
+    "neighborhood": null,
+    "address": "6050 Roswell Rd Ste 200, Sandy Springs, GA 30328",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [
+      "sauna_infrared",
+      "cold_plunge",
+      "contrast"
+    ],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x88f50f189585b3ed:0xcd8b28a877f28130",
+    "google_rating": 4.7,
+    "google_reviews_count": 321,
+    "source_urls": [
+      "https://www.google.com/maps/place/SweatHouz+-+Sandy+Springs/data=!4m7!3m6!1s0x88f50f189585b3ed:0xcd8b28a877f28130!8m2!3d33.9198656!4d-84.3793385!16s%2Fg%2F11j4pfm_3x!19sChIJ7bOFlRgP9YgRMIHyd6goi80?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
+    "id": "glow-sauna-studios-sandy-springs-atlanta",
+    "name": "Glow Sauna Studios | Sandy Springs",
+    "metro": "atlanta_ga",
+    "city": "Atlanta",
+    "lat": 33.918472,
+    "lng": -84.3819156,
+    "status": "active",
+    "brand": null,
+    "state": "GA",
+    "neighborhood": null,
+    "address": "5982 Roswell Rd NE, Sandy Springs, GA 30328",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [
+      "sauna_infrared"
+    ],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x88f50f002c32a571:0x8933eab332e1792c",
+    "google_rating": 4.9,
+    "google_reviews_count": 127,
+    "source_urls": [
+      "https://www.google.com/maps/place/Glow+Sauna+Studios+%7C+Sandy+Springs/data=!4m7!3m6!1s0x88f50f002c32a571:0x8933eab332e1792c!8m2!3d33.918472!4d-84.3819156!16s%2Fg%2F11lmnqwsb1!19sChIJcaUyLAAP9YgRLHnhMrPqM4k?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
     "id": "beem-light-sauna---atlanta-glenwood-atlanta",
     "name": "beem® Light Sauna - Atlanta Glenwood",
     "metro": "atlanta_ga",
@@ -3083,7 +3217,7 @@
     "amenities": [],
     "google_place_id": "0x88f503d6146f813b:0x2c5f8c448fc514f9",
     "google_rating": 4.3,
-    "google_reviews_count": 71,
+    "google_reviews_count": 72,
     "source_urls": [
       "https://www.google.com/maps/place/beem%C2%AE+Light+Sauna+-+Atlanta+Glenwood/data=!4m7!3m6!1s0x88f503d6146f813b:0x2c5f8c448fc514f9!8m2!3d33.7408217!4d-84.3582825!16s%2Fg%2F11y1c38x5t!19sChIJO4FvFNYD9YgR-RTFj0SMXyw?authuser=0&hl=en&rclk=1"
     ],
@@ -3115,7 +3249,7 @@
     "amenities": [],
     "google_place_id": "0x88f53f2ddfc4b80b:0x46c2c1b319388d28",
     "google_rating": 5.0,
-    "google_reviews_count": 178,
+    "google_reviews_count": 179,
     "source_urls": [
       "https://www.google.com/maps/place/Studio+Recovery/data=!4m7!3m6!1s0x88f53f2ddfc4b80b:0x46c2c1b319388d28!8m2!3d33.9680584!4d-84.665035!16s%2Fg%2F11p74smfbt!19sChIJC7jE3y0_9YgRKI04GbPBwkY?authuser=0&hl=en&rclk=1"
     ],
@@ -3192,24 +3326,22 @@
     "last_verified": null
   },
   {
-    "id": "sweathouz---sandy-springs-atlanta",
-    "name": "SweatHouz - Sandy Springs",
-    "metro": "atlanta_ga",
-    "city": "Atlanta",
-    "lat": 33.9198656,
-    "lng": -84.3793385,
+    "id": "bywater-sauna-seattle",
+    "name": "Bywater Sauna",
+    "metro": "seattle_wa",
+    "city": "Seattle",
+    "lat": 47.6926008,
+    "lng": -122.4042438,
     "status": "active",
     "brand": null,
-    "state": "GA",
+    "state": "WA",
     "neighborhood": null,
-    "address": "6050 Roswell Rd Ste 200, Sandy Springs, GA 30328",
+    "address": "8498 Seaview Pl NW, Seattle, WA 98117",
     "website": null,
     "booking_url": null,
     "instagram": null,
     "modalities": [
-      "sauna_infrared",
-      "cold_plunge",
-      "contrast"
+      "sauna_traditional"
     ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
@@ -3219,11 +3351,11 @@
     "day_pass_price_usd": null,
     "membership_from_usd": null,
     "amenities": [],
-    "google_place_id": "0x88f50f189585b3ed:0xcd8b28a877f28130",
-    "google_rating": 4.7,
-    "google_reviews_count": 321,
+    "google_place_id": "0x549017b459491deb:0x113c0807911a1682",
+    "google_rating": 5.0,
+    "google_reviews_count": 86,
     "source_urls": [
-      "https://www.google.com/maps/place/SweatHouz+-+Sandy+Springs/data=!4m7!3m6!1s0x88f50f189585b3ed:0xcd8b28a877f28130!8m2!3d33.9198656!4d-84.3793385!16s%2Fg%2F11j4pfm_3x!19sChIJ7bOFlRgP9YgRMIHyd6goi80?authuser=0&hl=en&rclk=1"
+      "https://www.google.com/maps/place/Bywater+Sauna/data=!4m7!3m6!1s0x549017b459491deb:0x113c0807911a1682!8m2!3d47.6926008!4d-122.4042438!16s%2Fg%2F11w3tfcdth!19sChIJ6x1JWbQXkFQRghYakQcIPBE?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -3263,74 +3395,6 @@
     "last_verified": null
   },
   {
-    "id": "bywater-sauna-seattle",
-    "name": "Bywater Sauna",
-    "metro": "seattle_wa",
-    "city": "Seattle",
-    "lat": 47.6926008,
-    "lng": -122.4042438,
-    "status": "active",
-    "brand": null,
-    "state": "WA",
-    "neighborhood": null,
-    "address": "8498 Seaview Pl NW, Seattle, WA 98117",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "sauna_traditional"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x549017b459491deb:0x113c0807911a1682",
-    "google_rating": 5.0,
-    "google_reviews_count": 86,
-    "source_urls": [
-      "https://www.google.com/maps/place/Bywater+Sauna/data=!4m7!3m6!1s0x549017b459491deb:0x113c0807911a1682!8m2!3d47.6926008!4d-122.4042438!16s%2Fg%2F11w3tfcdth!19sChIJ6x1JWbQXkFQRghYakQcIPBE?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
-    "id": "seattle-sauna-seattle",
-    "name": "Seattle Sauna",
-    "metro": "seattle_wa",
-    "city": "Seattle",
-    "lat": 47.6503297,
-    "lng": -122.3305096,
-    "status": "active",
-    "brand": null,
-    "state": "WA",
-    "neighborhood": null,
-    "address": "2401 N Northlake Way Bldg G, Seattle, WA 98103",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "sauna_traditional"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x54901592b080b2a1:0xf5e32bd7a5f433e0",
-    "google_rating": 5.0,
-    "google_reviews_count": 217,
-    "source_urls": [
-      "https://www.google.com/maps/place/Seattle+Sauna/data=!4m7!3m6!1s0x54901592b080b2a1:0xf5e32bd7a5f433e0!8m2!3d47.6503297!4d-122.3305096!16s%2Fg%2F11wtk99vc4!19sChIJobKAsJIVkFQR4DP0pdcr4_U?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
     "id": "sauna-moon-seattle-seattle",
     "name": "Sauna Moon Seattle",
     "metro": "seattle_wa",
@@ -3361,110 +3425,6 @@
     "google_reviews_count": 10,
     "source_urls": [
       "https://www.google.com/maps/place/Sauna+Moon+Seattle/data=!4m7!3m6!1s0x5490413ccd7bc989:0x7eab3ff9a610ca92!8m2!3d47.5796944!4d-122.4096486!16s%2Fg%2F11yxhkt2vw!19sChIJicl7zTxBkFQRksoQpvk_q34?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
-    "id": "wild-haus-floating-saunas-seattle",
-    "name": "Wild Haus Floating Saunas",
-    "metro": "seattle_wa",
-    "city": "Seattle",
-    "lat": 47.6494245,
-    "lng": -122.3254393,
-    "status": "active",
-    "brand": null,
-    "state": "WA",
-    "neighborhood": null,
-    "address": "10 E Allison St, Seattle, WA 98013",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "sauna_traditional"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x5490154ab0204e23:0x548ce1e8c1028f9c",
-    "google_rating": 4.9,
-    "google_reviews_count": 133,
-    "source_urls": [
-      "https://www.google.com/maps/place/Wild+Haus+Floating+Saunas/data=!4m7!3m6!1s0x5490154ab0204e23:0x548ce1e8c1028f9c!8m2!3d47.6494245!4d-122.3254393!16s%2Fg%2F11wv44js18!19sChIJI04gsEoVkFQRnI8CwejhjFQ?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
-    "id": "city-sweats---wallingford-seattle",
-    "name": "City Sweats - Wallingford",
-    "metro": "seattle_wa",
-    "city": "Seattle",
-    "lat": 47.6587,
-    "lng": -122.342033,
-    "status": "active",
-    "brand": null,
-    "state": "WA",
-    "neighborhood": null,
-    "address": "4222 Stone Way N, Seattle, WA 98103",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "sauna_infrared",
-      "cold_plunge",
-      "contrast"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x5490145422c93edb:0xadd66e89ffab790e",
-    "google_rating": 4.6,
-    "google_reviews_count": 109,
-    "source_urls": [
-      "https://www.google.com/maps/place/City+Sweats+-+Wallingford/data=!4m7!3m6!1s0x5490145422c93edb:0xadd66e89ffab790e!8m2!3d47.6587!4d-122.342033!16s%2Fg%2F11df06pkxz!19sChIJ2z7JIlQUkFQRDnmr_4lu1q0?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
-    "id": "vihta-sauna-seattle",
-    "name": "Vihta Sauna",
-    "metro": "seattle_wa",
-    "city": "Seattle",
-    "lat": 47.5770398,
-    "lng": -122.1118198,
-    "status": "active",
-    "brand": null,
-    "state": "WA",
-    "neighborhood": null,
-    "address": "3560 W Lake Sammamish Pkwy SE, Bellevue, WA 98008",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "sauna_traditional"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x54906f003a166c31:0x7b5f4712a70ca89d",
-    "google_rating": 5.0,
-    "google_reviews_count": 146,
-    "source_urls": [
-      "https://www.google.com/maps/place/Vihta+Sauna/data=!4m7!3m6!1s0x54906f003a166c31:0x7b5f4712a70ca89d!8m2!3d47.5770398!4d-122.1118198!16s%2Fg%2F11ymfgb2yw!19sChIJMWwWOgBvkFQRnagMpxJHX3s?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -3505,6 +3465,40 @@
     "last_verified": null
   },
   {
+    "id": "vihta-sauna-bellevue",
+    "name": "Vihta Sauna",
+    "metro": "seattle_wa",
+    "city": "Bellevue",
+    "lat": 47.5770398,
+    "lng": -122.1118198,
+    "status": "active",
+    "brand": null,
+    "state": "WA",
+    "neighborhood": null,
+    "address": "3560 W Lake Sammamish Pkwy SE, Bellevue, WA 98008",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [
+      "sauna_traditional"
+    ],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x54906f003a166c31:0x7b5f4712a70ca89d",
+    "google_rating": 5.0,
+    "google_reviews_count": 146,
+    "source_urls": [
+      "https://www.google.com/maps/place/Vihta+Sauna/data=!4m7!3m6!1s0x54906f003a166c31:0x7b5f4712a70ca89d!8m2!3d47.5770398!4d-122.1118198!16s%2Fg%2F11ymfgb2yw!19sChIJMWwWOgBvkFQRnagMpxJHX3s?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
     "id": "fyre-sauna-redmond",
     "name": "Fyre Sauna",
     "metro": "seattle_wa",
@@ -3532,7 +3526,7 @@
     "amenities": [],
     "google_place_id": "0x74d04c0c3496ad5:0x2f20c2bb3b2f02be",
     "google_rating": 4.9,
-    "google_reviews_count": 127,
+    "google_reviews_count": 129,
     "source_urls": [
       "https://www.google.com/maps/place/Fyre+Sauna/data=!4m7!3m6!1s0x74d04c0c3496ad5:0x2f20c2bb3b2f02be!8m2!3d47.7265889!4d-122.1384768!16s%2Fg%2F11v5dqh1jb!19sChIJ1WpJw8AETQcRvgIvO7vCIC8?authuser=0&hl=en&rclk=1"
     ],
@@ -3675,6 +3669,76 @@
     "last_verified": null
   },
   {
+    "id": "city-sweats---wallingford-seattle",
+    "name": "City Sweats - Wallingford",
+    "metro": "seattle_wa",
+    "city": "Seattle",
+    "lat": 47.6587,
+    "lng": -122.342033,
+    "status": "active",
+    "brand": null,
+    "state": "WA",
+    "neighborhood": null,
+    "address": "4222 Stone Way N, Seattle, WA 98103",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [
+      "sauna_infrared",
+      "cold_plunge",
+      "contrast"
+    ],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x5490145422c93edb:0xadd66e89ffab790e",
+    "google_rating": 4.6,
+    "google_reviews_count": 110,
+    "source_urls": [
+      "https://www.google.com/maps/place/City+Sweats+-+Wallingford/data=!4m7!3m6!1s0x5490145422c93edb:0xadd66e89ffab790e!8m2!3d47.6587!4d-122.342033!16s%2Fg%2F11df06pkxz!19sChIJ2z7JIlQUkFQRDnmr_4lu1q0?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
+    "id": "seattle-sauna-seattle",
+    "name": "Seattle Sauna",
+    "metro": "seattle_wa",
+    "city": "Seattle",
+    "lat": 47.6503297,
+    "lng": -122.3305096,
+    "status": "active",
+    "brand": null,
+    "state": "WA",
+    "neighborhood": null,
+    "address": "2401 N Northlake Way Bldg G, Seattle, WA 98103",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [
+      "sauna_traditional"
+    ],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x54901592b080b2a1:0xf5e32bd7a5f433e0",
+    "google_rating": 5.0,
+    "google_reviews_count": 219,
+    "source_urls": [
+      "https://www.google.com/maps/place/Seattle+Sauna/data=!4m7!3m6!1s0x54901592b080b2a1:0xf5e32bd7a5f433e0!8m2!3d47.6503297!4d-122.3305096!16s%2Fg%2F11wtk99vc4!19sChIJobKAsJIVkFQR4DP0pdcr4_U?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
     "id": "sauna-hut-green-lake-seattle",
     "name": "Sauna Hut Green Lake",
     "metro": "seattle_wa",
@@ -3702,9 +3766,43 @@
     "amenities": [],
     "google_place_id": "0x54901516b3fa6231:0xf1b5cf43db5e6f61",
     "google_rating": 4.7,
-    "google_reviews_count": 46,
+    "google_reviews_count": 47,
     "source_urls": [
       "https://www.google.com/maps/place/Sauna+Hut+Green+Lake/data=!4m7!3m6!1s0x54901516b3fa6231:0xf1b5cf43db5e6f61!8m2!3d47.6789169!4d-122.3237406!16s%2Fg%2F11qpq6nyrt!19sChIJMWL6sxYVkFQRYW9e20PPtfE?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
+    "id": "wild-haus-floating-saunas-seattle",
+    "name": "Wild Haus Floating Saunas",
+    "metro": "seattle_wa",
+    "city": "Seattle",
+    "lat": 47.6494245,
+    "lng": -122.3254393,
+    "status": "active",
+    "brand": null,
+    "state": "WA",
+    "neighborhood": null,
+    "address": "10 E Allison St, Seattle, WA 98013",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [
+      "sauna_traditional"
+    ],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x5490154ab0204e23:0x548ce1e8c1028f9c",
+    "google_rating": 4.9,
+    "google_reviews_count": 137,
+    "source_urls": [
+      "https://www.google.com/maps/place/Wild+Haus+Floating+Saunas/data=!4m7!3m6!1s0x5490154ab0204e23:0x548ce1e8c1028f9c!8m2!3d47.6494245!4d-122.3254393!16s%2Fg%2F11wv44js18!19sChIJI04gsEoVkFQRnI8CwejhjFQ?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -3970,7 +4068,7 @@
     "amenities": [],
     "google_place_id": "0x88d9b7b835570a77:0x9632cf27cb7db076",
     "google_rating": 5.0,
-    "google_reviews_count": 86,
+    "google_reviews_count": 87,
     "source_urls": [
       "https://www.google.com/maps/place/The+Ice+Room+Miami/data=!4m7!3m6!1s0x88d9b7b835570a77:0x9632cf27cb7db076!8m2!3d25.7617655!4d-80.1904094!16s%2Fg%2F11xdfvlsh_!19sChIJdwpXNbi32YgRdrB9yyfPMpY?authuser=0&hl=en&rclk=1"
     ],
@@ -4036,7 +4134,7 @@
     "amenities": [],
     "google_place_id": "0x88d9b47e0bf40001:0xeefd74f5fd2700cc",
     "google_rating": 4.9,
-    "google_reviews_count": 579,
+    "google_reviews_count": 582,
     "source_urls": [
       "https://www.google.com/maps/place/SWEAT440+Fitness+Miami+Beach/data=!4m7!3m6!1s0x88d9b47e0bf40001:0xeefd74f5fd2700cc!8m2!3d25.7950542!4d-80.1442104!16s%2Fg%2F11f5d5473t!19sChIJAQD0C3602YgRzAAn_fV0_e4?authuser=0&hl=en&rclk=1"
     ],
@@ -4104,30 +4202,28 @@
     "amenities": [],
     "google_place_id": "0x88d9ad6a29939985:0x9ee0e865014d2d78",
     "google_rating": 4.7,
-    "google_reviews_count": 112,
+    "google_reviews_count": 113,
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Aventura+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x88d9ad6a29939985:0x9ee0e865014d2d78!8m2!3d25.9542159!4d-80.1454876!16s%2Fg%2F11myzm98n8!19sChIJhZmTKWqt2YgReC1NAWXo4J4?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
   {
-    "id": "royal-standard-llc-sauna-miami",
-    "name": "ROYAL STANDARD LLC sauna",
+    "id": "miami-custom-saunas-miami",
+    "name": "Miami Custom Saunas",
     "metro": "miami_fl",
     "city": "Miami",
-    "lat": 25.9094965,
-    "lng": -80.1657982,
+    "lat": 25.802897,
+    "lng": -80.2566103,
     "status": "active",
     "brand": null,
     "state": "FL",
     "neighborhood": null,
-    "address": "1675 NE 145th St, Miami, FL 33181",
+    "address": "3702 NW S River Dr, Miami, FL 33142",
     "website": null,
     "booking_url": null,
     "instagram": null,
-    "modalities": [
-      "sauna"
-    ],
+    "modalities": [],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
     "format": null,
@@ -4136,11 +4232,11 @@
     "day_pass_price_usd": null,
     "membership_from_usd": null,
     "amenities": [],
-    "google_place_id": "0x88d9ad652f785f57:0x309e8783dc6e0256",
+    "google_place_id": "0x88d9b74f9288ec6d:0x51542c2315c2f616",
     "google_rating": 5.0,
-    "google_reviews_count": 6,
+    "google_reviews_count": 7,
     "source_urls": [
-      "https://www.google.com/maps/place/ROYAL+STANDARD+LLC+sauna/data=!4m7!3m6!1s0x88d9ad652f785f57:0x309e8783dc6e0256!8m2!3d25.9094965!4d-80.1657982!16s%2Fg%2F11lv8wb1cl!19sChIJV194L2Wt2YgRVgJu3IOHnjA?authuser=0&hl=en&rclk=1"
+      "https://www.google.com/maps/place/Miami+Custom+Saunas/data=!4m7!3m6!1s0x88d9b74f9288ec6d:0x51542c2315c2f616!8m2!3d25.802897!4d-80.2566103!16s%2Fg%2F11zkcvt565!19sChIJbeyIkk-32YgRFvbCFSMsVFE?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -4307,9 +4403,41 @@
     "amenities": [],
     "google_place_id": "0x88d9bb1e258cdeb5:0xe1ea795aaa6e6a2a",
     "google_rating": 4.9,
-    "google_reviews_count": 24,
+    "google_reviews_count": 27,
     "source_urls": [
       "https://www.google.com/maps/place/Blue+recovery+lounge/data=!4m7!3m6!1s0x88d9bb1e258cdeb5:0xe1ea795aaa6e6a2a!8m2!3d25.7457651!4d-80.3686882!16s%2Fg%2F11z4pyx700!19sChIJtd6MJR672YgRKmpuqlp56uE?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
+    "id": "cr-recovery-center-pilates-miami",
+    "name": "CR RECOVERY CENTER PILATES",
+    "metro": "miami_fl",
+    "city": "Miami",
+    "lat": 25.6520684,
+    "lng": -80.4117434,
+    "status": "active",
+    "brand": null,
+    "state": "FL",
+    "neighborhood": null,
+    "address": "12401 SW 134th Ct",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x88d9c1001f2ead03:0x63c8ef5263e82079",
+    "google_rating": 5.0,
+    "google_reviews_count": 11,
+    "source_urls": [
+      "https://www.google.com/maps/place/CR+RECOVERY+CENTER+PILATES/data=!4m7!3m6!1s0x88d9c1001f2ead03:0x63c8ef5263e82079!8m2!3d25.6520684!4d-80.4117434!16s%2Fg%2F11vsw4m5nj!19sChIJA60uHwDB2YgReSDoY1LvyGM?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -4342,17 +4470,49 @@
     "amenities": [],
     "google_place_id": "0x88d9b9006e4ed507:0xcdb6048ee023452",
     "google_rating": 5.0,
-    "google_reviews_count": 3,
+    "google_reviews_count": 4,
     "source_urls": [
       "https://www.google.com/maps/place/Nexus+Recovery+Lab/data=!4m7!3m6!1s0x88d9b9006e4ed507:0xcdb6048ee023452!8m2!3d25.7472329!4d-80.3150102!16s%2Fg%2F11ys1__t2y!19sChIJB9VObgC52YgRUjQC7khg2ww?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
   {
-    "id": "the-kov-cryotherapy-miami-beach",
-    "name": "The Kov Cryotherapy",
+    "id": "sport-recovery-miami-miami-beach",
+    "name": "Sport Recovery Miami",
     "metro": "miami_fl",
     "city": "Miami Beach",
+    "lat": 25.9226804,
+    "lng": -80.1635721,
+    "status": "active",
+    "brand": null,
+    "state": "FL",
+    "neighborhood": null,
+    "address": "15925 NE 18th Ave, North Miami Beach, FL 33162",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x88d9ad461b7cfb6d:0x22a2cc34b04132cb",
+    "google_rating": 5.0,
+    "google_reviews_count": 19,
+    "source_urls": [
+      "https://www.google.com/maps/place/Sport+Recovery+Miami/data=!4m7!3m6!1s0x88d9ad461b7cfb6d:0x22a2cc34b04132cb!8m2!3d25.9226804!4d-80.1635721!16s%2Fg%2F11ndv_0xmp!19sChIJbft8G0at2YgRyzJBsDTMoiI?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
+    "id": "the-kov-cryotherapy-miami",
+    "name": "The Kov Cryotherapy",
+    "metro": "miami_fl",
+    "city": "Miami",
     "lat": 25.8217026,
     "lng": -80.1921368,
     "status": "active",
@@ -4584,7 +4744,7 @@
     "amenities": [],
     "google_place_id": "0x88646768c66bbd83:0x5c2577b6a3dfa38e",
     "google_rating": 4.8,
-    "google_reviews_count": 37,
+    "google_reviews_count": 38,
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Germantown+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x88646768c66bbd83:0x5c2577b6a3dfa38e!8m2!3d36.1720874!4d-86.7835637!16s%2Fg%2F11ynb1kb93!19sChIJg71rxmhnZIgRjqPfo7Z3JVw?authuser=0&hl=en&rclk=1"
     ],
@@ -4721,17 +4881,52 @@
     "amenities": [],
     "google_place_id": "0x8864797646faef7b:0x63ccf4feb1e1578b",
     "google_rating": 5.0,
-    "google_reviews_count": 280,
+    "google_reviews_count": 281,
     "source_urls": [
       "https://www.google.com/maps/place/s%C4%93k+Sauna+Studio/data=!4m7!3m6!1s0x8864797646faef7b:0x63ccf4feb1e1578b!8m2!3d35.9225897!4d-86.8158689!16s%2Fg%2F11qmqm_v1w!19sChIJe-_6RnZ5ZIgRi1fhsf70zGM?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
   {
-    "id": "the-sweat-shack--franklin-franklin",
+    "id": "pure-sweat-float-studio-brentwood-brentwood",
+    "name": "Pure Sweat + Float Studio, Brentwood",
+    "metro": "nashville_tn",
+    "city": "Brentwood",
+    "lat": 36.0330615,
+    "lng": -86.7912695,
+    "status": "active",
+    "brand": null,
+    "state": "TN",
+    "neighborhood": null,
+    "address": "213 Franklin Rd Ste 130, Brentwood, TN 37027",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [
+      "sauna_infrared",
+      "cold_plunge"
+    ],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x88647bf32e6e83b9:0x5dadbb36a8cb806",
+    "google_rating": 4.9,
+    "google_reviews_count": 82,
+    "source_urls": [
+      "https://www.google.com/maps/place/Pure+Sweat+%2B+Float+Studio,+Brentwood/data=!4m7!3m6!1s0x88647bf32e6e83b9:0x5dadbb36a8cb806!8m2!3d36.0330615!4d-86.7912695!16s%2Fg%2F11fr68ctg8!19sChIJuYNuLvN7ZIgRBriMarPb2gU?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
+    "id": "the-sweat-shack--franklin-brentwood",
     "name": "The Sweat Shack- Franklin",
     "metro": "nashville_tn",
-    "city": "Franklin",
+    "city": "Brentwood",
     "lat": 35.971532,
     "lng": -86.835728,
     "status": "active",
@@ -4756,7 +4951,7 @@
     "amenities": [],
     "google_place_id": "0x88647dd703d0f769:0x6533ec9effa48f2a",
     "google_rating": 4.9,
-    "google_reviews_count": 47,
+    "google_reviews_count": 48,
     "source_urls": [
       "https://www.google.com/maps/place/The+Sweat+Shack-+Franklin/data=!4m7!3m6!1s0x88647dd703d0f769:0x6533ec9effa48f2a!8m2!3d35.971532!4d-86.835728!16s%2Fg%2F11s4ws8w8d!19sChIJaffQA9d9ZIgRKo-k_57sM2U?authuser=0&hl=en&rclk=1"
     ],
@@ -4795,41 +4990,6 @@
     "google_reviews_count": 19,
     "source_urls": [
       "https://www.google.com/maps/place/Contrast+Club/data=!4m7!3m6!1s0x886465eaf639cdb9:0x62c211b1f929c936!8m2!3d36.1043806!4d-86.8166637!16s%2Fg%2F11xkwjk2tj!19sChIJuc059uplZIgRNskp-bERwmI?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
-    "id": "pure-sweat-float-studio-brentwood-brentwood",
-    "name": "Pure Sweat + Float Studio, Brentwood",
-    "metro": "nashville_tn",
-    "city": "Brentwood",
-    "lat": 36.0330615,
-    "lng": -86.7912695,
-    "status": "active",
-    "brand": null,
-    "state": "TN",
-    "neighborhood": null,
-    "address": "213 Franklin Rd Ste 130, Brentwood, TN 37027",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "sauna_infrared",
-      "cold_plunge"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x88647bf32e6e83b9:0x5dadbb36a8cb806",
-    "google_rating": 4.9,
-    "google_reviews_count": 82,
-    "source_urls": [
-      "https://www.google.com/maps/place/Pure+Sweat+%2B+Float+Studio,+Brentwood/data=!4m7!3m6!1s0x88647bf32e6e83b9:0x5dadbb36a8cb806!8m2!3d36.0330615!4d-86.7912695!16s%2Fg%2F11fr68ctg8!19sChIJuYNuLvN7ZIgRBriMarPb2gU?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -4939,38 +5099,6 @@
     "last_verified": null
   },
   {
-    "id": "recovery-zone-franklin",
-    "name": "Recovery Zone",
-    "metro": "nashville_tn",
-    "city": "Franklin",
-    "lat": 35.7555279,
-    "lng": -86.9249854,
-    "status": "active",
-    "brand": null,
-    "state": "TN",
-    "neighborhood": null,
-    "address": "5228 Main St Suite A-5, Spring Hill, TN 37174",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x886379616d252d8d:0xc05dbea673e5a87d",
-    "google_rating": 5.0,
-    "google_reviews_count": 30,
-    "source_urls": [
-      "https://www.google.com/maps/place/Recovery+Zone/data=!4m7!3m6!1s0x886379616d252d8d:0xc05dbea673e5a87d!8m2!3d35.7555279!4d-86.9249854!16s%2Fg%2F11ldq9f9_r!19sChIJjS0lbWF5Y4gRfajlc6a-XcA?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
     "id": "icepass-sauna-cold-plunge-club-los-angeles",
     "name": "IcePass Sauna & Cold Plunge Club",
     "metro": "los_angeles_ca",
@@ -4999,7 +5127,7 @@
     "amenities": [],
     "google_place_id": "0x80c2bbe1c92677eb:0x1cd343762b6b17e6",
     "google_rating": 5.0,
-    "google_reviews_count": 148,
+    "google_reviews_count": 149,
     "source_urls": [
       "https://www.google.com/maps/place/IcePass+Sauna+%26+Cold+Plunge+Club/data=!4m7!3m6!1s0x80c2bbe1c92677eb:0x1cd343762b6b17e6!8m2!3d33.9938269!4d-118.4748039!16s%2Fg%2F11txglck2g!19sChIJ63cmyeG7woAR5hdrK3ZD0xw?authuser=0&hl=en&rclk=1"
     ],
@@ -5068,7 +5196,7 @@
     "amenities": [],
     "google_place_id": "0x80c29745d85916eb:0x301fa302cde39b1a",
     "google_rating": 5.0,
-    "google_reviews_count": 127,
+    "google_reviews_count": 126,
     "source_urls": [
       "https://www.google.com/maps/place/Pure+Recovery/data=!4m7!3m6!1s0x80c29745d85916eb:0x301fa302cde39b1a!8m2!3d34.1516857!4d-118.4514475!16s%2Fg%2F11vdt_tmqx!19sChIJ6xZZ2EWXwoARGpvjzQKjHzA?authuser=0&hl=en&rclk=1"
     ],
@@ -5104,9 +5232,45 @@
     "amenities": [],
     "google_place_id": "0x80c2bb2fe3e00b8b:0xb2d0ac96e0442abf",
     "google_rating": 5.0,
-    "google_reviews_count": 36,
+    "google_reviews_count": 38,
     "source_urls": [
       "https://www.google.com/maps/place/Sweathouz+Santa+Monica+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x80c2bb2fe3e00b8b:0xb2d0ac96e0442abf!8m2!3d34.02947!4d-118.4761986!16s%2Fg%2F11yzc2c1zw!19sChIJiwvg4y-7woARvypE4Jas0LI?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
+    "id": "sweathouz-pasadena-contrast-therapy-studio-los-angeles",
+    "name": "SweatHouz Pasadena Contrast Therapy Studio",
+    "metro": "los_angeles_ca",
+    "city": "Los Angeles",
+    "lat": 34.1429104,
+    "lng": -118.1325437,
+    "status": "active",
+    "brand": null,
+    "state": "CA",
+    "neighborhood": null,
+    "address": "173 S Lake Ave, Pasadena, CA 91101",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [
+      "sauna_infrared",
+      "cold_plunge",
+      "contrast"
+    ],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x80c2c3006f0487ef:0xa741966381a7d3ef",
+    "google_rating": 4.4,
+    "google_reviews_count": 49,
+    "source_urls": [
+      "https://www.google.com/maps/place/SweatHouz+Pasadena+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x80c2c3006f0487ef:0xa741966381a7d3ef!8m2!3d34.1429104!4d-118.1325437!16s%2Fg%2F11yzn9gmm8!19sChIJ74cEbwDDwoAR79OngWOWQac?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -5138,7 +5302,7 @@
     "amenities": [],
     "google_place_id": "0x80c2b95ed7ff552d:0x4585299686c344e6",
     "google_rating": 4.8,
-    "google_reviews_count": 45,
+    "google_reviews_count": 46,
     "source_urls": [
       "https://www.google.com/maps/place/Perspire+Sauna+Studio/data=!4m7!3m6!1s0x80c2b95ed7ff552d:0x4585299686c344e6!8m2!3d34.0278562!4d-118.3729864!16s%2Fg%2F11x3310fqr!19sChIJLVX_1165woAR5kTDhpYphUU?authuser=0&hl=en&rclk=1"
     ],
@@ -5179,6 +5343,38 @@
     "last_verified": null
   },
   {
+    "id": "infrared-sauna-studios-los-angeles",
+    "name": "INFRARED Sauna Studios",
+    "metro": "los_angeles_ca",
+    "city": "Los Angeles",
+    "lat": 33.8040432,
+    "lng": -118.0727844,
+    "status": "active",
+    "brand": null,
+    "state": "CA",
+    "neighborhood": null,
+    "address": "10905 Los Alamitos Blvd, Los Alamitos, CA 90720",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x80dd2d9f7e6f4f93:0x2eaa539b58c35e6b",
+    "google_rating": 5.0,
+    "google_reviews_count": 55,
+    "source_urls": [
+      "https://www.google.com/maps/place/INFRARED+Sauna+Studios/data=!4m7!3m6!1s0x80dd2d9f7e6f4f93:0x2eaa539b58c35e6b!8m2!3d33.8040432!4d-118.0727844!16s%2Fg%2F11rkmtx1jc!19sChIJk09vfp8t3YARa17DWJtTqi4?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
     "id": "burbank-infrared-sauna-los-angeles",
     "name": "Burbank Infrared Sauna",
     "metro": "los_angeles_ca",
@@ -5207,38 +5403,6 @@
     "google_reviews_count": 64,
     "source_urls": [
       "https://www.google.com/maps/place/Burbank+Infrared+Sauna/data=!4m7!3m6!1s0x80c2955ed7a38ab7:0xb8cde73b7e1aad9!8m2!3d34.1791657!4d-118.3363825!16s%2Fg%2F11g6xbnnvc!19sChIJt4qj116VwoAR2arht3PejAs?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
-    "id": "los-angeles-custom-saunas-los-angeles",
-    "name": "Los Angeles Custom Saunas",
-    "metro": "los_angeles_ca",
-    "city": "Los Angeles",
-    "lat": 34.0456969,
-    "lng": -118.259309,
-    "status": "active",
-    "brand": null,
-    "state": "CA",
-    "neighborhood": null,
-    "address": "826 S Hope St, Los Angeles, CA 90017",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x80c2c7c0805d2def:0x2b1c62ccc6a9705a",
-    "google_rating": 5.0,
-    "google_reviews_count": 8,
-    "source_urls": [
-      "https://www.google.com/maps/place/Los+Angeles+Custom+Saunas/data=!4m7!3m6!1s0x80c2c7c0805d2def:0x2b1c62ccc6a9705a!8m2!3d34.0456969!4d-118.259309!16s%2Fg%2F11mcy486gq!19sChIJ7y1dgMDHwoARWnCpxsxiHCs?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -5274,38 +5438,6 @@
     "google_reviews_count": 27,
     "source_urls": [
       "https://www.google.com/maps/place/Vive+Recovery+Studio/data=!4m7!3m6!1s0x80c2b1679d8909e1:0x3a68403a9acf57ed!8m2!3d33.9188671!4d-118.4012032!16s%2Fg%2F11t0s0745j!19sChIJ4QmJnWexwoAR7VfPmjpAaDo?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
-    "id": "studio-64-recovery-los-angeles",
-    "name": "Studio 64 Recovery",
-    "metro": "los_angeles_ca",
-    "city": "Los Angeles",
-    "lat": 34.1810827,
-    "lng": -118.3299849,
-    "status": "active",
-    "brand": null,
-    "state": "CA",
-    "neighborhood": null,
-    "address": "1716 W Burbank Blvd, Burbank, CA 91503",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x80c295f1706f0937:0xbacfc77e8229aa26",
-    "google_rating": 5.0,
-    "google_reviews_count": 23,
-    "source_urls": [
-      "https://www.google.com/maps/place/Studio+64+Recovery/data=!4m7!3m6!1s0x80c295f1706f0937:0xbacfc77e8229aa26!8m2!3d34.1810827!4d-118.3299849!16s%2Fg%2F11fkq9hcj1!19sChIJNwlvcPGVwoARJqopgn7Hz7o?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -5405,7 +5537,7 @@
     "amenities": [],
     "google_place_id": "0x80c2beb36decec17:0xcd343f22adc2fd82",
     "google_rating": 4.9,
-    "google_reviews_count": 268,
+    "google_reviews_count": 267,
     "source_urls": [
       "https://www.google.com/maps/place/Cryohealthcare/data=!4m7!3m6!1s0x80c2beb36decec17:0xcd343f22adc2fd82!8m2!3d34.0775677!4d-118.3767911!16s%2Fg%2F12hvhrc22!19sChIJF-zsbbO-woARgv3CrSI_NM0?authuser=0&hl=en&rclk=1"
     ],
@@ -5443,6 +5575,42 @@
     "google_reviews_count": 191,
     "source_urls": [
       "https://www.google.com/maps/place/Flow+State+Cryo+%26+Recovery/data=!4m7!3m6!1s0x80c2be125ae2546b:0x3d054b7d75044d27!8m2!3d34.1395061!4d-118.3792372!16s%2Fg%2F11c5075qh_!19sChIJa1TiWhK-woARJ00EdX1LBT0?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
+    "id": "sweathouz-paradise-valley-contrast-therapy-studio-phoenix",
+    "name": "SweatHouz Paradise Valley Contrast Therapy Studio",
+    "metro": "phoenix_az",
+    "city": "Phoenix",
+    "lat": 33.5848943,
+    "lng": -111.9785649,
+    "status": "active",
+    "brand": null,
+    "state": "AZ",
+    "neighborhood": null,
+    "address": "10810 N Tatum Blvd #105, Phoenix, AZ 85028",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [
+      "sauna_infrared",
+      "cold_plunge",
+      "contrast"
+    ],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x872b73290bd9eb63:0x14ee009d09cdcf74",
+    "google_rating": 4.7,
+    "google_reviews_count": 17,
+    "source_urls": [
+      "https://www.google.com/maps/place/SweatHouz+Paradise+Valley+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x872b73290bd9eb63:0x14ee009d09cdcf74!8m2!3d33.5848943!4d-111.9785649!16s%2Fg%2F11yz6vybbc!19sChIJY-vZCylzK4cRdM_NCZ0A7hQ?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -5515,42 +5683,6 @@
     "last_verified": null
   },
   {
-    "id": "sweathouz-paradise-valley-contrast-therapy-studio-phoenix",
-    "name": "SweatHouz Paradise Valley Contrast Therapy Studio",
-    "metro": "phoenix_az",
-    "city": "Phoenix",
-    "lat": 33.5848943,
-    "lng": -111.9785649,
-    "status": "active",
-    "brand": null,
-    "state": "AZ",
-    "neighborhood": null,
-    "address": "10810 N Tatum Blvd #105, Phoenix, AZ 85028",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "sauna_infrared",
-      "cold_plunge",
-      "contrast"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x872b73290bd9eb63:0x14ee009d09cdcf74",
-    "google_rating": 4.7,
-    "google_reviews_count": 17,
-    "source_urls": [
-      "https://www.google.com/maps/place/SweatHouz+Paradise+Valley+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x872b73290bd9eb63:0x14ee009d09cdcf74!8m2!3d33.5848943!4d-111.9785649!16s%2Fg%2F11yz6vybbc!19sChIJY-vZCylzK4cRdM_NCZ0A7hQ?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
     "id": "sweathouz-chandler-contrast-therapy-studio-phoenix",
     "name": "SweatHouz Chandler Contrast Therapy Studio",
     "metro": "phoenix_az",
@@ -5580,7 +5712,7 @@
     "amenities": [],
     "google_place_id": "0x872b07e74fcabbd9:0xc62f3def3de203c4",
     "google_rating": 5.0,
-    "google_reviews_count": 16,
+    "google_reviews_count": 17,
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Chandler+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x872b07e74fcabbd9:0xc62f3def3de203c4!8m2!3d33.3196507!4d-111.8901094!16s%2Fg%2F11yz9vf8h2!19sChIJ2bvKT-cHK4cRxAPiPe89L8Y?authuser=0&hl=en&rclk=1"
     ],
@@ -5616,7 +5748,7 @@
     "amenities": [],
     "google_place_id": "0x872b755c8720fabb:0x83e8ad8ba3531bec",
     "google_rating": 4.9,
-    "google_reviews_count": 61,
+    "google_reviews_count": 62,
     "source_urls": [
       "https://www.google.com/maps/place/SweatHouz+Salt+River+Contrast+Therapy+Studio/data=!4m7!3m6!1s0x872b755c8720fabb:0x83e8ad8ba3531bec!8m2!3d33.5674082!4d-111.8875084!16s%2Fg%2F11yk5szdcd!19sChIJu_ogh1x1K4cR7BtTo4ut6IM?authuser=0&hl=en&rclk=1"
     ],
@@ -5657,88 +5789,22 @@
     "last_verified": null
   },
   {
-    "id": "beem-light-sauna-north-scottsdale-scottsdale",
-    "name": "beem® Light Sauna North Scottsdale",
+    "id": "rest-recovery-wellness-north-phoenix-phoenix",
+    "name": "Rest Recovery Wellness North Phoenix",
     "metro": "phoenix_az",
-    "city": "Scottsdale",
-    "lat": 33.6384067,
-    "lng": -111.8637172,
+    "city": "Phoenix",
+    "lat": 33.636173,
+    "lng": -112.2306476,
     "status": "active",
     "brand": null,
     "state": "AZ",
     "neighborhood": null,
-    "address": "10115 E Bell Rd Ste B102, Scottsdale, AZ 85060",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x872b755ff35a4815:0x4f3347ef09d846df",
-    "google_rating": 5.0,
-    "google_reviews_count": 42,
-    "source_urls": [
-      "https://www.google.com/maps/place/beem%C2%AE+Light+Sauna+North+Scottsdale/data=!4m7!3m6!1s0x872b755ff35a4815:0x4f3347ef09d846df!8m2!3d33.6384067!4d-111.8637172!16s%2Fg%2F11yjjj2v70!19sChIJFUha8191K4cR30bYCe9HM08?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
-    "id": "heritage-custom-saunas-scottsdale",
-    "name": "Heritage Custom Saunas",
-    "metro": "phoenix_az",
-    "city": "Scottsdale",
-    "lat": 33.6318018,
-    "lng": -111.9163094,
-    "status": "active",
-    "brand": null,
-    "state": "AZ",
-    "neighborhood": null,
-    "address": "16071 N 76th St #100, Scottsdale, AZ 85260",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x872b75c60c2662db:0x76ea53575914d052",
-    "google_rating": 5.0,
-    "google_reviews_count": 5,
-    "source_urls": [
-      "https://www.google.com/maps/place/Heritage+Custom+Saunas/data=!4m7!3m6!1s0x872b75c60c2662db:0x76ea53575914d052!8m2!3d33.6318018!4d-111.9163094!16s%2Fg%2F11vz5lxq7t!19sChIJ22ImDMZ1K4cRUtAUWVdT6nY?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
-    "id": "fire-and-ice-wellness-scottsdale",
-    "name": "Fire and Ice Wellness",
-    "metro": "phoenix_az",
-    "city": "Scottsdale",
-    "lat": 33.6389143,
-    "lng": -111.8836271,
-    "status": "active",
-    "brand": null,
-    "state": "AZ",
-    "neighborhood": null,
-    "address": "9171 E Bell Rd Unit 102, Scottsdale, AZ 85260",
+    "address": "8155 W Bell Rd Ste 112, Peoria, AZ 85382",
     "website": null,
     "booking_url": null,
     "instagram": null,
     "modalities": [
-      "sauna",
-      "cold_plunge",
-      "contrast"
+      "sauna"
     ],
     "plunge_temp_f_min": null,
     "plunge_temp_f_max": null,
@@ -5748,11 +5814,11 @@
     "day_pass_price_usd": null,
     "membership_from_usd": null,
     "amenities": [],
-    "google_place_id": "0x872b75c7c6eab1c7:0xfb31d5cc2dd5a5a1",
-    "google_rating": 4.9,
-    "google_reviews_count": 53,
+    "google_place_id": "0x872b699ef810f1f9:0xb59ed96c696dbced",
+    "google_rating": 5.0,
+    "google_reviews_count": 15,
     "source_urls": [
-      "https://www.google.com/maps/place/Fire+and+Ice+Wellness/data=!4m7!3m6!1s0x872b75c7c6eab1c7:0xfb31d5cc2dd5a5a1!8m2!3d33.6389143!4d-111.8836271!16s%2Fg%2F11vc73tv7y!19sChIJx7Hqxsd1K4cRoaXVLczVMfs?authuser=0&hl=en&rclk=1"
+      "https://www.google.com/maps/place/Rest+Recovery+Wellness+North+Phoenix/data=!4m7!3m6!1s0x872b699ef810f1f9:0xb59ed96c696dbced!8m2!3d33.636173!4d-112.2306476!16s%2Fg%2F11z29ky3gs!19sChIJ-fEQ-J5pK4cR7bxtaWzZnrU?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -5785,40 +5851,6 @@
     "google_reviews_count": 15,
     "source_urls": [
       "https://www.google.com/maps/place/Phoenix+Recovery+Hub/data=!4m7!3m6!1s0x872b710ba164a9ab:0xc126f8b19a695603!8m2!3d33.628607!4d-112.0129932!16s%2Fg%2F11wfchxdhp!19sChIJq6lkoQtxK4cRA1ZpmrH4JsE?authuser=0&hl=en&rclk=1"
-    ],
-    "last_verified": null
-  },
-  {
-    "id": "rest-recovery-wellness-north-phoenix-phoenix",
-    "name": "Rest Recovery Wellness North Phoenix",
-    "metro": "phoenix_az",
-    "city": "Phoenix",
-    "lat": 33.636173,
-    "lng": -112.2306476,
-    "status": "active",
-    "brand": null,
-    "state": "AZ",
-    "neighborhood": null,
-    "address": "8155 W Bell Rd Ste 112, Peoria, AZ 85382",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "sauna"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": "0x872b699ef810f1f9:0xb59ed96c696dbced",
-    "google_rating": 5.0,
-    "google_reviews_count": 15,
-    "source_urls": [
-      "https://www.google.com/maps/place/Rest+Recovery+Wellness+North+Phoenix/data=!4m7!3m6!1s0x872b699ef810f1f9:0xb59ed96c696dbced!8m2!3d33.636173!4d-112.2306476!16s%2Fg%2F11z29ky3gs!19sChIJ-fEQ-J5pK4cR7bxtaWzZnrU?authuser=0&hl=en&rclk=1"
     ],
     "last_verified": null
   },
@@ -5887,6 +5919,42 @@
     "last_verified": null
   },
   {
+    "id": "fire-and-ice-wellness-scottsdale",
+    "name": "Fire and Ice Wellness",
+    "metro": "phoenix_az",
+    "city": "Scottsdale",
+    "lat": 33.6389143,
+    "lng": -111.8836271,
+    "status": "active",
+    "brand": null,
+    "state": "AZ",
+    "neighborhood": null,
+    "address": "9171 E Bell Rd Unit 102, Scottsdale, AZ 85260",
+    "website": null,
+    "booking_url": null,
+    "instagram": null,
+    "modalities": [
+      "sauna",
+      "cold_plunge",
+      "contrast"
+    ],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": null,
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": "0x872b75c7c6eab1c7:0xfb31d5cc2dd5a5a1",
+    "google_rating": 4.9,
+    "google_reviews_count": 53,
+    "source_urls": [
+      "https://www.google.com/maps/place/Fire+and+Ice+Wellness/data=!4m7!3m6!1s0x872b75c7c6eab1c7:0xfb31d5cc2dd5a5a1!8m2!3d33.6389143!4d-111.8836271!16s%2Fg%2F11vc73tv7y!19sChIJx7Hqxsd1K4cRoaXVLczVMfs?authuser=0&hl=en&rclk=1"
+    ],
+    "last_verified": null
+  },
+  {
     "id": "sweathouz-south-broadway-denver",
     "name": "SweatHouz South Broadway",
     "metro": "denver_co",
@@ -5907,8 +5975,8 @@
       "contrast",
       "red_light"
     ],
-    "plunge_temp_f_min": 41,
-    "plunge_temp_f_max": 41,
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
     "format": "private_suite",
     "session_style": "free_flow",
     "access": "both",
@@ -5923,7 +5991,7 @@
     "source_urls": [
       "https://sweathouz.com/south-broadway-book-now/"
     ],
-    "last_verified": "2026-07-19"
+    "last_verified": "2026-07-26"
   },
   {
     "id": "rok-spas-denver",
@@ -5960,7 +6028,43 @@
       "https://rokspas.com/",
       "https://rokspas.com/cold-plunge/"
     ],
-    "last_verified": "2026-07-19"
+    "last_verified": "2026-07-26"
+  },
+  {
+    "id": "naosu-sauna-denver",
+    "name": "NAOSU Sauna",
+    "metro": "denver_co",
+    "city": "Denver",
+    "lat": 39.7639982,
+    "lng": -104.9787994,
+    "status": "active",
+    "brand": null,
+    "state": "CO",
+    "neighborhood": "RiNo",
+    "address": "3145 Larimer St, Denver, CO 80205",
+    "website": "https://www.naosusauna.com/",
+    "booking_url": "https://www.naosusauna.com/book-a-session",
+    "instagram": "@naosusauna",
+    "modalities": [
+      "cold_plunge",
+      "sauna_traditional",
+      "contrast"
+    ],
+    "plunge_temp_f_min": null,
+    "plunge_temp_f_max": null,
+    "format": "communal",
+    "session_style": null,
+    "access": null,
+    "day_pass_price_usd": null,
+    "membership_from_usd": null,
+    "amenities": [],
+    "google_place_id": null,
+    "google_rating": null,
+    "google_reviews_count": null,
+    "source_urls": [
+      "https://www.naosusauna.com/"
+    ],
+    "last_verified": "2026-06-26"
   },
   {
     "id": "r3-experience-englewood",
@@ -5996,7 +6100,7 @@
     "source_urls": [
       "https://www.r3experience.com/"
     ],
-    "last_verified": "2026-07-19"
+    "last_verified": "2026-07-26"
   },
   {
     "id": "portal-denver-denver",
@@ -6035,7 +6139,7 @@
     "source_urls": [
       "https://www.portalthermaculture.com/denver"
     ],
-    "last_verified": "2026-07-19"
+    "last_verified": "2026-07-26"
   },
   {
     "id": "perspire-sauna-studio-cherry-hills-denver",
@@ -6073,7 +6177,7 @@
     "source_urls": [
       "https://www.perspiresaunastudio.com/locations/cherry-hills"
     ],
-    "last_verified": "2026-07-19"
+    "last_verified": "2026-07-26"
   },
   {
     "id": "restore-hyper-wellness-cherry-hills-denver",
@@ -6111,7 +6215,7 @@
     "source_urls": [
       "https://www.restore.com/locations/co-denver-cherry-hills-co033"
     ],
-    "last_verified": "2026-07-19"
+    "last_verified": "2026-07-26"
   },
   {
     "id": "denver-sports-recovery-denver",
@@ -6151,7 +6255,7 @@
     "source_urls": [
       "https://denversportsrecovery.com/"
     ],
-    "last_verified": "2026-07-19"
+    "last_verified": "2026-07-26"
   },
   {
     "id": "sauna-house-dallas-dallas",
@@ -6190,7 +6294,7 @@
     "source_urls": [
       "https://mysaunahouse.com/"
     ],
-    "last_verified": "2026-07-19"
+    "last_verified": "2026-07-26"
   },
   {
     "id": "sweathouz-frisco-frisco",
@@ -6230,7 +6334,7 @@
       "https://sweathouz.com/frisco-book-now/",
       "https://sweathouz.com/locations"
     ],
-    "last_verified": "2026-07-19"
+    "last_verified": "2026-07-26"
   },
   {
     "id": "sweathouz-camp-bowie-fort-worth",
@@ -6253,8 +6357,8 @@
       "contrast",
       "red_light"
     ],
-    "plunge_temp_f_min": 51,
-    "plunge_temp_f_max": 51,
+    "plunge_temp_f_min": 41,
+    "plunge_temp_f_max": 41,
     "format": "private_suite",
     "session_style": "free_flow",
     "access": "both",
@@ -6269,7 +6373,7 @@
     "source_urls": [
       "https://sweathouz.com/camp-bowie-book-now/"
     ],
-    "last_verified": "2026-07-19"
+    "last_verified": "2026-07-26"
   },
   {
     "id": "sweathouz-coppell-coppell",
@@ -6308,7 +6412,7 @@
     "source_urls": [
       "https://sweathouz.com/coppell-book-now/"
     ],
-    "last_verified": "2026-07-19"
+    "last_verified": "2026-07-26"
   },
   {
     "id": "perspire-sauna-studio-fort-worth-waterside-fort-worth",
@@ -6346,7 +6450,7 @@
     "source_urls": [
       "https://www.perspiresaunastudio.com/locations/fw-waterside"
     ],
-    "last_verified": "2026-07-19"
+    "last_verified": "2026-07-26"
   },
   {
     "id": "perspire-sauna-studio-southlake-southlake",
@@ -6384,7 +6488,7 @@
     "source_urls": [
       "https://www.perspiresaunastudio.com/locations/southlake"
     ],
-    "last_verified": "2026-07-19"
+    "last_verified": "2026-07-26"
   },
   {
     "id": "pause-studio-southlake-southlake",
@@ -6425,7 +6529,7 @@
     "source_urls": [
       "https://pausestudio.com/locations/southlake"
     ],
-    "last_verified": "2026-07-19"
+    "last_verified": "2026-07-26"
   },
   {
     "id": "restore-revive-wellness-center-fort-worth",
@@ -6463,7 +6567,7 @@
       "https://www.restoreandrevivefw.com/cold-plunge",
       "https://www.restoreandrevivefw.com/"
     ],
-    "last_verified": "2026-07-19"
+    "last_verified": "2026-07-26"
   },
   {
     "id": "restore-hyper-wellness-plano-plano",
@@ -6501,7 +6605,7 @@
     "source_urls": [
       "https://www.restore.com/locations/tx-plano-tx005"
     ],
-    "last_verified": "2026-07-19"
+    "last_verified": "2026-07-26"
   },
   {
     "id": "altered-states-wellness-coppell-coppell",
@@ -6540,7 +6644,7 @@
       "https://www.alteredstateswellness.com/locations",
       "https://www.alteredstateswellness.com/coppell-tx-float-therapy-sauna-cold-plunge-red-light-therapy"
     ],
-    "last_verified": "2026-07-19"
+    "last_verified": "2026-07-26"
   },
   {
     "id": "restore-hyper-wellness-center-city-philadelphia",
@@ -6578,7 +6682,7 @@
     "source_urls": [
       "https://www.restore.com/locations/pa-philadelphia-center-city-pa019"
     ],
-    "last_verified": "2026-07-19"
+    "last_verified": "2026-07-26"
   },
   {
     "id": "restore-hyper-wellness-plymouth-meeting-plymouth-meeting",
@@ -6616,7 +6720,7 @@
     "source_urls": [
       "https://www.restore.com/locations/pa-plymouth-meeting-pa003"
     ],
-    "last_verified": "2026-07-19"
+    "last_verified": "2026-07-26"
   },
   {
     "id": "mvmnt-center-queen-village-philadelphia",
@@ -6653,7 +6757,7 @@
     "source_urls": [
       "https://mvmnt.life/locations/queen-village/"
     ],
-    "last_verified": "2026-07-19"
+    "last_verified": "2026-07-26"
   },
   {
     "id": "warriors-garden-spa-and-recovery-jenkintown",
@@ -6690,7 +6794,7 @@
     "source_urls": [
       "https://warriorsgardenspa.com/"
     ],
-    "last_verified": "2026-07-19"
+    "last_verified": "2026-07-26"
   },
   {
     "id": "surge-sauna-cold-plunge-downingtown",
@@ -6729,7 +6833,7 @@
     "source_urls": [
       "https://www.surgesaunacoldplunge.com/"
     ],
-    "last_verified": "2026-07-19"
+    "last_verified": "2026-07-26"
   },
   {
     "id": "cure-de-repos-chestnut-hill-philadelphia",
@@ -6765,7 +6869,7 @@
       "https://curederepos.com/pages/zen-garden-infrared-sauna",
       "https://curederepos.com/"
     ],
-    "last_verified": "2026-07-19"
+    "last_verified": "2026-07-26"
   },
   {
     "id": "main-line-float-and-freeze-ardmore",
@@ -6804,7 +6908,7 @@
       "https://www.floatandfreeze.com/infrared-sauna",
       "https://www.floatandfreeze.com/"
     ],
-    "last_verified": "2026-07-19"
+    "last_verified": "2026-07-26"
   },
   {
     "id": "the-fox-den-wellness-exton",
@@ -6842,7 +6946,7 @@
       "https://www.thefoxdenwellness.com/services",
       "https://www.thefoxdenwellness.com/"
     ],
-    "last_verified": "2026-07-19"
+    "last_verified": "2026-07-26"
   },
   {
     "id": "sweathouz-denver-denver",
