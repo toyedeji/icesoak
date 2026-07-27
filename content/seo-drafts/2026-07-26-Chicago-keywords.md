@@ -1,252 +1,286 @@
-# IceSoak SEO — Chicago Metro | 2026-07-26
-
-> **Metro:** Chicago, IL  
-> **Day-of-month mod 11:** 26 mod 11 = 4 → Chicago  
-> **Generated:** 2026-07-26  
-
----
-
-## Keyword 1: "cold plunge studio Chicago Loop"
-
-**Search Intent:** Local / Navigational — user wants a cold plunge facility specifically in the downtown Chicago Loop neighborhood.  
-**Estimated Competition:** Low–Medium. Most top results are generic "cold plunge Chicago" pages without neighborhood specificity.  
-**Target Audience:** Downtown office workers, fitness enthusiasts working near the Loop, tourists staying in the area.
-
-### Title Tag
-`Cold Plunge Studio in the Chicago Loop | IceSoak Directory`
-
-### Meta Description
-`Find top-rated cold plunge studios near the Chicago Loop. Browse amenities, pricing, and booking info for the best cold water immersion spots downtown Chicago.`
-
-### Content Brief (300 words)
-
-**Outline:**
-
-1. **H1:** Best Cold Plunge Studios in the Chicago Loop
-2. **Intro (50 words):** Open with a hook about recovery culture in downtown Chicago — busy professionals and athletes seeking fast, effective recovery between meetings or after early-morning workouts.
-3. **H2: What to Look for in a Loop-Area Cold Plunge Studio**
-   - Water temperature range (50–59°F optimal)
-   - Hygiene & filtration standards
-   - Session length options (3–5 min guided vs. open plunge)
-   - Proximity to transit (CTA Red/Blue lines)
-4. **H2: Top Cold Plunge Studios Near the Chicago Loop**
-   - Directory listing cards: name, address, hours, price range, standout feature
-   - Encourage user-generated reviews
-5. **H2: Cold Plunge + Sauna Contrast Therapy in the Loop**
-   - Explain contrast therapy benefits (circulation, inflammation reduction)
-   - Studios offering hot/cold combo packages
-6. **H2: How to Book a Cold Plunge Session Downtown**
-   - Walk-in vs. appointment options
-   - Membership vs. day-pass pricing
-7. **FAQ Section (schema-ready):**
-   - *How cold is a cold plunge in Chicago?*
-   - *Is cold plunge safe for beginners?*
-   - *Can I do cold plunge every day?*
-8. **CTA:** "Browse all Chicago cold plunge studios on IceSoak →"
-
-**Internal Links:** Link to main Chicago metro page, contrast therapy guide, beginner's cold plunge tips.  
-**External Links:** Reference PubMed study on cold water immersion and recovery.  
-**Word Count Target:** 900–1,100 words  
-**Schema Markup:** LocalBusiness + FAQPage  
+# IceSoak SEO Brief — Chicago, IL
+**Date:** 2026-07-26
+**Metro:** Chicago
+**Prepared by:** IceSoak SEO Specialist
 
 ---
 
-## Keyword 2: "cold plunge near Wicker Park Chicago"
-
-**Search Intent:** Local / Navigational — user in or near Wicker Park neighborhood seeking a cold plunge facility they can walk or bike to.  
-**Estimated Competition:** Very Low. Hyper-local neighborhood terms have minimal optimized competition.  
-**Target Audience:** Wicker Park / Bucktown residents, yoga/fitness studio goers in the 60622 zip code, young professionals aged 25–40.
-
-### Title Tag
-`Cold Plunge Near Wicker Park Chicago | IceSoak`
-
-### Meta Description
-`Looking for a cold plunge studio near Wicker Park or Bucktown in Chicago? IceSoak lists the closest cold water immersion studios with hours, pricing & reviews.`
-
-### Content Brief (300 words)
-
-**Outline:**
-
-1. **H1:** Cold Plunge Studios Near Wicker Park, Chicago
-2. **Intro (50 words):** Highlight the wellness-forward culture of Wicker Park — residents already invested in yoga, cycling, and plant-based living who are now adopting cold plunge as a recovery ritual.
-3. **H2: Wicker Park's Wellness Scene & Cold Plunge Culture**
-   - Neighborhood overview: fitness studios, boutique gyms, health cafés
-   - Why cold therapy is trending in this demographic
-4. **H2: Closest Cold Plunge Studios to Wicker Park**
-   - Map-based directory listing (embed Google Maps widget)
-   - Studios within 1.5 miles: names, addresses, star ratings
-   - Distance and transit/walk time from Damen Blue Line stop
-5. **H2: What to Expect at a Wicker Park-Area Cold Plunge Session**
-   - Typical session structure
-   - Locker room and amenity expectations
-   - Towel/robe rental policies
-6. **H2: Combining Cold Plunge with Wicker Park Fitness Routines**
-   - Post-yoga or post-HIIT recovery use cases
-   - Contrast therapy add-ons available nearby
-7. **FAQ Section:**
-   - *Where is the closest cold plunge to Wicker Park?*
-   - *Do I need to bring anything to a cold plunge session?*
-   - *What's the difference between cold plunge and cryotherapy?*
-8. **CTA:** "See all Wicker Park-area cold plunge listings →"
-
-**Internal Links:** Chicago metro hub, neighborhood guide index, sauna & cold plunge combo page.  
-**External Links:** Link to neighborhood wellness blog or local publication covering Chicago fitness trends.  
-**Word Count Target:** 800–1,000 words  
-**Schema Markup:** LocalBusiness + FAQPage + BreadcrumbList  
+## Overview
+Five long-tail keyword briefs targeting cold plunge and contrast therapy searches in the Chicago metro. Each brief includes search intent analysis, competition estimate, title tag, meta description, and a content outline (~300 words).
 
 ---
 
-## Keyword 3: "best cold plunge and sauna Chicago"
+## Keyword 1: "cold plunge studio Chicago Lincoln Park"
 
-**Search Intent:** Informational / Commercial Investigation — user wants to compare top venues offering both cold plunge and sauna (contrast therapy) in Chicago.  
-**Estimated Competition:** Medium. Several spa and wellness directories compete here, but content is rarely optimized for both modalities together.  
-**Target Audience:** Health enthusiasts familiar with contrast therapy, sauna-goers looking to add cold plunge, corporate wellness program coordinators.
+### Search Intent
+**Local / Transactional** — User is ready to visit or book a cold plunge session in a specific Chicago neighborhood (Lincoln Park). High buyer intent.
+
+### Competition Estimate
+**Low–Medium.** Lincoln Park is a health-conscious, affluent neighborhood. Existing competition comes from general wellness directories (Yelp, Google Maps) and a handful of local gym pages. Dedicated long-tail landing pages are sparse, giving IceSoak a strong opportunity to rank with a targeted page.
 
 ### Title Tag
-`Best Cold Plunge & Sauna Studios in Chicago | IceSoak`
+`Cold Plunge Studio in Lincoln Park, Chicago | IceSoak`
 
 ### Meta Description
-`Discover Chicago's best studios offering both cold plunge and sauna for contrast therapy. Compare top spots by price, features & location. Updated 2026.`
+`Looking for a cold plunge studio in Lincoln Park, Chicago? IceSoak lists the best ice bath and contrast therapy spots near you. Book your session today.`
 
-### Content Brief (300 words)
+### Content Brief
+
+**Target Word Count:** 550–700 words
+**Primary Keyword:** cold plunge studio Chicago Lincoln Park
+**Secondary Keywords:** ice bath Lincoln Park, contrast therapy Chicago north side, cold water immersion Chicago
 
 **Outline:**
 
-1. **H1:** Best Cold Plunge and Sauna Studios in Chicago (2026 Guide)
-2. **Intro (60 words):** Frame contrast therapy as the premier recovery method — briefly define the hot/cold cycle, cite its growing popularity in elite athletic recovery, and position Chicago as a city with a fast-expanding contrast therapy scene.
-3. **H2: What Is Contrast Therapy? (Cold Plunge + Sauna Explained)**
-   - The science: vasodilation (sauna) → vasoconstriction (cold plunge)
-   - Reported benefits: reduced DOMS, improved circulation, mental resilience
-   - Ideal session protocol: 3 rounds, 10–15 min sauna / 3–5 min cold plunge
-4. **H2: Top Chicago Studios Offering Both Sauna and Cold Plunge**
-   - Ranked directory cards with: type of sauna (Finnish, infrared), cold plunge temp, price per session, membership options
-   - Callout badges: "Best for Groups," "Best Value," "Best Downtown Location"
-5. **H2: Comparing Sauna Types at Chicago Studios**
-   - Finnish sauna vs. infrared vs. steam room — which pairs best with cold plunge
-6. **H2: Pricing Guide — Cold Plunge + Sauna Packages in Chicago**
-   - Day pass vs. monthly membership
-   - Corporate / group booking rates
-7. **H2: Tips for Your First Contrast Therapy Session in Chicago**
-   - Hydration, timing, contraindications
-   - What to bring
-8. **FAQ Section:**
-   - *Is cold plunge after sauna better than before?*
-   - *How many times a week should I do contrast therapy?*
-   - *Are there medical contraindications for cold plunge + sauna?*
-9. **CTA:** "Find your perfect Chicago contrast therapy studio on IceSoak →"
+1. **Introduction** (60–80 words)
+   - Hook: Why cold plunge therapy is surging in Chicago's North Side wellness scene.
+   - Brief mention of what readers will find on this page (curated studios near Lincoln Park).
 
-**Internal Links:** Chicago metro page, contrast therapy educational guide, individual studio profile pages.  
-**External Links:** Mayo Clinic or NIH reference on thermotherapy.  
-**Word Count Target:** 1,100–1,400 words  
-**Schema Markup:** FAQPage + Article + BreadcrumbList  
+2. **Why Lincoln Park Residents Love Cold Plunge Therapy** (80–100 words)
+   - Active lifestyle demographics of Lincoln Park.
+   - Proximity to lakefront running/cycling trails creating demand for recovery services.
+   - Contrast therapy pairing with saunas as a post-workout ritual.
+
+3. **Top Cold Plunge Studios Near Lincoln Park** (150–200 words)
+   - Structured directory listings (studio name, address, key amenities, price range, booking link).
+   - Include studios within 2–3 miles of Lincoln Park (Lakeview, Old Town, River North).
+   - Highlight studios with combo sauna + cold plunge packages.
+
+4. **What to Expect at a Cold Plunge Session** (60–80 words)
+   - Brief explainer for first-timers (temperature range, session duration, protocol tips).
+   - Reassure hesitant readers — links to IceSoak's beginner guide.
+
+5. **FAQ** (60–80 words)
+   - "How much does a cold plunge session cost in Chicago?"
+   - "Is there parking near Lincoln Park cold plunge studios?"
+   - "Can I do cold plunge if I'm a beginner?"
+
+6. **CTA** (20–30 words)
+   - Prompt to explore all Chicago listings or book via IceSoak's directory.
 
 ---
 
-## Keyword 4: "cold plunge Chicago price"
+## Keyword 2: "best ice bath therapy Chicago Loop"
 
-**Search Intent:** Commercial Investigation — user is actively comparing costs before booking; high purchase intent.  
-**Estimated Competition:** Low–Medium. Pricing pages are rarely well-optimized; most studios don't publish clear pricing online, creating a content gap.  
-**Target Audience:** First-time cold plunge seekers, budget-conscious wellness consumers, corporate HR/wellness coordinators researching group options.
+### Search Intent
+**Informational / Local Commercial** — User is researching options, likely comparing studios downtown. Intent shifts from research to booking when they find a trustworthy directory.
+
+### Competition Estimate
+**Medium.** The Loop is a competitive commercial area with wellness studios posting their own SEO content. However, long-tail neighborhood-specific content on aggregator/directory sites is underrepresented.
 
 ### Title Tag
-`Cold Plunge Chicago Pricing 2026 | How Much Does It Cost? | IceSoak`
+`Best Ice Bath Therapy in the Chicago Loop | IceSoak Directory`
 
 ### Meta Description
-`How much does a cold plunge session cost in Chicago? IceSoak breaks down pricing by studio, membership vs. day pass, and what's included. Compare 2026 rates.`
+`Find the best ice bath and cold plunge therapy studios in the Chicago Loop. Compare locations, prices, and amenities — all in one place on IceSoak.`
 
-### Content Brief (300 words)
+### Content Brief
+
+**Target Word Count:** 550–700 words
+**Primary Keyword:** best ice bath therapy Chicago Loop
+**Secondary Keywords:** ice bath downtown Chicago, cold plunge near Millennium Park, cryotherapy vs ice bath Chicago
 
 **Outline:**
 
-1. **H1:** Cold Plunge Pricing in Chicago: What to Expect in 2026
-2. **Intro (50 words):** Hook with a direct answer: "A single cold plunge session in Chicago typically runs $20–$55 depending on location, amenities, and session length." Then invite the reader to dig into the full breakdown.
-3. **H2: Average Cold Plunge Session Prices in Chicago**
-   - Table: Studio Name | Session Price | Duration | Includes Sauna? | Membership Available?
-   - Note that Loop/River North locations tend to be pricier than suburban studios
-4. **H2: Day Pass vs. Membership — Which Is Worth It?**
-   - Break-even math: if you go 4+ times/month, membership usually wins
-   - Typical monthly membership range: $80–$160/month
-5. **H2: What's Included in a Chicago Cold Plunge Session?**
-   - Towel service, robe, shower access, guided breathing coaching (where offered)
-   - Studios with vs. without amenity bundles
-6. **H2: Cold Plunge + Sauna Combo Pricing**
-   - Contrast therapy packages vs. à la carte
-   - Group/corporate rates
-7. **H2: Are There Free or Low-Cost Cold Plunge Options in Chicago?**
-   - Lake Michigan cold water swimming (seasonal, outdoor)
-   - Gym memberships that include cold plunge (e.g., upscale health clubs)
-8. **FAQ Section:**
-   - *Is cold plunge worth the cost?*
-   - *Do Chicago cold plunge studios offer intro discounts?*
-   - *Can I use FSA/HSA for cold plunge sessions?*
-9. **CTA:** "Compare Chicago cold plunge studio prices on IceSoak →"
+1. **Introduction** (60–80 words)
+   - Who seeks cold therapy in the Loop: downtown workers, hotel guests, convention attendees.
+   - What makes the Loop a growing hub for urban wellness.
 
-**Internal Links:** Chicago studio directory, contrast therapy guide, membership comparison tool.  
-**External Links:** Reference a wellness cost-of-living article or fitness spending survey.  
-**Word Count Target:** 900–1,100 words  
-**Schema Markup:** FAQPage + Table markup  
+2. **Ice Bath Therapy Explained** (80–100 words)
+   - What happens during an ice bath session.
+   - Key benefits: reduced inflammation, improved mood, faster muscle recovery.
+   - Distinguish from cryotherapy — why ice baths are preferred by many practitioners.
+
+3. **Top Ice Bath Studios in & Near the Chicago Loop** (150–200 words)
+   - Directory-style listings sorted by proximity to major Loop landmarks (Millennium Park, Chicago Riverwalk).
+   - Note which studios offer day passes vs. memberships.
+   - Highlight any hotels or spas offering cold plunge to non-guests.
+
+4. **How to Choose the Right Studio** (60–80 words)
+   - Temperature control options.
+   - Amenity pairings (sauna, infrared, steam).
+   - Pricing transparency.
+   - Hygiene and water filtration standards.
+
+5. **FAQ** (60–80 words)
+   - "What's the difference between ice bath therapy and cryotherapy?"
+   - "Are there cold plunge day passes in the Chicago Loop?"
+   - "How often should I do ice bath therapy?"
+
+6. **CTA** (20–30 words)
+   - Invite readers to view full Loop listings and compare studio profiles on IceSoak.
 
 ---
 
-## Keyword 5: "cold plunge Chicago recovery athletes"
+## Keyword 3: "sauna and cold plunge Chicago Wicker Park"
 
-**Search Intent:** Informational / Commercial Investigation — fitness-focused users (runners, cyclists, CrossFitters, team sport athletes) researching cold plunge as a performance recovery tool.  
-**Estimated Competition:** Low. Athlete-specific cold plunge content in Chicago is sparse; most content is generic wellness-focused rather than performance-focused.  
-**Target Audience:** Amateur and semi-pro athletes, marathon runners (Chicago Marathon community is massive), CrossFit/HIIT gym members, personal trainers recommending recovery modalities.
+### Search Intent
+**Local / Transactional** — User explicitly wants contrast therapy (sauna + cold plunge combo) in Wicker Park, a trendy, wellness-forward Chicago neighborhood. Very high commercial intent.
+
+### Competition Estimate
+**Low.** Wicker Park has boutique wellness studios but very few publish neighborhood-specific SEO landing pages targeting this exact combo search. This is a high-opportunity gap.
 
 ### Title Tag
-`Cold Plunge for Athletes in Chicago | Recovery Studios | IceSoak`
+`Sauna & Cold Plunge in Wicker Park, Chicago | IceSoak`
 
 ### Meta Description
-`Chicago athletes: discover cold plunge studios built for recovery. Reduce soreness, speed up muscle repair & boost performance. Find the best athlete-focused studios on IceSoak.`
+`Discover sauna and cold plunge studios in Wicker Park, Chicago. Experience contrast therapy for recovery, stress relief, and better sleep. Browse IceSoak listings now.`
 
-### Content Brief (300 words)
+### Content Brief
+
+**Target Word Count:** 550–700 words
+**Primary Keyword:** sauna and cold plunge Chicago Wicker Park
+**Secondary Keywords:** contrast therapy Wicker Park, hot cold therapy Chicago west side, sauna studio Chicago near 606 trail
 
 **Outline:**
 
-1. **H1:** Cold Plunge for Athlete Recovery in Chicago — Where to Go & What to Expect
-2. **Intro (60 words):** Open with a nod to Chicago's massive running and fitness community — 40,000+ Chicago Marathon finishers, hundreds of CrossFit boxes, a year-round cycling culture. Position cold plunge as the tool elite and everyday athletes use to train harder and recover faster.
-3. **H2: The Science of Cold Plunge for Athletic Recovery**
-   - Reduced delayed-onset muscle soreness (DOMS) — cite studies
-   - Decreased inflammation markers post-exercise
-   - Mental toughness benefits: cold exposure as stress inoculation
-   - Optimal timing: cold plunge within 1–2 hours post-training
-4. **H2: Best Chicago Cold Plunge Studios for Athletes**
-   - Directory listings filtered for: sports recovery focus, adequate session lengths, proximity to major training corridors (Lakefront Trail, gyms in Lincoln Park, River North, West Loop)
-   - Callout: studios offering sports recovery packages or coached sessions
-5. **H2: Cold Plunge Protocols for Chicago Athletes**
-   - Post-long run protocol (Chicago Marathon training guide tie-in)
-   - Post-strength training protocol
-   - In-season vs. off-season frequency
-6. **H2: Cold Plunge vs. Ice Bath at Home — Why Studios Win**
-   - Consistent temperature control
-   - Safety (monitored environments)
-   - Social / accountability element
-7. **H2: Combining Cold Plunge with Other Chicago Recovery Services**
-   - Red light therapy, compression boots, massage therapy offerings at area studios
-8. **FAQ Section:**
-   - *When should athletes do cold plunge — before or after training?*
-   - *How long should an athlete stay in a cold plunge?*
-   - *Can cold plunge slow muscle growth (hypertrophy concern)?*
-9. **CTA:** "Find athlete-focused cold plunge studios in Chicago on IceSoak →"
+1. **Introduction** (60–80 words)
+   - Wicker Park's identity as a fitness and wellness hub on Chicago's West Side.
+   - Growing trend of contrast therapy (sauna → cold plunge cycling) among urban professionals.
 
-**Internal Links:** Chicago metro hub, contrast therapy science page, marathon recovery guide.  
-**External Links:** Link to peer-reviewed study (e.g., Journal of Physiology on cold water immersion and DOMS).  
-**Word Count Target:** 1,000–1,200 words  
-**Schema Markup:** Article + FAQPage + BreadcrumbList  
+2. **The Science of Contrast Therapy** (80–100 words)
+   - Alternating heat and cold: vasodilation and vasoconstriction cycle.
+   - Evidence-based benefits: cardiovascular health, endorphin release, inflammation control.
+   - Recommended protocol (e.g., 3 rounds of 10-min sauna + 2-min cold plunge).
+
+3. **Best Sauna + Cold Plunge Studios Near Wicker Park** (150–200 words)
+   - Listings for studios in Wicker Park, Bucktown, Ukrainian Village, and Logan Square.
+   - Note studios with private suite options (popular for date nights or solo sessions).
+   - Flag any BYOB sauna or membership clubs.
+
+4. **What Makes a Great Contrast Therapy Studio?** (60–80 words)
+   - Key criteria: sauna temperature range (170–195°F), cold plunge temp (38–55°F), cleanliness, booking ease.
+   - Why IceSoak vets listings for quality standards.
+
+5. **FAQ** (60–80 words)
+   - "How long should I alternate between sauna and cold plunge?"
+   - "Is contrast therapy safe for everyone?"
+   - "What should I bring to a sauna and cold plunge session?"
+
+6. **CTA** (20–30 words)
+   - Prompt user to browse Wicker Park listings or sign up for IceSoak membership deals.
+
+---
+
+## Keyword 4: "cold plunge membership Chicago affordable"
+
+### Search Intent
+**Transactional / Price-Sensitive** — User wants recurring access to cold plunge facilities at a reasonable cost. High buyer intent with cost as a deciding factor. Excellent for conversion-focused content.
+
+### Competition Estimate
+**Low–Medium.** Very few directory or studio sites create dedicated pages around cold plunge membership pricing in Chicago. This is a strong long-tail gap with commercial upside.
+
+### Title Tag
+`Affordable Cold Plunge Memberships in Chicago | IceSoak`
+
+### Meta Description
+`Compare affordable cold plunge memberships at Chicago studios. Find the best monthly rates, day passes, and combo sauna packages. Discover your options on IceSoak.`
+
+### Content Brief
+
+**Target Word Count:** 600–750 words
+**Primary Keyword:** cold plunge membership Chicago affordable
+**Secondary Keywords:** cheap cold plunge Chicago, cold plunge monthly membership Chicago, ice bath pass Chicago
+
+**Outline:**
+
+1. **Introduction** (60–80 words)
+   - Rising popularity of cold plunge therapy in Chicago and the demand for accessible pricing.
+   - Thesis: You don't need to spend a fortune to enjoy regular cold immersion therapy.
+
+2. **Types of Cold Plunge Memberships in Chicago** (100–120 words)
+   - Day passes (single session).
+   - Monthly unlimited memberships.
+   - Punch cards / multi-session packages.
+   - Premium memberships (cold plunge + sauna + amenities).
+   - Corporate wellness packages.
+
+3. **Price Comparison Table** (100–120 words / table format)
+   - Example table with columns: Studio Name | Neighborhood | Membership Type | Monthly Price | Includes Sauna?
+   - Note that IceSoak keeps listings current with verified pricing.
+
+4. **Tips to Get the Most Value from a Cold Plunge Membership** (80–100 words)
+   - Go at off-peak hours.
+   - Combine with sauna for maximum benefit (justify cost).
+   - Check for new member discounts or referral bonuses.
+   - Look for studios near your commute or gym.
+
+5. **Is a Cold Plunge Membership Worth It?** (80–100 words)
+   - ROI framing: cost vs. gym membership, spa visits, or sports massage.
+   - Health benefit argument supporting frequency of use.
+
+6. **FAQ** (60–80 words)
+   - "What is the average cost of a cold plunge membership in Chicago?"
+   - "Do Chicago cold plunge studios offer trial passes?"
+   - "Can I share a cold plunge membership with a partner?"
+
+7. **CTA** (20–30 words)
+   - Direct readers to IceSoak's Chicago membership listings to compare and book.
+
+---
+
+## Keyword 5: "cold plunge near me Chicago open Sunday"
+
+### Search Intent
+**Micro-Local / Urgent Transactional** — "Near me" combined with a day qualifier signals immediate intent. User wants to go today (Sunday). Extremely high conversion potential; captures weekend wellness seekers.
+
+### Competition Estimate
+**Very Low.** Day-specific cold plunge search content is almost nonexistent in Chicago's SEO landscape. Capturing this intent with a dedicated page (or FAQ-optimized section) gives IceSoak a near-uncontested SERP opportunity, especially for Google's local pack.
+
+### Title Tag
+`Cold Plunge Studios Open on Sunday in Chicago | IceSoak`
+
+### Meta Description
+`Find cold plunge studios open on Sundays near you in Chicago. Check hours, locations, and book a session today — IceSoak makes it easy.`
+
+### Content Brief
+
+**Target Word Count:** 500–650 words
+**Primary Keyword:** cold plunge near me Chicago open Sunday
+**Secondary Keywords:** cold plunge open Sunday Chicago, ice bath Chicago weekend, cold plunge studio hours Chicago
+
+**Outline:**
+
+1. **Introduction** (50–70 words)
+   - Sunday morning cold plunge as a ritual for recovery and mental reset before the work week.
+   - Quick answer: here's where to find open studios in Chicago on Sundays.
+
+2. **Chicago Cold Plunge Studios Open on Sunday** (150–200 words)
+   - Directory listings with explicit Sunday hours highlighted.
+   - Organized by neighborhood: North Side, West Side, South Side, Downtown.
+   - Include walk-in availability vs. reservation-required studios.
+   - Flag any studios with extended Sunday hours (open before 9am or after 7pm).
+
+3. **Sunday Cold Plunge Protocols: Making the Most of Your Session** (80–100 words)
+   - Ideal Sunday timing: morning session for energy, evening for sleep prep.
+   - Contrast therapy pairing recommendations for a rest-day routine.
+   - Hydration and nutrition tips pre/post session.
+
+4. **What to Know Before You Go (Sunday Tips)** (60–80 words)
+   - Book ahead — Sundays are popular, especially mornings.
+   - Check parking or transit options (CTA Blue/Red Line access notes for relevant studios).
+   - Bring a towel, robe, or check if studio provides them.
+
+5. **FAQ** (60–80 words)
+   - "Which Chicago cold plunge studios are open early on Sundays?"
+   - "Do I need to book in advance for Sunday cold plunge in Chicago?"
+   - "Is there a cold plunge studio open late Sunday night in Chicago?"
+
+6. **CTA** (20–30 words)
+   - Encourage users to view real-time hours and book a Sunday session directly through IceSoak's Chicago directory.
 
 ---
 
 ## Summary Table
 
-| # | Keyword | Intent | Competition | Word Count Target |
-|---|---------|--------|-------------|-------------------|
-| 1 | cold plunge studio Chicago Loop | Local/Nav | Low–Med | 900–1,100 |
-| 2 | cold plunge near Wicker Park Chicago | Local/Nav | Very Low | 800–1,000 |
-| 3 | best cold plunge and sauna Chicago | Info/Commercial | Medium | 1,100–1,400 |
-| 4 | cold plunge Chicago price | Commercial | Low–Med | 900–1,100 |
-| 5 | cold plunge Chicago recovery athletes | Info/Commercial | Low | 1,000–1,200 |
+| # | Keyword | Intent | Competition | Priority |
+|---|---------|--------|-------------|----------|
+| 1 | cold plunge studio Chicago Lincoln Park | Local/Transactional | Low–Medium | High |
+| 2 | best ice bath therapy Chicago Loop | Info/Local Commercial | Medium | High |
+| 3 | sauna and cold plunge Chicago Wicker Park | Local/Transactional | Low | High |
+| 4 | cold plunge membership Chicago affordable | Transactional/Price | Low–Medium | Very High |
+| 5 | cold plunge near me Chicago open Sunday | Micro-Local/Urgent | Very Low | Very High |
 
 ---
 
-*File generated by IceSoak SEO cron job — 2026-07-26*
+*Generated by IceSoak SEO Specialist — Hermes Agent | 2026-07-26*
