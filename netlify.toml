@@ -85,3 +85,343 @@
   for = "/_next/*"
   [headers.values]
     X-Robots-Tag = "noindex"
+
+# ---------------------------------------------------------------------------
+# Studio churn from the pending data refresh (studios.json 239 -> 232 active).
+# 46 /studio/ URLs stop being generated. All are live, indexed, and internally
+# linked, so every one gets a 301 rather than a 404.
+#
+#   12 slug drift + 1 de-duplication -> the business's current studio page
+#   33 genuine removals              -> the parent city page for the studio's
+#                                       primary modality
+#
+# Modality routing for removals: contrast if the studio offered contrast or
+# both hot and cold; otherwise cold-plunge / sauna / infrared-sauna. Studios
+# with cryo only (no vertical page exists) fall back to cold-plunge.
+# ---------------------------------------------------------------------------
+
+# --- Slug drift: same business, new slug (11 of 12 matched on identical address).
+# same address
+[[redirects]]
+  from = "/studio/cryo-philadelphia-philadelphia/"
+  to = "/studio/cryo-philadelphia-cherry-hill/"
+  status = 301
+  force = true
+
+# same address, renamed
+[[redirects]]
+  from = "/studio/evolve-cryo-facials-austin/"
+  to = "/studio/evolve-cryo-wellness-austin/"
+  status = 301
+  force = true
+
+# same address
+[[redirects]]
+  from = "/studio/perspire-sauna-studio-scottsdale/"
+  to = "/studio/perspire-sauna-studio-phoenix/"
+  status = 301
+  force = true
+
+# same address
+[[redirects]]
+  from = "/studio/pure-recovery-los-angeles/"
+  to = "/studio/pure-recovery-beverly-hills/"
+  status = 301
+  force = true
+
+# same address
+[[redirects]]
+  from = "/studio/sek-sauna-studio-brentwood/"
+  to = "/studio/sek-sauna-studio-nashville/"
+  status = 301
+  force = true
+
+# same address
+[[redirects]]
+  from = "/studio/sweathouz-bryn-mawr-philadelphia/"
+  to = "/studio/sweathouz-bryn-mawr-king-of-prussia/"
+  status = 301
+  force = true
+
+# same address
+[[redirects]]
+  from = "/studio/sweathouz-infrared-sauna-studio-plano/"
+  to = "/studio/sweathouz-infrared-sauna-studio-dallas/"
+  status = 301
+  force = true
+
+# same address
+[[redirects]]
+  from = "/studio/sweathouz-media-contrast-therapy-studio-king-of-prussia/"
+  to = "/studio/sweathouz-media-contrast-therapy-studio-cherry-hill/"
+  status = 301
+  force = true
+
+# same address
+[[redirects]]
+  from = "/studio/sweathouz-tennyson-contrast-therapy-studio-lakewood/"
+  to = "/studio/sweathouz-tennyson-contrast-therapy-studio-denver/"
+  status = 301
+  force = true
+
+# same address
+[[redirects]]
+  from = "/studio/sweathouz-upper-dublin-contrast-therapy-studio-king-of-prussia/"
+  to = "/studio/sweathouz-upper-dublin-contrast-therapy-studio-cherry-hill/"
+  status = 301
+  force = true
+
+# same address
+[[redirects]]
+  from = "/studio/vihta-sauna-seattle/"
+  to = "/studio/vihta-sauna-bellevue/"
+  status = 301
+  force = true
+
+# de-duplicated
+[[redirects]]
+  from = "/studio/the-cove-denver/"
+  to = "/studio/the-cove-sauna-and-cold-plunge-denver/"
+  status = 301
+  force = true
+
+# --- UNVERIFIED: matched on name only; neither record carries an address.
+#     Confirm this is the same business before relying on it.
+[[redirects]]
+  from = "/studio/perspire-sauna-studio---kyle-cedar-park/"
+  to = "/studio/perspire-sauna-studio---kyle-austin/"
+  status = 301
+  force = true
+
+# --- Genuine removals: no counterpart in current data -> parent city page.
+# cold_plunge,sauna
+[[redirects]]
+  from = "/studio/david-jones-and-lisa-jones---recovery-studio-and-visionary-heali/"
+  to = "/contrast-therapy/atlanta/"
+  status = 301
+  force = true
+
+# cold_plunge,sauna_infrared,sauna
+[[redirects]]
+  from = "/studio/eleos-float-spa-float-therapy-infrared-sauna-and-cold-plunge-eva/"
+  to = "/contrast-therapy/chicago/"
+  status = 301
+  force = true
+
+# sauna
+[[redirects]]
+  from = "/studio/sweat-it-off-fitness-oak-park/"
+  to = "/sauna/chicago/"
+  status = 301
+  force = true
+
+# cold_plunge,sauna
+[[redirects]]
+  from = "/studio/the-recovery-studio-by-coach-ness-chicago/"
+  to = "/contrast-therapy/chicago/"
+  status = 301
+  force = true
+
+# sauna_infrared
+[[redirects]]
+  from = "/studio/urban-unwind-wellness---massage-therapy-wellness-services-in-oak/"
+  to = "/infrared-sauna/chicago/"
+  status = 301
+  force = true
+
+# cryo
+[[redirects]]
+  from = "/studio/cryo-boost-plano/"
+  to = "/cold-plunge/dallas-fort-worth/"
+  status = 301
+  force = true
+
+# sauna
+[[redirects]]
+  from = "/studio/halsa-nordic-saunas-fort-worth/"
+  to = "/sauna/dallas-fort-worth/"
+  status = 301
+  force = true
+
+# cryo
+[[redirects]]
+  from = "/studio/icryo-cryotherapy-iv-therapy-fort-worth/"
+  to = "/cold-plunge/dallas-fort-worth/"
+  status = 301
+  force = true
+
+# sauna
+[[redirects]]
+  from = "/studio/perspire-sauna-studio-fort-worth/"
+  to = "/sauna/dallas-fort-worth/"
+  status = 301
+  force = true
+
+# sauna_infrared
+[[redirects]]
+  from = "/studio/perspire-sauna-studio-plano-plano/"
+  to = "/infrared-sauna/dallas-fort-worth/"
+  status = 301
+  force = true
+
+# cold_plunge,sauna
+[[redirects]]
+  from = "/studio/west-plano---sauna-cold-plunge-hot-tub-plano/"
+  to = "/contrast-therapy/dallas-fort-worth/"
+  status = 301
+  force = true
+
+# cold_plunge,sauna
+[[redirects]]
+  from = "/studio/west-plano---saunacold-plungehot-tub-plano/"
+  to = "/contrast-therapy/dallas-fort-worth/"
+  status = 301
+  force = true
+
+# cold_plunge
+[[redirects]]
+  from = "/studio/garden-sauna-denver/"
+  to = "/cold-plunge/denver/"
+  status = 301
+  force = true
+
+# sauna_infrared,cold_plunge
+[[redirects]]
+  from = "/studio/urban-sweat-cherry-creek-denver/"
+  to = "/contrast-therapy/denver/"
+  status = 301
+  force = true
+
+# cold_plunge,sauna
+[[redirects]]
+  from = "/studio/icepass-cold-plunge-sauna-blue-republic-crossfit-los-angeles/"
+  to = "/contrast-therapy/los-angeles/"
+  status = 301
+  force = true
+
+# cold_plunge,sauna
+[[redirects]]
+  from = "/studio/icepass-cold-plunge-sauna-club-saba-cafe-los-angeles/"
+  to = "/contrast-therapy/los-angeles/"
+  status = 301
+  force = true
+
+# sauna_infrared,sauna
+[[redirects]]
+  from = "/studio/optimal-health-wellness---colonics-detox-infrared-sauna-beverly-/"
+  to = "/sauna/los-angeles/"
+  status = 301
+  force = true
+
+# cold_plunge,sauna
+[[redirects]]
+  from = "/studio/recovery-studio-beverly-hills-by-sergey-suvorov-cmt-los-angeles/"
+  to = "/contrast-therapy/los-angeles/"
+  status = 301
+  force = true
+
+# sauna_infrared,cold_plunge
+[[redirects]]
+  from = "/studio/westside-sweat-club-los-angeles/"
+  to = "/contrast-therapy/los-angeles/"
+  status = 301
+  force = true
+
+# cryo,cold_plunge
+[[redirects]]
+  from = "/studio/electric-ice-cryo-south-miami-cryotherapy-cold-therapy-coral-gab/"
+  to = "/cold-plunge/miami/"
+  status = 301
+  force = true
+
+# cold_plunge,cryo
+[[redirects]]
+  from = "/studio/helix-performance-recovery-miami-beach/"
+  to = "/cold-plunge/miami/"
+  status = 301
+  force = true
+
+# cold_plunge
+[[redirects]]
+  from = "/studio/rivera-performance-recovery-miami/"
+  to = "/cold-plunge/miami/"
+  status = 301
+  force = true
+
+# sauna
+[[redirects]]
+  from = "/studio/royal-standard-llc-sauna-miami/"
+  to = "/sauna/miami/"
+  status = 301
+  force = true
+
+# sauna
+[[redirects]]
+  from = "/studio/pure-sweat-sauna-studio-nashville/"
+  to = "/sauna/nashville/"
+  status = 301
+  force = true
+
+# sauna_infrared,cold_plunge,contrast
+[[redirects]]
+  from = "/studio/sweathouz-farragut-contrast-therapy-studio-franklin/"
+  to = "/contrast-therapy/nashville/"
+  status = 301
+  force = true
+
+# cold_plunge
+[[redirects]]
+  from = "/studio/aura-esthetic-spa-sauna-philadelphia/"
+  to = "/cold-plunge/philadelphia/"
+  status = 301
+  force = true
+
+# sauna
+[[redirects]]
+  from = "/studio/aura-sauna-studio-cherry-hill/"
+  to = "/sauna/philadelphia/"
+  status = 301
+  force = true
+
+# sauna
+[[redirects]]
+  from = "/studio/elite-edge-recovery-king-of-prussia/"
+  to = "/sauna/philadelphia/"
+  status = 301
+  force = true
+
+# sauna_infrared
+[[redirects]]
+  from = "/studio/perspire-sauna-studio-media-media/"
+  to = "/infrared-sauna/philadelphia/"
+  status = 301
+  force = true
+
+# sauna_infrared
+[[redirects]]
+  from = "/studio/perspire-sauna-studio-philadelphia-philadelphia/"
+  to = "/infrared-sauna/philadelphia/"
+  status = 301
+  force = true
+
+# cold_plunge
+[[redirects]]
+  from = "/studio/polar-star-spa-luxury-banya-cold-plunge-philadelphia/"
+  to = "/cold-plunge/philadelphia/"
+  status = 301
+  force = true
+
+# cold_plunge,sauna_infrared,sauna
+[[redirects]]
+  from = "/studio/recover-cold-plunge-contrast-therapy-float-spa-and-infrared-saun/"
+  to = "/contrast-therapy/philadelphia/"
+  status = 301
+  force = true
+
+# (none)
+[[redirects]]
+  from = "/studio/recovery-room-iv-therapy-wellness-scottsdale/"
+  to = "/cold-plunge/phoenix/"
+  status = 301
+  force = true
+
