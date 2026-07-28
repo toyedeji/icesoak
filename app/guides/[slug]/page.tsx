@@ -6,7 +6,7 @@ import AnswerCapsule from "@/components/AnswerCapsule";
 import AffiliateSection from "@/components/AffiliateSection";
 import InternalLinks from "@/components/InternalLinks";
 import JsonLd from "@/components/JsonLd";
-import { QUESTIONS, questionBySlug } from "@/lib/data";
+import { QUESTIONS, questionBySlug, hasGuideBody } from "@/lib/data";
 import { GUIDE_FAQS } from "@/lib/guideFAQs";
 import { pageMetadata, clamp } from "@/lib/seo";
 import { articleSchema, faqSchema, breadcrumbSchema, type Crumb } from "@/lib/jsonld";
@@ -21,11 +21,17 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: P): Promise<Metadata> {
   const q = questionBySlug((await params).slug);
   if (!q) return {};
+  // A guide with no body is served noindex,follow: the URL and its internal
+  // links stay alive, but Google drops it from the index instead of holding it
+  // as thin content. scripts/postexport.mjs reads the rendered robots tag, so
+  // this also removes the page from the sitemap automatically. Writing a body
+  // flips it back to indexable with no code change.
+  const published = hasGuideBody(q);
   return pageMetadata({
     title: q.question,
     description: clamp(q.capsule ?? ""),
     path: `/guides/${q.slug}/`,
-    index: true,
+    index: published,
   });
 }
 
@@ -59,10 +65,13 @@ export default async function Page({ params }: P) {
       <Breadcrumbs crumbs={crumbs} />
       <article className="prose">
         <h1>{q.question}</h1>
-        <p className="byline">
-          By {q.author}
-          {updated ? ` · Last updated ${updated}` : ""}
-        </p>
+        {(q.author || updated) && (
+          <p className="byline">
+            {q.author ? `By ${q.author}` : ""}
+            {q.author && updated ? " · " : ""}
+            {updated ? `Last updated ${updated}` : ""}
+          </p>
+        )}
         <AnswerCapsule text={q.capsule} />
 
         {(q.sections ?? []).map((sec) => (
