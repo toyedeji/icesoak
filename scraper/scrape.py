@@ -194,7 +194,69 @@ def _apply_sticky_modalities(records: list, prev_path: Path) -> int:
     return patched
 
 
-async def run(metro_filter: list[str] | None = None) -> None:
+# ── Question merge ───────────────────────────────────────────────────────────
+# questions.json is written by TWO pipelines: harvest_questions() below supplies
+# the stub fields, and a separate content pass fills in the prose. Until
+# 2026-07-28 this file was overwritten wholesale on every scrape, so each run
+# silently destroyed the content pass's work — see the sawtooth in git history
+# (267 KB on 2026-07-06, 8 KB on 2026-07-12, and a literal [] on 2026-07-19).
+# studios.json already merges and preserves sticky fields; questions.json never
+# did. It does now.
+
+# Owned by the content pass. The scraper must never author or clear these.
+CONTENT_FIELDS = ("capsule", "sections", "faqs", "author", "category", "updated")
+
+# Owned by the scraper. Refreshed from every harvest.
+HARVEST_FIELDS = ("slug", "question", "type", "metro")
+
+
+def _merge_questions(harvested: list, existing: list) -> tuple[list, list]:
+    """Merge harvested stubs into existing records, preserving content fields.
+
+    Returns (merged, retained_dropped) where retained_dropped are records the
+    harvest no longer returns but which still carry prose.
+
+    Removed slugs: a slug vanishing from a harvest usually means PAA/Reddit
+    stopped surfacing that phrasing, not that the guide is worthless. So a
+    dropped slug that HAS prose is retained (it is a live, linked, possibly
+    ranking URL — deleting it would 404 real content), while a dropped slug
+    that is still an empty stub is discarded, since nothing is lost.
+    """
+    by_slug = {
+        q.get("slug"): q
+        for q in existing
+        if isinstance(q, dict) and isinstance(q.get("slug"), str)
+    }
+
+    merged = []
+    for h in harvested:
+        slug = h.get("slug")
+        rec = dict(h)                      # harvest fields win
+        prev = by_slug.pop(slug, None)
+        if prev:
+            for f in CONTENT_FIELDS:       # content fields survive
+                if prev.get(f):
+                    rec[f] = prev[f]
+        merged.append(rec)
+
+    retained = [
+        q for q in by_slug.values() if any(q.get(f) for f in CONTENT_FIELDS)
+    ]
+    return merged + retained, retained
+
+
+def _read_existing_questions(path: Path) -> list:
+    if not path.exists():
+        return []
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError) as exc:
+        log.warning("Could not read existing %s (%s) — treating as empty.", path, exc)
+        return []
+    return data if isinstance(data, list) else []
+
+
+async def run(metro_filter: list[str] | None = None, force: bool = False) -> None:
     today = date.today().isoformat()
     all_records: list = []
 
@@ -325,10 +387,42 @@ async def run(metro_filter: list[str] | None = None) -> None:
 
     # ── Questions ────────────────────────────────────────────────────────────
     from crawlers.questions import harvest_questions
-    questions = await harvest_questions()
+    harvested = await harvest_questions()
     q_out = WORK_DIR / "questions.json"
-    q_out.write_text(json.dumps(questions, indent=2, ensure_ascii=False), encoding="utf-8")
-    log.info("Wrote %d questions → %s", len(questions), q_out)
+    existing = _read_existing_questions(q_out)
+
+    # Guard 1: never let an empty harvest truncate the file. Commit f5880df
+    # (2026-07-19) wrote a literal [] this way, which would have 404'd all 52
+    # guide URLs on the next deploy.
+    if not harvested and not force:
+        log.error(
+            "Harvest returned 0 questions — refusing to overwrite %s (%d existing). "
+            "Re-run with --force to override.",
+            q_out, len(existing),
+        )
+        return
+
+    merged, retained = _merge_questions(harvested, existing)
+
+    # Guard 2: refuse a materially smaller file. A harvest that collapses is a
+    # scrape failure, not an editorial decision.
+    THRESHOLD = 0.8
+    if existing and len(merged) < len(existing) * THRESHOLD and not force:
+        log.error(
+            "Refusing to shrink %s from %d to %d entries (below %.0f%% of existing). "
+            "This usually means the harvest partially failed. Re-run with --force "
+            "if the reduction is intended.",
+            q_out, len(existing), len(merged), THRESHOLD * 100,
+        )
+        return
+
+    preserved = sum(1 for q in merged if any(q.get(f) for f in CONTENT_FIELDS))
+    q_out.write_text(json.dumps(merged, indent=2, ensure_ascii=False), encoding="utf-8")
+    log.info(
+        "Wrote %d questions → %s (%d harvested, %d with content preserved, "
+        "%d retained despite dropping out of the harvest)",
+        len(merged), q_out, len(harvested), preserved, len(retained),
+    )
 
 
 if __name__ == "__main__":
@@ -338,5 +432,10 @@ if __name__ == "__main__":
         help="Limit scrape to specific metros (e.g. austin chicago). "
              f"Available: {', '.join(_METRO_ALIAS.keys())}",
     )
+    parser.add_argument(
+        "--force", action="store_true",
+        help="Override the questions.json safety guards (empty harvest, or a "
+             "materially smaller file). Use only when the reduction is intended.",
+    )
     args = parser.parse_args()
-    asyncio.run(run(metro_filter=args.metros))
+    asyncio.run(run(metro_filter=args.metros, force=args.force))
