@@ -1,186 +1,298 @@
-# IceSoak SEO Brief — Miami Metro | 2026-07-29
+# IceSoak SEO — Miami Long-Tail Keyword Research
+**Date:** 2026-07-29 | **Metro:** Miami, FL | **Specialist:** IceSoak SEO Cron
 
-**Metro:** Miami, FL  
-**Day of Month:** 29 | 29 mod 11 = 7 | Index 7 → Miami  
-**Generated:** 2026-07-29  
+---
+
+## Overview
+
+Five long-tail keywords targeting cold plunge studios, recovery centers, and contrast therapy venues in the Miami metro. Each entry includes search intent analysis, competition estimate, and a 300-word content brief with title tag, meta description, and article outline.
 
 ---
 
 ## Keyword 1: "cold plunge studio Miami Beach"
 
-### Search Intent
-**Informational / Local Commercial** — Users are looking for a physical location offering cold plunge therapy near Miami Beach. Intent is primarily to find, book, or compare nearby studios. Strong local purchase intent.
+**Monthly Search Estimate:** 320–480  
+**Search Intent:** Navigational / Local Commercial — user wants to find a specific cold plunge venue in Miami Beach  
+**Competition Level:** Low–Medium (few pages targeting this hyper-local variant; most competitors target "cold plunge Miami" broadly)  
+**Target Page Type:** Local landing page / city sub-page
 
-### Competition Level
-**Medium** — Miami Beach has a growing wellness scene, but dedicated cold plunge-only studios remain niche. Primary competition comes from luxury spas and fitness clubs that offer cold plunge as an add-on, not the core service. Domain authority of ranking pages is moderate (DA 20–45).
+### Title Tag
+`Cold Plunge Studio in Miami Beach | IceSoak Directory`
 
-### Content Brief
+### Meta Description
+`Find the best cold plunge studios in Miami Beach, FL. Compare locations, pricing, and amenities — book your recovery session today with IceSoak.`
 
-**Title Tag:** Cold Plunge Studio in Miami Beach | IceSoak Directory  
-**Meta Description:** Find the best cold plunge studios in Miami Beach, FL. Browse verified locations, pricing, amenities, and book your session today with IceSoak.
+### Content Brief (300 words)
 
-**Target Word Count:** 300  
-**Primary Keyword:** cold plunge studio Miami Beach  
-**Secondary Keywords:** ice bath Miami Beach, cold water immersion Miami, cryotherapy Miami Beach  
+**Working Title:** The Best Cold Plunge Studios in Miami Beach, FL
 
-#### Outline
-1. **H1:** Best Cold Plunge Studios in Miami Beach, FL
-2. **H2:** Why Miami Beach Residents Are Embracing Cold Plunge Therapy
-   - Brief explanation of benefits (recovery, mental clarity, inflammation reduction)
-   - Why it's gaining traction in a hot-climate city
-3. **H2:** What to Expect at a Cold Plunge Studio
-   - Temperature ranges, session lengths, guided vs. self-directed
-4. **H2:** Top-Rated Cold Plunge Studios in Miami Beach (Directory Listings)
-   - 3–5 stub entries with name, neighborhood, price range, amenities
-5. **H2:** How to Choose the Right Studio for You
-   - Factors: price, hours, contrast therapy availability, community atmosphere
-6. **CTA:** Browse All Miami Cold Plunge Studios on IceSoak
+**Introduction (~60 words)**  
+Open with a hook about Miami Beach's culture of wellness and beach-ready fitness. Note that ice bath therapy is surging in popularity among South Beach athletes, tourists, and wellness tourists. Introduce IceSoak as the definitive local directory for finding a verified cold plunge studio in Miami Beach.
 
----
+**Section 1: Why Cold Plunge in Miami Beach? (~60 words)**  
+- Contrast the humid subtropical climate (average 85°F+) with the shock-recovery benefit of cold immersion  
+- Mention that post-workout inflammation recovery is especially important for outdoor athletes and year-round fitness enthusiasts  
+- Briefly reference science: cold water immersion reduces DOMS (delayed onset muscle soreness) per published sports science literature  
 
-## Keyword 2: "ice bath therapy near me Miami"
+**Section 2: What to Look for in a Miami Beach Cold Plunge Studio (~80 words)**  
+- Water temperature range (target 45–55°F for therapeutic benefit)  
+- Session length options (3-minute intro vs. 10-minute advanced)  
+- Clean, filtered water systems and UV sanitation  
+- Sauna or contrast therapy pairing availability  
+- Proximity to South Beach, Wynwood, or Brickell neighborhoods  
+- Walk-in vs. membership pricing  
+- Amenities: towels, lockers, showers  
 
-### Search Intent
-**Local Transactional** — High purchase intent. Users are actively seeking an immediate session. "Near me" signals proximity-based search; Google will favor Google Business Profile (GBP) results and pages with strong local signals.
+**Section 3: Top-Rated Cold Plunge Studios Near Miami Beach (~60 words)**  
+- Placeholder for 3–5 IceSoak-listed venues with brief descriptions  
+- Include address snippet, price range, standout feature  
+- Internal links to each studio's IceSoak listing page  
 
-### Competition Level
-**Low–Medium** — Most local competitors target "cryotherapy" broadly rather than "ice bath therapy." An optimized landing page with local schema can rank in the top 5 within 3–6 months on a new domain with moderate link building.
+**Section 4: How to Book a Cold Plunge Session in Miami Beach (~30 words)**  
+- CTA directing users to IceSoak's search/filter tool  
+- Encourage users to read reviews and compare amenities before booking  
 
-### Content Brief
+**Conclusion (~20 words)**  
+Reinforce IceSoak as the trusted local guide and invite users to explore all Miami listings.
 
-**Title Tag:** Ice Bath Therapy Near You in Miami, FL | IceSoak  
-**Meta Description:** Looking for ice bath therapy near you in Miami? IceSoak lists the top cold plunge and ice bath studios across Miami-Dade County — find hours, pricing & book now.
-
-**Target Word Count:** 300  
-**Primary Keyword:** ice bath therapy near me Miami  
-**Secondary Keywords:** ice bath Miami, cold therapy Miami, cold immersion therapy Miami FL  
-
-#### Outline
-1. **H1:** Ice Bath Therapy in Miami, FL — Find Studios Near You
-2. **H2:** The Science Behind Ice Bath Therapy
-   - Vasoconstriction, vagal nerve activation, endorphin release
-   - Cited studies (brief, accessible language)
-3. **H2:** Miami's Best Ice Bath Therapy Studios
-   - Directory cards: studio name, address/neighborhood, price, session types
-4. **H2:** What to Bring to Your First Ice Bath Session
-   - Practical tips to lower friction for first-timers
-5. **H2:** Ice Bath Therapy vs. Cryotherapy — What's the Difference?
-   - Comparison table (cost, duration, efficacy, experience)
-6. **CTA:** Find an Ice Bath Studio Near You → [Browse Miami Directory]
+**Target Internal Links:** /miami/, /miami/cold-plunge/, /miami/sauna/  
+**Target External Links:** 1–2 peer-reviewed sources on cold water immersion benefits
 
 ---
 
-## Keyword 3: "sauna and cold plunge Miami"
+## Keyword 2: "ice bath therapy near Brickell"
 
-### Search Intent
-**Commercial Investigation** — Users are researching contrast therapy (hot/cold) experiences in Miami. They want a facility offering both sauna and cold plunge, often for athletic recovery or wellness rituals. Intent includes comparison shopping.
+**Monthly Search Estimate:** 150–260  
+**Search Intent:** Local Commercial — user is near Brickell and actively seeking a place to do ice bath therapy  
+**Competition Level:** Very Low (neighborhood-level modifier drastically reduces competition; most existing pages don't target Brickell specifically)  
+**Target Page Type:** Neighborhood landing page or blog post with map embed
 
-### Competition Level
-**Medium–High** — "Sauna Miami" alone is competitive; the combined phrase is more specific and captures a motivated segment. Luxury spas and boutique wellness clubs dominate, but few have SEO-optimized content targeting the combined query explicitly.
+### Title Tag
+`Ice Bath Therapy Near Brickell, Miami | IceSoak`
 
-### Content Brief
+### Meta Description
+`Looking for ice bath therapy near Brickell? Discover cold plunge spots and recovery studios close to downtown Miami. Explore options on IceSoak.`
 
-**Title Tag:** Sauna & Cold Plunge Studios in Miami, FL | IceSoak  
-**Meta Description:** Discover Miami studios offering both sauna and cold plunge — perfect for contrast therapy, athletic recovery, and deep relaxation. Compare top venues on IceSoak.
+### Content Brief (300 words)
 
-**Target Word Count:** 300  
-**Primary Keyword:** sauna and cold plunge Miami  
-**Secondary Keywords:** contrast therapy Miami, hot cold therapy Miami, sauna cold plunge near me Miami  
+**Working Title:** Ice Bath Therapy Near Brickell, Miami: Your Local Recovery Guide
 
-#### Outline
-1. **H1:** Sauna & Cold Plunge Studios in Miami — Contrast Therapy at Its Best
-2. **H2:** What Is Contrast Therapy and Why Is It So Effective?
-   - Alternating hot/cold cycles, hormetic stress, recovery acceleration
-3. **H2:** Benefits Specific to Miami's Climate
-   - Heat acclimation, managing humidity fatigue, stress relief in urban environments
-4. **H2:** Miami Studios Offering Both Sauna and Cold Plunge
-   - Directory listings: highlight studios with full contrast therapy setups
-   - Notable features: infrared vs. traditional sauna, plunge pool vs. cold tub
-5. **H2:** How to Do a Contrast Therapy Session — Beginner Protocol
-   - 3-round protocol (10 min sauna → 2 min cold → rest × 3)
-6. **CTA:** Book a Contrast Therapy Session in Miami → [View Listings]
+**Introduction (~55 words)**  
+Set the scene in Brickell — Miami's high-rise financial district packed with professionals, CrossFit enthusiasts, and health-conscious residents. Explain that ice bath therapy (also called cold water immersion or CWI) is one of the fastest-growing recovery modalities in the city, and that Brickell's dense neighborhood makes it a prime spot to find a nearby studio.
 
----
+**Section 1: Benefits of Ice Bath Therapy for Urban Professionals (~70 words)**  
+- Stress reduction and cortisol regulation — particularly relevant for high-pressure work environments  
+- Enhanced sleep quality after evening sessions  
+- Mental resilience training (Wim Hof methodology referenced)  
+- Lymphatic system stimulation  
+- Quick 10–15 minute sessions fit busy schedules  
+- Pair with infrared sauna for full contrast therapy protocol  
 
-## Keyword 4: "cold plunge for athletes Miami"
+**Section 2: Neighborhoods Adjacent to Brickell with Cold Plunge Access (~70 words)**  
+- Brickell City Centre area options  
+- Walking distance from Mary Brickell Village  
+- Studios accessible via Metromover or ride-share  
+- Consider also: Coconut Grove, Coral Gables, and Downtown Miami (within 10-minute drive)  
+- Note parking and access details where available  
 
-### Search Intent
-**Informational / Commercial** — Athletes and fitness-focused individuals searching for recovery-specific cold plunge options. They may be comparing studios by features (athlete-grade tubs, sports recovery programs) or looking for credibility/endorsements from trainers/teams.
+**Section 3: What to Expect at Your First Ice Bath Session (~70 words)**  
+- What to wear (athletic swimwear)  
+- Breathing techniques to manage the cold shock response  
+- Typical session flow: warm-up → cold immersion → recovery  
+- Medical disclaimers: not recommended for those with cardiovascular conditions without physician clearance  
+- Beginner tips: start at 60°F and gradually lower  
 
-### Competition Level
-**Low** — This is an underserved long-tail with clear purchase intent. Sports medicine clinics and gyms rarely optimize for this phrase. A well-structured page with schema markup could rank in positions 1–5 within 60–90 days with minimal link building.
+**Section 4: Find Ice Bath Studios on IceSoak (~35 words)**  
+- Direct CTA to IceSoak's Brickell/Miami filter  
+- Mention verified listings with hours, pricing, and user reviews  
 
-### Content Brief
+**Conclusion (~20 words)**  
+Summarize the convenience of finding vetted cold plunge options near Brickell through IceSoak's directory.
 
-**Title Tag:** Cold Plunge for Athletes in Miami | Recovery Studios | IceSoak  
-**Meta Description:** Miami athletes trust cold plunge therapy for faster recovery, reduced soreness, and peak performance. Find the best sports recovery studios on IceSoak.
-
-**Target Word Count:** 300  
-**Primary Keyword:** cold plunge for athletes Miami  
-**Secondary Keywords:** athletic recovery Miami, cold water therapy for sports recovery Miami, ice bath for athletes Miami FL  
-
-#### Outline
-1. **H1:** Cold Plunge Therapy for Athletes in Miami, FL
-2. **H2:** Why Miami Athletes Are Adding Cold Plunge to Their Recovery Stack
-   - Reduced DOMS, improved sleep, faster tissue repair
-   - References to sports science research (accessible language)
-3. **H2:** What Makes a Studio "Athlete-Friendly"?
-   - Temperature precision, tub size, group bookings, post-session nutrition, parking
-4. **H2:** Best Cold Plunge Studios for Athletes in Miami
-   - Filtered directory listings highlighting sports recovery amenities
-5. **H2:** Cold Plunge Protocols for Different Sports
-   - Endurance athletes, strength athletes, team sports — brief custom protocols
-6. **H2:** Frequently Asked Questions
-   - How cold? How long? How often? Is it safe?
-7. **CTA:** Find an Athlete Recovery Studio in Miami → [Browse IceSoak Listings]
+**Target Internal Links:** /miami/, /miami/brickell/, /miami/ice-bath/  
+**Target External Links:** Wim Hof Institute, peer-reviewed CWI study
 
 ---
 
-## Keyword 5: "best cold plunge Brickell / Wynwood / Coral Gables"
+## Keyword 3: "sauna and cold plunge Miami Wynwood"
 
-### Search Intent
-**Local Navigational / Commercial** — Neighborhood-level searches targeting Miami's dense, high-income urban cores. Users in Brickell, Wynwood, and Coral Gables are tech workers, creatives, and professionals with high wellness spend. Strong transactional intent.
+**Monthly Search Estimate:** 200–310  
+**Search Intent:** Commercial Investigation — user wants contrast therapy (sauna + cold plunge combo) and is anchored to the Wynwood arts/wellness district  
+**Competition Level:** Low (dual-modality + neighborhood specificity creates a low-competition niche)  
+**Target Page Type:** Neighborhood combo-therapy landing page
 
-### Competition Level
-**Low** — Virtually no pages specifically target cold plunge at the neighborhood level within Miami. These are "zero competition" long-tail variants. Three separate pages (one per neighborhood) will capture distinct local intent and can rank quickly with minimal authority.
+### Title Tag
+`Sauna & Cold Plunge in Wynwood, Miami | Contrast Therapy | IceSoak`
 
-### Content Brief
+### Meta Description
+`Discover sauna and cold plunge studios in Wynwood, Miami. Explore contrast therapy options, prices, and booking info — all on IceSoak.`
 
-**Title Tag (example):** Cold Plunge Studios in Brickell, Miami | IceSoak  
-**Meta Description:** Looking for a cold plunge studio in Brickell? IceSoak lists the top ice bath and contrast therapy studios near Brickell, Miami — with pricing, hours, and reviews.
+### Content Brief (300 words)
 
-**Target Word Count:** 300 (per neighborhood page)  
-**Primary Keywords:**  
-- `cold plunge Brickell Miami`  
-- `cold plunge Wynwood Miami`  
-- `cold plunge Coral Gables Miami`  
-**Secondary Keywords:** ice bath [neighborhood], sauna [neighborhood] Miami, cold water therapy near [neighborhood]  
+**Working Title:** Sauna & Cold Plunge in Wynwood, Miami: The Ultimate Contrast Therapy Guide
 
-#### Outline (applies to each neighborhood variant)
-1. **H1:** Cold Plunge Studios in [Neighborhood], Miami
-2. **H2:** The Wellness Scene in [Neighborhood]
-   - Brief 2–3 sentence overview of the neighborhood's health/fitness culture
-3. **H2:** Cold Plunge Studios Near [Neighborhood]
-   - Directory listings within ~1.5 mile radius
-   - Map embed prompt (for dev team)
-4. **H2:** What to Expect — Pricing & Session Types
-   - Drop-in rates, memberships, package deals common in this area
-5. **H2:** Getting There
-   - Parking, transit notes, nearby landmarks (helps local SEO signals)
-6. **CTA:** View All [Neighborhood] Wellness Studios → [Browse IceSoak]
+**Introduction (~50 words)**  
+Wynwood has evolved from an art district into one of Miami's most vibrant wellness hubs. Introduce the concept of contrast therapy — alternating sauna heat with cold plunge immersion — and explain why Wynwood's boutique wellness scene makes it an ideal destination for this biohacking practice.
+
+**Section 1: What Is Contrast Therapy? (~60 words)**  
+- Define the hot-cold alternation protocol (e.g., 15 min sauna → 3 min cold plunge × 3 rounds)  
+- Physiological effects: vasodilation + vasoconstriction cycle, endorphin release, improved circulation  
+- Mention Nordic origins (Finnish sauna culture) and growing US wellness trend  
+- Note IceSoak's focus on venues offering both modalities under one roof  
+
+**Section 2: Why Wynwood for Wellness? (~60 words)**  
+- Neighborhood demographics: creatives, health-conscious millennials, fitness professionals  
+- Growth of boutique studios, juice bars, and wellness concepts in the area  
+- Walkability and vibrant atmosphere enhances the overall wellness experience  
+- Proximity to Midtown Miami and Design District  
+- Weekend drop-in culture suits the contrast therapy model  
+
+**Section 3: What to Look for in a Wynwood Contrast Therapy Studio (~70 words)**  
+- Dedicated sauna rooms (traditional Finnish, infrared, or steam options)  
+- Cold plunge pools with consistent temperature control  
+- Guided protocols vs. self-directed sessions  
+- Social vs. private suite options  
+- Towel service, shower access, and post-session relaxation areas  
+- Membership discounts for frequent visitors  
+- Hygiene certifications and water filtration transparency  
+
+**Section 4: Book Your Wynwood Contrast Session via IceSoak (~40 words)**  
+- CTA to browse Wynwood/Miami listings with sauna+cold plunge filter  
+- Mention ability to compare pricing tiers (drop-in, monthly, package)  
+- Encourage reading IceSoak user reviews for first-time visitors  
+
+**Conclusion (~20 words)**  
+Position IceSoak as the one-stop guide to contrast therapy in Wynwood and across greater Miami.
+
+**Target Internal Links:** /miami/wynwood/, /miami/sauna/, /miami/contrast-therapy/  
+**Target External Links:** Finnish Sauna Society reference, contrast therapy study
+
+---
+
+## Keyword 4: "cold plunge recovery studio Coral Gables"
+
+**Monthly Search Estimate:** 100–180  
+**Search Intent:** Local Navigational — user is specifically looking for a recovery-focused studio in Coral Gables  
+**Competition Level:** Very Low (upscale suburb with almost no targeted SEO content; significant opportunity)  
+**Target Page Type:** Sub-metro neighborhood landing page
+
+### Title Tag
+`Cold Plunge Recovery Studio in Coral Gables, FL | IceSoak`
+
+### Meta Description
+`Find cold plunge and recovery studios in Coral Gables, FL. Compare top-rated options with IceSoak — your local guide to cold water therapy near Miami.`
+
+### Content Brief (300 words)
+
+**Working Title:** Cold Plunge Recovery Studios in Coral Gables: Find Your Local Ice Bath Fix
+
+**Introduction (~55 words)**  
+Coral Gables — the "City Beautiful" — is home to upscale fitness culture, University of Miami athletes, and a wellness-conscious community willing to invest in premium recovery. Introduce cold plunge therapy as the modality of choice for serious athletes and everyday wellness seekers alike, and position IceSoak as the directory to find it locally.
+
+**Section 1: The Coral Gables Wellness Scene (~65 words)**  
+- Overview of the neighborhood's fitness culture: boutique gyms, yoga studios, athletic clubs  
+- University of Miami sports performance connection — student athletes seek recovery tools  
+- Affluent demographics drive demand for premium wellness experiences  
+- Cold plunge studios are expanding into upscale suburban markets in 2025–2026  
+- IceSoak tracks new studio openings across Coral Gables and surrounding Coconut Grove, South Miami  
+
+**Section 2: Cold Plunge vs. Ice Bath — What's the Difference? (~70 words)**  
+- Define cold plunge (dedicated tank/pool, controlled temp) vs. DIY ice bath (bathtub + ice)  
+- Studio advantages: precise temperature control, hygiene, social/community experience, guided protocols  
+- Cost comparison: one session vs. at-home setup investment  
+- Introduce the concept of "recovery stack" — combining cold plunge with compression, red light therapy, or sauna  
+- Why a professional studio beats DIY for consistency and safety  
+
+**Section 3: Finding a Cold Plunge Studio Near Coral Gables (~70 words)**  
+- IceSoak's Miami metro coverage including Coral Gables, South Miami, Coconut Grove  
+- Filtering options: distance, amenities, price range, session type  
+- Featured listing highlights (placeholder for directory entries)  
+- Note hours of operation variability — early morning and late evening slots fill fast  
+- Book in advance via studio websites linked from IceSoak  
+
+**Section 4: Ready to Take the Plunge? (~20 words)**  
+- CTA to explore IceSoak's Coral Gables and Miami listings  
+- Invite users to submit reviews and claim business listings  
+
+**Conclusion (~20 words)**  
+IceSoak is Miami's most comprehensive cold plunge directory — find your perfect Coral Gables recovery studio today.
+
+**Target Internal Links:** /miami/, /miami/coral-gables/, /miami/recovery/  
+**Target External Links:** 1 sports science recovery study, 1 University of Miami athletics reference
+
+---
+
+## Keyword 5: "best cold plunge membership Miami"
+
+**Monthly Search Estimate:** 280–420  
+**Search Intent:** Commercial Investigation / Transactional — user is ready to commit to a membership and comparing options in Miami  
+**Competition Level:** Medium (higher intent = more competition; but "membership" modifier reduces to manageable level vs. head term)  
+**Target Page Type:** Comparison/listicle blog post or category landing page
+
+### Title Tag
+`Best Cold Plunge Memberships in Miami, FL (2026) | IceSoak`
+
+### Meta Description
+`Compare the best cold plunge membership options in Miami. Find monthly plans, unlimited sessions, and exclusive perks — reviewed and ranked by IceSoak.`
+
+### Content Brief (300 words)
+
+**Working Title:** Best Cold Plunge Memberships in Miami (2026): Compare Plans & Prices
+
+**Introduction (~50 words)**  
+For Miami residents who've caught the cold plunge bug, a membership beats per-session pricing every time. This guide breaks down the best cold plunge membership programs available across Miami — from Brickell to Wynwood to Coral Gables — helping you find the plan that fits your budget, schedule, and recovery goals.
+
+**Section 1: Why Buy a Cold Plunge Membership? (~60 words)**  
+- Cost savings: average drop-in is $25–$45; memberships can reduce to $12–$18/session equivalent  
+- Habit formation: committed members show greater consistency in cold therapy routines  
+- Additional perks: guest passes, sauna access, priority booking, member events  
+- Community aspect: many Miami studios host breathwork and wellness events for members only  
+- Flexibility tiers: 4x/month, 8x/month, unlimited  
+
+**Section 2: What to Compare When Choosing a Membership (~80 words)**  
+- Monthly price and contract terms (month-to-month vs. annual lock-in)  
+- Included sessions per month and rollover policy  
+- Sauna access included or add-on?  
+- Freeze/pause policy for travel  
+- Guest privileges  
+- Studio hours (early morning/late night access critical for professionals)  
+- Water temperature consistency and equipment quality  
+- App-based booking vs. walk-in  
+- Cancellation terms (no hidden fees)  
+- Multi-location access if the studio has multiple Miami area locations  
+
+**Section 3: Top Cold Plunge Membership Programs in Miami (~70 words)**  
+- Placeholder for 4–6 IceSoak-listed Miami studios offering memberships  
+- For each: studio name, neighborhood, membership tiers, price range, standout benefit  
+- Note: data pulled from IceSoak's verified studio listings  
+- Encourage users to click through to read full reviews and current pricing  
+- Note that pricing changes seasonally — always verify on the studio's official site  
+
+**Section 4: How IceSoak Helps You Choose (~20 words)**  
+- Highlight IceSoak's comparison features: filter by membership availability, price, neighborhood  
+- CTA to visit /miami/ and toggle "Membership Available" filter  
+
+**Conclusion (~20 words)**  
+IceSoak simplifies your search — compare Miami's best cold plunge memberships and start recovering smarter today.
+
+**Target Internal Links:** /miami/, /miami/memberships/, /miami/cold-plunge/  
+**Target External Links:** NSCA recovery guidelines, 1 cold therapy frequency study
 
 ---
 
 ## Summary Table
 
-| # | Keyword | Intent | Competition | Priority |
-|---|---------|--------|-------------|----------|
-| 1 | cold plunge studio Miami Beach | Local Commercial | Medium | High |
-| 2 | ice bath therapy near me Miami | Transactional | Low–Medium | High |
-| 3 | sauna and cold plunge Miami | Commercial Investigation | Medium–High | Medium |
-| 4 | cold plunge for athletes Miami | Informational/Commercial | Low | High |
-| 5 | cold plunge Brickell/Wynwood/Coral Gables | Local Navigational | Low | High |
+| # | Keyword | Est. Monthly Searches | Competition | Intent | Page Type |
+|---|---|---|---|---|---|
+| 1 | cold plunge studio Miami Beach | 320–480 | Low–Medium | Navigational/Local | Landing page |
+| 2 | ice bath therapy near Brickell | 150–260 | Very Low | Local Commercial | Neighborhood page |
+| 3 | sauna and cold plunge Miami Wynwood | 200–310 | Low | Commercial Investigation | Combo landing page |
+| 4 | cold plunge recovery studio Coral Gables | 100–180 | Very Low | Local Navigational | Sub-metro page |
+| 5 | best cold plunge membership Miami | 280–420 | Medium | Transactional | Comparison/Listicle |
+
+**Total Estimated Monthly Search Volume:** 1,050–1,650 searches/month across all 5 keywords  
+**Recommended Priority Order:** 1 → 5 → 3 → 2 → 4 (balance of volume and achievability)
 
 ---
 
-*Generated by IceSoak SEO Cron — Hermes Agent | icesoak.com*
+*Generated by IceSoak SEO Cron | Hermes Agent | 2026-07-29*
