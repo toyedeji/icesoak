@@ -1,6 +1,33 @@
 [build]
   command = "npm run build"
   publish = "out"
+  # Skip the build when a commit cannot possibly change the site.
+  #
+  # Netlify semantics: if this command exits 0 the build is CANCELLED; any other
+  # exit code proceeds. `git diff --quiet` exits 0 when there is NO difference —
+  # so this cancels precisely when every changed path is one the site does not
+  # read.
+  #
+  # It is written as an EXCLUDE list, not an allowlist, and that direction
+  # matters. The obvious form —
+  #     git diff --quiet HEAD^ HEAD -- studios.json questions.json netlify.toml
+  # — cancels whenever those specific files are untouched, which silently means
+  # a change to app/ or lib/ would never deploy at all. Excluding what is
+  # irrelevant fails safe: anything unrecognised builds.
+  #
+  # Excluded:
+  #   scraper/            Python pipeline; runs on CT 170, never shipped to the CDN
+  #   *.md                docs
+  #   slug_registry.json  scraper-only artifact; no app code reads it (verified)
+  #
+  # Everything else — studios.json, questions.json, metros.json, app/, lib/,
+  # components/, netlify.toml, package.json — triggers a normal build. Note that
+  # netlify.toml is deliberately NOT excluded: a redirect change only takes
+  # effect on deploy.
+  #
+  # HEAD^ missing (first commit, or a shallow clone without the parent) makes
+  # git exit non-zero, which builds. Failing toward "build" is the safe default.
+  ignore = "git diff --quiet HEAD^ HEAD -- . ':(exclude)scraper' ':(exclude)*.md' ':(exclude)slug_registry.json'"
 
 [build.environment]
   NODE_VERSION = "22"
@@ -37,7 +64,7 @@
   from = "/studio/city-sweats--wallingford-seattle/"
   to = "/studio/city-sweats---wallingford-seattle/"
   status = 301
-  force = true
+  force = false
 
 # Deduped studio slug — an older data snapshot suffixed a duplicate with "-3";
 # current data holds a single canonical entry.
@@ -45,7 +72,7 @@
   from = "/studio/sweathouz-infrared-sauna-studio-atlanta-3/"
   to = "/studio/sweathouz-infrared-sauna-studio-atlanta/"
   status = 301
-  force = true
+  force = false
 
 # Orphaned studio URL (Belterra location no longer in data). Send to Austin
 # metro landing page to preserve link equity without misidentifying a business.
@@ -53,7 +80,7 @@
   from = "/studio/sweathouz-belterra-contrast-therapy-studio-cedar-park/"
   to = "/cold-plunge/austin/"
   status = 301
-  force = true
+  force = false
 
 # Long-cache hashed static assets.
 [[headers]]
@@ -98,6 +125,48 @@
 # Modality routing for removals: contrast if the studio offered contrast or
 # both hot and cold; otherwise cold-plunge / sauna / infrared-sauna. Studios
 # with cryo only (no vertical page exists) fall back to cold-plunge.
+#
+# ===========================================================================
+# EVERY /studio/ RULE BELOW IS DELIBERATELY force = false. DO NOT "TIDY" THEM
+# BACK TO force = true.
+# ===========================================================================
+#
+# What force does
+#   Netlify applies an unforced redirect ONLY when no file exists at the
+#   requested path. force = true makes the redirect win *over* an existing
+#   file — a shadowing redirect.
+#
+# Why forcing these would be a bug
+#   These 46 slugs were dropped by a scraper that was silently discarding a
+#   tenth to a fifth of the directory every week (the pre-retention full-run
+#   overwrite in scraper/scrape.py). 27 of the 33 "genuine removals" carried a
+#   google_place_id and no website — the profile of a studio that one flaky
+#   Google Maps render failed to return, NOT of a business that closed. A
+#   healthy crawl is expected to re-discover many of them, and because the slug
+#   is derived from (name, search-city) it will regenerate byte-identical.
+#
+#   With force = true, the moment that happens the studio's page exists AND is
+#   permanently unreachable — every request 301s away from it. Worse, it fails
+#   invisibly: a 301 to a plausible city page looks entirely intentional, so
+#   nobody investigates. That is exactly how the churn itself went unnoticed
+#   for weeks.
+#
+# Why unforced is correct in BOTH states
+#   page absent (genuinely gone)  -> redirect fires, no 404 on an indexed URL
+#   page present (re-discovered)  -> file served, redirect lies dormant
+#   Self-healing. No list to maintain, nothing to remember.
+#
+#   Deleting the rules instead would be wrong in the first state: it re-creates
+#   the 404s this section exists to prevent, for the handful that really did
+#   close.
+#
+# The 4 remaining force = true rules in this file (apex/www consolidation and
+# /sitemap.xml -> /sitemap_index.xml) redirect paths that DO exist as files and
+# genuinely need to win. Those must stay forced. The distinction is the point.
+#
+# Enforced, not just documented: scraper/processors/quality_gate.py fails the
+# weekly run (exit 2, no commit, no deploy) if any forced redirect shadows a
+# live studio record, or if any /studio/ redirect target is not a live record.
 # ---------------------------------------------------------------------------
 
 # --- Slug drift: same business, new slug (11 of 12 matched on identical address).
@@ -106,92 +175,94 @@
   from = "/studio/cryo-philadelphia-philadelphia/"
   to = "/studio/cryo-philadelphia-cherry-hill/"
   status = 301
-  force = true
+  force = false
 
 # same address, renamed
 [[redirects]]
   from = "/studio/evolve-cryo-facials-austin/"
   to = "/studio/evolve-cryo-wellness-austin/"
   status = 301
-  force = true
+  force = false
 
 # same address
 [[redirects]]
   from = "/studio/perspire-sauna-studio-scottsdale/"
   to = "/studio/perspire-sauna-studio-phoenix/"
   status = 301
-  force = true
+  force = false
 
 # same address
 [[redirects]]
   from = "/studio/pure-recovery-los-angeles/"
   to = "/studio/pure-recovery-beverly-hills/"
   status = 301
-  force = true
+  force = false
 
 # same address
 [[redirects]]
   from = "/studio/sek-sauna-studio-brentwood/"
   to = "/studio/sek-sauna-studio-nashville/"
   status = 301
-  force = true
+  force = false
 
 # same address
 [[redirects]]
   from = "/studio/sweathouz-bryn-mawr-philadelphia/"
   to = "/studio/sweathouz-bryn-mawr-king-of-prussia/"
   status = 301
-  force = true
+  force = false
 
 # same address
 [[redirects]]
   from = "/studio/sweathouz-infrared-sauna-studio-plano/"
   to = "/studio/sweathouz-infrared-sauna-studio-dallas/"
   status = 301
-  force = true
+  force = false
 
 # same address
 [[redirects]]
   from = "/studio/sweathouz-media-contrast-therapy-studio-king-of-prussia/"
   to = "/studio/sweathouz-media-contrast-therapy-studio-cherry-hill/"
   status = 301
-  force = true
+  force = false
 
 # same address
 [[redirects]]
   from = "/studio/sweathouz-tennyson-contrast-therapy-studio-lakewood/"
   to = "/studio/sweathouz-tennyson-contrast-therapy-studio-denver/"
   status = 301
-  force = true
+  force = false
 
 # same address
 [[redirects]]
   from = "/studio/sweathouz-upper-dublin-contrast-therapy-studio-king-of-prussia/"
   to = "/studio/sweathouz-upper-dublin-contrast-therapy-studio-cherry-hill/"
   status = 301
-  force = true
+  force = false
 
 # same address
 [[redirects]]
   from = "/studio/vihta-sauna-seattle/"
   to = "/studio/vihta-sauna-bellevue/"
   status = 301
-  force = true
+  force = false
 
 # de-duplicated
 [[redirects]]
   from = "/studio/the-cove-denver/"
   to = "/studio/the-cove-sauna-and-cold-plunge-denver/"
   status = 301
-  force = true
+  force = false
 
-# --- UNVERIFIED: matched on name only; neither record carries an address.
-#     Confirm this is the same business before relying on it.
+# --- VERIFIED 2026-07-30: originally flagged UNVERIFIED (name-only match, no
+#     address on either record). Both records in fact carry the SAME
+#     google_place_id (0x865b51e276c230e7:0x24d5389070168f1c), which is Google's
+#     own stable per-place identifier — so this is confirmed the same business.
 [[redirects]]
   from = "/studio/perspire-sauna-studio---kyle-cedar-park/"
   to = "/studio/perspire-sauna-studio---kyle-austin/"
   status = 301
-  force = true
+  force = false
 
 # --- Genuine removals: no counterpart in current data -> parent city page.
 # cold_plunge,sauna
@@ -199,229 +270,270 @@
   from = "/studio/david-jones-and-lisa-jones---recovery-studio-and-visionary-heali/"
   to = "/contrast-therapy/atlanta/"
   status = 301
-  force = true
+  force = false
 
 # cold_plunge,sauna_infrared,sauna
 [[redirects]]
   from = "/studio/eleos-float-spa-float-therapy-infrared-sauna-and-cold-plunge-eva/"
   to = "/contrast-therapy/chicago/"
   status = 301
-  force = true
+  force = false
 
 # sauna
 [[redirects]]
   from = "/studio/sweat-it-off-fitness-oak-park/"
   to = "/sauna/chicago/"
   status = 301
-  force = true
+  force = false
 
 # cold_plunge,sauna
 [[redirects]]
   from = "/studio/the-recovery-studio-by-coach-ness-chicago/"
   to = "/contrast-therapy/chicago/"
   status = 301
-  force = true
+  force = false
 
 # sauna_infrared
 [[redirects]]
   from = "/studio/urban-unwind-wellness---massage-therapy-wellness-services-in-oak/"
   to = "/infrared-sauna/chicago/"
   status = 301
-  force = true
+  force = false
 
 # cryo
 [[redirects]]
   from = "/studio/cryo-boost-plano/"
   to = "/cold-plunge/dallas-fort-worth/"
   status = 301
-  force = true
+  force = false
 
 # sauna
 [[redirects]]
   from = "/studio/halsa-nordic-saunas-fort-worth/"
   to = "/sauna/dallas-fort-worth/"
   status = 301
-  force = true
+  force = false
 
 # cryo
 [[redirects]]
   from = "/studio/icryo-cryotherapy-iv-therapy-fort-worth/"
   to = "/cold-plunge/dallas-fort-worth/"
   status = 301
-  force = true
+  force = false
 
 # sauna
 [[redirects]]
   from = "/studio/perspire-sauna-studio-fort-worth/"
   to = "/sauna/dallas-fort-worth/"
   status = 301
-  force = true
+  force = false
 
 # sauna_infrared
 [[redirects]]
   from = "/studio/perspire-sauna-studio-plano-plano/"
   to = "/infrared-sauna/dallas-fort-worth/"
   status = 301
-  force = true
+  force = false
 
 # cold_plunge,sauna
 [[redirects]]
   from = "/studio/west-plano---sauna-cold-plunge-hot-tub-plano/"
   to = "/contrast-therapy/dallas-fort-worth/"
   status = 301
-  force = true
+  force = false
 
 # cold_plunge,sauna
 [[redirects]]
   from = "/studio/west-plano---saunacold-plungehot-tub-plano/"
   to = "/contrast-therapy/dallas-fort-worth/"
   status = 301
-  force = true
+  force = false
 
 # cold_plunge
 [[redirects]]
   from = "/studio/garden-sauna-denver/"
   to = "/cold-plunge/denver/"
   status = 301
-  force = true
+  force = false
 
 # sauna_infrared,cold_plunge
 [[redirects]]
   from = "/studio/urban-sweat-cherry-creek-denver/"
   to = "/contrast-therapy/denver/"
   status = 301
-  force = true
+  force = false
 
 # cold_plunge,sauna
 [[redirects]]
   from = "/studio/icepass-cold-plunge-sauna-blue-republic-crossfit-los-angeles/"
   to = "/contrast-therapy/los-angeles/"
   status = 301
-  force = true
+  force = false
 
 # cold_plunge,sauna
 [[redirects]]
   from = "/studio/icepass-cold-plunge-sauna-club-saba-cafe-los-angeles/"
   to = "/contrast-therapy/los-angeles/"
   status = 301
-  force = true
+  force = false
 
 # sauna_infrared,sauna
 [[redirects]]
   from = "/studio/optimal-health-wellness---colonics-detox-infrared-sauna-beverly-/"
   to = "/sauna/los-angeles/"
   status = 301
-  force = true
+  force = false
 
 # cold_plunge,sauna
 [[redirects]]
   from = "/studio/recovery-studio-beverly-hills-by-sergey-suvorov-cmt-los-angeles/"
   to = "/contrast-therapy/los-angeles/"
   status = 301
-  force = true
+  force = false
 
 # sauna_infrared,cold_plunge
 [[redirects]]
   from = "/studio/westside-sweat-club-los-angeles/"
   to = "/contrast-therapy/los-angeles/"
   status = 301
-  force = true
+  force = false
 
 # cryo,cold_plunge
 [[redirects]]
   from = "/studio/electric-ice-cryo-south-miami-cryotherapy-cold-therapy-coral-gab/"
   to = "/cold-plunge/miami/"
   status = 301
-  force = true
+  force = false
 
 # cold_plunge,cryo
 [[redirects]]
   from = "/studio/helix-performance-recovery-miami-beach/"
   to = "/cold-plunge/miami/"
   status = 301
-  force = true
+  force = false
 
 # cold_plunge
 [[redirects]]
   from = "/studio/rivera-performance-recovery-miami/"
   to = "/cold-plunge/miami/"
   status = 301
-  force = true
+  force = false
 
 # sauna
 [[redirects]]
   from = "/studio/royal-standard-llc-sauna-miami/"
   to = "/sauna/miami/"
   status = 301
-  force = true
+  force = false
 
 # sauna
 [[redirects]]
   from = "/studio/pure-sweat-sauna-studio-nashville/"
   to = "/sauna/nashville/"
   status = 301
-  force = true
+  force = false
 
 # sauna_infrared,cold_plunge,contrast
 [[redirects]]
   from = "/studio/sweathouz-farragut-contrast-therapy-studio-franklin/"
   to = "/contrast-therapy/nashville/"
   status = 301
-  force = true
+  force = false
 
 # cold_plunge
 [[redirects]]
   from = "/studio/aura-esthetic-spa-sauna-philadelphia/"
   to = "/cold-plunge/philadelphia/"
   status = 301
-  force = true
+  force = false
 
 # sauna
 [[redirects]]
   from = "/studio/aura-sauna-studio-cherry-hill/"
   to = "/sauna/philadelphia/"
   status = 301
-  force = true
+  force = false
 
 # sauna
 [[redirects]]
   from = "/studio/elite-edge-recovery-king-of-prussia/"
   to = "/sauna/philadelphia/"
   status = 301
-  force = true
+  force = false
 
 # sauna_infrared
 [[redirects]]
   from = "/studio/perspire-sauna-studio-media-media/"
   to = "/infrared-sauna/philadelphia/"
   status = 301
-  force = true
+  force = false
 
 # sauna_infrared
 [[redirects]]
   from = "/studio/perspire-sauna-studio-philadelphia-philadelphia/"
   to = "/infrared-sauna/philadelphia/"
   status = 301
-  force = true
+  force = false
 
 # cold_plunge
 [[redirects]]
   from = "/studio/polar-star-spa-luxury-banya-cold-plunge-philadelphia/"
   to = "/cold-plunge/philadelphia/"
   status = 301
-  force = true
+  force = false
 
 # cold_plunge,sauna_infrared,sauna
 [[redirects]]
   from = "/studio/recover-cold-plunge-contrast-therapy-float-spa-and-infrared-saun/"
   to = "/contrast-therapy/philadelphia/"
   status = 301
-  force = true
+  force = false
 
 # (none)
 [[redirects]]
   from = "/studio/recovery-room-iv-therapy-wellness-scottsdale/"
   to = "/cold-plunge/phoenix/"
   status = 301
-  force = true
+  force = false
 
+
+# ---------------------------------------------------------------------------
+# Duplicate-record de-duplication, staged.
+#
+# Three pairs of records in studios.json describe ONE business each, recorded
+# twice under different city labels for a single street address. deduper.py
+# misses them because it keys on name+address and each pair carries different
+# names; processors/identity.py catches them on the address tier.
+#
+# All six pages are LIVE right now. The slug registry resolves a fresh crawl of
+# each address to the canonical slug, so the shadowed record is never re-seen
+# and ages out through the normal missed_runs path — expected to drop around
+# 2026-08-23 (3 consecutive misses at the Sunday cadence).
+#
+# These rules are pre-staged so that transition never produces a 404. They are
+# force = false, which here is not merely preferable but REQUIRED: forcing them
+# would break three live pages immediately. Unforced, each rule is dormant
+# while its page exists and activates by itself the run the record drops out.
+#
+# If you instead merge the pairs by hand (recommended, since it reclaims the
+# duplicate crawl budget), these rules become the correct permanent redirects
+# and need no change.
+# ---------------------------------------------------------------------------
+
+[[redirects]]
+  from = "/studio/sweathouz-fort-worth-fort-worth/"
+  to = "/studio/sweathouz-camp-bowie-fort-worth/"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/studio/sweathouz-vinings-vinings/"
+  to = "/studio/sweathouz-atlanta-atlanta/"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/studio/sweathouz-roswell-roswell/"
+  to = "/studio/sweathouz-alpharetta-alpharetta/"
+  status = 301
+  force = false

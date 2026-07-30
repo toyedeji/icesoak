@@ -1,198 +1,171 @@
-"""
-Unit tests for the partial-run merge logic in scrape.py.
+"""Tests for the studios.json write path in scrape.py.
 
-Tests the four scenarios required by the task:
-  1. Partial run preserves non-targeted metros
-  2. Partial run replaces targeted metro data correctly
-  3. Zero-result protection: 0 studios returned → keep old data, warn
-  4. Full run still overwrites completely
+WHAT CHANGED IN THIS FILE, AND WHY IT MATTERS
+---------------------------------------------
+The previous version of this file reimplemented scrape.py's write logic inline as
+a local `_write_studios()` helper and asserted against that copy. Its fourth
+scenario was:
+
+    def test_full_run_overwrites(self):
+        ...
+        self.assertEqual(merged, fresh)
+        self.assertEqual(len(merged), 1)
+        print("PASS: full run overwrites completely (old=5 records -> new=1 record)")
+
+That test passed, permanently and cheerfully, while describing the exact defect
+that dropped 45 of 239 studios on 2026-07-19 and 23 of 229 on 2026-07-26. It
+codified "the scheduled run throws away everything it did not just see" as
+intended behaviour, and because it tested a COPY of the logic it could never have
+noticed a divergence between the copy and the shipped code either.
+
+Two lessons applied here:
+  1. The assertion is inverted: a full run must now RETAIN.
+  2. The tests call the real functions — scrape.partition_previous and
+     retention.merge_with_previous — not a local re-implementation. A test that
+     mirrors the source cannot detect the source drifting away from it.
 """
-import json
-import logging
 import sys
-import types
 import unittest
 from pathlib import Path
-from unittest.mock import MagicMock, patch
 
-# ---------------------------------------------------------------------------
-# Extract just the write logic from scrape.py without importing crawl4ai etc.
-# We pull the source, isolate the write block, and wrap it in a testable fn.
-# ---------------------------------------------------------------------------
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from processors.retention import merge_with_previous  # noqa: E402
+from scrape import partition_previous  # noqa: E402
 
 EXISTING = [
-    {"id": "d1", "metro": "denver_co",             "name": "Denver Studio 1"},
-    {"id": "d2", "metro": "denver_co",             "name": "Denver Studio 2"},
-    {"id": "p1", "metro": "philadelphia_pa",        "name": "Philly Studio 1"},
-    {"id": "p2", "metro": "philadelphia_pa",        "name": "Philly Studio 2"},
-    {"id": "a1", "metro": "austin_tx",              "name": "Austin Studio 1"},
+    {"id": "d1", "metro": "denver_co",       "name": "Denver Studio 1", "address": "1 D St"},
+    {"id": "d2", "metro": "denver_co",       "name": "Denver Studio 2", "address": "2 D St"},
+    {"id": "p1", "metro": "philadelphia_pa", "name": "Philly Studio 1", "address": "1 P St"},
+    {"id": "p2", "metro": "philadelphia_pa", "name": "Philly Studio 2", "address": "2 P St"},
+    {"id": "a1", "metro": "austin_tx",       "name": "Austin Studio 1", "address": "1 A St"},
 ]
 
 NEW_AUSTIN = [
-    {"id": "a2", "metro": "austin_tx", "name": "Austin Studio 2 (fresh)"},
-    {"id": "a3", "metro": "austin_tx", "name": "Austin Studio 3 (fresh)"},
+    {"id": "a2", "metro": "austin_tx", "name": "Austin Studio 2", "address": "2 A St"},
+    {"id": "a3", "metro": "austin_tx", "name": "Austin Studio 3", "address": "3 A St"},
 ]
 
-_METRO_ALIAS = {
-    "denver":       "denver_co",
-    "denver_co":    "denver_co",
-    "philadelphia": "philadelphia_pa",
-    "philadelphia_pa": "philadelphia_pa",
-    "austin":       "austin_tx",
-    "austin_tx":    "austin_tx",
-}
+
+def write(fresh, metro_filter, previous, **kw):
+    """Exercise the real production path: partition, then merge."""
+    scoped, untouched = partition_previous(previous, metro_filter)
+    merged_scope, stats = merge_with_previous(
+        fresh=fresh, previous=scoped,
+        run_date=kw.pop("run_date", "2026-08-02"),
+        previous_run_date=kw.pop("previous_run_date", "2026-07-26"),
+        **kw,
+    )
+    return untouched + merged_scope, stats
 
 
-def _write_studios(
-    *,
-    studios: list,           # freshly scraped + processed records
-    metro_filter: list[str] | None,
-    out: Path,
-) -> tuple[list, list[str]]:
-    """
-    Mirrors the write logic from scrape.py.
-    Returns (final_records, warning_messages).
-    """
-    warnings: list[str] = []
+class TestFullRun(unittest.TestCase):
+    """The inverted assertion. This is the regression that matters."""
 
-    if metro_filter and out.exists():
-        scraped_metro_ids = {_METRO_ALIAS.get(m.lower(), m.lower()) for m in metro_filter}
-        new_by_metro: dict[str, list] = {mid: [] for mid in scraped_metro_ids}
-        for s in studios:
-            mid = s.get("metro")
-            if mid in new_by_metro:
-                new_by_metro[mid].append(s)
+    def test_full_run_RETAINS_studios_absent_from_the_crawl(self):
+        # A crawl that only saw Denver — Philadelphia and Austin went dark.
+        fresh = [dict(s) for s in EXISTING if s["metro"] == "denver_co"]
 
-        existing: list = json.loads(out.read_text(encoding="utf-8"))
-        kept: list = []
-        replaced_metros: list[str] = []
-        preserved_metros: list[str] = []
-        for s in existing:
-            mid = s.get("metro")
-            if mid not in scraped_metro_ids:
-                kept.append(s)
+        merged, stats = write(fresh, metro_filter=None, previous=EXISTING)
 
-        added: list = []
-        for mid in scraped_metro_ids:
-            fresh = new_by_metro[mid]
-            if fresh:
-                added.extend(fresh)
-                replaced_metros.append(mid)
-            else:
-                old = [s for s in existing if s.get("metro") == mid]
-                kept.extend(old)
-                preserved_metros.append(mid)
-                msg = (
-                    f"WARNING: {mid} returned 0 studios — preserving existing "
-                    f"{len(old)} records rather than wiping."
-                )
-                warnings.append(msg)
-
-        merged = kept + added
-        out.write_text(json.dumps(merged, indent=2, ensure_ascii=False), encoding="utf-8")
-        return merged, warnings
-    else:
-        out.write_text(json.dumps(studios, indent=2, ensure_ascii=False), encoding="utf-8")
-        return studios, warnings
-
-
-class TestMergeLogic(unittest.TestCase):
-
-    def setUp(self):
-        import tempfile
-        self._tmpdir = tempfile.TemporaryDirectory()
-        self.tmp = Path(self._tmpdir.name)
-        self.out = self.tmp / "studios.json"
-        # Write the "existing" studios.json
-        self.out.write_text(json.dumps(EXISTING, indent=2), encoding="utf-8")
-
-    def tearDown(self):
-        self._tmpdir.cleanup()
-
-    # ── Scenario 1: partial run preserves non-targeted metros ────────────────
-    def test_partial_run_preserves_other_metros(self):
-        merged, warnings = _write_studios(
-            studios=NEW_AUSTIN,
-            metro_filter=["austin"],
-            out=self.out,
-        )
         ids = {s["id"] for s in merged}
-        self.assertIn("d1", ids, "Denver studio 1 must be preserved")
-        self.assertIn("d2", ids, "Denver studio 2 must be preserved")
-        self.assertIn("p1", ids, "Philly studio 1 must be preserved")
-        self.assertIn("p2", ids, "Philly studio 2 must be preserved")
-        self.assertEqual(warnings, [], "No warnings expected")
-        print("  PASS: partial run preserves non-targeted metros "
-              f"(total={len(merged)}, denver={sum(1 for s in merged if s['metro']=='denver_co')}, "
-              f"philly={sum(1 for s in merged if s['metro']=='philadelphia_pa')})")
-
-    # ── Scenario 2: partial run replaces targeted metro data ─────────────────
-    def test_partial_run_replaces_targeted_metro(self):
-        merged, warnings = _write_studios(
-            studios=NEW_AUSTIN,
-            metro_filter=["austin"],
-            out=self.out,
+        self.assertEqual(
+            ids, {"d1", "d2", "p1", "p2", "a1"},
+            "a full run must NOT discard studios this crawl did not return — "
+            "this is the 2026-07-19 / 07-26 data loss",
         )
-        austin_records = [s for s in merged if s["metro"] == "austin_tx"]
-        ids = {s["id"] for s in austin_records}
-        self.assertNotIn("a1", ids, "Old Austin record must be replaced")
-        self.assertIn("a2", ids, "New Austin record a2 must appear")
-        self.assertIn("a3", ids, "New Austin record a3 must appear")
-        self.assertEqual(len(austin_records), 2)
-        self.assertEqual(warnings, [])
-        print(f"  PASS: partial run replaces targeted metro "
-              f"(austin_records={len(austin_records)}, ids={sorted(ids)})")
+        self.assertEqual(len(merged), 5)
+        self.assertEqual(stats["reseen"], 2)
+        self.assertEqual(stats["retained"], 3)
+        self.assertEqual(stats["dropped"], 0)
 
-    # ── Scenario 3: zero-result protection ───────────────────────────────────
-    def test_zero_result_preserves_existing_and_warns(self):
-        merged, warnings = _write_studios(
-            studios=[],              # scraper returned nothing for austin
-            metro_filter=["austin"],
-            out=self.out,
-        )
+        for sid in ("p1", "p2", "a1"):
+            rec = next(s for s in merged if s["id"] == sid)
+            self.assertEqual(rec["missed_runs"], 1)
+            self.assertEqual(rec["last_seen_at"], "2026-07-26")
+
+    def test_full_run_still_adds_new_studios(self):
+        fresh = [dict(s) for s in EXISTING] + NEW_AUSTIN
+        merged, stats = write(fresh, metro_filter=None, previous=EXISTING)
+        self.assertEqual(len(merged), 7)
+        self.assertEqual(stats["new"], 2)
+        self.assertEqual(stats["retained"], 0)
+
+    def test_full_run_on_a_first_run_writes_fresh(self):
+        merged, stats = write(NEW_AUSTIN, metro_filter=None, previous=[])
+        self.assertEqual({s["id"] for s in merged}, {"a2", "a3"})
+        self.assertEqual(stats["new"], 2)
+
+
+class TestPartialRun(unittest.TestCase):
+    """The --metros branch keeps its original guarantees, plus retention."""
+
+    def test_non_targeted_metros_pass_through_untouched(self):
+        merged, stats = write(NEW_AUSTIN, metro_filter=["austin"], previous=EXISTING)
         ids = {s["id"] for s in merged}
-        self.assertIn("a1", ids, "Old Austin record must be preserved when 0 returned")
-        self.assertEqual(len(merged), len(EXISTING), "Total count unchanged")
-        self.assertEqual(len(warnings), 1)
-        self.assertIn("austin_tx", warnings[0])
-        self.assertIn("0 studios", warnings[0])
-        print(f"  PASS: zero-result protection (preserved a1, warning='{warnings[0][:60]}…')")
+        for sid in ("d1", "d2", "p1", "p2"):
+            self.assertIn(sid, ids, f"{sid} is outside the targeted metro")
 
-    # ── Scenario 4: full run overwrites completely ────────────────────────────
-    def test_full_run_overwrites(self):
-        fresh = [{"id": "x1", "metro": "denver_co", "name": "Fresh Denver"}]
-        merged, warnings = _write_studios(
-            studios=fresh,
-            metro_filter=None,       # no --metros flag
-            out=self.out,
-        )
-        self.assertEqual(merged, fresh)
-        self.assertEqual(len(merged), 1)
-        self.assertEqual(warnings, [])
-        on_disk = json.loads(self.out.read_text())
-        self.assertEqual(on_disk, fresh, "Disk must match overwritten content")
-        print(f"  PASS: full run overwrites completely "
-              f"(old={len(EXISTING)} records → new={len(merged)} record)")
+        # Untouched records must not be marked as missed — they were not crawled.
+        for sid in ("d1", "d2", "p1", "p2"):
+            rec = next(s for s in merged if s["id"] == sid)
+            self.assertNotIn(
+                "missed_runs", rec,
+                "a metro that was never crawled must not accrue missed_runs",
+            )
 
-    # ── Bonus: no existing file → write fresh even with --metros ─────────────
-    def test_partial_run_no_existing_file_writes_fresh(self):
-        self.out.unlink()            # simulate first run
-        merged, warnings = _write_studios(
-            studios=NEW_AUSTIN,
-            metro_filter=["austin"],
-            out=self.out,
-        )
-        self.assertEqual(merged, NEW_AUSTIN)
-        self.assertEqual(warnings, [])
-        print(f"  PASS: no existing file → writes fresh "
-              f"({len(merged)} records, no warnings)")
+    def test_targeted_metro_gains_new_records(self):
+        merged, _ = write(NEW_AUSTIN, metro_filter=["austin"], previous=EXISTING)
+        austin = {s["id"] for s in merged if s["metro"] == "austin_tx"}
+        self.assertIn("a2", austin)
+        self.assertIn("a3", austin)
+
+    def test_targeted_metro_RETAINS_its_old_records_too(self):
+        """Changed behaviour: the old code rebuilt the metro from scratch.
+
+        Previously a1 was dropped outright because the targeted metro was
+        replaced wholesale. It is now retained with missed_runs=1, on the same
+        reasoning as the full run: one crawl missing a studio is not evidence the
+        studio closed.
+        """
+        merged, stats = write(NEW_AUSTIN, metro_filter=["austin"], previous=EXISTING)
+        ids = {s["id"] for s in merged}
+        self.assertIn("a1", ids)
+        a1 = next(s for s in merged if s["id"] == "a1")
+        self.assertEqual(a1["missed_runs"], 1)
+        self.assertEqual(stats["retained"], 1)
+
+    def test_zero_result_for_the_targeted_metro_aborts(self):
+        """Old behaviour warned and rewrote the file; aborting is stronger.
+
+        Nothing is lost either way — but not writing means no spurious commit,
+        no Netlify deploy, and a non-zero exit the cron log will show.
+        """
+        from processors.retention import RetentionAbort
+        with self.assertRaises(RetentionAbort):
+            write([], metro_filter=["austin"], previous=EXISTING)
+
+    def test_partial_run_with_no_existing_file_writes_fresh(self):
+        merged, stats = write(NEW_AUSTIN, metro_filter=["austin"], previous=[])
+        self.assertEqual({s["id"] for s in merged}, {"a2", "a3"})
+
+
+class TestPartitioning(unittest.TestCase):
+    def test_full_run_puts_everything_in_scope(self):
+        scoped, untouched = partition_previous(EXISTING, None)
+        self.assertEqual(len(scoped), 5)
+        self.assertEqual(untouched, [])
+
+    def test_metro_aliases_resolve(self):
+        for alias in ("philly", "philadelphia", "philadelphia_pa"):
+            scoped, _ = partition_previous(EXISTING, [alias])
+            self.assertEqual({s["id"] for s in scoped}, {"p1", "p2"}, f"alias {alias}")
+
+    def test_multiple_metros(self):
+        scoped, untouched = partition_previous(EXISTING, ["austin", "denver"])
+        self.assertEqual({s["id"] for s in scoped}, {"a1", "d1", "d2"})
+        self.assertEqual({s["id"] for s in untouched}, {"p1", "p2"})
 
 
 if __name__ == "__main__":
-    print("Running merge-logic tests…\n")
-    loader = unittest.TestLoader()
-    loader.sortTestMethodsUsing = None
-    suite = loader.loadTestsFromTestCase(TestMergeLogic)
-    runner = unittest.TextTestRunner(verbosity=0, stream=sys.stdout)
-    result = runner.run(suite)
-    sys.exit(0 if result.wasSuccessful() else 1)
+    unittest.main(verbosity=2)

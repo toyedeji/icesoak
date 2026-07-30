@@ -6,6 +6,8 @@ import unicodedata
 from bs4 import BeautifulSoup
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
 
+from utils.blocking import SearchStats, classify_response
+
 log = logging.getLogger(__name__)
 
 SEARCH_QUERIES = [
@@ -72,22 +74,67 @@ def _card_place(card) -> tuple:
         return href, lat, lng, (idm.group(1) if idm else None)
     return None, None, None, None
 
-# JS to scroll the results feed so Maps lazy-loads more cards
+# JS to scroll the results feed so Maps lazy-loads more cards.
+#
+# The previous version did six fixed 600px steps with a 700ms wait each: a
+# 4.2s time budget with no completion check, so how many cards had been
+# hydrated when it expired was a function of that morning's render latency.
+# That is the single largest contributor to week-over-week inventory churn.
+#
+# This version scrolls to the bottom of the feed and keeps going until the card
+# count stops growing (STABLE_ROUNDS consecutive no-growth polls), Maps prints
+# its end-of-list marker, or a hard ceiling is reached.  Completion is now a
+# property of the DOM, not of the clock.
+#
+# Worst-case wall clock is MAX_ROUNDS * STEP_MS = 12.5s per search; typical
+# convergence is 5-9 rounds. At 180 searches per full run that is ~30-45 min of
+# scrolling, which is within budget for a weekly 03:00 UTC job.
 _SCROLL_JS = """
 (async () => {
     const feed = document.querySelector('[role="feed"]');
     if (!feed) return;
-    for (let i = 0; i < 6; i++) {
-        feed.scrollTop += 600;
-        await new Promise(r => setTimeout(r, 700));
+
+    const CARD_SEL      = '[role="article"], .Nv2PK, .bfdHYd';
+    const MAX_ROUNDS    = 25;   // hard ceiling on wall-clock per search
+    const STABLE_ROUNDS = 3;    // consecutive no-growth polls == fully loaded
+    const MAX_CARDS     = 140;  // Maps caps a single search near ~120 results
+    const STEP_MS       = 500;
+    const END_RE        = /you.{0,3}ve reached the end of the list/i;
+
+    let last = -1, stable = 0;
+
+    for (let round = 0; round < MAX_ROUNDS; round++) {
+        const count = feed.querySelectorAll(CARD_SEL).length;
+
+        if (count >= MAX_CARDS) break;
+        if (END_RE.test(feed.innerText || '')) break;
+
+        if (count === last) {
+            if (++stable >= STABLE_ROUNDS) break;
+        } else {
+            stable = 0;
+            last = count;
+        }
+
+        feed.scrollTo({ top: feed.scrollHeight });
+        await new Promise(r => setTimeout(r, STEP_MS));
     }
 })();
 """
 
 
-async def scrape_google_maps(metro: dict) -> list:
+async def scrape_google_maps(metro: dict, stats: SearchStats | None = None) -> list:
+    """Scrape one metro.  Records every search outcome into `stats`.
+
+    NOTE: cities[:3] deliberately left in place for now — see MIGRATION NOTES.
+    Each metro defines 10-18 cities and only the first three are ever queried,
+    which caps discovery well below the configured footprint.  That is a
+    coverage bug, not a churn bug (it is deterministic), and expanding it in the
+    same change as the retention rework would confound the two.
+    """
     results = []
     cities = metro.get("cities", [metro["name"].split("–")[0]])[:3]
+    metro_id = metro["id"]
 
     async with AsyncWebCrawler(config=_BROWSER) as crawler:
         for query in SEARCH_QUERIES:
@@ -107,12 +154,54 @@ async def scrape_google_maps(metro: dict) -> list:
                             cache_mode=CacheMode.BYPASS,
                         ),
                     )
-                    if res.success:
-                        cards = _parse(res.html, metro, city)
-                        results.extend(cards)
-                        log.info("  → %d cards", len(cards))
                 except Exception as exc:
-                    log.warning("Maps scrape failed (%s/%s): %s", query, city, exc)
+                    # Timeout waiting for [role=feed] lands here, and a consent
+                    # wall or CAPTCHA is the most likely reason the feed never
+                    # appeared — so this is a *failure*, not a quiet zero.
+                    log.warning(
+                        "Maps search ERRORED (%s / %s / %s): %s",
+                        metro_id, query, city, exc,
+                    )
+                    if stats:
+                        stats.record_failure(metro_id, "exception")
+                    await asyncio.sleep(2.5)
+                    continue
+
+                status = getattr(res, "status_code", None)
+                html = getattr(res, "html", None)
+
+                if not res.success:
+                    reason = classify_response(html, status) or "request_failed"
+                    log.warning(
+                        "Maps search FAILED (%s / %s / %s): reason=%s status=%s %s",
+                        metro_id, query, city, reason, status,
+                        getattr(res, "error_message", "") or "",
+                    )
+                    if stats:
+                        stats.record_failure(metro_id, reason)
+                    await asyncio.sleep(2.5)
+                    continue
+
+                # A 200 that is really a consent wall / CAPTCHA / throttle page.
+                reason = classify_response(html, status)
+                if reason:
+                    log.warning(
+                        "Maps search BLOCKED (%s / %s / %s): reason=%s status=%s",
+                        metro_id, query, city, reason, status,
+                    )
+                    if stats:
+                        stats.record_failure(metro_id, reason)
+                    # Back off harder on an anti-bot response than on a plain
+                    # miss: hammering a throttle is what produced the clustered
+                    # metro-shaped losses on 2026-07-19.
+                    await asyncio.sleep(15.0 if reason in ("captcha", "rate_limit") else 5.0)
+                    continue
+
+                cards = _parse(html, metro, city)
+                results.extend(cards)
+                log.info("  → %d cards", len(cards))
+                if stats:
+                    stats.record_success(metro_id, len(cards))
                 await asyncio.sleep(2.5)
 
     return _filter(results)

@@ -38,151 +38,72 @@ log "Auto-clean complete."
 
 # 4. Quality gate — validate the freshly generated studios.json BEFORE any git
 #    commit/push (and therefore before the Netlify deploy).
-#    ABORT checks (exit 1, no push):
-#      CHECK 1: valid-address rate must be >= 60%
-#      CHECK 2: studio count must not drop > 40% vs the last successful run
-#      CHECK 3: NOT all three launch metros may fall below the 3-studio floor
-#    WARN checks (logged, push still proceeds):
-#      - geocoded (lat/lng) rate < 50%
-#      - a single launch metro below the 3-studio floor (that page goes noindex)
-#    On failure: append to quality_gate.log, leave studios.json untouched, exit 1.
+#
+#    This now DELEGATES to scraper/processors/quality_gate.py instead of
+#    reimplementing the thresholds inline.
+#
+#    Why that matters: this script used to carry its own ~120-line bash copy of
+#    the gate and never called quality_gate.py at all — the module's only
+#    consumer was merger.py importing is_valid_studio_name() from it. Two gates
+#    existed, only one ran, and the one that ran was the one nobody edited. That
+#    is the same defect shape as the studios.json write path itself: a guard
+#    living on a branch the scheduled run never takes. Editing
+#    MAX_DROP_FRACTION in the module would have had zero production effect.
+#
+#    ABORT checks (exit 2 -> no push):
+#      - valid-address rate < 60%
+#      - CHURN > 5% of the previous studios disappeared, computed on
+#        disappearances alone regardless of additions. The net-total check below
+#        cannot see substitution: the 2026-07-26 run removed 23 and added 26, a
+#        NET GAIN, and passed. Replayed against real history the churn check
+#        aborts both the 07-19 (18.8%) and 07-26 (10.0%) runs.
+#      - net total dropped > 40% vs HEAD
+#      - >= 50% of records not re-observed by this crawl (retention's blind
+#        spot: a dead crawl reproduces last week's file with a perfect total and
+#        zero churn)
+#      - ALL three launch metros below the 3-studio floor
+#    WARN checks (logged, push proceeds):
+#      - geocoded rate < 50%; address rate 60-80%; >= 25% not re-observed;
+#        a single launch metro below the floor (that page goes noindex)
+#
+#    The address validator inside quality_gate.py was ported verbatim from the
+#    bash version it replaces, so the verdict does not shift: both score the
+#    live 232-record dataset at 225 valid (97%).
 STUDIOS_JSON="${WORK_DIR}/studios.json"
 COUNT_FILE="${SCRAPER_DIR}/.last_studio_count"
 GATE_LOG="${SCRAPER_DIR}/quality_gate.log"
-MIN_ADDRESS_RATE=60      # percent — abort below this valid-address rate
-MAX_DROP_PCT=40          # percent — abort if count drops more than this vs last run
-MIN_STUDIOS_PER_METRO=3  # abort only if ALL launch metros fall below this floor
-GEO_WARN_RATE=50         # percent — warn (don't abort) below this geocoded rate
+TS="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 
 log "Running quality gate..."
 
-# Extract "TOTAL VALID GEOCODED DENVER DFW PHILLY" from the new studios.json.
-# A valid address is non-null / non-empty, contains a digit, is NOT a pure
-# hours/status string, and has either a street keyword or a ", City, ST" tail
-# (so real streets like "Broadway" count). GEOCODED = both lat and lng present.
-GATE_METRICS="$(python3 - "${STUDIOS_JSON}" <<'PY'
-import json, re, sys
-try:
-    data = json.load(open(sys.argv[1], encoding="utf-8"))
-    if not isinstance(data, list):
-        raise ValueError
-except Exception:
-    print("0 0 0 0 0 0"); sys.exit(0)
-total = len(data)
-STREET = re.compile(r"(?i)\b(?:st|street|ave|avenue|blvd|boulevard|dr|drive|rd|road|way|ln|lane|"
-                    r"pkwy|parkway|pike|hwy|highway|ct|court|pl|place|ter|terrace|cir|circle|"
-                    r"ste|suite|unit|trail|trl|loop|sq|square)\b")
-HAS_DIGIT  = re.compile(r"\d")
-CITY_STATE = re.compile(r",\s*[A-Za-z .]+,\s*[A-Z]{2}\b")
-STATUS     = re.compile(r"(?i)\b(?:open|closed|opens|closes|hours|sleeps|temporarily|permanently)\b"
-                        r"|\b\d{1,2}(?::\d{2})?\s*[ap]m\b")
-def is_valid(a):
-    if not a or not a.strip():
-        return False
-    s = a.strip()
-    if not HAS_DIGIT.search(s):
-        return False
-    if STATUS.search(s) and not CITY_STATE.search(s):   # pure hours/status string
-        return False
-    return bool(STREET.search(s) or CITY_STATE.search(s))
-valid = sum(1 for s in data if is_valid(s.get("address")))
-geocoded = sum(1 for s in data if s.get("lat") is not None and s.get("lng") is not None)
-launch = {"denver_co": 0, "dallas_fort_worth_tx": 0, "philadelphia_pa": 0}
-for s in data:
-    m = s.get("metro")
-    if m in launch:
-        launch[m] += 1
-print(total, valid, geocoded,
-      launch["denver_co"], launch["dallas_fort_worth_tx"], launch["philadelphia_pa"])
-PY
-)"
-read -r TOTAL VALID GEOCODED DEN_CT DFW_CT PHL_CT <<< "${GATE_METRICS}"
+# `set -e` would kill the script before the log is written, so capture the code.
+GATE_OUTPUT="$(python3 "${SCRAPER_DIR}/processors/quality_gate.py" "${STUDIOS_JSON}" 2>&1)" && GATE_RC=0 || GATE_RC=$?
 
-TS="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
-
-# Guard: empty / unreadable studios.json — never push nothing.
-if [ -z "${TOTAL:-}" ] || [ "${TOTAL}" -eq 0 ]; then
-    echo "[${TS}] QUALITY GATE FAILED: studios.json empty or unreadable (total=0). Push aborted." >> "${GATE_LOG}"
-    log "QUALITY GATE FAILED: studios.json empty or unreadable. Push aborted."
-    exit 1
-fi
-
-RATE=$(( VALID * 100 / TOTAL ))
-GEO_RATE=$(( GEOCODED * 100 / TOTAL ))
-WARNINGS=()
-
-# Previous count from the last successful run (empty on first run).
-PREV=""
-if [ -f "${COUNT_FILE}" ]; then
-    PREV="$(tr -dc '0-9' < "${COUNT_FILE}")"
-fi
-
-GATE_FAILED=0
-FAIL_MSG=""
-
-# ── CHECK 1 — valid-address rate >= 60% ─────────────────────────────────────
-if [ $(( VALID * 100 )) -lt $(( TOTAL * MIN_ADDRESS_RATE )) ]; then
-    GATE_FAILED=1
-    FAIL_MSG="QUALITY GATE FAILED: valid address rate ${RATE}% below ${MIN_ADDRESS_RATE}% threshold. Push aborted."
-fi
-
-# ── CHECK 2 — studio-count regression vs last run (skipped on first run) ─────
-if [ "${GATE_FAILED}" -eq 0 ] && [ -n "${PREV}" ] && [ "${PREV}" -gt 0 ]; then
-    # "dropped more than 40%" ⇔ new < (100-40)% of prev ⇔ new*100 < prev*(100-MAX_DROP_PCT)
-    if [ $(( TOTAL * 100 )) -lt $(( PREV * (100 - MAX_DROP_PCT) )) ]; then
-        DROP=$(( (PREV - TOTAL) * 100 / PREV ))
-        GATE_FAILED=1
-        FAIL_MSG="QUALITY GATE FAILED: studio count dropped from ${PREV} to ${TOTAL} (${DROP}% drop). Push aborted."
-    fi
-fi
-
-# ── CHECK 3 — per-metro 3-studio floor (abort only if ALL are below) ────────
-METROS_BELOW=0
-BELOW_LIST=""
-for kv in "Denver:${DEN_CT}" "DFW:${DFW_CT}" "Philadelphia:${PHL_CT}"; do
-    nm="${kv%%:*}"; ct="${kv##*:}"
-    if [ "${ct}" -lt "${MIN_STUDIOS_PER_METRO}" ]; then
-        METROS_BELOW=$(( METROS_BELOW + 1 ))
-        BELOW_LIST="${BELOW_LIST}${BELOW_LIST:+, }${nm}=${ct}"
-    fi
-done
-if [ "${GATE_FAILED}" -eq 0 ] && [ "${METROS_BELOW}" -ge 3 ]; then
-    GATE_FAILED=1
-    FAIL_MSG="QUALITY GATE FAILED: all launch metros below ${MIN_STUDIOS_PER_METRO}-studio floor (${BELOW_LIST}). Push aborted."
-elif [ "${METROS_BELOW}" -gt 0 ]; then
-    WARNINGS+=("metro(s) below ${MIN_STUDIOS_PER_METRO}-studio floor (will be noindex): ${BELOW_LIST}")
-fi
-
-# ── WARN — geocoded (map-pin) rate below threshold ──────────────────────────
-if [ $(( GEOCODED * 100 )) -lt $(( TOTAL * GEO_WARN_RATE )) ]; then
-    WARNINGS+=("geocoded rate ${GEO_RATE}% below ${GEO_WARN_RATE}% (map pins sparse)")
-fi
-
-# ── ABORT ───────────────────────────────────────────────────────────────────
-if [ "${GATE_FAILED}" -eq 1 ]; then
-    {
-        echo "[${TS}] ${FAIL_MSG}"
-        echo "    metrics: total=${TOTAL} valid=${VALID} rate=${RATE}% geocoded=${GEOCODED} (${GEO_RATE}%) metros: Denver=${DEN_CT} DFW=${DFW_CT} Philadelphia=${PHL_CT} prev=${PREV:-none}"
-        if [ "${#WARNINGS[@]}" -gt 0 ]; then for w in "${WARNINGS[@]}"; do echo "    WARN: ${w}"; done; fi
-    } >> "${GATE_LOG}"
-    log "${FAIL_MSG}"
-    if [ "${#WARNINGS[@]}" -gt 0 ]; then for w in "${WARNINGS[@]}"; do log "WARN: ${w}"; done; fi
-    log "studios.json left intact on disk and in git; not committing."
-    exit 1
-fi
-
-# ── PASS — record the new count and proceed ─────────────────────────────────
-echo "${TOTAL}" > "${COUNT_FILE}"
+echo "${GATE_OUTPUT}"
 {
-    echo "[${TS}] QUALITY GATE PASSED: ${VALID}/${TOTAL} valid addresses (${RATE}%), ${TOTAL} studios (prev: ${PREV:-none})"
-    if [ "${#WARNINGS[@]}" -gt 0 ]; then for w in "${WARNINGS[@]}"; do echo "    WARN: ${w}"; done; fi
+    echo "[${TS}] quality gate rc=${GATE_RC}"
+    echo "${GATE_OUTPUT}" | sed 's/^/    /'
 } >> "${GATE_LOG}"
-log "QUALITY GATE PASSED: ${VALID}/${TOTAL} valid addresses (${RATE}%), ${TOTAL} studios (prev: ${PREV:-none})"
-if [ "${#WARNINGS[@]}" -gt 0 ]; then for w in "${WARNINGS[@]}"; do log "WARN: ${w}"; done; fi
+
+if [ "${GATE_RC}" -ne 0 ]; then
+    log "QUALITY GATE FAILED (rc=${GATE_RC}). studios.json left intact on disk; not committing."
+    log "To accept a run whose removals have been reviewed and are genuine:"
+    log "  ICESOAK_MAX_CHURN_FRACTION=0.25 bash ${SCRAPER_DIR}/run_scrape.sh"
+    exit 1
+fi
+
+# Record the count for operator reference. No longer load-bearing: the gate reads
+# HEAD:studios.json directly, which lets it diff ID SETS rather than just counts.
+TOTAL="$(python3 -c "import json,sys;print(len(json.load(open(sys.argv[1]))))" "${STUDIOS_JSON}")"
+echo "${TOTAL}" > "${COUNT_FILE}"
+log "QUALITY GATE PASSED: ${TOTAL} studios."
 
 # 5. Commit and push only if outputs changed
 cd "${WORK_DIR}"
-git add studios.json questions.json
+# slug_registry.json pins each studio's live URL to its identity. If it is
+# not committed the registry resets every run and slug churn silently
+# returns — see processors/identity.py.
+git add studios.json questions.json slug_registry.json
 
 if git diff --cached --quiet; then
     log "No changes in studios.json / questions.json — nothing to commit."

@@ -7,26 +7,55 @@ from utils.schema import (
     VALID_SESSION_STYLES, VALID_ACCESS, VALID_AMENITIES,
 )
 from utils.franchise_map import modalities_for_name
+from processors.identity import identity_key
 
 log = logging.getLogger(__name__)
 
 
-def merge_sources(studios: list) -> list:
-    """Validate, clean, assign unique IDs, and return final record list."""
+def merge_sources(studios: list, registry=None) -> list:
+    """Validate, clean, assign stable IDs, and return the final record list.
+
+    ID assignment, and why it is ordered
+    ------------------------------------
+    The previous implementation walked `output` in arrival order and appended
+    "-2"/"-3" to whichever colliding record it happened to meet second:
+
+        for studio in output:
+            base = studio["id"]
+            if base in seen_ids: studio["id"] = f"{base}-{seen_ids[base]}"
+
+    Arrival order is a property of which crawler returned first, so two studios
+    colliding on one base slug could swap ids between runs — silently swapping
+    two live URLs' contents.
+
+    Now: records are processed in `identity_key` order (stable across runs,
+    independent of crawler timing), and a SlugRegistry — if supplied — returns
+    the slug this studio already owns, so a Maps name variant can no longer
+    re-slug an existing studio.  Collision suffixes come from the registry's
+    deterministic ladder.  With no registry the behaviour degrades to the old
+    scheme but keeps the deterministic ordering.
+    """
     output = []
     for studio in studios:
         cleaned = _clean(studio)
         if cleaned:
             output.append(cleaned)
 
-    seen_ids: dict = {}
-    for studio in output:
-        base = studio["id"]
-        if base in seen_ids:
-            seen_ids[base] += 1
-            studio["id"] = f"{base}-{seen_ids[base]}"
-        else:
-            seen_ids[base] = 1
+    # Deterministic, crawler-order-independent claim sequence.
+    ordered = sorted(output, key=identity_key)
+
+    if registry is not None:
+        for studio in ordered:
+            studio["id"] = registry.resolve(studio, studio["id"])
+    else:
+        seen_ids: dict = {}
+        for studio in ordered:
+            base = studio["id"]
+            if base in seen_ids:
+                seen_ids[base] += 1
+                studio["id"] = f"{base}-{seen_ids[base]}"
+            else:
+                seen_ids[base] = 1
 
     log.info("Final record count: %d", len(output))
     return output
@@ -120,6 +149,12 @@ def _clean(studio: dict) -> Optional[dict]:  # noqa: F821
         "google_reviews_count": studio.get("google_reviews_count"),
         "source_urls": studio["source_urls"],
         "last_verified": studio.get("last_verified"),
+        # Retention bookkeeping — authoritatively set by processors/retention.py
+        # at write time.  Declared here so every record carries the full schema
+        # even on a first run, and so _clean() cannot silently drop them if a
+        # future caller passes already-merged records back through.
+        "last_seen_at": studio.get("last_seen_at"),
+        "missed_runs": studio.get("missed_runs") or 0,
     }
 
 
