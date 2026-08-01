@@ -5,6 +5,7 @@ import { SITE } from "@/lib/site";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import JsonLd from "@/components/JsonLd";
+import Analytics from "@/components/Analytics";
 import { organizationSchema, websiteSchema } from "@/lib/jsonld";
 
 const inter = Inter({
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="impact-site-verification" content="4ca40c7d-f208-4ed2-b039-762c1152e9bb"/>
       </head>
       <body>
+        <Analytics />
         {/* Site-wide Organization + WebSite structured data */}
         <JsonLd data={[organizationSchema(), websiteSchema()]} />
         <a href="#main" className="skip-link">Skip to content</a>

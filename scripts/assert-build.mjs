@@ -195,6 +195,85 @@ if (sitemap) {
 check("/editorial-standards/ returns 200", await exists("editorial-standards/index.html"));
 
 // ---------------------------------------------------------------------------
+// 6. GA4. Three values must agree: the ID pinned in lib/analytics.ts, the env
+//    var Netlify supplies, and the ID actually baked into the exported HTML.
+//
+//    Checking only "is a tag present" would not catch the failure that matters.
+//    A tag with the wrong property ID looks like success everywhere — the page
+//    has gtag, the build is green, the pulse collector reports tag_present:
+//    true — while every hit lands in a property nobody is reading. That is
+//    strictly worse than no tag, because no tag is obvious within a day.
+// ---------------------------------------------------------------------------
+const analyticsSrc = await fs.readFile(path.join(ROOT, "lib/analytics.ts"), "utf8");
+const expectedId = analyticsSrc.match(
+  /EXPECTED_GA4_MEASUREMENT_ID\s*=\s*['"]([^'"]+)['"]/,
+)?.[1];
+const envId = process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID || "";
+
+check("lib/analytics.ts pins an expected GA4 ID", Boolean(expectedId));
+check(
+  "NEXT_PUBLIC_GA4_MEASUREMENT_ID is set at build time",
+  envId !== "",
+  "unset — the export ships with no tag on any page and nothing at runtime will " +
+    "say so. Set it in the Netlify environment, or export it for a local build.",
+);
+check(
+  "env var matches the ID pinned in the repo",
+  envId === expectedId,
+  `env is "${envId}", lib/analytics.ts pins "${expectedId}" — one of them is wrong, ` +
+    "and a mismatch means hits go to the wrong GA4 property",
+);
+
+const htmlFiles = [];
+const walk = async (dir) => {
+  for (const e of await fs.readdir(dir, { withFileTypes: true })) {
+    const full = path.join(dir, e.name);
+    if (e.isDirectory()) {
+      if (e.name === "_next") continue;
+      await walk(full);
+    } else if (e.name.endsWith(".html")) htmlFiles.push(full);
+  }
+};
+await walk(OUT);
+
+const loaderRe = /googletagmanager\.com\/gtag\/js\?id=([A-Za-z0-9-]+)/g;
+const configRe = /gtag\(\\?['"]config\\?['"],\s*\\?['"]([A-Za-z0-9-]+)\\?['"]/g;
+
+const noTag = [];
+const wrongId = new Map(); // id -> sample file
+for (const file of htmlFiles) {
+  const html = await fs.readFile(file, "utf8");
+  const rel = path.relative(OUT, file);
+  const loaded = [...html.matchAll(loaderRe)].map((m) => m[1]);
+  const configured = [...html.matchAll(configRe)].map((m) => m[1]);
+
+  if (loaded.length === 0) {
+    noTag.push(rel);
+    continue;
+  }
+  for (const id of [...loaded, ...configured]) {
+    if (id !== expectedId && !wrongId.has(id)) wrongId.set(id, rel);
+  }
+  // A page that loads the library but never calls config sends nothing.
+  if (configured.length === 0) noTag.push(`${rel} (loader but no config call)`);
+}
+
+check(
+  `every exported page carries the GA4 loader (${htmlFiles.length} pages)`,
+  noTag.length === 0,
+  noTag.length
+    ? `${noTag.length} page(s) without a tag, e.g. ${noTag.slice(0, 5).join(", ")}`
+    : "",
+);
+check(
+  "no page references a GA4 property other than the expected one",
+  wrongId.size === 0,
+  wrongId.size
+    ? [...wrongId].map(([id, f]) => `${id} in ${f}`).join("; ")
+    : "",
+);
+
+// ---------------------------------------------------------------------------
 const passed = checks.length - failures.length;
 if (failures.length) {
   console.error(
