@@ -143,6 +143,28 @@ main { display: block; padding: 1.4rem 0 3rem; }
 .breadcrumbs li:not(:last-child)::after { content: "/"; margin-left: 0.3rem; color: var(--color-border); }
 
 /* =====================================================
+   MEDICAL DISCLAIMER (risk_tier A and B, above the fold)
+   =====================================================
+   Deliberately quieter than the answer capsule sitting directly below it — a
+   disclaimer that outshouts the answer trains people to scroll past it. Warm
+   border rather than the site blue so it reads as a different kind of block. */
+.disclaimer {
+  border: 1px solid #F0D9A8;
+  border-left: 3px solid #D9A441;
+  background: rgba(240, 217, 168, 0.16);
+  border-radius: var(--radius);
+  padding: 0.85rem 1.1rem;
+  margin: 1rem 0 0;
+}
+.disclaimer p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--color-text);
+}
+.disclaimer strong { color: var(--color-navy); }
+
+/* =====================================================
    ANSWER CAPSULE
    ===================================================== */
 .capsule {

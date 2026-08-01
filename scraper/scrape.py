@@ -222,7 +222,17 @@ def _apply_sticky_modalities(records: list, prev_path: Path) -> int:
 # did. It does now.
 
 # Owned by the content pass. The scraper must never author or clear these.
-CONTENT_FIELDS = ("capsule", "sections", "faqs", "author", "category", "updated")
+#
+# risk_tier is on this list for a specific reason: the site suppresses the
+# affiliate block and renders a medical disclaimer based on it (see
+# app/guides/[slug]/page.tsx). A harvest that dropped the field would silently
+# put a cold-plunge tub back at the bottom of a page about autoimmune thyroid
+# disease, with no build error and nothing in the diff to notice. This list is a
+# whitelist, so a new content-owned field is invisible to the merge until it is
+# added here.
+CONTENT_FIELDS = (
+    "capsule", "sections", "faqs", "author", "category", "updated", "risk_tier",
+)
 
 # Owned by the scraper. Refreshed from every harvest.
 HARVEST_FIELDS = ("slug", "question", "type", "metro")

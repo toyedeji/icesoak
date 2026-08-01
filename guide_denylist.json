@@ -1,0 +1,34 @@
+{
+  "_comment": "Guides removed from the site on purpose. Read by BOTH lib/data.ts (so generateStaticParams never emits the route again) and scraper/crawlers/questions.py (so a PAA harvest cannot re-mint the slug). A denylisted slug MUST have a matching single-hop 301 in netlify.toml — Netlify applies a force=false redirect only when no static file matches that path, so if the route ever came back the redirect would silently stop firing and the page would return 200 instead. scripts/assert-build.mjs enforces both halves against the built output.",
+  "_removed": "2026-08-01",
+  "slugs": {
+    "what-are-some-hidden-free-gems-in-dallas": {
+      "redirect_to": "/cold-plunge/dallas-fort-worth/",
+      "reason": "Off-topic travel content in a cold-plunge directory"
+    },
+    "where-to-walk-indoors-in-dallas": {
+      "redirect_to": "/cold-plunge/dallas-fort-worth/",
+      "reason": "Off-topic travel content in a cold-plunge directory"
+    },
+    "what-is-the-200-rule-sauna": {
+      "redirect_to": "/guides/what-is-the-200-rule-for-saunas/",
+      "reason": "Exact duplicate question, two URLs"
+    },
+    "does-sauna-help-lower-ldl": {
+      "redirect_to": "/guides/can-saunas-help-lower-cholesterol/",
+      "reason": "Near-duplicate, split across categories"
+    },
+    "what-does-joe-rogan-use-for-cold-plunge": {
+      "redirect_to": "/guides/what-is-the-average-cost-of-a-cold-plunge/",
+      "reason": "Named living person's private health practices, monetized"
+    },
+    "how-cold-is-joe-rogans-ice-bath": {
+      "redirect_to": "/guides/is-a-40-degree-ice-bath-safe/",
+      "reason": "Named living person's private health practices, monetized"
+    },
+    "what-do-10-minutes-in-an-infrared-sauna-do": {
+      "redirect_to": "/guides/what-does-10-minutes-in-a-sauna-do/",
+      "reason": "Near-duplicate. Direction reversed on 2026-08-01: the generic phrasing carries more search volume than the infrared-specific one, so the generic page is the survivor."
+    }
+  }
+}

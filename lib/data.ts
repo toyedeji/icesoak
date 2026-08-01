@@ -4,6 +4,7 @@
 import studiosJson from "@/studios.json";
 import questionsJson from "@/questions.json";
 import metrosJson from "@/data/metros.json";
+import denylistJson from "@/guide_denylist.json";
 import type { Studio, Question, Metro } from "./types";
 
 // Load + normalize. The build must succeed even if data is a stub or empty.
@@ -16,8 +17,29 @@ export const STUDIOS: Studio[] = safeArray<Studio>(studiosJson).filter(
   (s) => s && typeof s.id === "string" && (s.status ?? "active") !== "closed",
 );
 
+/**
+ * Guides deliberately removed from the site — see guide_denylist.json.
+ *
+ * The filter matters even though the records are already gone from
+ * questions.json, because the scraper harvests slugs from live Google PAA and
+ * can re-mint any of them at any time. If that happened, generateStaticParams()
+ * would emit the route again, Next would write out/guides/<slug>/index.html, and
+ * Netlify would serve that file in preference to the force=false 301 — the
+ * redirect would stop firing with nothing to see in the diff.
+ *
+ * scraper/crawlers/questions.py drops the same slugs at the harvest end. This is
+ * the second half of that pair, and the half that actually controls what ships.
+ */
+export const DENIED_GUIDE_SLUGS: ReadonlySet<string> = new Set(
+  Object.keys((denylistJson as { slugs?: Record<string, unknown> }).slugs ?? {}),
+);
+
+export function isDeniedGuide(slug: string): boolean {
+  return DENIED_GUIDE_SLUGS.has(slug);
+}
+
 export const QUESTIONS: Question[] = safeArray<Question>(questionsJson).filter(
-  (q) => q && typeof q.slug === "string",
+  (q) => q && typeof q.slug === "string" && !isDeniedGuide(q.slug),
 );
 
 export const METROS: Metro[] = safeArray<Metro>(metrosJson);

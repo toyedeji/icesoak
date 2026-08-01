@@ -1,12 +1,35 @@
 """Harvest questions from Google PAA and Reddit."""
 import asyncio
+import json
 import logging
 import re
 import unicodedata
+from pathlib import Path
 from bs4 import BeautifulSoup
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
 
+from .relevance import filter_on_topic
+
 log = logging.getLogger(__name__)
+
+# Slugs deliberately removed from the site. A harvest that re-mints one would
+# recreate the static page, and Netlify serves an existing file in preference to
+# a force=false redirect — so the 301 would silently stop firing. lib/data.ts
+# reads the same file for the app half of this guard.
+_DENYLIST_PATH = Path(__file__).resolve().parents[2] / "guide_denylist.json"
+
+
+def _load_denylist() -> set:
+    try:
+        data = json.loads(_DENYLIST_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        # Fail loud but keep harvesting: a missing denylist should not take the
+        # weekly scrape down. The app-side filter in lib/data.ts still holds.
+        log.error("Could not read %s (%s) — harvesting WITHOUT a denylist.",
+                  _DENYLIST_PATH, exc)
+        return set()
+    slugs = data.get("slugs") or {}
+    return set(slugs) if isinstance(slugs, dict) else set(slugs)
 
 _GLOBAL_TOPICS = [
     "cold plunge benefits",
@@ -61,7 +84,11 @@ _BROWSER = BrowserConfig(
 
 async def harvest_questions() -> list:
     questions = []
-    seen: set = set()
+    denied = _load_denylist()
+    # Seeding `seen` with the denylist is what enforces it: every append below is
+    # already guarded by a `slug not in seen` check, so a denied slug is skipped
+    # wherever it surfaces — PAA, local PAA, or Reddit — with no extra branches.
+    seen: set = set(denied)
 
     async with AsyncWebCrawler(config=_BROWSER) as crawler:
         # Global topics
@@ -91,7 +118,21 @@ async def harvest_questions() -> list:
                 seen.add(item["slug"])
                 questions.append(item)
 
-    log.info("Harvested %d questions", len(questions))
+    # Subject-relevance filter, applied to everything — PAA, local PAA and
+    # Reddit alike. Global topics drift too; they just have not embarrassed us
+    # yet. See crawlers/relevance.py for why this is on subject and not metro.
+    questions, rejected = filter_on_topic(questions)
+    if rejected:
+        log.info(
+            "Rejected %d off-topic questions: %s",
+            len(rejected),
+            ", ".join(sorted(q.get("question", "?") for q in rejected)[:10]),
+        )
+
+    log.info(
+        "Harvested %d questions (%d off-topic rejected, %d slugs denylisted)",
+        len(questions), len(rejected), len(denied),
+    )
     return questions
 
 

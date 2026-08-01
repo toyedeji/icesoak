@@ -41,8 +41,11 @@ describe("questions.json integrity", () => {
 });
 
 describe("published guides have real bodies", () => {
-  it("at least 32 guides have body prose (the recovered set)", () => {
-    expect(PUBLISHED_QUESTIONS.length).toBeGreaterThanOrEqual(32);
+  it("at least 25 guides have body prose (the recovered set, less the removals)", () => {
+    // 32 bodies were recovered on 2026-07-28. Seven were dropped on 2026-08-01
+    // by the health-claims audit — two off-topic Dallas travel pages, three
+    // duplicates, and two about a named living person. See guide_denylist.json.
+    expect(PUBLISHED_QUESTIONS.length).toBeGreaterThanOrEqual(25);
   });
 
   it("no PUBLISHED guide has an empty body", () => {

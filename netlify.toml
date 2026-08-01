@@ -1,4 +1,9 @@
 [build]
+  # npm run build = next build → scripts/postexport.mjs → scripts/assert-build.mjs.
+  # That last step is a gate, not a report: it asserts against the exported HTML
+  # in out/ and exits non-zero, so a guide that starts rendering the affiliate
+  # block on a Tier A health page, or a removed guide that comes back as a live
+  # 200 and shadows its 301, fails the deploy instead of shipping.
   command = "npm run build"
   publish = "out"
   # Skip the build when a commit cannot possibly change the site.
@@ -535,5 +540,64 @@
 [[redirects]]
   from = "/studio/sweathouz-roswell-roswell/"
   to = "/studio/sweathouz-alpharetta-alpharetta/"
+  status = 301
+  force = false
+
+# ---------------------------------------------------------------------------
+# Guide removals — 2026-08-01 health-claims audit.
+#
+# Seven of the 32 live guides were dropped: two off-topic Dallas travel pages,
+# three duplicate or near-duplicate questions, and two pages about a named
+# living person's private health practices on a monetized directory. 32 -> 25.
+#
+# Every rule is single-hop and force = false, matching the studio redirects
+# above. force = false is safe here because the pages are genuinely gone from
+# questions.json AND their slugs are in guide_denylist.json, which both
+# lib/data.ts and scraper/crawlers/questions.py honor — so no build can
+# recreate the static file that would shadow these rules. scripts/assert-build.mjs
+# fails the deploy if that stops being true.
+#
+# Source of truth for the pairs is guide_denylist.json. Change them together.
+# ---------------------------------------------------------------------------
+
+[[redirects]]
+  from = "/guides/what-are-some-hidden-free-gems-in-dallas/"
+  to = "/cold-plunge/dallas-fort-worth/"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/guides/where-to-walk-indoors-in-dallas/"
+  to = "/cold-plunge/dallas-fort-worth/"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/guides/what-is-the-200-rule-sauna/"
+  to = "/guides/what-is-the-200-rule-for-saunas/"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/guides/does-sauna-help-lower-ldl/"
+  to = "/guides/can-saunas-help-lower-cholesterol/"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/guides/what-do-10-minutes-in-an-infrared-sauna-do/"
+  to = "/guides/what-does-10-minutes-in-a-sauna-do/"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/guides/what-does-joe-rogan-use-for-cold-plunge/"
+  to = "/guides/what-is-the-average-cost-of-a-cold-plunge/"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/guides/how-cold-is-joe-rogans-ice-bath/"
+  to = "/guides/is-a-40-degree-ice-bath-safe/"
   status = 301
   force = false

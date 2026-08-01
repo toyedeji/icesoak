@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && node scripts/postexport.mjs",
+    "build": "next build && node scripts/postexport.mjs && node scripts/assert-build.mjs",
     "start": "npx serve out",
     "lint": "next lint",
-    "test": "vitest run && python3 scraper/test_merge_questions.py",
+    "test": "python3 scraper/test_merge_questions.py && vitest run",
     "test:js": "vitest run"
   },
   "dependencies": {

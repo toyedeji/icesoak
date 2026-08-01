@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
-import { QUESTIONS } from "@/lib/data";
+import { PUBLISHED_QUESTIONS } from "@/lib/data";
 import { pageMetadata } from "@/lib/seo";
 import { breadcrumbSchema, type Crumb } from "@/lib/jsonld";
 import { abs } from "@/lib/site";
@@ -22,13 +22,19 @@ export const metadata: Metadata = pageMetadata({
 });
 
 export default function GuidesIndex() {
-  const categories = Array.from(new Set(QUESTIONS.map((q) => q.category))).filter(Boolean);
+  // PUBLISHED_QUESTIONS, not QUESTIONS. The index used to link all 52 records,
+  // including the 20 bodyless stubs that are served noindex and kept out of the
+  // sitemap — so the one page most likely to be crawled was feeding Google a
+  // list of pages it had been told to drop, and an ItemList schema asserting
+  // they were items.
+  const guides = PUBLISHED_QUESTIONS;
+  const categories = Array.from(new Set(guides.map((q) => q.category))).filter(Boolean);
   const listSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: "IceSoak guides",
-    numberOfItems: QUESTIONS.length,
-    itemListElement: QUESTIONS.map((q, i) => ({
+    numberOfItems: guides.length,
+    itemListElement: guides.map((q, i) => ({
       "@type": "ListItem",
       position: i + 1,
       url: abs(`/guides/${q.slug}/`),
@@ -48,7 +54,7 @@ export default function GuidesIndex() {
       </p>
 
       {categories.map((cat) => {
-        const items = QUESTIONS.filter((q) => q.category === cat);
+        const items = guides.filter((q) => q.category === cat);
         return (
           <section key={cat} className="section">
             <h2>{modalityLabel(cat) === cat ? labelFor(cat) : modalityLabel(cat)}</h2>
@@ -66,9 +72,15 @@ export default function GuidesIndex() {
   );
 }
 
+// Any category missing from this map renders its raw slug as an <h2>, which is
+// how "ice-bath", "denver-wellness" and "dallas-lifestyle" ended up as visible
+// headings on the index. denver-wellness was folded into contrast-therapy and
+// dallas-lifestyle emptied out in the 2026-08-01 removals; ice-bath is a real
+// category and just needed a label.
 function labelFor(cat: string): string {
   const map: Record<string, string> = {
     "cold-plunge": "Cold plunge",
+    "ice-bath": "Ice baths",
     sauna: "Sauna",
     "contrast-therapy": "Contrast therapy",
     comparison: "Comparisons",

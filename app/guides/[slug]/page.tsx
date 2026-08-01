@@ -4,18 +4,26 @@ import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import AnswerCapsule from "@/components/AnswerCapsule";
 import AffiliateSection from "@/components/AffiliateSection";
+import MedicalDisclaimer from "@/components/MedicalDisclaimer";
 import InternalLinks from "@/components/InternalLinks";
 import JsonLd from "@/components/JsonLd";
-import { QUESTIONS, questionBySlug, hasGuideBody } from "@/lib/data";
+import { QUESTIONS, questionBySlug, hasGuideBody, isDeniedGuide } from "@/lib/data";
+import { showsAffiliate, showsDisclaimer } from "@/lib/riskTier";
 import { GUIDE_FAQS } from "@/lib/guideFAQs";
 import { pageMetadata, clamp } from "@/lib/seo";
 import { articleSchema, faqSchema, breadcrumbSchema, type Crumb } from "@/lib/jsonld";
 import { formatDate } from "@/lib/format";
+import { SITE } from "@/lib/site";
 
 type P = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {
-  return QUESTIONS.map((q) => ({ slug: q.slug }));
+  // The isDeniedGuide() filter is redundant with the one in lib/data.ts and is
+  // kept deliberately. This is the exact line that decides whether a removed
+  // guide gets a static file written for it, and an existing file shadows the
+  // force = false 301 in netlify.toml. Cheap insurance at the one place it
+  // matters. See guide_denylist.json.
+  return QUESTIONS.filter((q) => !isDeniedGuide(q.slug)).map((q) => ({ slug: q.slug }));
 }
 
 export async function generateMetadata({ params }: P): Promise<Metadata> {
@@ -65,13 +73,19 @@ export default async function Page({ params }: P) {
       <Breadcrumbs crumbs={crumbs} />
       <article className="prose">
         <h1>{q.question}</h1>
-        {(q.author || updated) && (
-          <p className="byline">
-            {q.author ? `By ${q.author}` : ""}
-            {q.author && updated ? " · " : ""}
-            {updated ? `Last updated ${updated}` : ""}
-          </p>
-        )}
+        {/*
+          Was "By IceSoak Editorial · Last updated July 6, 2026" on all 32
+          guides. There is no editorial body and no medical reviewer, and the
+          uniform date was an artifact of bulk generation rather than a real
+          revision. Both halves now say what is actually true, and the
+          not-reviewed claim links to the page that explains it.
+        */}
+        <p className="byline">
+          Compiled by {q.author || SITE.editor} ·{" "}
+          <Link href="/editorial-standards/">Not medically reviewed</Link>
+          {updated ? ` · Last updated ${updated}` : ""}
+        </p>
+        {showsDisclaimer(q.risk_tier) && <MedicalDisclaimer tier={q.risk_tier!} />}
         <AnswerCapsule text={q.capsule} />
 
         {(q.sections ?? []).map((sec) => (
@@ -109,7 +123,7 @@ export default async function Page({ params }: P) {
 
       <InternalLinks type="guide" slug={q.slug} />
 
-      <AffiliateSection type="general" />
+      {showsAffiliate(q.risk_tier) && <AffiliateSection type="general" />}
     </div>
   );
 }

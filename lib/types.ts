@@ -56,6 +56,22 @@ export interface Faq {
   a: string;
 }
 
+/**
+ * Editorial risk tier. Drives affiliate suppression and the medical
+ * disclaimer — see app/guides/[slug]/page.tsx.
+ *
+ *   A  condition-specific health claims (Hashimoto's, BP, cholesterol, cortisol)
+ *   B  safety thresholds and dosing (temperatures, durations, frequency limits)
+ *   C  mechanism and efficacy
+ *   D  commercial and neutral
+ *   E  editorial judgement, no health risk
+ *
+ * Optional because bodyless stubs have no tier: they are served noindex and
+ * never reach the guide template's gated blocks. Absent is treated as
+ * "suppress" everywhere, so a missing tier fails closed.
+ */
+export type RiskTier = "A" | "B" | "C" | "D" | "E";
+
 export interface Question {
   slug: string;
   question: string;
@@ -65,4 +81,5 @@ export interface Question {
   capsule: string;
   sections: QuestionSection[];
   faqs?: Faq[];
+  risk_tier?: RiskTier;
 }
