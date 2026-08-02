@@ -13,6 +13,13 @@
 // remediation from shipping over copy that has not been written yet.
 import { promises as fs } from "node:fs";
 import path from "node:path";
+import {
+  normalize,
+  hasAffiliate,
+  hasDisclaimer,
+  hasForbiddenByline,
+  FORBIDDEN_BYLINE,
+} from "./htmlAssertions.mjs";
 
 const OUT = path.resolve("out");
 const ROOT = path.resolve(".");
@@ -25,7 +32,18 @@ function check(name, ok, detail = "") {
   if (!ok) failures.push(detail ? `${name}\n      ${detail}` : name);
 }
 
+
+
 async function read(rel) {
+  try {
+    return normalize(await fs.readFile(path.join(OUT, rel), "utf8"));
+  } catch {
+    return null;
+  }
+}
+
+/** Unnormalized, for assertions that must see the bytes as shipped. */
+async function readRaw(rel) {
   try {
     return await fs.readFile(path.join(OUT, rel), "utf8");
   } catch {
@@ -33,14 +51,8 @@ async function read(rel) {
   }
 }
 
-const exists = async (rel) => (await read(rel)) !== null;
+const exists = async (rel) => (await readRaw(rel)) !== null;
 
-// The affiliate block's own heading and the sponsored links it wraps. Matching
-// both means a partial render (heading kept, cards dropped, or vice versa)
-// still trips the gate.
-const AFFILIATE_MARKERS = [">Practice at Home<", 'rel="sponsored'];
-const hasAffiliate = (html) => AFFILIATE_MARKERS.some((m) => html.includes(m));
-const hasDisclaimer = (html) => html.includes('aria-label="Medical disclaimer"');
 
 const guidePath = (slug) => `guides/${slug}/index.html`;
 
@@ -110,7 +122,8 @@ for (const q of published) {
   );
   check(
     `${q.slug} no longer claims an editorial body`,
-    !html.includes("IceSoak Editorial"),
+    !hasForbiddenByline(html),
+    `the page still renders "${FORBIDDEN_BYLINE}"`,
   );
 }
 
@@ -242,7 +255,7 @@ const configRe = /gtag\(\\?['"]config\\?['"],\s*\\?['"]([A-Za-z0-9-]+)\\?['"]/g;
 const noTag = [];
 const wrongId = new Map(); // id -> sample file
 for (const file of htmlFiles) {
-  const html = await fs.readFile(file, "utf8");
+  const html = normalize(await fs.readFile(file, "utf8"));
   const rel = path.relative(OUT, file);
   const loaded = [...html.matchAll(loaderRe)].map((m) => m[1]);
   const configured = [...html.matchAll(configRe)].map((m) => m[1]);
