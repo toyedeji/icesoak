@@ -33,14 +33,20 @@ export default function Home() {
           <h2>Browse by metro</h2>
           <div className="tiles">
             {METROS.map((m) => {
-              const count = STUDIOS.filter((s) => s.metro === m.metro).length;
+              // Count cold-plunge studios only, so the tile matches what the
+              // destination /cold-plunge/<slug>/ page actually lists. Counting
+              // every modality here would read as 30 studios but the clicked
+              // page would show 18 — the mismatch this fix exists to end.
+              const count = STUDIOS.filter(
+                (s) => s.metro === m.metro && (s.modalities ?? []).includes("cold_plunge"),
+              ).length;
               return (
                 <Link key={m.slug} className="tile" href={`/cold-plunge/${m.slug}/`}>
                   <strong>
                     {m.name}, {m.state}
                   </strong>
                   <span className="tile__count">
-                    {count} {count === 1 ? "studio" : "studios"}
+                    {count} cold plunge {count === 1 ? "studio" : "studios"}
                   </span>
                   <span className="tile__blurb">{m.blurb}</span>
                 </Link>

@@ -2,6 +2,29 @@ import { AFFILIATE_PRODUCTS, type AffiliateProduct } from "@/lib/affiliates";
 
 type SectionType = "cold_plunge" | "sauna" | "general";
 
+/**
+ * The visible button text for a product.
+ *
+ * Half the products in AFFILIATE_PRODUCTS link to amazon.com; the rest point
+ * straight at the merchant (Plunge via Impact.com, Sweaty Yeti direct). Every
+ * button used to say "View on Amazon →" regardless, which was both a lie on
+ * the merchant-direct rows and a wasted trust signal: a shopper who recognises
+ * the Plunge brand is more likely to click a "View at Plunge" button than
+ * one that mis-labels itself as Amazon.
+ */
+function ctaLabelFor(url: string, brand: string): string {
+  try {
+    const host = new URL(url).hostname.toLowerCase();
+    if (host.includes("amazon.")) return "View on Amazon →";
+    if (host.includes("plunge.")) return "View at Plunge →";
+    if (host.includes("sweatyyeti")) return "View at Sweaty Yeti →";
+    if (host.includes("icebarrel")) return "View at Ice Barrel →";
+    return `View at ${brand} →`;
+  } catch {
+    return `View at ${brand} →`;
+  }
+}
+
 function productsForType(type: SectionType): AffiliateProduct[] {
   if (type === "cold_plunge") {
     return AFFILIATE_PRODUCTS.filter(
@@ -50,7 +73,7 @@ export default function AffiliateSection({ type }: { type: SectionType }) {
               target="_blank"
               rel="sponsored noopener noreferrer"
             >
-              View on Amazon →
+              {ctaLabelFor(p.amazonUrl, p.brand)}
             </a>
           </div>
         ))}
