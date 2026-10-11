@@ -262,11 +262,24 @@ def merge_with_previous(
     # exact place it can go wrong, and a silently duplicated id is precisely the
     # class of defect this whole change exists to stop shipping.
     id_counts: dict = {}
+    id_records: dict = {}
     for record in merged:
         rid = record.get("id")
         id_counts[rid] = id_counts.get(rid, 0) + 1
+        id_records.setdefault(rid, []).append(record)
     collisions = {rid: n for rid, n in id_counts.items() if n > 1}
     if collisions:
+        # Dump the colliding records so the abort cause is diagnosable without
+        # another full run. Each entry: slug | identity_key | address | place_id | source_urls.
+        detail_lines = []
+        for rid in sorted(collisions):
+            detail_lines.append(f"  [{rid}] {len(id_records[rid])} records:")
+            for r in id_records[rid]:
+                detail_lines.append(
+                    f"    identity={identity_key(r)!r} addr={r.get('address')!r} "
+                    f"place={r.get('google_place_id')!r} sources={r.get('source_urls')}"
+                )
+        log.error("Collision detail:\n%s", "\n".join(detail_lines))
         raise RetentionAbort(
             f"merge produced {len(collisions)} duplicated studio id(s): "
             f"{sorted(collisions)[:5]} — refusing to write. Two records sharing "
