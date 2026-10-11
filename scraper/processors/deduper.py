@@ -2,39 +2,65 @@ import logging
 import re
 from typing import Optional
 
+from processors.identity import all_identity_keys
+
 log = logging.getLogger(__name__)
 
 
 def deduplicate(studios: list) -> list:
-    """Deduplicate by google_place_id first, then by normalised name+address."""
-    by_place_id: dict = {}
-    by_name_addr: dict = {}
-    orphans: list = []
+    """Collapse records that refer to the same business.
+
+    Groups by any shared identity key — place_id, (metro, street-first-line),
+    or (metro, name) — using union-find over `all_identity_keys()`. The old
+    place-id-then-name+address pipeline missed the case the 2026-10-11 run
+    exposed: a franchise crawler record (addr only) and a Google-Maps record
+    (place_id + addr) for the same studio ended up in different indexes, and
+    the reconciliation step only dropped the name+addr duplicate when its
+    key exactly matched the place-indexed record's name+addr. With slight
+    formatting differences (whitespace, suite number punctuation) both
+    survived; the merger then handed both the same slug and retention aborted.
+    """
+    # Union-find over records keyed by their identity keys.
+    parent: dict = {}  # key -> representative record (dict object)
+
+    def find_root(record: dict) -> dict:
+        """Follow the chain to the current root record for this one."""
+        root = record
+        while root.get("_dedup_merged_into") is not None:
+            root = root["_dedup_merged_into"]
+        return root
 
     for studio in studios:
-        place_id = studio.get("google_place_id")
-        name_key = _name_addr_key(studio)
-
-        if place_id:
-            if place_id in by_place_id:
-                _merge_into(by_place_id[place_id], studio)
-            else:
-                by_place_id[place_id] = studio
-        elif name_key:
-            if name_key in by_name_addr:
-                _merge_into(by_name_addr[name_key], studio)
-            else:
-                by_name_addr[name_key] = studio
+        keys = all_identity_keys(studio)
+        matched_root = None
+        for k in keys:
+            if k in parent:
+                candidate = find_root(parent[k])
+                if matched_root is None:
+                    matched_root = candidate
+                elif candidate is not matched_root:
+                    # Two previously-independent groups bridged by this record;
+                    # unify them.
+                    _merge_into(matched_root, candidate)
+                    candidate["_dedup_merged_into"] = matched_root
+        if matched_root is None:
+            # New business; the record is its own root.
+            matched_root = studio
         else:
-            orphans.append(studio)
+            _merge_into(matched_root, studio)
+        for k in keys:
+            parent[k] = matched_root
 
-    # Prevent double-counting records that appear in both indexes
-    place_id_name_keys = {_name_addr_key(s) for s in by_place_id.values()}
-    result = list(by_place_id.values())
-    for key, studio in by_name_addr.items():
-        if key not in place_id_name_keys:
-            result.append(studio)
-    result.extend(orphans)
+    # Collect unique roots and strip the internal marker.
+    seen_ids = set()
+    result = []
+    for root in parent.values():
+        actual_root = find_root(root)
+        rid = id(actual_root)
+        if rid not in seen_ids:
+            seen_ids.add(rid)
+            actual_root.pop("_dedup_merged_into", None)
+            result.append(actual_root)
 
     log.info("Deduplication: %d → %d records", len(studios), len(result))
     return result
