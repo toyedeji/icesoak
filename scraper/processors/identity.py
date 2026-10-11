@@ -172,6 +172,11 @@ class SlugRegistry:
     def __init__(self, mapping: Optional[dict] = None):
         self._by_key: dict = dict(mapping or {})
         self._taken: set = set(self._by_key.values())
+        # Proximity-tier index: normalized name -> list of (metro, lat, lng, slug).
+        # Populated only by seed_fallback_tiers() against HEAD. The resolver
+        # consults it as a last-chance match before allocating a new slug — see
+        # resolve() for the when-and-why. Not persisted; rebuilt per run.
+        self._by_proximity: dict = {}
 
     # ── construction ────────────────────────────────────────────────────────
 
@@ -302,7 +307,81 @@ class SlugRegistry:
                 self._by_key[k] = slug
                 added += 1
             self._taken.add(slug)
+
+            # Third seeding tier: normalized-name + metro + coordinates. Used
+            # by resolve() when primary and addr tiers both miss — the exact
+            # case where a studio shifts place_id and address between runs
+            # (Perspire chain-page restructure, SweatHouz vendor-page addresses
+            # mangled on crawl). Only seeded when the HEAD record has coords;
+            # otherwise there is nothing for the proximity check to measure.
+            lat = studio.get("lat")
+            lng = studio.get("lng")
+            if lat is None or lng is None:
+                continue
+            metro = _norm(studio.get("metro"))
+            name_key = _norm(studio.get("name"))
+            if not name_key:
+                continue
+            self._by_proximity.setdefault(name_key, []).append(
+                (metro, float(lat), float(lng), slug)
+            )
         return added
+
+    @staticmethod
+    def _coords_distance_m(lat1: float, lng1: float, lat2: float, lng2: float) -> float:
+        """Approximate great-circle distance in metres.
+
+        Equirectangular projection — accurate to a few metres at <5km and well
+        below the 100m threshold we actually compare against. Avoids importing
+        math.sin/cos/asin per lookup.
+        """
+        import math
+        lat_mid = math.radians((lat1 + lat2) / 2.0)
+        x = math.radians(lng2 - lng1) * math.cos(lat_mid)
+        y = math.radians(lat2 - lat1)
+        return math.hypot(x, y) * 6371000.0
+
+    def _match_by_proximity(self, studio: dict, threshold_m: float = 100.0) -> Optional[str]:
+        """Return an existing slug if a HEAD studio with the same normalized
+        name sits within `threshold_m` metres of this record. None otherwise.
+
+        Why: a chain re-crawled on a different date can arrive with a changed
+        place_id and a vendor-page address that geocodes elsewhere — same
+        business, different identity tiers. If the normalized name and the
+        location both match a HEAD record, that is the same business, and the
+        existing slug must be preserved rather than allocated "-2".
+        """
+        lat = studio.get("lat")
+        lng = studio.get("lng")
+        if lat is None or lng is None:
+            return None
+        try:
+            lat_f = float(lat)
+            lng_f = float(lng)
+        except (TypeError, ValueError):
+            return None
+        name_key = _norm(studio.get("name"))
+        if not name_key:
+            return None
+        candidates = self._by_proximity.get(name_key, ())
+        if not candidates:
+            return None
+        metro = _norm(studio.get("metro"))
+        best_slug: Optional[str] = None
+        best_dist: float = threshold_m
+        for cand_metro, cand_lat, cand_lng, cand_slug in candidates:
+            # Metro must match too — two Perspire Sauna Studios 2 miles apart in
+            # the same city are the same chain but different studios, which the
+            # proximity check correctly separates. Metro mismatch guards the
+            # degenerate case where two different cities happen to share a chain
+            # location name.
+            if cand_metro and metro and cand_metro != metro:
+                continue
+            dist = self._coords_distance_m(lat_f, lng_f, cand_lat, cand_lng)
+            if dist < best_dist:
+                best_dist = dist
+                best_slug = cand_slug
+        return best_slug
 
     # ── use ─────────────────────────────────────────────────────────────────
 
@@ -315,6 +394,15 @@ class SlugRegistry:
         the existing slug via the weaker-tier entry.  When a match is found
         at a weaker tier, the stronger tiers of the fresh record are also
         recorded as aliases so the next run short-circuits on the primary.
+
+        Last-chance fallback — proximity tier: if every explicit identity key
+        misses, consult the normalized-name + metro + coords index built by
+        seed_fallback_tiers(). A fresh record whose name matches a HEAD
+        record's name and whose coordinates sit within 100m of HEAD's is the
+        same business even if its place_id and address have drifted. This
+        prevents the Perspire / SweatHouz class of regression where a
+        re-crawled chain location acquired a different Google Maps place_id
+        and ended up at "-2".
         """
         keys = all_identity_keys(studio)
 
@@ -327,6 +415,14 @@ class SlugRegistry:
                     if alias not in self._by_key:
                         self._by_key[alias] = existing
                 return existing
+
+        # Proximity-tier match — same name, same metro, within 100m.
+        existing = self._match_by_proximity(studio)
+        if existing:
+            for alias in keys:
+                if alias not in self._by_key:
+                    self._by_key[alias] = existing
+            return existing
 
         # No match at any tier — allocate a fresh slug.
         slug = self._first_free(proposed_slug)
