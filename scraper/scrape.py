@@ -434,6 +434,31 @@ async def run(
         geo_stats["failed"], geo_stats["no_address"],
     )
 
+    # ── Drop fresh records that have neither coordinates nor a place_id ──────
+    #
+    # A record that failed geocode (bad vendor-page address) and has no
+    # google_place_id (Google Maps never found it) carries no stable identity
+    # the retention step can match against HEAD. If kept, its identity_key
+    # falls back to the normalized street which almost never matches HEAD's
+    # Google-Maps-verified address, so HEAD is treated as disappeared and the
+    # fresh record claims a "<slug>-2" variant. On the 2026-10-10 run that
+    # pattern alone produced four of the fifteen drops. Dropping these fresh
+    # records lets HEAD retain through the normal missed_runs cycle (three
+    # misses before it is actually removed), which is the behaviour we want.
+    before = len(studios)
+    studios = [
+        s for s in studios
+        if (s.get("lat") is not None and s.get("lng") is not None)
+        or s.get("google_place_id")
+    ]
+    rejected_no_identity = before - len(studios)
+    if rejected_no_identity:
+        log.warning(
+            "Dropped %d fresh records with no coords and no google_place_id "
+            "(usually vendor-page bad addresses — HEAD retains via missed_runs)",
+            rejected_no_identity,
+        )
+
     # ── Write studios.json ───────────────────────────────────────────────────
     #
     # ONE path for both full and partial runs. The bug this replaces was
