@@ -601,3 +601,49 @@
   to = "/guides/is-a-40-degree-ice-bath-safe/"
   status = 301
   force = false
+
+# 2026-10-11 wrong-city removal: studios whose place_id resolved to
+# a real business outside the metro we had assigned them to (addresses mangled
+# to the metro state during the scrape).
+[[redirects]]
+  from = "/studio/recovery-studio-spa-aurora/"
+  to = "/cold-plunge/denver/"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/studio/the-recovery-room-oak-park/"
+  to = "/cold-plunge/chicago/"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/studio/sweathouz-national-landing-contrast-therapy-studio-aurora/"
+  to = "/cold-plunge/denver/"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/studio/sweathouz-pike-and-rose-contrast-therapy-studio-cherry-hill/"
+  to = "/cold-plunge/denver/"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/studio/reset-sauna-plunge-cherry-hill/"
+  to = "/cold-plunge/philadelphia/"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/studio/bluecube-cold-plunge-tubs-redmond/"
+  to = "/cold-plunge/seattle/"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/studio/cold-plunge-studios-evanston/"
+  to = "/cold-plunge/chicago/"
+  status = 301
+  force = false
+

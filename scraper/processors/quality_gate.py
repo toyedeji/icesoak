@@ -11,6 +11,7 @@ Exit codes:
 """
 
 import json
+import math
 import os
 import re
 import subprocess
@@ -54,6 +55,16 @@ ABORT_STALE_FRACTION = 0.50
 
 # Abort if ANY launch metro has fewer than this many studios.
 MIN_STUDIOS_PER_METRO = 3
+
+# Abort if any studio sits further than this from its metro's center. The
+# 2026-10-11 publish shipped seven studios whose Google Maps records had the
+# right chain name but a different physical location — e.g. "SweatHouz National
+# Landing" in Arlington VA listed under denver_co at 2396 km from Denver, and
+# "Cold Plunge Studios" in Carmel IN listed under chicago_il at 245 km from
+# Chicago. The scraper writes the metro ID based on which crawler-pass found
+# the record, not where the record actually is; without this check a Maps
+# result for a city-name collision in another state slides through unchallenged.
+MAX_STUDIO_KM_FROM_METRO = 60.0
 
 # The three launch metros that must all meet MIN_STUDIOS_PER_METRO.
 LAUNCH_METROS = {
@@ -182,6 +193,93 @@ _VERTICAL_PREFIXES = ("/cold-plunge/", "/sauna/", "/infrared-sauna/", "/contrast
 def _studio_slug(path: str) -> Optional[str]:
     m = _STUDIO_PATH_RE.match(path.strip())
     return m.group(1) if m else None
+
+
+def _haversine_km(lat1: float, lng1: float, lat2: float, lng2: float) -> float:
+    """Great-circle distance in kilometres. Only used for the location check."""
+    r = 6371.0
+    phi1 = math.radians(lat1); phi2 = math.radians(lat2)
+    dphi = math.radians(lat2 - lat1); dlam = math.radians(lng2 - lng1)
+    a = math.sin(dphi / 2) ** 2 + math.cos(phi1) * math.cos(phi2) * math.sin(dlam / 2) ** 2
+    return 2 * r * math.asin(math.sqrt(a))
+
+
+_ADDR_STATE_RE = re.compile(r",\s*([A-Z]{2})\s*(?:\d{5}(?:-\d{4})?)?\s*$")
+
+
+def check_studio_locations(studios: list, metros_json_path: Path) -> dict:
+    """Reject studios whose coordinates or address state put them in the wrong
+    metro.
+
+    Two independent rules, both HARD aborts:
+
+      1. If the studio has coordinates and sits more than MAX_STUDIO_KM_FROM_METRO
+         from the metro's center, it is not in that metro — Fort Collins is not
+         in Denver, Carmel IN is not in Chicago, Arlington VA is not in Denver.
+
+      2. If the studio's address ends with ", XX" and that two-letter state does
+         not match the metro's state, same verdict — the scraper has overwritten
+         the record's state with the metro's and left the city stale (the 2026-
+         10-11 run wrote "Arlington, CO 22202" where ZIP 22202 is Virginia).
+
+    If metros.json is unreadable, degrade to a WARN rather than silently pass:
+    the gate's job is to say so when a rule cannot run.
+    """
+    aborts: list = []
+    warns: list = []
+    report: list = []
+
+    try:
+        metros_raw = json.loads(metros_json_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        warns.append(
+            f"could not read {metros_json_path} ({exc}) — location rule cannot "
+            f"run; new wrong-city records may ship unchallenged."
+        )
+        return {"aborts": aborts, "warns": warns, "report": report}
+
+    metros = {m["metro"]: m for m in metros_raw if isinstance(m, dict)}
+
+    violations: list = []
+    for s in studios:
+        metro_id = s.get("metro")
+        m = metros.get(metro_id)
+        if not m:
+            violations.append((s.get("id"), metro_id, "unknown metro"))
+            continue
+        reasons = []
+        lat = s.get("lat"); lng = s.get("lng")
+        if lat is not None and lng is not None:
+            try:
+                d = _haversine_km(float(lat), float(lng), m["lat"], m["lng"])
+                if d > MAX_STUDIO_KM_FROM_METRO:
+                    reasons.append(f"{d:.0f}km from {m['name']} center")
+            except (TypeError, ValueError):
+                pass
+        addr = s.get("address") or ""
+        addr_match = _ADDR_STATE_RE.search(addr)
+        if addr_match:
+            addr_state = addr_match.group(1)
+            if addr_state != m["state"]:
+                reasons.append(f"address state {addr_state} ≠ metro state {m['state']}")
+        if reasons:
+            violations.append((s.get("id"), metro_id, "; ".join(reasons)))
+
+    report.append(
+        f"location check: {len(violations)} studio(s) outside their metro"
+    )
+    if violations:
+        sample = ", ".join(f"{sid}" for sid, _, _ in violations[:5])
+        more = f" (+{len(violations) - 5} more)" if len(violations) > 5 else ""
+        aborts.append(
+            f"{len(violations)} studio(s) outside their declared metro: {sample}{more}. "
+            f"Fix the metro assignment or remove the record — a Fort Collins studio "
+            f"on the Denver page misleads every visitor who clicks through."
+        )
+        for sid, metro_id, reason in violations:
+            report.append(f"  OUT_OF_METRO  {sid}  [{metro_id}]  {reason}")
+
+    return {"aborts": aborts, "warns": warns, "report": report}
 
 
 def parse_redirects(toml_text: str) -> list:
@@ -512,6 +610,18 @@ def run(studios_path: Path) -> None:
         sys.exit(2)
 
     result = evaluate(studios, _load_head_studios(studios_path.parent))
+
+    # ── Location rule — runs on EVERY refresh, blocks rather than warns ────
+    # data/metros.json sits in the repo under data/.
+    metros_json_path = studios_path.parent / "data" / "metros.json"
+    try:
+        loc_result = check_studio_locations(studios, metros_json_path)
+    except Exception as exc:  # pragma: no cover - defensive
+        result["warns"].append(f"location check crashed: {exc}")
+    else:
+        result["report"].extend(loc_result["report"])
+        result["warns"].extend(loc_result["warns"])
+        result["aborts"].extend(loc_result["aborts"])
 
     # ── Redirect shadowing — runs on EVERY refresh, blocks rather than warns ──
     # netlify.toml sits beside studios.json at the repo root.
