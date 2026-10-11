@@ -288,9 +288,15 @@ class TestIdentityTierChange(unittest.TestCase):
             "place-tier entry too so the next run finds it directly",
         )
 
-    def test_seed_fallback_tiers_is_first_wins_and_idempotent(self):
-        """Two studios colliding on a weaker-tier key must not swap owners,
-        and calling twice must not duplicate."""
+    def test_seed_fallback_tiers_skips_shadow_addresses_and_is_idempotent(self):
+        """Two different studios sharing an addr key must NOT be aliased.
+
+        If the registry pointed addr:X at either one of them, a fresh crawl
+        for addr:X with a new place_id would blindly inherit that slug —
+        exactly the live-URL swap the registry exists to prevent. The two
+        primary place keys are still seeded (unambiguous); only the shadow
+        addr key is skipped. Also must be idempotent on re-seed.
+        """
         registry = SlugRegistry()
         studios = [
             {"id": "first", "name": "First", "metro": "denver_co",
@@ -305,10 +311,13 @@ class TestIdentityTierChange(unittest.TestCase):
         n2 = registry.seed_fallback_tiers(studios)
         self.assertEqual(n2, 0, "re-seeding must add nothing — idempotent")
         self.assertEqual(snapshot, registry.mapping, "registry must not change")
-        self.assertEqual(snapshot["place:placeA"], "first", "first studio keeps its primary")
-        self.assertEqual(
-            registry.mapping["addr:denver co|100 main st"], "first",
-            "the two studios collide on addr-tier; the sorted-id winner takes it",
+        self.assertEqual(snapshot["place:placeA"], "first")
+        self.assertEqual(snapshot["place:placeB"], "second")
+        self.assertNotIn(
+            "addr:denver co|100 main st", snapshot,
+            "the two studios collide on addr-tier (shadow); the registry "
+            "must not pick a winner — leave it unseeded so a fresh crawl "
+            "cannot inherit someone else's slug.",
         )
 
 

@@ -260,29 +260,47 @@ class SlugRegistry:
 
         For each record, register its addr and name tiers (in addition to
         whatever primary tier is already recorded) pointing at the record's
-        slug — but ONLY if that key is not already claimed.  First-wins
-        semantics: an existing entry for key K pointing at slug S1 is not
-        overwritten by a later studio S2 that would also key on K.  Returns
-        the number of alias entries added.
+        slug — but ONLY if that key is unambiguous: no other studio in
+        `studios` has the same key.  Shadow cases (two different studios
+        sharing an addr key, e.g. the three SweatHouz locations at
+        6252 Camp Bowie Blvd) are intentionally LEFT UNSEEDED, because
+        there is no safe way to tell which HEAD slug a fresh crawl record
+        at that addr belongs to; blindly matching the first one swaps live
+        URLs' contents on a Google re-index, which is exactly the failure
+        class the whole registry exists to prevent.
+
+        First-wins per key is preserved as a safety net: if the registry
+        already has an entry, it is not overwritten.  Returns the number of
+        alias entries added.  Idempotent — safe to call every run.
 
         Why: a studio can shift tiers between runs (Google Maps starts or
         stops returning a google_place_id).  Without alias entries the
         registry sees the fresh primary key as new and allocates "<slug>-2".
         The 2026-10-10 run lost 11 URLs to exactly this.
-
-        Idempotent — safe to call every run.  Collisions are expected and
-        correct: the SAME studio registering the same addr-tier on two
-        consecutive runs hits an existing-match no-op, not a new entry.
         """
+        # First pass: count how many studios claim each potential alias key.
+        # A key claimed by two or more studios is a "shadow" and must not be
+        # offered as a lookup alias — see docstring.
+        key_claimants: dict = {}
+        for studio in studios:
+            if not studio.get("id"):
+                continue
+            for k in all_identity_keys(studio):
+                key_claimants[k] = key_claimants.get(k, 0) + 1
+
+        # Second pass: seed only unambiguous keys, deterministic by id.
         added = 0
         for studio in sorted(studios, key=lambda s: str(s.get("id") or "")):
             slug = studio.get("id")
             if not slug:
                 continue
             for k in all_identity_keys(studio):
-                if k not in self._by_key:
-                    self._by_key[k] = slug
-                    added += 1
+                if k in self._by_key:
+                    continue
+                if key_claimants.get(k, 0) > 1:
+                    continue  # shadow — do not alias
+                self._by_key[k] = slug
+                added += 1
             self._taken.add(slug)
         return added
 
