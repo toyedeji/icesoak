@@ -236,16 +236,43 @@ class TestDuplicateIdentities(unittest.TestCase):
         alpharetta = next(s for s in merged if s["id"] == "sweathouz-alpharetta")
         self.assertEqual(alpharetta["missed_runs"], 0, "this one WAS re-observed")
 
-    def test_duplicate_ids_are_refused_outright(self):
-        """The invariant, independent of how it might be violated."""
-        previous = [
-            studio("clash", place="0x1:0x1"),
-            studio("other", place="0x2:0x2"),
-        ]
-        # A fresh record that collides on id with a record that will be retained.
+    def test_head_slug_reclaim_does_not_duplicate(self):
+        """A fresh record claiming a HEAD slug IS that studio re-identified.
+
+        When Google Maps starts returning a google_place_id for a studio that
+        had none in HEAD, the fresh record's identity_key moves addr->place,
+        the registry resolves it to the HEAD slug via the addr-tier fallback,
+        and the HEAD record would otherwise be kept as an absentee under its
+        OLD identity_key — carrying the SAME slug. That used to trip the
+        one-id invariant below and abort the whole run (2026-10-11 regression).
+
+        Correct behaviour: treat the HEAD record as re-seen through its slug,
+        drop it from absentees, keep the fresh record. One record, one slug.
+        """
+        previous = [studio("other", place="0x2:0x2")]
+        # Fresh record carries the SAME id ("other") but a different primary
+        # identity key — the registry resolved it via a weaker-tier alias.
         fresh = [studio("other", place="0x3:0x3", address="9 Elsewhere Ave")]
-        # 'other' (0x2) is not re-seen -> retained with id 'other';
-        # the fresh 0x3 record also carries id 'other'. That must abort.
+        merged, _ = merge_with_previous(
+            fresh=fresh, previous=previous,
+            run_date="2026-08-02", previous_run_date="2026-07-26",
+        )
+        ids = [s["id"] for s in merged]
+        self.assertEqual(ids.count("other"), 1,
+                         "one slug must map to one record, not two")
+        self.assertEqual(len(merged), 1)
+        # The fresh record wins (has the new primary identity).
+        self.assertEqual(merged[0].get("google_place_id"), "0x3:0x3")
+
+    def test_duplicate_ids_in_fresh_are_still_refused(self):
+        """The invariant still catches a true code bug: two FRESH records
+        resolving to the same slug (slug_registry out of sync, say)."""
+        previous = [studio("clash", place="0x1:0x1")]
+        # Two fresh records with the same id but different identities.
+        fresh = [
+            studio("ghost", place="0x4:0x4"),
+            studio("ghost", place="0x5:0x5", address="7 Second St"),
+        ]
         with self.assertRaises(RetentionAbort) as ctx:
             merge_with_previous(
                 fresh=fresh, previous=previous,

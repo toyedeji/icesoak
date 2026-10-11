@@ -228,11 +228,23 @@ def merge_with_previous(
     # Previous records the crawl did not return: those whose identity was not
     # seen, plus the duplicate-identity extras (which can never be "seen",
     # because the fresh record for that identity matched the canonical record).
+    #
+    # Also filter by slug: when a fresh record identity-tier upgrades (addr →
+    # place because Google Maps now returns a place_id), its primary
+    # identity_key differs from the HEAD record's, so the HEAD record is NOT
+    # in seen_keys and would be kept as an absentee alongside the fresh
+    # record — both carrying the same slug, which trips the one-id invariant
+    # below. The slug is the stable cross-run identifier (that is what the
+    # registry pins); if a HEAD slug has already been claimed by a fresh
+    # record, the HEAD record for it is the SAME studio, re-seen.
+    seen_slugs = {m["id"] for m in merged if m.get("id")}
     absentees: list = [
-        prev_by_key[key] for key in sorted(prev_by_key) if key not in seen_keys
+        prev_by_key[key] for key in sorted(prev_by_key)
+        if key not in seen_keys and prev_by_key[key].get("id") not in seen_slugs
     ]
     absentees.extend(
-        sorted(prev_duplicates, key=lambda s: str(s.get("id") or ""))
+        s for s in sorted(prev_duplicates, key=lambda s: str(s.get("id") or ""))
+        if s.get("id") not in seen_slugs
     )
 
     retained: list = []
