@@ -8976,44 +8976,6 @@
     "missed_runs": 1
   },
   {
-    "id": "sweathouz-media-media",
-    "name": "SweatHouz Media",
-    "metro": "philadelphia_pa",
-    "city": "Media",
-    "lat": null,
-    "lng": null,
-    "status": "active",
-    "brand": "SweatHouz",
-    "state": "PA",
-    "neighborhood": null,
-    "address": "1127 W Baltimore Pike, Media, PA",
-    "website": null,
-    "booking_url": null,
-    "instagram": null,
-    "modalities": [
-      "sauna_infrared",
-      "cold_plunge",
-      "contrast"
-    ],
-    "plunge_temp_f_min": null,
-    "plunge_temp_f_max": null,
-    "format": null,
-    "session_style": null,
-    "access": null,
-    "day_pass_price_usd": null,
-    "membership_from_usd": null,
-    "amenities": [],
-    "google_place_id": null,
-    "google_rating": null,
-    "google_reviews_count": null,
-    "source_urls": [
-      "https://sweathouz.com/locations"
-    ],
-    "last_verified": null,
-    "last_seen_at": null,
-    "missed_runs": 1
-  },
-  {
     "id": "sweathouz-philadelphia-philadelphia",
     "name": "SweatHouz Philadelphia",
     "metro": "philadelphia_pa",

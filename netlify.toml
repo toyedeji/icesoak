@@ -647,3 +647,12 @@
   status = 301
   force = false
 
+
+# 2026-10-11 duplicate removal: sweathouz-media-media is the same business
+# as sweathouz-media-contrast-therapy-studio-cherry-hill (same base address
+# "1127 W Baltimore Pike"), captured twice under different scraper passes.
+[[redirects]]
+  from = "/studio/sweathouz-media-media/"
+  to = "/studio/sweathouz-media-contrast-therapy-studio-cherry-hill/"
+  status = 301
+  force = false
