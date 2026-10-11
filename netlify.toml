@@ -192,7 +192,7 @@
 # same address
 [[redirects]]
   from = "/studio/perspire-sauna-studio-scottsdale/"
-  to = "/studio/perspire-sauna-studio-phoenix/"
+  to = "/cold-plunge/phoenix/"
   status = 301
   force = false
 
@@ -527,7 +527,7 @@
 
 [[redirects]]
   from = "/studio/sweathouz-fort-worth-fort-worth/"
-  to = "/studio/sweathouz-camp-bowie-fort-worth/"
+  to = "/studio/sweathouz-camp-bowie-contrast-therapy-studio-fort-worth/"
   status = 301
   force = false
 
