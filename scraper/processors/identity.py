@@ -42,6 +42,21 @@ Identity tiers (first match wins)
                                  locator pages with stable markup — not from
                                  Maps.  See MIGRATION NOTES in the branch
                                  report before relying on this tier.
+
+Multi-tier lookup (added 2026-10-10)
+------------------------------------
+The 2026-10-10 run dropped 15 studios because their identity *tier* changed
+between runs: 10 of them went addr→place (Maps started returning a
+google_place_id on this run for a studio that previously had none), 1 went
+place→addr (the opposite), and the registry — keyed on primary tier only —
+could not find the pre-existing slug and allocated "<slug>-2" instead.
+
+`resolve()` now checks EVERY applicable tier of the fresh record against the
+registry, so an upgrade is tolerated.  And `seed_fallback_tiers()`, called once
+per run from scrape.py against the current studios.json, backfills the weaker-
+tier entries for every known studio, so a downgrade is tolerated too.  The
+primary key is still what new entries claim: fallbacks only come into play as
+look-up aliases.
 """
 import json
 import re
@@ -101,6 +116,38 @@ def identity_key(studio: dict) -> str:
         return f"addr:{metro}|{street}"
 
     return f"name:{metro}|{_norm(studio.get('name'))}"
+
+
+def all_identity_keys(studio: dict) -> list:
+    """Return every identity key useful for registry lookup, strongest first.
+
+    `identity_key()` returns the single *primary* key for a studio.  This
+    returns every lookup key that key could stand in for — primary plus any
+    weaker tier that unambiguously identifies the same business.
+
+    Name tier is DELIBERATELY omitted when a stronger tier applies: two
+    different studios inside one metro can share a name (every Perspire Sauna
+    Studio is called 'Perspire Sauna Studio'), so a name alias would quietly
+    collapse their slugs on the next run.  Name tier is only ever used when
+    it IS the primary — i.e. the franchise crawler returned a record with
+    neither google_place_id nor address.
+
+    Degenerate case (no metro, no address, no name) collapses to
+    "name:|" so the invariant "every record has at least one key" holds.
+    """
+    keys: list = []
+    place_id = (studio.get("google_place_id") or "").strip()
+    if place_id:
+        keys.append(f"place:{place_id}")
+
+    metro = _norm(studio.get("metro"))
+    street = _norm_street(studio.get("address"))
+    if street:
+        keys.append(f"addr:{metro}|{street}")
+
+    if not keys:
+        keys.append(f"name:{metro}|{_norm(studio.get('name'))}")
+    return keys
 
 
 def identity_tier(studio: dict) -> str:
@@ -183,6 +230,12 @@ class SlugRegistry:
         # Sort by id, not identity_key: two records sharing an identity_key must
         # resolve in a stable order, and the id is the tiebreaker that decides
         # which URL is canonical.
+        #
+        # Only the primary identity_key is registered here.  Fallback-tier
+        # aliases that make the registry robust to an identity-tier change
+        # (addr <-> place) are added at run time by seed_fallback_tiers()
+        # from scrape.py, so that the one-entry-per-studio invariant holds
+        # for seeding/migration tools (which call this method directly).
         for studio in sorted(studios, key=lambda s: str(s.get("id") or "")):
             slug = studio.get("id")
             if not slug:
@@ -202,17 +255,66 @@ class SlugRegistry:
             reg._taken.add(slug)
         return reg, collisions
 
+    def seed_fallback_tiers(self, studios: list) -> int:
+        """Add weaker-tier aliases for every studio currently in `studios`.
+
+        For each record, register its addr and name tiers (in addition to
+        whatever primary tier is already recorded) pointing at the record's
+        slug — but ONLY if that key is not already claimed.  First-wins
+        semantics: an existing entry for key K pointing at slug S1 is not
+        overwritten by a later studio S2 that would also key on K.  Returns
+        the number of alias entries added.
+
+        Why: a studio can shift tiers between runs (Google Maps starts or
+        stops returning a google_place_id).  Without alias entries the
+        registry sees the fresh primary key as new and allocates "<slug>-2".
+        The 2026-10-10 run lost 11 URLs to exactly this.
+
+        Idempotent — safe to call every run.  Collisions are expected and
+        correct: the SAME studio registering the same addr-tier on two
+        consecutive runs hits an existing-match no-op, not a new entry.
+        """
+        added = 0
+        for studio in sorted(studios, key=lambda s: str(s.get("id") or "")):
+            slug = studio.get("id")
+            if not slug:
+                continue
+            for k in all_identity_keys(studio):
+                if k not in self._by_key:
+                    self._by_key[k] = slug
+                    added += 1
+            self._taken.add(slug)
+        return added
+
     # ── use ─────────────────────────────────────────────────────────────────
 
     def resolve(self, studio: dict, proposed_slug: str) -> str:
-        """Return the slug this studio owns, claiming `proposed_slug` if new."""
-        key = identity_key(studio)
-        existing = self._by_key.get(key)
-        if existing:
-            return existing
+        """Return the slug this studio owns, claiming `proposed_slug` if new.
 
+        Checks EVERY applicable identity tier of the fresh record, strongest
+        first, so a run that upgrades a studio's primary tier (addr → place,
+        say, because Google Maps now returns a place_id) still resolves to
+        the existing slug via the weaker-tier entry.  When a match is found
+        at a weaker tier, the stronger tiers of the fresh record are also
+        recorded as aliases so the next run short-circuits on the primary.
+        """
+        keys = all_identity_keys(studio)
+
+        for k in keys:
+            existing = self._by_key.get(k)
+            if existing:
+                # Auto-upgrade: register any stronger tiers of the fresh
+                # record too, so next run finds the primary immediately.
+                for alias in keys:
+                    if alias not in self._by_key:
+                        self._by_key[alias] = existing
+                return existing
+
+        # No match at any tier — allocate a fresh slug.
         slug = self._first_free(proposed_slug)
-        self._by_key[key] = slug
+        for k in keys:
+            if k not in self._by_key:
+                self._by_key[k] = slug
         self._taken.add(slug)
         return slug
 

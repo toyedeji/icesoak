@@ -407,6 +407,22 @@ async def run(
     registry_path = WORK_DIR / REGISTRY_FILENAME
     registry = SlugRegistry.load(registry_path)
     registry_size_before = len(registry)
+
+    # Seed weaker-tier aliases from the current studios.json so a shift in a
+    # studio’s identity tier (Google Maps starts/stops returning a
+    # google_place_id for it) does not re-slug it. The 2026-10-10 run lost 11
+    # URLs to exactly this. First-wins: never overwrite an entry already in
+    # the registry; the primary tier someone claimed yesterday stays the
+    # primary tier today.
+    studios_path = WORK_DIR / "studios.json"
+    if studios_path.exists():
+        try:
+            current = json.loads(studios_path.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            current = []
+        if isinstance(current, list) and current:
+            aliases_added = registry.seed_fallback_tiers(current)
+            log.info("Slug registry: seeded %d fallback-tier aliases from %d existing studios", aliases_added, len(current))
     studios = merge_sources(enriched, registry=registry)
 
     # ── Geocode addresses → lat/lng (cached; 1 req/sec Nominatim policy) ─────

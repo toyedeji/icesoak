@@ -197,5 +197,120 @@ class TestLiveDatasetSeeding(unittest.TestCase):
         )
 
 
+class TestIdentityTierChange(unittest.TestCase):
+    """The 2026-10-10 bug: a studio’s identity tier changes between runs and
+    the slug registry fails to find the existing entry — so the fresh record
+    gets a “-2” slug and the real one appears to “disappear”. 11 of 15 URLs
+    broke on that run exactly this way."""
+
+    def test_addr_tier_upgrade_to_place_tier_preserves_slug(self):
+        """Studio was addr-tier last run; Google Maps now gives a place_id."""
+        registry = SlugRegistry()
+
+        week1 = merge_sources(
+            [raw("NAOSU Sauna", address="3145 Larimer St, Denver, CO 80205")],
+            registry=registry,
+        )
+        original_slug = week1[0]["id"]
+
+        # Same studio, same address, Maps now returns a google_place_id.
+        week2 = merge_sources(
+            [raw("NAOSU Sauna", address="3145 Larimer St, Denver, CO 80205",
+                 place="0x876c791f428ca72f:0x1b5a85b0676536")],
+            registry=registry,
+        )
+        self.assertEqual(
+            week2[0]["id"], original_slug,
+            "an addr\u2192place upgrade must keep the existing slug, not allocate "
+            "<slug>-2 (the 2026-10-10 regression)",
+        )
+
+    def test_place_tier_downgrade_to_addr_tier_preserves_slug_via_seeding(self):
+        """Studio was place-tier last run; Maps now returns no place_id.
+
+        The scraper seeds fallback-tier aliases from the previous
+        studios.json at the start of every run; without that, the registry
+        has only the place-tier entry and a downgrade still breaks.
+        """
+        registry = SlugRegistry()
+
+        week1 = merge_sources(
+            [raw("The Cove Sauna and Cold Plunge",
+                 address="1361 S Broadway, Denver, CO 80210",
+                 place="0x876c7fe47f60749f:0x5a1784de3d69f406")],
+            registry=registry,
+        )
+        original_slug = week1[0]["id"]
+
+        # Simulate the per-run seeding step scrape.py performs: pass the
+        # studios list through seed_fallback_tiers so addr and name aliases
+        # exist alongside the primary place-tier entry.
+        registry.seed_fallback_tiers(week1)
+
+        # Same studio, same address, Maps now returns no place_id.
+        week2 = merge_sources(
+            [raw("The Cove Sauna and Cold Plunge",
+                 address="1361 S Broadway, Denver, CO 80210")],
+            registry=registry,
+        )
+        self.assertEqual(
+            week2[0]["id"], original_slug,
+            "a place\u2192addr downgrade must keep the existing slug via the "
+            "seeded addr-tier alias",
+        )
+
+    def test_resolve_auto_upgrades_registry_entry(self):
+        """When a weaker-tier alias saves the day, the stronger tiers of the
+        fresh record are also recorded, so the next run short-circuits."""
+        registry = SlugRegistry()
+
+        week1 = merge_sources(
+            [raw("Denver Sports Recovery",
+                 address="2242 W 29th Ave, Denver, CO 80211")],
+            registry=registry,
+        )
+        original_slug = week1[0]["id"]
+        self.assertNotIn(
+            "place:0x876c7894231f0c6b:0x25eae7438d58bfdf", registry.mapping,
+            "primary tier was addr; no place entry should exist yet",
+        )
+
+        merge_sources(
+            [raw("Denver Sports Recovery",
+                 address="2242 W 29th Ave, Denver, CO 80211",
+                 place="0x876c7894231f0c6b:0x25eae7438d58bfdf")],
+            registry=registry,
+        )
+        self.assertEqual(
+            registry.mapping.get("place:0x876c7894231f0c6b:0x25eae7438d58bfdf"),
+            original_slug,
+            "after an addr\u2192place upgrade, the registry should carry the new "
+            "place-tier entry too so the next run finds it directly",
+        )
+
+    def test_seed_fallback_tiers_is_first_wins_and_idempotent(self):
+        """Two studios colliding on a weaker-tier key must not swap owners,
+        and calling twice must not duplicate."""
+        registry = SlugRegistry()
+        studios = [
+            {"id": "first", "name": "First", "metro": "denver_co",
+             "address": "100 Main St, Denver, CO",
+             "google_place_id": "placeA"},
+            {"id": "second", "name": "Second", "metro": "denver_co",
+             "address": "100 Main St, Denver, CO",
+             "google_place_id": "placeB"},
+        ]
+        n1 = registry.seed_fallback_tiers(studios)
+        snapshot = dict(registry.mapping)
+        n2 = registry.seed_fallback_tiers(studios)
+        self.assertEqual(n2, 0, "re-seeding must add nothing — idempotent")
+        self.assertEqual(snapshot, registry.mapping, "registry must not change")
+        self.assertEqual(snapshot["place:placeA"], "first", "first studio keeps its primary")
+        self.assertEqual(
+            registry.mapping["addr:denver co|100 main st"], "first",
+            "the two studios collide on addr-tier; the sorted-id winner takes it",
+        )
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
