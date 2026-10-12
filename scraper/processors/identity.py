@@ -86,6 +86,32 @@ def _norm(text: Optional[str]) -> str:
     return _NON_ALNUM_RE.sub(" ", _ascii_fold(text or "").lower()).strip()
 
 
+# Tokens that appear in half the dataset and so cannot by themselves identify
+# a business — kept out of the token-overlap check so e.g. "studio" alone
+# never collapses two different studios at a shared address.
+_GENERIC_NAME_TOKENS = frozenset({
+    "studio", "studios", "sauna", "saunas", "spa", "spas", "cold", "plunge",
+    "plunges", "ice", "bath", "therapy", "wellness", "recovery", "contrast",
+    "center", "centre", "lounge", "club", "co", "the", "a", "and", "of", "in",
+    "at", "on",
+})
+
+
+def _name_tokens(name: Optional[str]) -> list:
+    """Return the normalized, non-generic tokens in a studio name.
+
+    Used by the proximity tier: two records at the same coords in the same
+    metro are the same business iff they share at least one non-generic token
+    (brand, neighbourhood, founder) — a check robust to name growth, which the
+    2026-10-11 run exposed as the real root cause of the Perspire / R3 /
+    SweatHouz drops.
+    """
+    norm = _norm(name)
+    if not norm:
+        return []
+    return [t for t in norm.split(" ") if len(t) >= 2 and t not in _GENERIC_NAME_TOKENS]
+
+
 def _norm_street(address: Optional[str]) -> str:
     """Normalise the first line of a street address.
 
@@ -308,22 +334,33 @@ class SlugRegistry:
                 added += 1
             self._taken.add(slug)
 
-            # Third seeding tier: normalized-name + metro + coordinates. Used
-            # by resolve() when primary and addr tiers both miss — the exact
-            # case where a studio shifts place_id and address between runs
-            # (Perspire chain-page restructure, SweatHouz vendor-page addresses
-            # mangled on crawl). Only seeded when the HEAD record has coords;
-            # otherwise there is nothing for the proximity check to measure.
+            # Third seeding tier: metro + coordinates + name tokens. Used by
+            # resolve() when primary and addr tiers both miss — the exact case
+            # where a studio shifts place_id and address between runs (Perspire
+            # chain-page restructure, SweatHouz vendor-page addresses mangled
+            # on crawl). Only seeded when the HEAD record has coords; otherwise
+            # there is nothing for the proximity check to measure.
+            #
+            # Indexed on (metro, slug) with the tokens of the normalized name
+            # stored alongside, rather than keyed on the full normalized name.
+            # The 2026-10-11 run showed why: a HEAD record named "Perspire
+            # Sauna Studio Cherry Hills" and its fresh crawl named "Perspire
+            # Sauna Studio" (short, before enrichment appends the neighbourhood)
+            # key to DIFFERENT strings under full-name match and the proximity
+            # lookup silently misses — exactly the "<slug>-2" split this tier
+            # exists to prevent. Token-overlap resolves it: two records at the
+            # same place that share any non-trivial name token are the same
+            # business.
             lat = studio.get("lat")
             lng = studio.get("lng")
             if lat is None or lng is None:
                 continue
             metro = _norm(studio.get("metro"))
-            name_key = _norm(studio.get("name"))
-            if not name_key:
+            tokens = _name_tokens(studio.get("name"))
+            if not tokens:
                 continue
-            self._by_proximity.setdefault(name_key, []).append(
-                (metro, float(lat), float(lng), slug)
+            self._by_proximity.setdefault(metro, []).append(
+                (float(lat), float(lng), slug, tokens)
             )
         return added
 
@@ -342,14 +379,21 @@ class SlugRegistry:
         return math.hypot(x, y) * 6371000.0
 
     def _match_by_proximity(self, studio: dict, threshold_m: float = 100.0) -> Optional[str]:
-        """Return an existing slug if a HEAD studio with the same normalized
-        name sits within `threshold_m` metres of this record. None otherwise.
+        """Return an existing slug if a HEAD studio in the same metro, within
+        `threshold_m` metres, and sharing at least one non-generic name token
+        exists. None otherwise.
 
         Why: a chain re-crawled on a different date can arrive with a changed
-        place_id and a vendor-page address that geocodes elsewhere — same
-        business, different identity tiers. If the normalized name and the
-        location both match a HEAD record, that is the same business, and the
-        existing slug must be preserved rather than allocated "-2".
+        place_id, a vendor-page address that geocodes elsewhere, and a
+        shortened or expanded name (franchise crawler emits "Perspire Sauna
+        Studio" and the studio-detail enricher appends the neighbourhood as
+        "Perspire Sauna Studio Cherry Hills" — same business). Metro + 100m +
+        token overlap is sufficient to recognise this as a re-sighting. The
+        token-overlap check prevents two different businesses that happen to
+        share an address from collapsing, while tolerating name drift.
+
+        The generic-token denylist (processors.identity._GENERIC_NAME_TOKENS)
+        keeps "sauna" or "studio" from being the only token in common.
         """
         lat = studio.get("lat")
         lng = studio.get("lng")
@@ -360,22 +404,17 @@ class SlugRegistry:
             lng_f = float(lng)
         except (TypeError, ValueError):
             return None
-        name_key = _norm(studio.get("name"))
-        if not name_key:
-            return None
-        candidates = self._by_proximity.get(name_key, ())
-        if not candidates:
+        fresh_tokens = set(_name_tokens(studio.get("name")))
+        if not fresh_tokens:
             return None
         metro = _norm(studio.get("metro"))
+        candidates = self._by_proximity.get(metro, ())
+        if not candidates:
+            return None
         best_slug: Optional[str] = None
         best_dist: float = threshold_m
-        for cand_metro, cand_lat, cand_lng, cand_slug in candidates:
-            # Metro must match too — two Perspire Sauna Studios 2 miles apart in
-            # the same city are the same chain but different studios, which the
-            # proximity check correctly separates. Metro mismatch guards the
-            # degenerate case where two different cities happen to share a chain
-            # location name.
-            if cand_metro and metro and cand_metro != metro:
+        for cand_lat, cand_lng, cand_slug, cand_tokens in candidates:
+            if not (fresh_tokens & set(cand_tokens)):
                 continue
             dist = self._coords_distance_m(lat_f, lng_f, cand_lat, cand_lng)
             if dist < best_dist:
