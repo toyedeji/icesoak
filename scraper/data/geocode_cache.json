@@ -3961,5 +3961,90 @@
   "6609 Snowden Lane, Naperville, IL": null,
   "6050 Roswell Rd Ste 200, Midtown, GA": null,
   "980 Howell Mill Rd Unit 4, Buckhead, GA": null,
-  "12895 Paseo Village Way Suite #1260, Seattle, WA": null
+  "12895 Paseo Village Way Suite #1260, Seattle, WA": null,
+  "rev:39.962677,-104.991339": {
+    "house_number": "14672",
+    "road": "North Delaware Street",
+    "retail": "The Orchard Town Center",
+    "town": "Westminster",
+    "county": "Adams County",
+    "state": "Colorado",
+    "ISO3166-2-lvl4": "US-CO",
+    "postcode": "80023",
+    "country": "United States",
+    "country_code": "us"
+  },
+  "rev:40.169962,-74.988032": {
+    "shop": "NJoy Boutique",
+    "house_number": "96",
+    "road": "Buck Road",
+    "hamlet": "Holland",
+    "city": "Northampton Township",
+    "county": "Bucks County",
+    "state": "Pennsylvania",
+    "ISO3166-2-lvl4": "US-PA",
+    "postcode": "19053",
+    "country": "United States",
+    "country_code": "us"
+  },
+  "rev:40.451732,-79.984385": {
+    "amenity": "De Fer Coffee & Tea",
+    "house_number": "2002",
+    "road": "Smallman Street",
+    "neighbourhood": "Strip District",
+    "city": "Pittsburgh",
+    "county": "Allegheny County",
+    "state": "Pennsylvania",
+    "ISO3166-2-lvl4": "US-PA",
+    "postcode": "15222",
+    "country": "United States",
+    "country_code": "us"
+  },
+  "rev:39.948895,-75.962585": {
+    "house_number": "5137",
+    "road": "Lower Valley Road",
+    "hamlet": "Lenover",
+    "city": "West Sadsbury Township",
+    "county": "Chester County",
+    "state": "Pennsylvania",
+    "ISO3166-2-lvl4": "US-PA",
+    "postcode": "19310",
+    "country": "United States",
+    "country_code": "us"
+  },
+  "rev:30.210543,-97.737172": {
+    "house_number": "4109",
+    "road": "Todd Lane",
+    "city": "Austin",
+    "county": "Travis County",
+    "state": "Texas",
+    "ISO3166-2-lvl4": "US-TX",
+    "postcode": "78744",
+    "country": "United States",
+    "country_code": "us"
+  },
+  "rev:25.622259,-80.342457": {
+    "house_number": "15924",
+    "road": "Southwest 92nd Avenue",
+    "hamlet": "Rockdale",
+    "town": "Palmetto Bay",
+    "county": "Miami-Dade County",
+    "state": "Florida",
+    "ISO3166-2-lvl4": "US-FL",
+    "postcode": "33157",
+    "country": "United States",
+    "country_code": "us"
+  },
+  "rev:34.104526,-118.373192": {
+    "house_number": "8337",
+    "road": "Kirkwood Drive",
+    "neighbourhood": "Hollywood Hills West",
+    "city": "Los Angeles",
+    "county": "Los Angeles County",
+    "state": "California",
+    "ISO3166-2-lvl4": "US-CA",
+    "postcode": "90046",
+    "country": "United States",
+    "country_code": "us"
+  }
 }
